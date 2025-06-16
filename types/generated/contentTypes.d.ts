@@ -559,7 +559,12 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     PageContent: Schema.Attribute.DynamicZone<
-      ['homepage-components.hero-section']
+      [
+        'homepage-components.hero-section',
+        'homepage-components.a-decade-section',
+        'homepage-components.yourjourney',
+        'homepage-components.afs-section',
+      ]
     >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;

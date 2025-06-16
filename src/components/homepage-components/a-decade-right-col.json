@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_homepage_components_a_decade_right_cols",
+  "info": {
+    "displayName": "ADecadeRightCol"
+  },
+  "options": {},
+  "attributes": {
+    "counter1text": {
+      "type": "string"
+    },
+    "counter1content": {
+      "type": "string"
+    },
+    "counter2text": {
+      "type": "string"
+    },
+    "counter2content": {
+      "type": "string"
+    },
+    "counter3text": {
+      "type": "string"
+    },
+    "counter3content": {
+      "type": "string"
+    },
+    "counter4text": {
+      "type": "string"
+    },
+    "counter4content": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

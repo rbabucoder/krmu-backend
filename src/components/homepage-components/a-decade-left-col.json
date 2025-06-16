@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_homepage_components_a_decade_left_cols",
+  "info": {
+    "displayName": "adecadeleftcol",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "adecadetitle": {
+      "type": "string"
+    },
+    "adecadesubtitle": {
+      "type": "string"
+    },
+    "adecadedescription": {
+      "type": "text"
+    },
+    "button1text": {
+      "type": "string"
+    },
+    "button1link": {
+      "type": "string"
+    },
+    "button2text": {
+      "type": "string"
+    },
+    "button2link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

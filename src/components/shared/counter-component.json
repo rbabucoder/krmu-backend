@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_counter_components",
+  "info": {
+    "displayName": "Counter Component"
+  },
+  "options": {},
+  "attributes": {
+    "countertext": {
+      "type": "string"
+    },
+    "countercontent": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

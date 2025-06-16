@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_homepage_components_yourjourneys",
+  "info": {
+    "displayName": "yourjourney",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

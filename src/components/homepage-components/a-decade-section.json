@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_homepage_components_a_decade_sections",
+  "info": {
+    "displayName": "ADecade Section"
+  },
+  "options": {},
+  "attributes": {
+    "adecadeleftcol": {
+      "type": "component",
+      "component": "homepage-components.a-decade-left-col",
+      "repeatable": false
+    },
+    "adecaderightcol": {
+      "type": "component",
+      "component": "homepage-components.a-decade-right-col",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

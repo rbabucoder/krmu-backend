@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_homepage_components_afs_sections",
+  "info": {
+    "displayName": "AFS section",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "afsimage1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "afs1content": {
+      "type": "string"
+    },
+    "afsimage2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "afs2content": {
+      "type": "string"
+    },
+    "afsimage3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "afs3content": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
