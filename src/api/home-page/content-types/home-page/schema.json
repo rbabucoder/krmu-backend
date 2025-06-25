@@ -17,7 +17,8 @@
         "homepage-components.hero-section",
         "homepage-components.a-decade-section",
         "homepage-components.yourjourney",
-        "homepage-components.afs-section"
+        "homepage-components.afs-section",
+        "homepage-components.our-top-recruiters"
       ]
     }
   }

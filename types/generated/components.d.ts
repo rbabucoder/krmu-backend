@@ -85,6 +85,22 @@ export interface HomepageComponentsHeroSection extends Struct.ComponentSchema {
   };
 }
 
+export interface HomepageComponentsOurTopRecruiters
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_our_top_recruiters';
+  info: {
+    displayName: 'Our Top Recruiters';
+  };
+  attributes: {
+    counter: Schema.Attribute.Component<'shared.counter-component', true>;
+    logos: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.Blocks;
+  };
+}
+
 export interface HomepageComponentsYourjourney extends Struct.ComponentSchema {
   collectionName: 'components_homepage_components_yourjourneys';
   info: {
@@ -128,9 +144,7 @@ export interface SharedMedia extends Struct.ComponentSchema {
     displayName: 'Media';
     icon: 'file-video';
   };
-  attributes: {
-    file: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
-  };
+  attributes: {};
 }
 
 export interface SharedQuote extends Struct.ComponentSchema {
@@ -192,6 +206,7 @@ declare module '@strapi/strapi' {
       'homepage-components.a-decade-section': HomepageComponentsADecadeSection;
       'homepage-components.afs-section': HomepageComponentsAfsSection;
       'homepage-components.hero-section': HomepageComponentsHeroSection;
+      'homepage-components.our-top-recruiters': HomepageComponentsOurTopRecruiters;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
       'shared.button': SharedButton;
       'shared.counter-component': SharedCounterComponent;

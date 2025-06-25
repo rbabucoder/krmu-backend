@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_homepage_components_our_top_recruiters",
+  "info": {
+    "displayName": "Our Top Recruiters"
+  },
+  "options": {},
+  "attributes": {
+    "counter": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    },
+    "logos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

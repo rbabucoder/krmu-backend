@@ -564,6 +564,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
         'homepage-components.a-decade-section',
         'homepage-components.yourjourney',
         'homepage-components.afs-section',
+        'homepage-components.our-top-recruiters',
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;
