@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_homepage_components_shaping_futures",
+  "info": {
+    "displayName": "Shaping Future"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "highlightext": {
+      "type": "string"
+    },
+    "afterhighlighttext": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "text"
+    },
+    "link1text": {
+      "type": "string"
+    },
+    "link1": {
+      "type": "string"
+    },
+    "link2text": {
+      "type": "string"
+    },
+    "link2": {
+      "type": "string"
+    },
+    "shapingimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "shapingCounter": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

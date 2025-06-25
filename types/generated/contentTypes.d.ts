@@ -565,6 +565,14 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
         'homepage-components.yourjourney',
         'homepage-components.afs-section',
         'homepage-components.our-top-recruiters',
+        'homepage-components.fee-scholar',
+        'homepage-components.whykrmu',
+        'homepage-components.elevate-campus',
+        'homepage-components.home-testimonials',
+        'homepage-components.shaping-future',
+        'homepage-components.global-partener',
+        'homepage-components.visit-explore',
+        'homepage-components.home-events-and-news',
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;

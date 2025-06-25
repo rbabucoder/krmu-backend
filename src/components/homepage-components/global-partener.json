@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_homepage_components_global_parteners",
+  "info": {
+    "displayName": "Global Partener"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "text"
+    },
+    "logosliderheading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

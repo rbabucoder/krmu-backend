@@ -70,6 +70,121 @@ export interface HomepageComponentsAfsSection extends Struct.ComponentSchema {
   };
 }
 
+export interface HomepageComponentsElevateCampus
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_elevate_campuses';
+  info: {
+    displayName: 'ElevateCampus';
+  };
+  attributes: {
+    elevatecampus1: Schema.Attribute.Component<
+      'homepage-components.elevate-campus1',
+      false
+    >;
+    ElevateCampus2: Schema.Attribute.Component<
+      'homepage-components.elevatecampus2',
+      false
+    >;
+    elevatecampus3: Schema.Attribute.Component<
+      'homepage-components.elevatecampus3',
+      false
+    >;
+    elevatecampusimage1: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    elevatecampusimage2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    elevatecampusimage3: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
+export interface HomepageComponentsElevateCampus1
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_elevate_campus1s';
+  info: {
+    displayName: 'ElevateCampus1';
+  };
+  attributes: {
+    afterhighlighttext: Schema.Attribute.String;
+    beforehighlighttext: Schema.Attribute.String;
+    content: Schema.Attribute.Text;
+    highlighttext: Schema.Attribute.String;
+    link: Schema.Attribute.String;
+    linkclass: Schema.Attribute.String;
+    linktext: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageComponentsElevatecampus2
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_elevatecampus2s';
+  info: {
+    displayName: 'elevatecampus2';
+  };
+  attributes: {
+    afterhighlighttext: Schema.Attribute.String;
+    beforehighlighttext: Schema.Attribute.String;
+    content: Schema.Attribute.String;
+    highlighttext: Schema.Attribute.String;
+    link: Schema.Attribute.String;
+    linkclass: Schema.Attribute.String;
+    linktext: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageComponentsElevatecampus3
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_elevatecampus3s';
+  info: {
+    displayName: 'elevatecampus3';
+  };
+  attributes: {
+    afterhighlighttext: Schema.Attribute.String;
+    beforehighlighttext: Schema.Attribute.String;
+    content: Schema.Attribute.String;
+    highlighttext: Schema.Attribute.String;
+    link: Schema.Attribute.String;
+    linkclass: Schema.Attribute.String;
+    linktext: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageComponentsFeeScholar extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_fee_scholars';
+  info: {
+    displayName: 'Fee Scholar';
+  };
+  attributes: {
+    FeeStructureImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    ScholarshipImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    text1: Schema.Attribute.String;
+    text2: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageComponentsGlobalPartener
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_global_parteners';
+  info: {
+    displayName: 'Global Partener';
+  };
+  attributes: {
+    descriptions: Schema.Attribute.Text;
+    logosliderheading: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface HomepageComponentsHeroSection extends Struct.ComponentSchema {
   collectionName: 'components_homepage_components_hero_sections';
   info: {
@@ -81,6 +196,29 @@ export interface HomepageComponentsHeroSection extends Struct.ComponentSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageComponentsHomeEventsAndNews
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_home_events_and_news';
+  info: {
+    displayName: 'Home Events and News';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageComponentsHomeTestimonials
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_home_testimonials';
+  info: {
+    displayName: 'Home Testimonials';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
 }
@@ -97,7 +235,56 @@ export interface HomepageComponentsOurTopRecruiters
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
-    title: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageComponentsShapingFuture
+  extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_shaping_futures';
+  info: {
+    displayName: 'Shaping Future';
+  };
+  attributes: {
+    afterhighlighttext: Schema.Attribute.String;
+    descriptions: Schema.Attribute.Text;
+    highlightext: Schema.Attribute.String;
+    link1: Schema.Attribute.String;
+    link1text: Schema.Attribute.String;
+    link2: Schema.Attribute.String;
+    link2text: Schema.Attribute.String;
+    shapingCounter: Schema.Attribute.Component<
+      'shared.counter-component',
+      true
+    >;
+    shapingimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageComponentsVisitExplore extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_visit_explores';
+  info: {
+    displayName: 'Visit Explore';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+    visitexplorebtn: Schema.Attribute.Component<'shared.button', true>;
+  };
+}
+
+export interface HomepageComponentsWhykrmu extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_components_whykrmus';
+  info: {
+    displayName: 'whykrmu';
+  };
+  attributes: {
+    Descriptions: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -205,8 +392,19 @@ declare module '@strapi/strapi' {
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;
       'homepage-components.a-decade-section': HomepageComponentsADecadeSection;
       'homepage-components.afs-section': HomepageComponentsAfsSection;
+      'homepage-components.elevate-campus': HomepageComponentsElevateCampus;
+      'homepage-components.elevate-campus1': HomepageComponentsElevateCampus1;
+      'homepage-components.elevatecampus2': HomepageComponentsElevatecampus2;
+      'homepage-components.elevatecampus3': HomepageComponentsElevatecampus3;
+      'homepage-components.fee-scholar': HomepageComponentsFeeScholar;
+      'homepage-components.global-partener': HomepageComponentsGlobalPartener;
       'homepage-components.hero-section': HomepageComponentsHeroSection;
+      'homepage-components.home-events-and-news': HomepageComponentsHomeEventsAndNews;
+      'homepage-components.home-testimonials': HomepageComponentsHomeTestimonials;
       'homepage-components.our-top-recruiters': HomepageComponentsOurTopRecruiters;
+      'homepage-components.shaping-future': HomepageComponentsShapingFuture;
+      'homepage-components.visit-explore': HomepageComponentsVisitExplore;
+      'homepage-components.whykrmu': HomepageComponentsWhykrmu;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
       'shared.button': SharedButton;
       'shared.counter-component': SharedCounterComponent;

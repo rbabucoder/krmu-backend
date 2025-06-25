@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_homepage_components_home_events_and_news",
+  "info": {
+    "displayName": "Home Events and News"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

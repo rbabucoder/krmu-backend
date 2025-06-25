@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_homepage_components_elevate_campus1s",
+  "info": {
+    "displayName": "ElevateCampus1"
+  },
+  "options": {},
+  "attributes": {
+    "beforehighlighttext": {
+      "type": "string"
+    },
+    "highlighttext": {
+      "type": "string"
+    },
+    "afterhighlighttext": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "linktext": {
+      "type": "string"
+    },
+    "linkclass": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_homepage_components_elevate_campuses",
+  "info": {
+    "displayName": "ElevateCampus"
+  },
+  "options": {},
+  "attributes": {
+    "elevatecampus1": {
+      "type": "component",
+      "component": "homepage-components.elevate-campus1",
+      "repeatable": false
+    },
+    "elevatecampusimage1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ElevateCampus2": {
+      "type": "component",
+      "component": "homepage-components.elevatecampus2",
+      "repeatable": false
+    },
+    "elevatecampusimage2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "elevatecampus3": {
+      "type": "component",
+      "component": "homepage-components.elevatecampus3",
+      "repeatable": false
+    },
+    "elevatecampusimage3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

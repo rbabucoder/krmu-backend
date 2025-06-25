@@ -21,7 +21,7 @@
       ]
     },
     "title": {
-      "type": "blocks"
+      "type": "string"
     }
   },
   "config": {}

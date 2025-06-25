@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_components_visit_explores",
+  "info": {
+    "displayName": "Visit Explore"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "visitexplorebtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

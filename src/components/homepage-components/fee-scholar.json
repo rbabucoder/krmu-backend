@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_homepage_components_fee_scholars",
+  "info": {
+    "displayName": "Fee Scholar"
+  },
+  "options": {},
+  "attributes": {
+    "text1": {
+      "type": "string"
+    },
+    "FeeStructureImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "text2": {
+      "type": "string"
+    },
+    "ScholarshipImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
