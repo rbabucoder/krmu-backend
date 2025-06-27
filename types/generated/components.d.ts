@@ -282,7 +282,7 @@ export interface HomepageComponentsWhykrmu extends Struct.ComponentSchema {
     displayName: 'whykrmu';
   };
   attributes: {
-    Descriptions: Schema.Attribute.String;
+    Descriptions: Schema.Attribute.Text;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };

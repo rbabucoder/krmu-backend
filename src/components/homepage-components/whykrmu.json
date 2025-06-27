@@ -12,7 +12,7 @@
       "type": "string"
     },
     "Descriptions": {
-      "type": "string"
+      "type": "text"
     }
   },
   "config": {}
