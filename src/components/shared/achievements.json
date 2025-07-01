@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_achievements",
+  "info": {
+    "displayName": "Achievements"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

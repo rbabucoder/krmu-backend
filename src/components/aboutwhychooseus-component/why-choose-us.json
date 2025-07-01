@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_aboutwhychooseus_component_why_choose_uses",
+  "info": {
+    "displayName": "Why Choose Us"
+  },
+  "options": {},
+  "attributes": {
+    "maindescription": {
+      "type": "text"
+    },
+    "badgeheading": {
+      "type": "string"
+    },
+    "titlebluetext": {
+      "type": "string"
+    },
+    "beforetitlebluetext": {
+      "type": "string"
+    },
+    "titlehighlighttext": {
+      "type": "string"
+    },
+    "beforehighlighttitletext": {
+      "type": "string"
+    },
+    "achievementstitle": {
+      "type": "string"
+    },
+    "achievementsdescriptions": {
+      "type": "text"
+    },
+    "ourachievements": {
+      "type": "component",
+      "component": "shared.achievements",
+      "repeatable": true
+    },
+    "awardstitle": {
+      "type": "string"
+    },
+    "awards": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

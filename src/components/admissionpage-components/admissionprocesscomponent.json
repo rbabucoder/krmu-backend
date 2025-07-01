@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_admissionpage_components_admissionprocesscomponents",
+  "info": {
+    "displayName": "admissionprocesscomponent"
+  },
+  "options": {},
+  "attributes": {
+    "badgetext": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "title2": {
+      "type": "string"
+    },
+    "descriptions2": {
+      "type": "text"
+    },
+    "readytobeginsbtns": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    },
+    "needhelptext": {
+      "type": "string"
+    },
+    "needhelplink": {
+      "type": "string"
+    },
+    "needhelplinktext": {
+      "type": "string"
+    },
+    "highlighttext": {
+      "type": "string"
+    },
+    "beforehighlight": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

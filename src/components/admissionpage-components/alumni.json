@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_admissionpage_components_alumni",
+  "info": {
+    "displayName": "Alumni"
+  },
+  "options": {},
+  "attributes": {
+    "highlighttext": {
+      "type": "string"
+    },
+    "beforehighlighttext": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

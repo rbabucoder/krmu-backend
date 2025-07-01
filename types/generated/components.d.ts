@@ -1,5 +1,73 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AboutwhychooseusComponentWhyChooseUs
+  extends Struct.ComponentSchema {
+  collectionName: 'components_aboutwhychooseus_component_why_choose_uses';
+  info: {
+    displayName: 'Why Choose Us';
+  };
+  attributes: {
+    achievementsdescriptions: Schema.Attribute.Text;
+    achievementstitle: Schema.Attribute.String;
+    awards: Schema.Attribute.Component<'shared.card', true>;
+    awardstitle: Schema.Attribute.String;
+    badgeheading: Schema.Attribute.String;
+    beforehighlighttitletext: Schema.Attribute.String;
+    beforetitlebluetext: Schema.Attribute.String;
+    maindescription: Schema.Attribute.Text;
+    ourachievements: Schema.Attribute.Component<'shared.achievements', true>;
+    titlebluetext: Schema.Attribute.String;
+    titlehighlighttext: Schema.Attribute.String;
+  };
+}
+
+export interface AdmissionpageComponentsAcademicExcellence
+  extends Struct.ComponentSchema {
+  collectionName: 'components_admissionpage_components_academic_excellences';
+  info: {
+    displayName: 'Academic Excellence';
+  };
+  attributes: {
+    badgetext: Schema.Attribute.String;
+    beforehighlighttext: Schema.Attribute.String;
+    button: Schema.Attribute.Component<'shared.button', false>;
+    content: Schema.Attribute.Text;
+    highlighttext: Schema.Attribute.String;
+  };
+}
+
+export interface AdmissionpageComponentsAdmissionprocesscomponent
+  extends Struct.ComponentSchema {
+  collectionName: 'components_admissionpage_components_admissionprocesscomponents';
+  info: {
+    displayName: 'admissionprocesscomponent';
+  };
+  attributes: {
+    badgetext: Schema.Attribute.String;
+    beforehighlight: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    descriptions2: Schema.Attribute.Text;
+    highlighttext: Schema.Attribute.String;
+    needhelplink: Schema.Attribute.String;
+    needhelplinktext: Schema.Attribute.String;
+    needhelptext: Schema.Attribute.String;
+    readytobeginsbtns: Schema.Attribute.Component<'shared.button', true>;
+    title2: Schema.Attribute.String;
+  };
+}
+
+export interface AdmissionpageComponentsAlumni extends Struct.ComponentSchema {
+  collectionName: 'components_admissionpage_components_alumni';
+  info: {
+    displayName: 'Alumni';
+  };
+  attributes: {
+    beforehighlighttext: Schema.Attribute.String;
+    content: Schema.Attribute.Text;
+    highlighttext: Schema.Attribute.String;
+  };
+}
+
 export interface HomepageComponentsADecadeLeftCol
   extends Struct.ComponentSchema {
   collectionName: 'components_homepage_components_a_decade_left_cols';
@@ -301,6 +369,17 @@ export interface HomepageComponentsYourjourney extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedAchievements extends Struct.ComponentSchema {
+  collectionName: 'components_shared_achievements';
+  info: {
+    displayName: 'Achievements';
+  };
+  attributes: {
+    content: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
 export interface SharedButton extends Struct.ComponentSchema {
   collectionName: 'components_shared_buttons';
   info: {
@@ -311,6 +390,18 @@ export interface SharedButton extends Struct.ComponentSchema {
     buttonclass: Schema.Attribute.String;
     buttonlink: Schema.Attribute.String;
     buttontext: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cards';
+  info: {
+    displayName: 'Card';
+  };
+  attributes: {
+    cardimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    content: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -388,6 +479,10 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'aboutwhychooseus-component.why-choose-us': AboutwhychooseusComponentWhyChooseUs;
+      'admissionpage-components.academic-excellence': AdmissionpageComponentsAcademicExcellence;
+      'admissionpage-components.admissionprocesscomponent': AdmissionpageComponentsAdmissionprocesscomponent;
+      'admissionpage-components.alumni': AdmissionpageComponentsAlumni;
       'homepage-components.a-decade-left-col': HomepageComponentsADecadeLeftCol;
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;
       'homepage-components.a-decade-section': HomepageComponentsADecadeSection;
@@ -406,7 +501,9 @@ declare module '@strapi/strapi' {
       'homepage-components.visit-explore': HomepageComponentsVisitExplore;
       'homepage-components.whykrmu': HomepageComponentsWhykrmu;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
+      'shared.achievements': SharedAchievements;
       'shared.button': SharedButton;
+      'shared.card': SharedCard;
       'shared.counter-component': SharedCounterComponent;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;

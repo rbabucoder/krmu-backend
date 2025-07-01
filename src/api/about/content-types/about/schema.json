@@ -15,6 +15,12 @@
     "title": {
       "type": "string"
     },
+    "subtitle": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "text"
+    },
     "Article": {
       "type": "dynamiczone",
       "components": [
