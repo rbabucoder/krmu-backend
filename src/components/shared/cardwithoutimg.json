@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_cardwithoutimgs",
+  "info": {
+    "displayName": "cardwithoutimg"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -19,6 +19,21 @@
         "admissionpage-components.academic-excellence",
         "admissionpage-components.alumni"
       ]
+    },
+    "admissionprocesscards": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true
+    },
+    "awardsrecognition": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true
+    },
+    "visitus": {
+      "type": "component",
+      "component": "admissionvisitus-component.visit-us",
+      "repeatable": false
     }
   }
 }

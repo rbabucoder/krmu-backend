@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_procard_procards",
+  "info": {
+    "displayName": "procard"
+  },
+  "options": {},
+  "attributes": {
+    "card": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

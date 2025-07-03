@@ -423,6 +423,8 @@ export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
         'admissionpage-components.alumni',
       ]
     >;
+    admissionprocesscards: Schema.Attribute.Component<'shared.card', true>;
+    awardsrecognition: Schema.Attribute.Component<'shared.card', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -432,6 +434,43 @@ export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
       'api::admission.admission'
     > &
       Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    visitus: Schema.Attribute.Component<
+      'admissionvisitus-component.visit-us',
+      false
+    >;
+  };
+}
+
+export interface ApiAlumniAlumni extends Struct.CollectionTypeSchema {
+  collectionName: 'alumnis';
+  info: {
+    displayName: 'Alumni';
+    pluralName: 'alumnis';
+    singularName: 'alumni';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    alumnicontent: Schema.Attribute.Text;
+    alumnimedia: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    designation: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::alumni.alumni'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1130,6 +1169,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
       'api::admission.admission': ApiAdmissionAdmission;
+      'api::alumni.alumni': ApiAlumniAlumni;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;

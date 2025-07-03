@@ -1,13 +1,13 @@
 {
-  "collectionName": "components_shared_cards",
+  "collectionName": "components_shared_contact_info_cards",
   "info": {
-    "displayName": "Card"
+    "displayName": "Contact Info Card"
   },
   "options": {},
   "attributes": {
-    "cardimg": {
+    "contactimg": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",
@@ -15,13 +15,10 @@
         "audios"
       ]
     },
-    "title": {
+    "contacttitle": {
       "type": "string"
     },
-    "cardclass": {
-      "type": "string"
-    },
-    "cardcontent": {
+    "contentcontent": {
       "type": "text"
     }
   },

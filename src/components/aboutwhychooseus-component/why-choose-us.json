@@ -36,11 +36,6 @@
     },
     "awardstitle": {
       "type": "string"
-    },
-    "awards": {
-      "type": "component",
-      "component": "shared.card",
-      "repeatable": true
     }
   },
   "config": {}

@@ -1,22 +1,25 @@
 {
-  "collectionName": "components_admissionpage_components_alumni",
+  "collectionName": "components_admissionvisitus_component_visituses",
   "info": {
-    "displayName": "Alumni"
+    "displayName": "VisitUs"
   },
   "options": {},
   "attributes": {
+    "badgetext": {
+      "type": "string"
+    },
     "highlighttext": {
       "type": "string"
     },
     "beforehighlighttext": {
       "type": "string"
     },
-    "content": {
+    "description": {
       "type": "text"
     },
-    "alumniinfo": {
+    "contactinformations": {
       "type": "component",
-      "component": "shared.cardwithoutimg",
+      "component": "shared.contact-info-card",
       "repeatable": true
     }
   },

@@ -9,7 +9,6 @@ export interface AboutwhychooseusComponentWhyChooseUs
   attributes: {
     achievementsdescriptions: Schema.Attribute.Text;
     achievementstitle: Schema.Attribute.String;
-    awards: Schema.Attribute.Component<'shared.card', true>;
     awardstitle: Schema.Attribute.String;
     badgeheading: Schema.Attribute.String;
     beforehighlighttitletext: Schema.Attribute.String;
@@ -62,10 +61,38 @@ export interface AdmissionpageComponentsAlumni extends Struct.ComponentSchema {
     displayName: 'Alumni';
   };
   attributes: {
+    alumniinfo: Schema.Attribute.Component<'shared.cardwithoutimg', true>;
     beforehighlighttext: Schema.Attribute.String;
     content: Schema.Attribute.Text;
     highlighttext: Schema.Attribute.String;
   };
+}
+
+export interface AdmissionvisitusComponentVisitUs
+  extends Struct.ComponentSchema {
+  collectionName: 'components_admissionvisitus_component_visituses';
+  info: {
+    displayName: 'VisitUs';
+  };
+  attributes: {
+    badgetext: Schema.Attribute.String;
+    beforehighlighttext: Schema.Attribute.String;
+    contactinformations: Schema.Attribute.Component<
+      'shared.contact-info-card',
+      true
+    >;
+    description: Schema.Attribute.Text;
+    highlighttext: Schema.Attribute.String;
+  };
+}
+
+export interface AwardsRecognitionAwardsAndRecognition
+  extends Struct.ComponentSchema {
+  collectionName: 'components_awards_recognition_awards_and_recognitions';
+  info: {
+    displayName: 'Awards & Recognition';
+  };
+  attributes: {};
 }
 
 export interface HomepageComponentsADecadeLeftCol
@@ -369,6 +396,16 @@ export interface HomepageComponentsYourjourney extends Struct.ComponentSchema {
   };
 }
 
+export interface ProcardProcard extends Struct.ComponentSchema {
+  collectionName: 'components_procard_procards';
+  info: {
+    displayName: 'procard';
+  };
+  attributes: {
+    card: Schema.Attribute.Component<'shared.card', true>;
+  };
+}
+
 export interface SharedAchievements extends Struct.ComponentSchema {
   collectionName: 'components_shared_achievements';
   info: {
@@ -399,9 +436,36 @@ export interface SharedCard extends Struct.ComponentSchema {
     displayName: 'Card';
   };
   attributes: {
+    cardclass: Schema.Attribute.String;
+    cardcontent: Schema.Attribute.Text;
     cardimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    content: Schema.Attribute.String;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCardwithoutimg extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cardwithoutimgs';
+  info: {
+    displayName: 'cardwithoutimg';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedContactInfoCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_contact_info_cards';
+  info: {
+    displayName: 'Contact Info Card';
+  };
+  attributes: {
+    contactimg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    contacttitle: Schema.Attribute.String;
+    contentcontent: Schema.Attribute.Text;
   };
 }
 
@@ -483,6 +547,8 @@ declare module '@strapi/strapi' {
       'admissionpage-components.academic-excellence': AdmissionpageComponentsAcademicExcellence;
       'admissionpage-components.admissionprocesscomponent': AdmissionpageComponentsAdmissionprocesscomponent;
       'admissionpage-components.alumni': AdmissionpageComponentsAlumni;
+      'admissionvisitus-component.visit-us': AdmissionvisitusComponentVisitUs;
+      'awards-recognition.awards-and-recognition': AwardsRecognitionAwardsAndRecognition;
       'homepage-components.a-decade-left-col': HomepageComponentsADecadeLeftCol;
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;
       'homepage-components.a-decade-section': HomepageComponentsADecadeSection;
@@ -501,9 +567,12 @@ declare module '@strapi/strapi' {
       'homepage-components.visit-explore': HomepageComponentsVisitExplore;
       'homepage-components.whykrmu': HomepageComponentsWhykrmu;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
+      'procard.procard': ProcardProcard;
       'shared.achievements': SharedAchievements;
       'shared.button': SharedButton;
       'shared.card': SharedCard;
+      'shared.cardwithoutimg': SharedCardwithoutimg;
+      'shared.contact-info-card': SharedContactInfoCard;
       'shared.counter-component': SharedCounterComponent;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
