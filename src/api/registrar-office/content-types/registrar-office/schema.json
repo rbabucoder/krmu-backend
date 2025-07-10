@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "registrar_offices",
+  "info": {
+    "singularName": "registrar-office",
+    "pluralName": "registrar-offices",
+    "displayName": "Registrar Office"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "breadcrumb": {
+      "type": "component",
+      "component": "shared.breadcrumb",
+      "repeatable": false
+    }
+  }
+}

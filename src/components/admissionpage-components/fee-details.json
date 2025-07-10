@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_admissionvisitus_component_visituses",
+  "collectionName": "components_admissionpage_components_fee_details",
   "info": {
-    "displayName": "VisitUs"
+    "displayName": "Fee Details"
   },
   "options": {},
   "attributes": {
@@ -17,10 +17,11 @@
     "description": {
       "type": "text"
     },
-    "contactinformations": {
-      "type": "component",
-      "component": "shared.contact-info-card",
-      "repeatable": true
+    "paymentinfotitle": {
+      "type": "string"
+    },
+    "paymentinfocontent": {
+      "type": "text"
     }
   },
   "config": {}

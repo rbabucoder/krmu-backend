@@ -415,12 +415,18 @@ export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    admissionherobanner: Schema.Attribute.Component<
+      'shared.about-hero-banner',
+      true
+    >;
     AdmissionPageComponent: Schema.Attribute.DynamicZone<
       [
         'admissionpage-components.admissionprocesscomponent',
         'aboutwhychooseus-component.why-choose-us',
         'admissionpage-components.academic-excellence',
         'admissionpage-components.alumni',
+        'admissionpage-components.fee-details',
+        'admissionpage-components.location',
       ]
     >;
     admissionprocesscards: Schema.Attribute.Component<'shared.card', true>;
@@ -428,6 +434,7 @@ export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    feedetailsinfos: Schema.Attribute.Component<'shared.fee-detail-card', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -438,10 +445,6 @@ export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    visitus: Schema.Attribute.Component<
-      'admissionvisitus-component.visit-us',
-      false
-    >;
   };
 }
 
@@ -582,6 +585,97 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCodeOfConductCodeOfConduct extends Struct.SingleTypeSchema {
+  collectionName: 'code_of_conducts';
+  info: {
+    displayName: 'Code of Conduct';
+    pluralName: 'code-of-conducts';
+    singularName: 'code-of-conduct';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    breadcrumb: Schema.Attribute.Component<'shared.breadcrumb', false>;
+    cocitems: Schema.Attribute.Component<'shared.list-item', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::code-of-conduct.code-of-conduct'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFacilityFacility extends Struct.CollectionTypeSchema {
+  collectionName: 'facilities';
+  info: {
+    displayName: 'Facility';
+    pluralName: 'facilities';
+    singularName: 'facility';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    badgetext: Schema.Attribute.String;
+    bgimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    link: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::facility.facility'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFinanceDepartmentFinanceDepartment
+  extends Struct.SingleTypeSchema {
+  collectionName: 'finance_departments';
+  info: {
+    displayName: 'Finance Department';
+    pluralName: 'finance-departments';
+    singularName: 'finance-department';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    breadcrumb: Schema.Attribute.Component<'shared.breadcrumb', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    financeemployees: Schema.Attribute.Component<'shared.employee-card', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::finance-department.finance-department'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -651,6 +745,35 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
         'homepage-components.home-events-and-news',
       ]
     >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRegistrarOfficeRegistrarOffice
+  extends Struct.SingleTypeSchema {
+  collectionName: 'registrar_offices';
+  info: {
+    displayName: 'Registrar Office';
+    pluralName: 'registrar-offices';
+    singularName: 'registrar-office';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    breadcrumb: Schema.Attribute.Component<'shared.breadcrumb', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::registrar-office.registrar-office'
+    > &
+      Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1173,8 +1296,12 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
+      'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
+      'api::facility.facility': ApiFacilityFacility;
+      'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
       'api::global.global': ApiGlobalGlobal;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_list_items",
+  "info": {
+    "displayName": "list item"
+  },
+  "options": {},
+  "attributes": {
+    "listicon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "listtext": {
+      "type": "string"
+    },
+    "listlink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -17,7 +17,9 @@
         "admissionpage-components.admissionprocesscomponent",
         "aboutwhychooseus-component.why-choose-us",
         "admissionpage-components.academic-excellence",
-        "admissionpage-components.alumni"
+        "admissionpage-components.alumni",
+        "admissionpage-components.fee-details",
+        "admissionpage-components.location"
       ]
     },
     "admissionprocesscards": {
@@ -30,10 +32,15 @@
       "component": "shared.card",
       "repeatable": true
     },
-    "visitus": {
+    "feedetailsinfos": {
       "type": "component",
-      "component": "admissionvisitus-component.visit-us",
-      "repeatable": false
+      "component": "shared.fee-detail-card",
+      "repeatable": true
+    },
+    "admissionherobanner": {
+      "type": "component",
+      "component": "shared.about-hero-banner",
+      "repeatable": true
     }
   }
 }

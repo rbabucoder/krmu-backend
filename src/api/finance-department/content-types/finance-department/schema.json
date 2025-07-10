@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "finance_departments",
+  "info": {
+    "singularName": "finance-department",
+    "pluralName": "finance-departments",
+    "displayName": "Finance Department"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "breadcrumb": {
+      "type": "component",
+      "component": "shared.breadcrumb",
+      "repeatable": false
+    },
+    "financeemployees": {
+      "type": "component",
+      "component": "shared.employee-card",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_admissionpage_components_locations",
+  "info": {
+    "displayName": "Location"
+  },
+  "options": {},
+  "attributes": {
+    "badgetext": {
+      "type": "string"
+    },
+    "beforehighlighttext": {
+      "type": "string"
+    },
+    "highlighttext": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_breadcrumbs",
+  "info": {
+    "displayName": "Breadcrumb"
+  },
+  "options": {},
+  "attributes": {
+    "breadcrumbtext": {
+      "type": "string"
+    },
+    "backgroundimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "breadcrumbbgcolor": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

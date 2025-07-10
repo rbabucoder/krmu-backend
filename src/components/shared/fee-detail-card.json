@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_fee_detail_cards",
+  "info": {
+    "displayName": "Fee Detail Card"
+  },
+  "options": {},
+  "attributes": {
+    "feecardtitle": {
+      "type": "string"
+    },
+    "feecardimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "feepricedetails": {
+      "type": "component",
+      "component": "shared.fee-price",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

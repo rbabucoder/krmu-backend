@@ -68,22 +68,43 @@ export interface AdmissionpageComponentsAlumni extends Struct.ComponentSchema {
   };
 }
 
-export interface AdmissionvisitusComponentVisitUs
+export interface AdmissionpageComponentsFeeDetails
   extends Struct.ComponentSchema {
-  collectionName: 'components_admissionvisitus_component_visituses';
+  collectionName: 'components_admissionpage_components_fee_details';
   info: {
-    displayName: 'VisitUs';
+    displayName: 'Fee Details';
   };
   attributes: {
     badgetext: Schema.Attribute.String;
     beforehighlighttext: Schema.Attribute.String;
-    contactinformations: Schema.Attribute.Component<
-      'shared.contact-info-card',
-      true
-    >;
+    description: Schema.Attribute.Text;
+    highlighttext: Schema.Attribute.String;
+    paymentinfocontent: Schema.Attribute.Text;
+    paymentinfotitle: Schema.Attribute.String;
+  };
+}
+
+export interface AdmissionpageComponentsLocation
+  extends Struct.ComponentSchema {
+  collectionName: 'components_admissionpage_components_locations';
+  info: {
+    displayName: 'Location';
+  };
+  attributes: {
+    badgetext: Schema.Attribute.String;
+    beforehighlighttext: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     highlighttext: Schema.Attribute.String;
   };
+}
+
+export interface AdmissionvisitusComponentAcademic
+  extends Struct.ComponentSchema {
+  collectionName: 'components_admissionvisitus_component_academics';
+  info: {
+    displayName: 'Academic';
+  };
+  attributes: {};
 }
 
 export interface AwardsRecognitionAwardsAndRecognition
@@ -406,6 +427,21 @@ export interface ProcardProcard extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedAboutHeroBanner extends Struct.ComponentSchema {
+  collectionName: 'components_shared_about_hero_banners';
+  info: {
+    displayName: 'Hero Banner';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    ctas: Schema.Attribute.Component<'shared.button', true>;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedAchievements extends Struct.ComponentSchema {
   collectionName: 'components_shared_achievements';
   info: {
@@ -414,6 +450,20 @@ export interface SharedAchievements extends Struct.ComponentSchema {
   attributes: {
     content: Schema.Attribute.String;
     value: Schema.Attribute.String;
+  };
+}
+
+export interface SharedBreadcrumb extends Struct.ComponentSchema {
+  collectionName: 'components_shared_breadcrumbs';
+  info: {
+    displayName: 'Breadcrumb';
+  };
+  attributes: {
+    backgroundimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    breadcrumbbgcolor: Schema.Attribute.String;
+    breadcrumbtext: Schema.Attribute.String;
   };
 }
 
@@ -459,14 +509,7 @@ export interface SharedContactInfoCard extends Struct.ComponentSchema {
   info: {
     displayName: 'Contact Info Card';
   };
-  attributes: {
-    contactimg: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    contacttitle: Schema.Attribute.String;
-    contentcontent: Schema.Attribute.Text;
-  };
+  attributes: {};
 }
 
 export interface SharedCounterComponent extends Struct.ComponentSchema {
@@ -477,6 +520,59 @@ export interface SharedCounterComponent extends Struct.ComponentSchema {
   attributes: {
     countercontent: Schema.Attribute.String;
     countertext: Schema.Attribute.String;
+  };
+}
+
+export interface SharedEmployeeCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_employee_cards';
+  info: {
+    displayName: 'Employee Card';
+  };
+  attributes: {
+    designation: Schema.Attribute.String;
+    email: Schema.Attribute.String;
+    employeeimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    employeename: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFeeDetailCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_fee_detail_cards';
+  info: {
+    displayName: 'Fee Detail Card';
+  };
+  attributes: {
+    feecardimg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    feecardtitle: Schema.Attribute.String;
+    feepricedetails: Schema.Attribute.Component<'shared.fee-price', true>;
+  };
+}
+
+export interface SharedFeePrice extends Struct.ComponentSchema {
+  collectionName: 'components_shared_fee_prices';
+  info: {
+    displayName: 'Fee Price';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    price: Schema.Attribute.String;
+    refund: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface SharedListItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_list_items';
+  info: {
+    displayName: 'list item';
+  };
+  attributes: {
+    listicon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    listlink: Schema.Attribute.String;
+    listtext: Schema.Attribute.String;
   };
 }
 
@@ -547,7 +643,9 @@ declare module '@strapi/strapi' {
       'admissionpage-components.academic-excellence': AdmissionpageComponentsAcademicExcellence;
       'admissionpage-components.admissionprocesscomponent': AdmissionpageComponentsAdmissionprocesscomponent;
       'admissionpage-components.alumni': AdmissionpageComponentsAlumni;
-      'admissionvisitus-component.visit-us': AdmissionvisitusComponentVisitUs;
+      'admissionpage-components.fee-details': AdmissionpageComponentsFeeDetails;
+      'admissionpage-components.location': AdmissionpageComponentsLocation;
+      'admissionvisitus-component.academic': AdmissionvisitusComponentAcademic;
       'awards-recognition.awards-and-recognition': AwardsRecognitionAwardsAndRecognition;
       'homepage-components.a-decade-left-col': HomepageComponentsADecadeLeftCol;
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;
@@ -568,12 +666,18 @@ declare module '@strapi/strapi' {
       'homepage-components.whykrmu': HomepageComponentsWhykrmu;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
       'procard.procard': ProcardProcard;
+      'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
+      'shared.breadcrumb': SharedBreadcrumb;
       'shared.button': SharedButton;
       'shared.card': SharedCard;
       'shared.cardwithoutimg': SharedCardwithoutimg;
       'shared.contact-info-card': SharedContactInfoCard;
       'shared.counter-component': SharedCounterComponent;
+      'shared.employee-card': SharedEmployeeCard;
+      'shared.fee-detail-card': SharedFeeDetailCard;
+      'shared.fee-price': SharedFeePrice;
+      'shared.list-item': SharedListItem;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

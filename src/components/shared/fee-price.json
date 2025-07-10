@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_fee_prices",
+  "info": {
+    "displayName": "Fee Price"
+  },
+  "options": {},
+  "attributes": {
+    "refund": {
+      "type": "boolean",
+      "default": false
+    },
+    "price": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

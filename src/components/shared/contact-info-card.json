@@ -4,23 +4,6 @@
     "displayName": "Contact Info Card"
   },
   "options": {},
-  "attributes": {
-    "contactimg": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "contacttitle": {
-      "type": "string"
-    },
-    "contentcontent": {
-      "type": "text"
-    }
-  },
+  "attributes": {},
   "config": {}
 }

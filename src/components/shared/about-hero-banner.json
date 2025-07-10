@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_shared_about_hero_banners",
+  "info": {
+    "displayName": "Hero Banner"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ctas": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    },
+    "badge": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

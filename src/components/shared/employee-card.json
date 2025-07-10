@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_employee_cards",
+  "info": {
+    "displayName": "Employee Card"
+  },
+  "options": {},
+  "attributes": {
+    "employeename": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "employeeimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

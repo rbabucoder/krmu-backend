@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "code_of_conducts",
+  "info": {
+    "singularName": "code-of-conduct",
+    "pluralName": "code-of-conducts",
+    "displayName": "Code of Conduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "breadcrumb": {
+      "type": "component",
+      "component": "shared.breadcrumb",
+      "repeatable": false
+    },
+    "cocitems": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    }
+  }
+}
