@@ -15,6 +15,40 @@
       "type": "component",
       "component": "shared.breadcrumb",
       "repeatable": false
+    },
+    "registrarimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "registrarname": {
+      "type": "string"
+    },
+    "registrardesignation": {
+      "type": "string"
+    },
+    "registraremail": {
+      "type": "string"
+    },
+    "registrarinfo": {
+      "type": "text"
+    },
+    "department": {
+      "type": "component",
+      "component": "shared.department-container",
+      "repeatable": true
+    },
+    "registrardescription": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     }
   }
 }

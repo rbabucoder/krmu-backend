@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_department_containers",
+  "info": {
+    "displayName": "Department Container"
+  },
+  "options": {},
+  "attributes": {
+    "departmentname": {
+      "type": "string"
+    },
+    "employeecard": {
+      "type": "component",
+      "component": "shared.employee-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

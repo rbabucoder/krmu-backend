@@ -523,6 +523,17 @@ export interface SharedCounterComponent extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedDepartmentContainer extends Struct.ComponentSchema {
+  collectionName: 'components_shared_department_containers';
+  info: {
+    displayName: 'Department Container';
+  };
+  attributes: {
+    departmentname: Schema.Attribute.String;
+    employeecard: Schema.Attribute.Component<'shared.employee-card', true>;
+  };
+}
+
 export interface SharedEmployeeCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_employee_cards';
   info: {
@@ -674,6 +685,7 @@ declare module '@strapi/strapi' {
       'shared.cardwithoutimg': SharedCardwithoutimg;
       'shared.contact-info-card': SharedContactInfoCard;
       'shared.counter-component': SharedCounterComponent;
+      'shared.department-container': SharedDepartmentContainer;
       'shared.employee-card': SharedEmployeeCard;
       'shared.fee-detail-card': SharedFeeDetailCard;
       'shared.fee-price': SharedFeePrice;

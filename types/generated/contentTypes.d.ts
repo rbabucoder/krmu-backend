@@ -768,6 +768,7 @@ export interface ApiRegistrarOfficeRegistrarOffice
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    department: Schema.Attribute.Component<'shared.department-container', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -775,6 +776,20 @@ export interface ApiRegistrarOfficeRegistrarOffice
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    registrardescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    registrardesignation: Schema.Attribute.String;
+    registraremail: Schema.Attribute.String;
+    registrarimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    registrarinfo: Schema.Attribute.Text;
+    registrarname: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
