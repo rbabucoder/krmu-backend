@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_card_with_images",
+  "info": {
+    "displayName": "CardWithImage"
+  },
+  "options": {},
+  "attributes": {
+    "cardimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

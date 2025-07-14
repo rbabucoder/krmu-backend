@@ -493,6 +493,29 @@ export interface SharedCard extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCardWithImage extends Struct.ComponentSchema {
+  collectionName: 'components_shared_card_with_images';
+  info: {
+    displayName: 'CardWithImage';
+  };
+  attributes: {
+    cardimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface SharedCardWithImageLink extends Struct.ComponentSchema {
+  collectionName: 'components_shared_card_with_image_links';
+  info: {
+    displayName: 'CardWithImageLink';
+  };
+  attributes: {
+    cardimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    cardtitle: Schema.Attribute.String;
+    cardurl: Schema.Attribute.String;
+  };
+}
+
 export interface SharedCardwithoutimg extends Struct.ComponentSchema {
   collectionName: 'components_shared_cardwithoutimgs';
   info: {
@@ -682,6 +705,8 @@ declare module '@strapi/strapi' {
       'shared.breadcrumb': SharedBreadcrumb;
       'shared.button': SharedButton;
       'shared.card': SharedCard;
+      'shared.card-with-image': SharedCardWithImage;
+      'shared.card-with-image-link': SharedCardWithImageLink;
       'shared.cardwithoutimg': SharedCardwithoutimg;
       'shared.contact-info-card': SharedContactInfoCard;
       'shared.counter-component': SharedCounterComponent;

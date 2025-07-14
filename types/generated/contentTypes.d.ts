@@ -752,6 +752,42 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiMembershipAndRankingMembershipAndRanking
+  extends Struct.SingleTypeSchema {
+  collectionName: 'membership_and_rankings';
+  info: {
+    displayName: 'Membership and Ranking';
+    pluralName: 'membership-and-rankings';
+    singularName: 'membership-and-ranking';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::membership-and-ranking.membership-and-ranking'
+    > &
+      Schema.Attribute.Private;
+    memberships: Schema.Attribute.Component<
+      'shared.card-with-image-link',
+      true
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    rankings: Schema.Attribute.Component<'shared.card-with-image', true>;
+    rankingtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiRegistrarOfficeRegistrarOffice
   extends Struct.SingleTypeSchema {
   collectionName: 'registrar_offices';
@@ -1316,6 +1352,7 @@ declare module '@strapi/strapi' {
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
       'api::global.global': ApiGlobalGlobal;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

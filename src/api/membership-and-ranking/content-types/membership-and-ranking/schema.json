@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "membership_and_rankings",
+  "info": {
+    "singularName": "membership-and-ranking",
+    "pluralName": "membership-and-rankings",
+    "displayName": "Membership and Ranking"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "rankingtitle": {
+      "type": "string"
+    },
+    "memberships": {
+      "type": "component",
+      "component": "shared.card-with-image-link",
+      "repeatable": true
+    },
+    "rankings": {
+      "type": "component",
+      "component": "shared.card-with-image",
+      "repeatable": true
+    }
+  }
+}

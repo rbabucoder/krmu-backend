@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_card_with_image_links",
+  "info": {
+    "displayName": "CardWithImageLink"
+  },
+  "options": {},
+  "attributes": {
+    "cardimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cardurl": {
+      "type": "string"
+    },
+    "cardtitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
