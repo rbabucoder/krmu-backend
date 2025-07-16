@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_krmu_group_kr_mangalam_groups",
+  "info": {
+    "displayName": "KR Mangalam Group"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "krmbranch": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

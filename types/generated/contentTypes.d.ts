@@ -373,6 +373,46 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAboutKrmuAboutKrmu extends Struct.SingleTypeSchema {
+  collectionName: 'about_krmus';
+  info: {
+    displayName: 'About KRMU';
+    pluralName: 'about-krmus';
+    singularName: 'about-krmu';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accrediation: Schema.Attribute.Component<
+      'accrediation.accrediation',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    halloffame: Schema.Attribute.Component<'halloffame.hall-of-fame', false>;
+    krmugroup: Schema.Attribute.Component<
+      'krmu-group.kr-mangalam-group',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-krmu.about-krmu'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subtitle: Schema.Attribute.Text;
+    thenexgendescription: Schema.Attribute.Text;
+    thenexgentitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   collectionName: 'abouts';
   info: {
@@ -1341,6 +1381,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::about-krmu.about-krmu': ApiAboutKrmuAboutKrmu;
       'api::about.about': ApiAboutAbout;
       'api::admission.admission': ApiAdmissionAdmission;
       'api::alumni.alumni': ApiAlumniAlumni;

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_halloffame_hall_of_fames",
+  "info": {
+    "displayName": "Hall of Fame"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "hallfame": {
+      "type": "component",
+      "component": "shared.cardwithoutimg",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

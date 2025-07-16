@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_accrediation_accrediations",
+  "info": {
+    "displayName": "Accrediation",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "accrediationlogos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

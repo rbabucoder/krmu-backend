@@ -20,6 +20,21 @@ export interface AboutwhychooseusComponentWhyChooseUs
   };
 }
 
+export interface AccrediationAccrediation extends Struct.ComponentSchema {
+  collectionName: 'components_accrediation_accrediations';
+  info: {
+    displayName: 'Accrediation';
+    icon: 'command';
+  };
+  attributes: {
+    accrediationlogos: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface AdmissionpageComponentsAcademicExcellence
   extends Struct.ComponentSchema {
   collectionName: 'components_admissionpage_components_academic_excellences';
@@ -114,6 +129,17 @@ export interface AwardsRecognitionAwardsAndRecognition
     displayName: 'Awards & Recognition';
   };
   attributes: {};
+}
+
+export interface HalloffameHallOfFame extends Struct.ComponentSchema {
+  collectionName: 'components_halloffame_hall_of_fames';
+  info: {
+    displayName: 'Hall of Fame';
+  };
+  attributes: {
+    hallfame: Schema.Attribute.Component<'shared.cardwithoutimg', true>;
+    title: Schema.Attribute.String;
+  };
 }
 
 export interface HomepageComponentsADecadeLeftCol
@@ -417,6 +443,22 @@ export interface HomepageComponentsYourjourney extends Struct.ComponentSchema {
   };
 }
 
+export interface KrmuGroupKrMangalamGroup extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_group_kr_mangalam_groups';
+  info: {
+    displayName: 'KR Mangalam Group';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    krmbranch: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ProcardProcard extends Struct.ComponentSchema {
   collectionName: 'components_procard_procards';
   info: {
@@ -522,7 +564,7 @@ export interface SharedCardwithoutimg extends Struct.ComponentSchema {
     displayName: 'cardwithoutimg';
   };
   attributes: {
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
 }
@@ -658,6 +700,18 @@ export interface SharedSeo extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSingleMedia extends Struct.ComponentSchema {
+  collectionName: 'components_shared_single_medias';
+  info: {
+    displayName: 'Single Media';
+  };
+  attributes: {
+    singlemedia: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
 export interface SharedSlider extends Struct.ComponentSchema {
   collectionName: 'components_shared_sliders';
   info: {
@@ -674,6 +728,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'aboutwhychooseus-component.why-choose-us': AboutwhychooseusComponentWhyChooseUs;
+      'accrediation.accrediation': AccrediationAccrediation;
       'admissionpage-components.academic-excellence': AdmissionpageComponentsAcademicExcellence;
       'admissionpage-components.admissionprocesscomponent': AdmissionpageComponentsAdmissionprocesscomponent;
       'admissionpage-components.alumni': AdmissionpageComponentsAlumni;
@@ -681,6 +736,7 @@ declare module '@strapi/strapi' {
       'admissionpage-components.location': AdmissionpageComponentsLocation;
       'admissionvisitus-component.academic': AdmissionvisitusComponentAcademic;
       'awards-recognition.awards-and-recognition': AwardsRecognitionAwardsAndRecognition;
+      'halloffame.hall-of-fame': HalloffameHallOfFame;
       'homepage-components.a-decade-left-col': HomepageComponentsADecadeLeftCol;
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;
       'homepage-components.a-decade-section': HomepageComponentsADecadeSection;
@@ -699,6 +755,7 @@ declare module '@strapi/strapi' {
       'homepage-components.visit-explore': HomepageComponentsVisitExplore;
       'homepage-components.whykrmu': HomepageComponentsWhykrmu;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
+      'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'procard.procard': ProcardProcard;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
@@ -719,6 +776,7 @@ declare module '@strapi/strapi' {
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
+      'shared.single-media': SharedSingleMedia;
       'shared.slider': SharedSlider;
     }
   }

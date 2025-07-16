@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_krmus",
+  "info": {
+    "singularName": "about-krmu",
+    "pluralName": "about-krmus",
+    "displayName": "About KRMU"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "accrediation": {
+      "type": "component",
+      "component": "accrediation.accrediation",
+      "repeatable": false
+    },
+    "krmugroup": {
+      "type": "component",
+      "component": "krmu-group.kr-mangalam-group",
+      "repeatable": false
+    },
+    "thenexgentitle": {
+      "type": "text"
+    },
+    "thenexgendescription": {
+      "type": "text"
+    },
+    "halloffame": {
+      "type": "component",
+      "component": "halloffame.hall-of-fame",
+      "repeatable": false
+    }
+  }
+}
