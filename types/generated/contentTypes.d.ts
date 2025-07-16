@@ -444,6 +444,40 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAccreditationsRecognitionAndApprovalAccreditationsRecognitionAndApproval
+  extends Struct.SingleTypeSchema {
+  collectionName: 'accreditations_recognition_and_approvals';
+  info: {
+    displayName: 'Accreditations, Recognition and Approval';
+    pluralName: 'accreditations-recognition-and-approvals';
+    singularName: 'accreditations-recognition-and-approval';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accrediationrecogapprovals: Schema.Attribute.Component<
+      'shared.card-with-image-link',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::accreditations-recognition-and-approval.accreditations-recognition-and-approval'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
   collectionName: 'admissions';
   info: {
@@ -1383,6 +1417,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about-krmu.about-krmu': ApiAboutKrmuAboutKrmu;
       'api::about.about': ApiAboutAbout;
+      'api::accreditations-recognition-and-approval.accreditations-recognition-and-approval': ApiAccreditationsRecognitionAndApprovalAccreditationsRecognitionAndApproval;
       'api::admission.admission': ApiAdmissionAdmission;
       'api::alumni.alumni': ApiAlumniAlumni;
       'api::article.article': ApiArticleArticle;
