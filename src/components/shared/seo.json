@@ -20,7 +20,13 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "canonical": {
+      "type": "string",
+      "required": true
     }
   }
 }

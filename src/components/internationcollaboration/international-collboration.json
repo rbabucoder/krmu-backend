@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_internationcollaboration_international_collborations",
+  "info": {
+    "displayName": "International Collboration"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "intcollabbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "internationcollablogos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

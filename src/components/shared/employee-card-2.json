@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_employee_card_2s",
+  "info": {
+    "displayName": "Employee Card 2"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "empimg": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

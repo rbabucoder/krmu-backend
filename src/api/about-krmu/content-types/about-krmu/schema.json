@@ -37,6 +37,21 @@
       "type": "component",
       "component": "halloffame.hall-of-fame",
       "repeatable": false
+    },
+    "visionmission": {
+      "type": "component",
+      "component": "visionmission.vision-and-mission",
+      "repeatable": false
+    },
+    "internationcollaboration": {
+      "type": "component",
+      "component": "internationcollaboration.international-collboration",
+      "repeatable": false
+    },
+    "krmucommittee": {
+      "type": "component",
+      "component": "krmucommittee.krmu-committee",
+      "repeatable": false
     }
   }
 }

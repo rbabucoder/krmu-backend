@@ -13,6 +13,16 @@
     },
     "logosliderheading": {
       "type": "string"
+    },
+    "globalpartnerimages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   },
   "config": {}

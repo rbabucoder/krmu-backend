@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_krmucommittee_krmu_committees",
+  "info": {
+    "displayName": "KRMU Committee"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "committeebtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

@@ -28,6 +28,11 @@
         "homepage-components.visit-explore",
         "homepage-components.home-events-and-news"
       ]
+    },
+    "seofields": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

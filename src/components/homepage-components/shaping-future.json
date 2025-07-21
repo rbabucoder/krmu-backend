@@ -43,6 +43,16 @@
       "type": "component",
       "component": "shared.counter-component",
       "repeatable": true
+    },
+    "mobileshapingimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   },
   "config": {}

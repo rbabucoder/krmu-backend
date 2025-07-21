@@ -392,6 +392,14 @@ export interface ApiAboutKrmuAboutKrmu extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     halloffame: Schema.Attribute.Component<'halloffame.hall-of-fame', false>;
+    internationcollaboration: Schema.Attribute.Component<
+      'internationcollaboration.international-collboration',
+      false
+    >;
+    krmucommittee: Schema.Attribute.Component<
+      'krmucommittee.krmu-committee',
+      false
+    >;
     krmugroup: Schema.Attribute.Component<
       'krmu-group.kr-mangalam-group',
       false
@@ -410,6 +418,10 @@ export interface ApiAboutKrmuAboutKrmu extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    visionmission: Schema.Attribute.Component<
+      'visionmission.vision-and-mission',
+      false
+    >;
   };
 }
 
@@ -515,6 +527,37 @@ export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
       'api::admission.admission'
     > &
       Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiAdvisoryAdvisory extends Struct.CollectionTypeSchema {
+  collectionName: 'advisories';
+  info: {
+    displayName: 'Advisory';
+    pluralName: 'advisories';
+    singularName: 'advisory';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    department: Schema.Attribute.String;
+    designation: Schema.Attribute.String;
+    empimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::advisory.advisory'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -820,6 +863,37 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;
+    seofields: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMainMenuMainMenu extends Struct.SingleTypeSchema {
+  collectionName: 'main_menus';
+  info: {
+    displayName: 'MainMenu';
+    pluralName: 'main-menus';
+    singularName: 'main-menu';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::main-menu.main-menu'
+    > &
+      Schema.Attribute.Private;
+    MainMenuItems: Schema.Attribute.DynamicZone<
+      ['menu.dropdown', 'menu.menu-link', 'menu.menu-button']
+    >;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -900,6 +974,67 @@ export interface ApiRegistrarOfficeRegistrarOffice
     >;
     registrarinfo: Schema.Attribute.Text;
     registrarname: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSectionSection extends Struct.CollectionTypeSchema {
+  collectionName: 'sections';
+  info: {
+    displayName: 'Section';
+    pluralName: 'sections';
+    singularName: 'section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.String;
+    links: Schema.Attribute.Component<'menu.link', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::section.section'
+    > &
+      Schema.Attribute.Private;
+    navimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
+  collectionName: 'testimonials';
+  info: {
+    displayName: 'Testimonial';
+    pluralName: 'testimonials';
+    singularName: 'testimonial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::testimonial.testimonial'
+    > &
+      Schema.Attribute.Private;
+    profile: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    profiledesignation: Schema.Attribute.String;
+    profileinfo: Schema.Attribute.Text;
+    profilename: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1419,6 +1554,7 @@ declare module '@strapi/strapi' {
       'api::about.about': ApiAboutAbout;
       'api::accreditations-recognition-and-approval.accreditations-recognition-and-approval': ApiAccreditationsRecognitionAndApprovalAccreditationsRecognitionAndApproval;
       'api::admission.admission': ApiAdmissionAdmission;
+      'api::advisory.advisory': ApiAdvisoryAdvisory;
       'api::alumni.alumni': ApiAlumniAlumni;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
@@ -1428,8 +1564,11 @@ declare module '@strapi/strapi' {
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
       'api::global.global': ApiGlobalGlobal;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
+      'api::section.section': ApiSectionSection;
+      'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

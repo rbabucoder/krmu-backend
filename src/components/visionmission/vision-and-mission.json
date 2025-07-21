@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_visionmission_vision_and_missions",
+  "info": {
+    "displayName": "Vision and Mission"
+  },
+  "options": {},
+  "attributes": {
+    "visiontitle": {
+      "type": "string"
+    },
+    "visiondescription": {
+      "type": "blocks"
+    },
+    "missiontitle": {
+      "type": "string"
+    },
+    "missiondescription": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

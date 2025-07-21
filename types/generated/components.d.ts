@@ -322,6 +322,10 @@ export interface HomepageComponentsGlobalPartener
   };
   attributes: {
     descriptions: Schema.Attribute.Text;
+    globalpartnerimages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     logosliderheading: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -395,6 +399,9 @@ export interface HomepageComponentsShapingFuture
     link1text: Schema.Attribute.String;
     link2: Schema.Attribute.String;
     link2text: Schema.Attribute.String;
+    mobileshapingimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     shapingCounter: Schema.Attribute.Component<
       'shared.counter-component',
       true
@@ -443,6 +450,24 @@ export interface HomepageComponentsYourjourney extends Struct.ComponentSchema {
   };
 }
 
+export interface InternationcollaborationInternationalCollboration
+  extends Struct.ComponentSchema {
+  collectionName: 'components_internationcollaboration_international_collborations';
+  info: {
+    displayName: 'International Collboration';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    intcollabbtn: Schema.Attribute.Component<'shared.button', false>;
+    internationcollablogos: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface KrmuGroupKrMangalamGroup extends Struct.ComponentSchema {
   collectionName: 'components_krmu_group_kr_mangalam_groups';
   info: {
@@ -456,6 +481,63 @@ export interface KrmuGroupKrMangalamGroup extends Struct.ComponentSchema {
     >;
     subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface KrmucommitteeKrmuCommittee extends Struct.ComponentSchema {
+  collectionName: 'components_krmucommittee_krmu_committees';
+  info: {
+    displayName: 'KRMU Committee';
+  };
+  attributes: {
+    committeebtn: Schema.Attribute.Component<'shared.button', false>;
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface MenuDropdown extends Struct.ComponentSchema {
+  collectionName: 'components_menu_dropdowns';
+  info: {
+    displayName: 'Dropdown';
+  };
+  attributes: {
+    dropdownheading: Schema.Attribute.String;
+    sections: Schema.Attribute.Relation<'oneToMany', 'api::section.section'>;
+  };
+}
+
+export interface MenuLink extends Struct.ComponentSchema {
+  collectionName: 'components_menu_links';
+  info: {
+    displayName: 'link';
+    icon: 'link';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface MenuMenuButton extends Struct.ComponentSchema {
+  collectionName: 'components_menu_menu_buttons';
+  info: {
+    displayName: 'MenuButton';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface MenuMenuLink extends Struct.ComponentSchema {
+  collectionName: 'components_menu_menu_links';
+  info: {
+    displayName: 'MenuLink';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
   };
 }
 
@@ -614,6 +696,19 @@ export interface SharedEmployeeCard extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedEmployeeCard2 extends Struct.ComponentSchema {
+  collectionName: 'components_shared_employee_card_2s';
+  info: {
+    displayName: 'Employee Card 2';
+  };
+  attributes: {
+    department: Schema.Attribute.String;
+    designation: Schema.Attribute.String;
+    empimg: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+  };
+}
+
 export interface SharedFeeDetailCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_fee_detail_cards';
   info: {
@@ -694,6 +789,7 @@ export interface SharedSeo extends Struct.ComponentSchema {
     name: 'Seo';
   };
   attributes: {
+    canonical: Schema.Attribute.String & Schema.Attribute.Required;
     metaDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     metaTitle: Schema.Attribute.String & Schema.Attribute.Required;
     shareImage: Schema.Attribute.Media<'images'>;
@@ -721,6 +817,19 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
   attributes: {
     files: Schema.Attribute.Media<'images', true>;
+  };
+}
+
+export interface VisionmissionVisionAndMission extends Struct.ComponentSchema {
+  collectionName: 'components_visionmission_vision_and_missions';
+  info: {
+    displayName: 'Vision and Mission';
+  };
+  attributes: {
+    missiondescription: Schema.Attribute.Blocks;
+    missiontitle: Schema.Attribute.String;
+    visiondescription: Schema.Attribute.Blocks;
+    visiontitle: Schema.Attribute.String;
   };
 }
 
@@ -755,7 +864,13 @@ declare module '@strapi/strapi' {
       'homepage-components.visit-explore': HomepageComponentsVisitExplore;
       'homepage-components.whykrmu': HomepageComponentsWhykrmu;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
+      'internationcollaboration.international-collboration': InternationcollaborationInternationalCollboration;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
+      'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;
+      'menu.dropdown': MenuDropdown;
+      'menu.link': MenuLink;
+      'menu.menu-button': MenuMenuButton;
+      'menu.menu-link': MenuMenuLink;
       'procard.procard': ProcardProcard;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
@@ -769,6 +884,7 @@ declare module '@strapi/strapi' {
       'shared.counter-component': SharedCounterComponent;
       'shared.department-container': SharedDepartmentContainer;
       'shared.employee-card': SharedEmployeeCard;
+      'shared.employee-card-2': SharedEmployeeCard2;
       'shared.fee-detail-card': SharedFeeDetailCard;
       'shared.fee-price': SharedFeePrice;
       'shared.list-item': SharedListItem;
@@ -778,6 +894,7 @@ declare module '@strapi/strapi' {
       'shared.seo': SharedSeo;
       'shared.single-media': SharedSingleMedia;
       'shared.slider': SharedSlider;
+      'visionmission.vision-and-mission': VisionmissionVisionAndMission;
     }
   }
 }
