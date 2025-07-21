@@ -936,6 +936,40 @@ export interface ApiMembershipAndRankingMembershipAndRanking
   };
 }
 
+export interface ApiNewsAndEventNewsAndEvent
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'news_and_events';
+  info: {
+    displayName: 'News & Event';
+    pluralName: 'news-and-events';
+    singularName: 'news-and-event';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::news-and-event.news-and-event'
+    > &
+      Schema.Attribute.Private;
+    newsmedia: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiRegistrarOfficeRegistrarOffice
   extends Struct.SingleTypeSchema {
   collectionName: 'registrar_offices';
@@ -1566,6 +1600,7 @@ declare module '@strapi/strapi' {
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
+      'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'api::section.section': ApiSectionSection;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;

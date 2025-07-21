@@ -353,6 +353,7 @@ export interface HomepageComponentsHomeEventsAndNews
     displayName: 'Home Events and News';
   };
   attributes: {
+    newsandeventbtn: Schema.Attribute.Component<'shared.button', false>;
     title: Schema.Attribute.String;
   };
 }

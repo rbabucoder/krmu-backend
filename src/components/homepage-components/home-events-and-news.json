@@ -7,6 +7,11 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "newsandeventbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
     }
   },
   "config": {}
