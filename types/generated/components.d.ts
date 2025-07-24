@@ -497,36 +497,16 @@ export interface KrmucommitteeKrmuCommittee extends Struct.ComponentSchema {
   };
 }
 
-export interface MenuDropdown extends Struct.ComponentSchema {
-  collectionName: 'components_menu_dropdowns';
-  info: {
-    displayName: 'Dropdown';
-  };
-  attributes: {
-    dropdownheading: Schema.Attribute.String;
-    sections: Schema.Attribute.Relation<'oneToMany', 'api::section.section'>;
-  };
-}
-
-export interface MenuLink extends Struct.ComponentSchema {
-  collectionName: 'components_menu_links';
-  info: {
-    displayName: 'link';
-    icon: 'link';
-  };
-  attributes: {
-    name: Schema.Attribute.String;
-    url: Schema.Attribute.String;
-  };
-}
-
 export interface MenuMenuButton extends Struct.ComponentSchema {
   collectionName: 'components_menu_menu_buttons';
   info: {
-    displayName: 'MenuButton';
+    displayName: 'Menu Button';
+    icon: 'cursor';
   };
   attributes: {
+    class: Schema.Attribute.String;
     title: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['primary', 'secondary']>;
     url: Schema.Attribute.String;
   };
 }
@@ -535,9 +515,24 @@ export interface MenuMenuLink extends Struct.ComponentSchema {
   collectionName: 'components_menu_menu_links';
   info: {
     displayName: 'MenuLink';
+    icon: 'link';
   };
   attributes: {
     title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface MenuMenuSocialLinks extends Struct.ComponentSchema {
+  collectionName: 'components_menu_menu_social_links';
+  info: {
+    displayName: 'Menu Social Links';
+    icon: 'attachment';
+  };
+  attributes: {
+    socialicon: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     url: Schema.Attribute.String;
   };
 }
@@ -868,10 +863,9 @@ declare module '@strapi/strapi' {
       'internationcollaboration.international-collboration': InternationcollaborationInternationalCollboration;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;
-      'menu.dropdown': MenuDropdown;
-      'menu.link': MenuLink;
       'menu.menu-button': MenuMenuButton;
       'menu.menu-link': MenuMenuLink;
+      'menu.menu-social-links': MenuMenuSocialLinks;
       'procard.procard': ProcardProcard;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;

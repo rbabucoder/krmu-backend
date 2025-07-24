@@ -890,9 +890,7 @@ export interface ApiMainMenuMainMenu extends Struct.SingleTypeSchema {
       'api::main-menu.main-menu'
     > &
       Schema.Attribute.Private;
-    MainMenuItems: Schema.Attribute.DynamicZone<
-      ['menu.dropdown', 'menu.menu-link', 'menu.menu-button']
-    >;
+    MainMenuItems: Schema.Attribute.DynamicZone<[]>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1029,7 +1027,6 @@ export interface ApiSectionSection extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     heading: Schema.Attribute.String;
-    links: Schema.Attribute.Component<'menu.link', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1069,6 +1066,40 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
     profileinfo: Schema.Attribute.Text;
     profilename: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTopbarMenuTopbarMenu extends Struct.SingleTypeSchema {
+  collectionName: 'topbar_menus';
+  info: {
+    displayName: 'Topbar Menu';
+    pluralName: 'topbar-menus';
+    singularName: 'topbar-menu';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::topbar-menu.topbar-menu'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    TopbarMenuItems: Schema.Attribute.DynamicZone<
+      ['menu.menu-button', 'menu.menu-link']
+    >;
+    topbarsociallinks: Schema.Attribute.Component<
+      'menu.menu-social-links',
+      true
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1604,6 +1635,7 @@ declare module '@strapi/strapi' {
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'api::section.section': ApiSectionSection;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
+      'api::topbar-menu.topbar-menu': ApiTopbarMenuTopbarMenu;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

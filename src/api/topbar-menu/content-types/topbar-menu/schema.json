@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "topbar_menus",
+  "info": {
+    "singularName": "topbar-menu",
+    "pluralName": "topbar-menus",
+    "displayName": "Topbar Menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TopbarMenuItems": {
+      "type": "dynamiczone",
+      "components": [
+        "menu.menu-button",
+        "menu.menu-link"
+      ]
+    },
+    "topbarsociallinks": {
+      "type": "component",
+      "component": "menu.menu-social-links",
+      "repeatable": true
+    }
+  }
+}

@@ -14,11 +14,6 @@
     "heading": {
       "type": "string"
     },
-    "links": {
-      "type": "component",
-      "component": "menu.link",
-      "repeatable": true
-    },
     "navimage": {
       "type": "media",
       "multiple": false,

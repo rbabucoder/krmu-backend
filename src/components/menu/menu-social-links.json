@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_menu_menu_social_links",
+  "info": {
+    "displayName": "Menu Social Links",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "socialicon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
