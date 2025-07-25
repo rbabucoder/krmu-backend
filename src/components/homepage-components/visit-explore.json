@@ -14,7 +14,7 @@
       "repeatable": true
     },
     "title": {
-      "type": "string"
+      "type": "blocks"
     }
   },
   "config": {}
