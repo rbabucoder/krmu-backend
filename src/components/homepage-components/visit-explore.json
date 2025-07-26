@@ -12,9 +12,6 @@
       "type": "component",
       "component": "shared.button",
       "repeatable": true
-    },
-    "title": {
-      "type": "blocks"
     }
   },
   "config": {}
