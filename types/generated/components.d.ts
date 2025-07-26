@@ -816,6 +816,16 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTestingComponent extends Struct.ComponentSchema {
+  collectionName: 'components_shared_testing_components';
+  info: {
+    displayName: 'Testing component';
+  };
+  attributes: {
+    working: Schema.Attribute.String;
+  };
+}
+
 export interface VisionmissionVisionAndMission extends Struct.ComponentSchema {
   collectionName: 'components_visionmission_vision_and_missions';
   info: {
@@ -889,6 +899,7 @@ declare module '@strapi/strapi' {
       'shared.seo': SharedSeo;
       'shared.single-media': SharedSingleMedia;
       'shared.slider': SharedSlider;
+      'shared.testing-component': SharedTestingComponent;
       'visionmission.vision-and-mission': VisionmissionVisionAndMission;
     }
   }
