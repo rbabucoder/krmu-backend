@@ -421,6 +421,8 @@ export interface HomepageComponentsVisitExplore extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
+    title1: Schema.Attribute.String;
+    title2: Schema.Attribute.String;
     visitexplorebtn: Schema.Attribute.Component<'shared.button', true>;
   };
 }
