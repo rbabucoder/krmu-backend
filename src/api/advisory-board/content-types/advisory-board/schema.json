@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "advisory_boards",
+  "info": {
+    "singularName": "advisory-board",
+    "pluralName": "advisory-boards",
+    "displayName": "Advisory Board"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "advisoryboard": {
+      "type": "component",
+      "component": "shared.advisory-board-component",
+      "repeatable": true
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

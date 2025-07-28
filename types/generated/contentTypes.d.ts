@@ -534,6 +534,38 @@ export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAdvisoryBoardAdvisoryBoard extends Struct.SingleTypeSchema {
+  collectionName: 'advisory_boards';
+  info: {
+    displayName: 'Advisory Board';
+    pluralName: 'advisory-boards';
+    singularName: 'advisory-board';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    advisoryboard: Schema.Attribute.Component<
+      'shared.advisory-board-component',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Blocks;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::advisory-board.advisory-board'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAdvisoryAdvisory extends Struct.CollectionTypeSchema {
   collectionName: 'advisories';
   info: {
@@ -1619,6 +1651,7 @@ declare module '@strapi/strapi' {
       'api::about.about': ApiAboutAbout;
       'api::accreditations-recognition-and-approval.accreditations-recognition-and-approval': ApiAccreditationsRecognitionAndApprovalAccreditationsRecognitionAndApproval;
       'api::admission.admission': ApiAdmissionAdmission;
+      'api::advisory-board.advisory-board': ApiAdvisoryBoardAdvisoryBoard;
       'api::advisory.advisory': ApiAdvisoryAdvisory;
       'api::alumni.alumni': ApiAlumniAlumni;
       'api::article.article': ApiArticleArticle;

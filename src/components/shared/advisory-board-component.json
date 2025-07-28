@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_advisory_board_components",
+  "info": {
+    "displayName": "Advisory Board Component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "advisoryimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "advisoryboardinfo": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

@@ -574,6 +574,20 @@ export interface SharedAchievements extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedAdvisoryBoardComponent extends Struct.ComponentSchema {
+  collectionName: 'components_shared_advisory_board_components';
+  info: {
+    displayName: 'Advisory Board Component';
+  };
+  attributes: {
+    advisoryboardinfo: Schema.Attribute.Blocks;
+    advisoryimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedBreadcrumb extends Struct.ComponentSchema {
   collectionName: 'components_shared_breadcrumbs';
   info: {
@@ -880,6 +894,7 @@ declare module '@strapi/strapi' {
       'procard.procard': ProcardProcard;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
+      'shared.advisory-board-component': SharedAdvisoryBoardComponent;
       'shared.breadcrumb': SharedBreadcrumb;
       'shared.button': SharedButton;
       'shared.card': SharedCard;
