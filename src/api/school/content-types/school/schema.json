@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schools",
+  "info": {
+    "singularName": "school",
+    "pluralName": "schools",
+    "displayName": "School"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "school_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::school-category.school-category",
+      "inversedBy": "schools"
+    },
+    "schoolname": {
+      "type": "string"
+    },
+    "urlslug": {
+      "type": "uid",
+      "targetField": "schoolname"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "herobutton": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    },
+    "videoformat": {
+      "type": "enumeration",
+      "default": "Iframe",
+      "enum": [
+        "Iframe",
+        "videourl"
+      ]
+    },
+    "iframe": {
+      "type": "text"
+    },
+    "videolink": {
+      "type": "string"
+    },
+    "admissionsessiontitle": {
+      "type": "string"
+    },
+    "admissionbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "schoolcomps": {
+      "type": "dynamiczone",
+      "components": [
+        "schoolcomponent.knowledge"
+      ]
+    },
+    "alumnititle": {
+      "type": "string"
+    },
+    "alumnilogo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

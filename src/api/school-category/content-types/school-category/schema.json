@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "school_categories",
+  "info": {
+    "singularName": "school-category",
+    "pluralName": "school-categories",
+    "displayName": "School Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "text"
+    },
+    "schools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::school.school",
+      "mappedBy": "school_category"
+    }
+  }
+}

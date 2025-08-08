@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_schoolcomponent_school_components",
+  "info": {
+    "displayName": "School Component"
+  },
+  "options": {},
+  "attributes": {
+    "schools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::school.school"
+    }
+  },
+  "config": {}
+}

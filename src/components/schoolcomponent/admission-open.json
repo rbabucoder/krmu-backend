@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_schoolcomponent_admission_opens",
+  "info": {
+    "displayName": "Admission Open"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "applynowbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

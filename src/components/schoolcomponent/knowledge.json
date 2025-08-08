@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_schoolcomponent_knowledges",
+  "info": {
+    "displayName": "Knowledge"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "counter": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

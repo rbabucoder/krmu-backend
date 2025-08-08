@@ -548,6 +548,40 @@ export interface ProcardProcard extends Struct.ComponentSchema {
   };
 }
 
+export interface SchoolcomponentAdmissionOpen extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_admission_opens';
+  info: {
+    displayName: 'Admission Open';
+  };
+  attributes: {
+    applynowbtn: Schema.Attribute.Component<'shared.button', false>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolcomponentKnowledge extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_knowledges';
+  info: {
+    displayName: 'Knowledge';
+  };
+  attributes: {
+    counter: Schema.Attribute.Component<'shared.counter-component', true>;
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    subheading: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolcomponentSchoolComponent extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_school_components';
+  info: {
+    displayName: 'School Component';
+  };
+  attributes: {
+    schools: Schema.Attribute.Relation<'oneToMany', 'api::school.school'>;
+  };
+}
+
 export interface SharedAboutHeroBanner extends Struct.ComponentSchema {
   collectionName: 'components_shared_about_hero_banners';
   info: {
@@ -610,7 +644,7 @@ export interface SharedButton extends Struct.ComponentSchema {
   };
   attributes: {
     buttonclass: Schema.Attribute.String;
-    buttonlink: Schema.Attribute.String;
+    buttonlink: Schema.Attribute.Text;
     buttontext: Schema.Attribute.String;
   };
 }
@@ -892,6 +926,9 @@ declare module '@strapi/strapi' {
       'menu.menu-link': MenuMenuLink;
       'menu.menu-social-links': MenuMenuSocialLinks;
       'procard.procard': ProcardProcard;
+      'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
+      'schoolcomponent.knowledge': SchoolcomponentKnowledge;
+      'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
       'shared.advisory-board-component': SharedAdvisoryBoardComponent;

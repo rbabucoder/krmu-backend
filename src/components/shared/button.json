@@ -10,7 +10,7 @@
       "type": "string"
     },
     "buttonlink": {
-      "type": "string"
+      "type": "text"
     },
     "buttonclass": {
       "type": "string"

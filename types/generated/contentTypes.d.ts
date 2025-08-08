@@ -1044,6 +1044,85 @@ export interface ApiRegistrarOfficeRegistrarOffice
   };
 }
 
+export interface ApiSchoolCategorySchoolCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'school_categories';
+  info: {
+    displayName: 'School Category';
+    pluralName: 'school-categories';
+    singularName: 'school-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::school-category.school-category'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    schools: Schema.Attribute.Relation<'oneToMany', 'api::school.school'>;
+    slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
+  collectionName: 'schools';
+  info: {
+    displayName: 'School';
+    pluralName: 'schools';
+    singularName: 'school';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    admissionbtn: Schema.Attribute.Component<'shared.button', false>;
+    admissionsessiontitle: Schema.Attribute.String;
+    alumnilogo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    alumnititle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    herobutton: Schema.Attribute.Component<'shared.button', true>;
+    iframe: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::school.school'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    school_category: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::school-category.school-category'
+    >;
+    schoolcomps: Schema.Attribute.DynamicZone<['schoolcomponent.knowledge']>;
+    schoolname: Schema.Attribute.String;
+    subheading: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    urlslug: Schema.Attribute.UID<'schoolname'>;
+    videoformat: Schema.Attribute.Enumeration<['Iframe', 'videourl']> &
+      Schema.Attribute.DefaultTo<'Iframe'>;
+    videolink: Schema.Attribute.String;
+  };
+}
+
 export interface ApiSectionSection extends Struct.CollectionTypeSchema {
   collectionName: 'sections';
   info: {
@@ -1666,6 +1745,8 @@ declare module '@strapi/strapi' {
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
+      'api::school-category.school-category': ApiSchoolCategorySchoolCategory;
+      'api::school.school': ApiSchoolSchool;
       'api::section.section': ApiSectionSection;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::topbar-menu.topbar-menu': ApiTopbarMenuTopbarMenu;
