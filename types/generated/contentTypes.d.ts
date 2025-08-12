@@ -1089,22 +1089,40 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
   attributes: {
     admissionbtn: Schema.Attribute.Component<'shared.button', false>;
     admissionsessiontitle: Schema.Attribute.String;
+    advantageCards: Schema.Attribute.Component<'shared.card', true>;
+    advantagedesc: Schema.Attribute.Text;
+    advantagesubtitle: Schema.Attribute.Text;
+    advantagetitle: Schema.Attribute.String;
+    advantagimg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     alumnilogo: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
     alumnititle: Schema.Attribute.String;
+    collabcards: Schema.Attribute.Component<
+      'schoolcomponent.industry-collaboration-card',
+      true
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    excitedbtns: Schema.Attribute.Component<'shared.button', true>;
+    exciteddescription: Schema.Attribute.Text;
+    excitedtitle: Schema.Attribute.String;
     herobutton: Schema.Attribute.Component<'shared.button', true>;
     iframe: Schema.Attribute.Text;
+    induscollabtitle: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::school.school'
     > &
       Schema.Attribute.Private;
+    newsletterbtns: Schema.Attribute.Component<'shared.button', true>;
+    newsletterdesc: Schema.Attribute.Text;
+    newslettertitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     school_category: Schema.Attribute.Relation<
       'manyToOne',

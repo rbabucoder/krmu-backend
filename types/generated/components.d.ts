@@ -559,6 +559,19 @@ export interface SchoolcomponentAdmissionOpen extends Struct.ComponentSchema {
   };
 }
 
+export interface SchoolcomponentIndustryCollaborationCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_industry_collaboration_cards';
+  info: {
+    displayName: 'Industry Collaboration Card';
+    icon: 'apps';
+  };
+  attributes: {
+    cardcontent: Schema.Attribute.Blocks;
+    cardimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface SchoolcomponentKnowledge extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_knowledges';
   info: {
@@ -927,6 +940,7 @@ declare module '@strapi/strapi' {
       'menu.menu-social-links': MenuMenuSocialLinks;
       'procard.procard': ProcardProcard;
       'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
+      'schoolcomponent.industry-collaboration-card': SchoolcomponentIndustryCollaborationCard;
       'schoolcomponent.knowledge': SchoolcomponentKnowledge;
       'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
       'shared.about-hero-banner': SharedAboutHeroBanner;

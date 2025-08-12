@@ -72,6 +72,60 @@
         "videos",
         "audios"
       ]
+    },
+    "excitedtitle": {
+      "type": "string"
+    },
+    "exciteddescription": {
+      "type": "text"
+    },
+    "excitedbtns": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    },
+    "newslettertitle": {
+      "type": "string"
+    },
+    "newsletterdesc": {
+      "type": "text"
+    },
+    "newsletterbtns": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    },
+    "advantagetitle": {
+      "type": "string"
+    },
+    "advantagedesc": {
+      "type": "text"
+    },
+    "advantagesubtitle": {
+      "type": "text"
+    },
+    "advantagimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "advantageCards": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true
+    },
+    "collabcards": {
+      "type": "component",
+      "component": "schoolcomponent.industry-collaboration-card",
+      "repeatable": true
+    },
+    "induscollabtitle": {
+      "type": "blocks"
     }
   }
 }
