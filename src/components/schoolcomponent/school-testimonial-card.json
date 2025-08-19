@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_schoolcomponent_school_testimonial_cards",
+  "info": {
+    "displayName": "School Testimonial Card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "userimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "info": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

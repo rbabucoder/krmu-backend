@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_achievements",
+  "info": {
+    "singularName": "student-achievement",
+    "pluralName": "student-achievements",
+    "displayName": "Student Achievement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "achivementimage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "achievementcontent": {
+      "type": "text"
+    },
+    "school_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::school-category.school-category"
+    }
+  }
+}

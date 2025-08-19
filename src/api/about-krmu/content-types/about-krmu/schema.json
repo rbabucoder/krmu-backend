@@ -52,6 +52,9 @@
       "type": "component",
       "component": "krmucommittee.krmu-committee",
       "repeatable": false
+    },
+    "letsexplorecontent": {
+      "type": "blocks"
     }
   }
 }

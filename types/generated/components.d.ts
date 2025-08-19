@@ -559,6 +559,18 @@ export interface SchoolcomponentAdmissionOpen extends Struct.ComponentSchema {
   };
 }
 
+export interface SchoolcomponentEventsandexperiencecard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_eventsandexperiencecards';
+  info: {
+    displayName: 'eventsandexperiencecard';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SchoolcomponentIndustryCollaborationCard
   extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_industry_collaboration_cards';
@@ -592,6 +604,31 @@ export interface SchoolcomponentSchoolComponent extends Struct.ComponentSchema {
   };
   attributes: {
     schools: Schema.Attribute.Relation<'oneToMany', 'api::school.school'>;
+  };
+}
+
+export interface SchoolcomponentSchoolListItem extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_school_list_items';
+  info: {
+    displayName: 'School List item';
+  };
+  attributes: {
+    listheading: Schema.Attribute.String;
+    listsitems: Schema.Attribute.Component<'shared.list-item', true>;
+  };
+}
+
+export interface SchoolcomponentSchoolTestimonialCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_school_testimonial_cards';
+  info: {
+    displayName: 'School Testimonial Card';
+  };
+  attributes: {
+    education: Schema.Attribute.String;
+    info: Schema.Attribute.Text;
+    name: Schema.Attribute.String;
+    userimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -940,9 +977,12 @@ declare module '@strapi/strapi' {
       'menu.menu-social-links': MenuMenuSocialLinks;
       'procard.procard': ProcardProcard;
       'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
+      'schoolcomponent.eventsandexperiencecard': SchoolcomponentEventsandexperiencecard;
       'schoolcomponent.industry-collaboration-card': SchoolcomponentIndustryCollaborationCard;
       'schoolcomponent.knowledge': SchoolcomponentKnowledge;
       'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
+      'schoolcomponent.school-list-item': SchoolcomponentSchoolListItem;
+      'schoolcomponent.school-testimonial-card': SchoolcomponentSchoolTestimonialCard;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
       'shared.advisory-board-component': SharedAdvisoryBoardComponent;

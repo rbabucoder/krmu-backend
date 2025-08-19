@@ -404,6 +404,7 @@ export interface ApiAboutKrmuAboutKrmu extends Struct.SingleTypeSchema {
       'krmu-group.kr-mangalam-group',
       false
     >;
+    letsexplorecontent: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -646,7 +647,10 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     blocks: Schema.Attribute.DynamicZone<
       ['shared.media', 'shared.quote', 'shared.rich-text', 'shared.slider']
     >;
-    category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
+    categories: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::category.category'
+    >;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -714,7 +718,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
-    articles: Schema.Attribute.Relation<'oneToMany', 'api::article.article'>;
+    article: Schema.Attribute.Relation<'manyToOne', 'api::article.article'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -757,6 +761,41 @@ export interface ApiCodeOfConductCodeOfConduct extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiEventEvent extends Struct.CollectionTypeSchema {
+  collectionName: 'events';
+  info: {
+    displayName: 'Event';
+    pluralName: 'events';
+    singularName: 'event';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    desc: Schema.Attribute.RichText;
+    eventimages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::event.event'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    school_category: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::school-category.school-category'
+    >;
+    slug: Schema.Attribute.UID<'title'>;
+    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1101,6 +1140,10 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
       true
     >;
     alumnititle: Schema.Attribute.String;
+    coebtn1: Schema.Attribute.Component<'shared.button', false>;
+    coebtn2: Schema.Attribute.Component<'shared.button', false>;
+    coetitle1: Schema.Attribute.String;
+    coetitle2: Schema.Attribute.String;
     collabcards: Schema.Attribute.Component<
       'schoolcomponent.industry-collaboration-card',
       true
@@ -1108,12 +1151,40 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    deancontent: Schema.Attribute.Blocks;
+    deandesignation: Schema.Attribute.String;
+    deanemail: Schema.Attribute.String;
+    deanimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    deansname: Schema.Attribute.String;
+    deanvisionsubtitle: Schema.Attribute.String;
+    deanvisiontitle: Schema.Attribute.String;
+    eventsbtn: Schema.Attribute.Component<'shared.button', false>;
+    eventsdesc: Schema.Attribute.Text;
+    eventstitle: Schema.Attribute.String;
     excitedbtns: Schema.Attribute.Component<'shared.button', true>;
     exciteddescription: Schema.Attribute.Text;
     excitedtitle: Schema.Attribute.String;
     herobutton: Schema.Attribute.Component<'shared.button', true>;
     iframe: Schema.Attribute.Text;
     induscollabtitle: Schema.Attribute.Blocks;
+    knowledgepartenerlogos: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    knowledgetitle: Schema.Attribute.String;
+    letsexplorecontent: Schema.Attribute.Blocks;
+    listitem1: Schema.Attribute.Component<
+      'schoolcomponent.school-list-item',
+      false
+    >;
+    listitem2: Schema.Attribute.Component<
+      'schoolcomponent.school-list-item',
+      false
+    >;
+    listitem3: Schema.Attribute.Component<
+      'schoolcomponent.school-list-item',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1130,7 +1201,15 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     >;
     schoolcomps: Schema.Attribute.DynamicZone<['schoolcomponent.knowledge']>;
     schoolname: Schema.Attribute.String;
+    studentachievementsbtn: Schema.Attribute.Component<'shared.button', false>;
+    studentachievementtitle: Schema.Attribute.String;
     subheading: Schema.Attribute.Text;
+    testimonialdesc: Schema.Attribute.Text;
+    testimonials: Schema.Attribute.Component<
+      'schoolcomponent.school-testimonial-card',
+      true
+    >;
+    tetimonialtitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1164,6 +1243,43 @@ export interface ApiSectionSection extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     navimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiStudentAchievementStudentAchievement
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'student_achievements';
+  info: {
+    displayName: 'Student Achievement';
+    pluralName: 'student-achievements';
+    singularName: 'student-achievement';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    achievementcontent: Schema.Attribute.Text;
+    achivementimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::student-achievement.student-achievement'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    school_category: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::school-category.school-category'
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1755,6 +1871,7 @@ declare module '@strapi/strapi' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
+      'api::event.event': ApiEventEvent;
       'api::facility.facility': ApiFacilityFacility;
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
       'api::global.global': ApiGlobalGlobal;
@@ -1766,6 +1883,7 @@ declare module '@strapi/strapi' {
       'api::school-category.school-category': ApiSchoolCategorySchoolCategory;
       'api::school.school': ApiSchoolSchool;
       'api::section.section': ApiSectionSection;
+      'api::student-achievement.student-achievement': ApiStudentAchievementStudentAchievement;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::topbar-menu.topbar-menu': ApiTopbarMenuTopbarMenu;
       'plugin::content-releases.release': PluginContentReleasesRelease;

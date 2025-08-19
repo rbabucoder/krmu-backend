@@ -126,6 +126,111 @@
     },
     "induscollabtitle": {
       "type": "blocks"
+    },
+    "letsexplorecontent": {
+      "type": "blocks"
+    },
+    "listitem1": {
+      "type": "component",
+      "component": "schoolcomponent.school-list-item",
+      "repeatable": false
+    },
+    "listitem2": {
+      "type": "component",
+      "component": "schoolcomponent.school-list-item",
+      "repeatable": false
+    },
+    "listitem3": {
+      "type": "component",
+      "component": "schoolcomponent.school-list-item",
+      "repeatable": false
+    },
+    "coetitle1": {
+      "type": "string"
+    },
+    "coebtn1": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "coetitle2": {
+      "type": "string"
+    },
+    "coebtn2": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "knowledgetitle": {
+      "type": "string"
+    },
+    "knowledgepartenerlogos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tetimonialtitle": {
+      "type": "string"
+    },
+    "testimonialdesc": {
+      "type": "text"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "schoolcomponent.school-testimonial-card",
+      "repeatable": true
+    },
+    "deanvisiontitle": {
+      "type": "string"
+    },
+    "deanvisionsubtitle": {
+      "type": "string"
+    },
+    "deanimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "deancontent": {
+      "type": "blocks"
+    },
+    "deansname": {
+      "type": "string"
+    },
+    "deanemail": {
+      "type": "string"
+    },
+    "deandesignation": {
+      "type": "string"
+    },
+    "eventstitle": {
+      "type": "string"
+    },
+    "eventsdesc": {
+      "type": "text"
+    },
+    "eventsbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "studentachievementtitle": {
+      "type": "string"
+    },
+    "studentachievementsbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
     }
   }
 }

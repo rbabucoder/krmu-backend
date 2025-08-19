@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_schoolcomponent_school_list_items",
+  "info": {
+    "displayName": "School List item"
+  },
+  "options": {},
+  "attributes": {
+    "listsitems": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "listheading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

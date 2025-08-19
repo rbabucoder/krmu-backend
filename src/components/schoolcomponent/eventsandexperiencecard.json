@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_schoolcomponent_eventsandexperiencecards",
+  "info": {
+    "displayName": "eventsandexperiencecard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
