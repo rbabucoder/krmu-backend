@@ -1200,6 +1200,9 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
       'api::school-category.school-category'
     >;
     schoolcomps: Schema.Attribute.DynamicZone<['schoolcomponent.knowledge']>;
+    schoolherobanner: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     schoolname: Schema.Attribute.String;
     studentachievementsbtn: Schema.Attribute.Component<'shared.button', false>;
     studentachievementtitle: Schema.Attribute.String;

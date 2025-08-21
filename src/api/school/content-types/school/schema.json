@@ -17,6 +17,16 @@
       "target": "api::school-category.school-category",
       "inversedBy": "schools"
     },
+    "schoolherobanner": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "schoolname": {
       "type": "string"
     },
