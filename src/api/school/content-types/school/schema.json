@@ -241,6 +241,10 @@
       "type": "component",
       "component": "shared.button",
       "repeatable": false
+    },
+    "showdeaninfo": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

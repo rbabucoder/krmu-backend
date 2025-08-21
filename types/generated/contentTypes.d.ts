@@ -1204,6 +1204,7 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     schoolname: Schema.Attribute.String;
+    showdeaninfo: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     studentachievementsbtn: Schema.Attribute.Component<'shared.button', false>;
     studentachievementtitle: Schema.Attribute.String;
     subheading: Schema.Attribute.Text;
