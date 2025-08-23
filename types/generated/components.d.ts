@@ -632,6 +632,18 @@ export interface SchoolcomponentSchoolTestimonialCard
   };
 }
 
+export interface SchoolprogrammeHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_hero_sections';
+  info: {
+    displayName: 'Hero Section';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    herobtn: Schema.Attribute.Component<'shared.button', false>;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
 export interface SharedAboutHeroBanner extends Struct.ComponentSchema {
   collectionName: 'components_shared_about_hero_banners';
   info: {
@@ -983,6 +995,7 @@ declare module '@strapi/strapi' {
       'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
       'schoolcomponent.school-list-item': SchoolcomponentSchoolListItem;
       'schoolcomponent.school-testimonial-card': SchoolcomponentSchoolTestimonialCard;
+      'schoolprogramme.hero-section': SchoolprogrammeHeroSection;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
       'shared.advisory-board-component': SharedAdvisoryBoardComponent;

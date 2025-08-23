@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "school_programmes",
+  "info": {
+    "singularName": "school-programme",
+    "pluralName": "school-programmes",
+    "displayName": "School Programme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "school_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::school-category.school-category",
+      "mappedBy": "school_programme"
+    },
+    "title": {
+      "type": "text"
+    },
+    "programmeslug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "herosection": {
+      "type": "component",
+      "component": "schoolprogramme.hero-section",
+      "repeatable": false
+    }
+  }
+}

@@ -1107,8 +1107,50 @@ export interface ApiSchoolCategorySchoolCategory
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    school_programme: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::school-programme.school-programme'
+    >;
     schools: Schema.Attribute.Relation<'oneToMany', 'api::school.school'>;
     slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSchoolProgrammeSchoolProgramme
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'school_programmes';
+  info: {
+    displayName: 'School Programme';
+    pluralName: 'school-programmes';
+    singularName: 'school-programme';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    herosection: Schema.Attribute.Component<
+      'schoolprogramme.hero-section',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::school-programme.school-programme'
+    > &
+      Schema.Attribute.Private;
+    programmeslug: Schema.Attribute.UID<'title'>;
+    publishedAt: Schema.Attribute.DateTime;
+    school_categories: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::school-category.school-category'
+    >;
+    title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1885,6 +1927,7 @@ declare module '@strapi/strapi' {
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'api::school-category.school-category': ApiSchoolCategorySchoolCategory;
+      'api::school-programme.school-programme': ApiSchoolProgrammeSchoolProgramme;
       'api::school.school': ApiSchoolSchool;
       'api::section.section': ApiSectionSection;
       'api::student-achievement.student-achievement': ApiStudentAchievementStudentAchievement;
