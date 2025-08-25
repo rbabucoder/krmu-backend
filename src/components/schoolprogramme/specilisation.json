@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_schoolprogramme_specilisations",
+  "info": {
+    "displayName": "Specilisation",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "highlightheading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "specialisationimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "specialisationcards": {
+      "type": "component",
+      "component": "schoolprogramme.programme-specialisation-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

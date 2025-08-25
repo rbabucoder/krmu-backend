@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_schoolprogramme_eligibility_criteria",
+  "info": {
+    "displayName": "Eligibility Criteria",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "elgibility": {
+      "type": "component",
+      "component": "schoolprogramme.programme-eligibility",
+      "repeatable": true
+    },
+    "mobherobtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

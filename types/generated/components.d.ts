@@ -632,6 +632,151 @@ export interface SchoolcomponentSchoolTestimonialCard
   };
 }
 
+export interface SchoolprogrammeAdmissionProcess
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_admission_processes';
+  info: {
+    displayName: 'Admission Process';
+    icon: 'store';
+  };
+  attributes: {
+    admissionprocesscard: Schema.Attribute.Component<
+      'schoolprogramme.admission-process-card',
+      true
+    >;
+    description: Schema.Attribute.String;
+    desktopadmissionprocessimg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeAdmissionProcessCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_admission_process_cards';
+  info: {
+    displayName: 'Admission Process Card';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    mobcounting: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeBeyondClassroom extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_beyond_classrooms';
+  info: {
+    displayName: 'Beyond Classroom';
+  };
+  attributes: {
+    beyondclassroomimages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    description: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeCareerProspects extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_career_prospects';
+  info: {
+    displayName: 'Career Prospects';
+  };
+  attributes: {
+    careerbtn: Schema.Attribute.Component<'shared.button', false>;
+    careercards: Schema.Attribute.Component<
+      'schoolprogramme.career-prospects-card',
+      true
+    >;
+    careerimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    description: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeCareerProspectsCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_career_prospects_cards';
+  info: {
+    displayName: 'Career Prospects Card';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    num: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeCurriculum extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_curricula';
+  info: {
+    displayName: 'Curriculum';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+    years: Schema.Attribute.Component<
+      'schoolprogramme.programme-structure',
+      true
+    >;
+  };
+}
+
+export interface SchoolprogrammeDreamCareer extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_dream_careers';
+  info: {
+    displayName: 'Dream Career';
+  };
+  attributes: {
+    campusrecruitersnum: Schema.Attribute.String;
+    campusrecruitertitle: Schema.Attribute.String;
+    careerlogos: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    description: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    highestpackagenum: Schema.Attribute.String;
+    highestpackagetitle: Schema.Attribute.String;
+    placementassistnum: Schema.Attribute.String;
+    placementassisttitle: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeDreamCareerCard extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_dream_career_cards';
+  info: {
+    displayName: 'Dream Career Card';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeEligibilityCriteria
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_eligibility_criteria';
+  info: {
+    displayName: 'Eligibility Criteria';
+    icon: 'command';
+  };
+  attributes: {
+    elgibility: Schema.Attribute.Component<
+      'schoolprogramme.programme-eligibility',
+      true
+    >;
+    mobherobtn: Schema.Attribute.Component<'shared.button', false>;
+  };
+}
+
 export interface SchoolprogrammeHeroSection extends Struct.ComponentSchema {
   collectionName: 'components_schoolprogramme_hero_sections';
   info: {
@@ -640,7 +785,171 @@ export interface SchoolprogrammeHeroSection extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     herobtn: Schema.Attribute.Component<'shared.button', false>;
+    heroimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     subtitle: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeLabsAndFacilities
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_labs_and_facilities';
+  info: {
+    displayName: 'Labs & Facilities';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+    labbtn: Schema.Attribute.Component<'shared.button', false>;
+    labcards: Schema.Attribute.Component<
+      'schoolprogramme.labs-facilities-card',
+      true
+    >;
+    labscontent: Schema.Attribute.Blocks;
+    labsimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SchoolprogrammeLabsFacilitiesCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_labs_facilities_cards';
+  info: {
+    displayName: 'LabsFacilities Card';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeProgrammeEligibility
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_programme_eligibilities';
+  info: {
+    displayName: 'Programme Eligibility';
+    icon: 'filter';
+  };
+  attributes: {
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeProgrammeHighlightCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_programme_highlight_cards';
+  info: {
+    displayName: 'Programme Highlight Card';
+    icon: 'crop';
+  };
+  attributes: {
+    highlightimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeProgrammeHighlights
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_programme_highlights';
+  info: {
+    displayName: 'Programme Highlights';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+    programmehighlightcards: Schema.Attribute.Component<
+      'schoolprogramme.programme-highlight-card',
+      true
+    >;
+    subheading: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeProgrammeScope extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_programme_scopes';
+  info: {
+    displayName: 'Programme Scope';
+    icon: 'cog';
+  };
+  attributes: {
+    scopebtn: Schema.Attribute.Component<'shared.button', false>;
+    scopecontent: Schema.Attribute.Text;
+    scopeheading: Schema.Attribute.String;
+    scopeimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SchoolprogrammeProgrammeSpecialisationCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_programme_specialisation_cards';
+  info: {
+    displayName: 'Programme Specialisation Card';
+  };
+  attributes: {
+    link: Schema.Attribute.String;
+    specialisationimg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface SchoolprogrammeProgrammeStructure
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_programme_structures';
+  info: {
+    displayName: 'Programme Structure';
+  };
+  attributes: {
+    semester: Schema.Attribute.Component<'schoolprogramme.semester', true>;
+    year: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeProgrammeSubjects
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_programme_subjects';
+  info: {
+    displayName: 'Programme Subjects';
+  };
+  attributes: {
+    subjectname: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeSemester extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_semesters';
+  info: {
+    displayName: 'Semester';
+  };
+  attributes: {
+    pdfbtns: Schema.Attribute.Component<'shared.button', true>;
+    semestername: Schema.Attribute.String;
+    subjects: Schema.Attribute.Component<
+      'schoolprogramme.programme-subjects',
+      true
+    >;
+  };
+}
+
+export interface SchoolprogrammeSpecilisation extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_specilisations';
+  info: {
+    displayName: 'Specilisation';
+    icon: 'arrowRight';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+    specialisationcards: Schema.Attribute.Component<
+      'schoolprogramme.programme-specialisation-card',
+      true
+    >;
+    specialisationimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
   };
 }
 
@@ -995,7 +1304,27 @@ declare module '@strapi/strapi' {
       'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
       'schoolcomponent.school-list-item': SchoolcomponentSchoolListItem;
       'schoolcomponent.school-testimonial-card': SchoolcomponentSchoolTestimonialCard;
+      'schoolprogramme.admission-process': SchoolprogrammeAdmissionProcess;
+      'schoolprogramme.admission-process-card': SchoolprogrammeAdmissionProcessCard;
+      'schoolprogramme.beyond-classroom': SchoolprogrammeBeyondClassroom;
+      'schoolprogramme.career-prospects': SchoolprogrammeCareerProspects;
+      'schoolprogramme.career-prospects-card': SchoolprogrammeCareerProspectsCard;
+      'schoolprogramme.curriculum': SchoolprogrammeCurriculum;
+      'schoolprogramme.dream-career': SchoolprogrammeDreamCareer;
+      'schoolprogramme.dream-career-card': SchoolprogrammeDreamCareerCard;
+      'schoolprogramme.eligibility-criteria': SchoolprogrammeEligibilityCriteria;
       'schoolprogramme.hero-section': SchoolprogrammeHeroSection;
+      'schoolprogramme.labs-and-facilities': SchoolprogrammeLabsAndFacilities;
+      'schoolprogramme.labs-facilities-card': SchoolprogrammeLabsFacilitiesCard;
+      'schoolprogramme.programme-eligibility': SchoolprogrammeProgrammeEligibility;
+      'schoolprogramme.programme-highlight-card': SchoolprogrammeProgrammeHighlightCard;
+      'schoolprogramme.programme-highlights': SchoolprogrammeProgrammeHighlights;
+      'schoolprogramme.programme-scope': SchoolprogrammeProgrammeScope;
+      'schoolprogramme.programme-specialisation-card': SchoolprogrammeProgrammeSpecialisationCard;
+      'schoolprogramme.programme-structure': SchoolprogrammeProgrammeStructure;
+      'schoolprogramme.programme-subjects': SchoolprogrammeProgrammeSubjects;
+      'schoolprogramme.semester': SchoolprogrammeSemester;
+      'schoolprogramme.specilisation': SchoolprogrammeSpecilisation;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
       'shared.advisory-board-component': SharedAdvisoryBoardComponent;

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_schoolprogramme_dream_careers",
+  "info": {
+    "displayName": "Dream Career"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "careerlogos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "highestpackagenum": {
+      "type": "string"
+    },
+    "highestpackagetitle": {
+      "type": "string"
+    },
+    "campusrecruitersnum": {
+      "type": "string"
+    },
+    "campusrecruitertitle": {
+      "type": "string"
+    },
+    "placementassistnum": {
+      "type": "string"
+    },
+    "placementassisttitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

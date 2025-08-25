@@ -1,24 +1,22 @@
 {
-  "collectionName": "components_schoolprogramme_hero_sections",
+  "collectionName": "components_schoolprogramme_beyond_classrooms",
   "info": {
-    "displayName": "Hero Section"
+    "displayName": "Beyond Classroom"
   },
   "options": {},
   "attributes": {
-    "subtitle": {
+    "heading": {
+      "type": "string"
+    },
+    "highlightheading": {
       "type": "string"
     },
     "description": {
       "type": "text"
     },
-    "herobtn": {
-      "type": "component",
-      "component": "shared.button",
-      "repeatable": false
-    },
-    "heroimg": {
+    "beyondclassroomimages": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",

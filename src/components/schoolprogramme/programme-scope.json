@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_schoolprogramme_programme_scopes",
+  "info": {
+    "displayName": "Programme Scope",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "scopeheading": {
+      "type": "string"
+    },
+    "scopecontent": {
+      "type": "text"
+    },
+    "scopeimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "scopebtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

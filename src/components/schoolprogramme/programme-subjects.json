@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_schoolprogramme_programme_subjects",
+  "info": {
+    "displayName": "Programme Subjects"
+  },
+  "options": {},
+  "attributes": {
+    "subjectname": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_schoolprogramme_labs_and_facilities",
+  "info": {
+    "displayName": "Labs & Facilities"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "highlightheading": {
+      "type": "string"
+    },
+    "labscontent": {
+      "type": "blocks"
+    },
+    "labsimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "labbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "labcards": {
+      "type": "component",
+      "component": "schoolprogramme.labs-facilities-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

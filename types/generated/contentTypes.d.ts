@@ -388,9 +388,17 @@ export interface ApiAboutKrmuAboutKrmu extends Struct.SingleTypeSchema {
       'accrediation.accrediation',
       false
     >;
+    careerprospects: Schema.Attribute.Component<
+      'schoolprogramme.career-prospects',
+      false
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    dreamcareer: Schema.Attribute.Component<
+      'schoolprogramme.dream-career',
+      false
+    >;
     halloffame: Schema.Attribute.Component<'halloffame.hall-of-fame', false>;
     internationcollaboration: Schema.Attribute.Component<
       'internationcollaboration.international-collboration',
@@ -1131,11 +1139,32 @@ export interface ApiSchoolProgrammeSchoolProgramme
     draftAndPublish: true;
   };
   attributes: {
+    admissionprocess: Schema.Attribute.Component<
+      'schoolprogramme.admission-process',
+      false
+    >;
+    beyondclassroom: Schema.Attribute.Component<
+      'schoolprogramme.beyond-classroom',
+      false
+    >;
+    career: Schema.Attribute.Component<
+      'schoolprogramme.career-prospects',
+      false
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    curriculum: Schema.Attribute.Component<'schoolprogramme.curriculum', false>;
+    dreamcareer: Schema.Attribute.Component<
+      'schoolprogramme.dream-career',
+      false
+    >;
     herosection: Schema.Attribute.Component<
       'schoolprogramme.hero-section',
+      false
+    >;
+    labsfacilities: Schema.Attribute.Component<
+      'schoolprogramme.labs-and-facilities',
       false
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -1144,11 +1173,27 @@ export interface ApiSchoolProgrammeSchoolProgramme
       'api::school-programme.school-programme'
     > &
       Schema.Attribute.Private;
+    programmeeligibility: Schema.Attribute.Component<
+      'schoolprogramme.eligibility-criteria',
+      false
+    >;
+    programmehighlight: Schema.Attribute.Component<
+      'schoolprogramme.programme-highlights',
+      false
+    >;
+    programmescope: Schema.Attribute.Component<
+      'schoolprogramme.programme-scope',
+      false
+    >;
     programmeslug: Schema.Attribute.UID<'title'>;
     publishedAt: Schema.Attribute.DateTime;
     school_categories: Schema.Attribute.Relation<
       'oneToMany',
       'api::school-category.school-category'
+    >;
+    specialisation: Schema.Attribute.Component<
+      'schoolprogramme.specilisation',
+      false
     >;
     title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;

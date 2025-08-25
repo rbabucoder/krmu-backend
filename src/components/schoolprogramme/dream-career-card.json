@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_schoolprogramme_dream_career_cards",
+  "info": {
+    "displayName": "Dream Career Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,22 +1,18 @@
 {
-  "collectionName": "components_schoolprogramme_hero_sections",
+  "collectionName": "components_schoolprogramme_programme_highlight_cards",
   "info": {
-    "displayName": "Hero Section"
+    "displayName": "Programme Highlight Card",
+    "icon": "crop"
   },
   "options": {},
   "attributes": {
-    "subtitle": {
+    "title": {
       "type": "string"
     },
-    "description": {
+    "subtitle": {
       "type": "text"
     },
-    "herobtn": {
-      "type": "component",
-      "component": "shared.button",
-      "repeatable": false
-    },
-    "heroimg": {
+    "highlightimage": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

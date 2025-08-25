@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_schoolprogramme_programme_structures",
+  "info": {
+    "displayName": "Programme Structure"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "semester": {
+      "type": "component",
+      "component": "schoolprogramme.semester",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_schoolprogramme_labs_facilities_cards",
+  "info": {
+    "displayName": "LabsFacilities Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

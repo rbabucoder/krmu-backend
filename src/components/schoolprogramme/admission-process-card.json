@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_schoolprogramme_admission_process_cards",
+  "info": {
+    "displayName": "Admission Process Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "mobcounting": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

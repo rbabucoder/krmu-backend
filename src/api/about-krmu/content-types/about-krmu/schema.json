@@ -55,6 +55,16 @@
     },
     "letsexplorecontent": {
       "type": "blocks"
+    },
+    "careerprospects": {
+      "type": "component",
+      "component": "schoolprogramme.career-prospects",
+      "repeatable": false
+    },
+    "dreamcareer": {
+      "type": "component",
+      "component": "schoolprogramme.dream-career",
+      "repeatable": false
     }
   }
 }

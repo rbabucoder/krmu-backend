@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_schoolprogramme_programme_highlights",
+  "info": {
+    "displayName": "Programme Highlights"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "programmehighlightcards": {
+      "type": "component",
+      "component": "schoolprogramme.programme-highlight-card",
+      "repeatable": true
+    },
+    "highlightheading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_schoolprogramme_career_prospects",
+  "info": {
+    "displayName": "Career Prospects"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "highlightheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "careerimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "careerbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "careercards": {
+      "type": "component",
+      "component": "schoolprogramme.career-prospects-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

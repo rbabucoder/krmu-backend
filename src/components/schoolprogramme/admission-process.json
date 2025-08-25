@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_schoolprogramme_admission_processes",
+  "info": {
+    "displayName": "Admission Process",
+    "icon": "store"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "highlightheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "desktopadmissionprocessimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "admissionprocesscard": {
+      "type": "component",
+      "component": "schoolprogramme.admission-process-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

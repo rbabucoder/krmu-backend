@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_schoolprogramme_career_prospects_cards",
+  "info": {
+    "displayName": "Career Prospects Card"
+  },
+  "options": {},
+  "attributes": {
+    "num": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

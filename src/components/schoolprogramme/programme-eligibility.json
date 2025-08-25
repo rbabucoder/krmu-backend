@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_schoolprogramme_programme_eligibilities",
+  "info": {
+    "displayName": "Programme Eligibility",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

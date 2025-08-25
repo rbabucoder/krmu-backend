@@ -28,6 +28,56 @@
       "type": "component",
       "component": "schoolprogramme.hero-section",
       "repeatable": false
+    },
+    "programmeeligibility": {
+      "type": "component",
+      "component": "schoolprogramme.eligibility-criteria",
+      "repeatable": false
+    },
+    "programmescope": {
+      "type": "component",
+      "component": "schoolprogramme.programme-scope",
+      "repeatable": false
+    },
+    "programmehighlight": {
+      "type": "component",
+      "component": "schoolprogramme.programme-highlights",
+      "repeatable": false
+    },
+    "specialisation": {
+      "type": "component",
+      "component": "schoolprogramme.specilisation",
+      "repeatable": false
+    },
+    "admissionprocess": {
+      "type": "component",
+      "component": "schoolprogramme.admission-process",
+      "repeatable": false
+    },
+    "curriculum": {
+      "type": "component",
+      "component": "schoolprogramme.curriculum",
+      "repeatable": false
+    },
+    "labsfacilities": {
+      "type": "component",
+      "component": "schoolprogramme.labs-and-facilities",
+      "repeatable": false
+    },
+    "beyondclassroom": {
+      "type": "component",
+      "component": "schoolprogramme.beyond-classroom",
+      "repeatable": false
+    },
+    "career": {
+      "type": "component",
+      "component": "schoolprogramme.career-prospects",
+      "repeatable": false
+    },
+    "dreamcareer": {
+      "type": "component",
+      "component": "schoolprogramme.dream-career",
+      "repeatable": false
     }
   }
 }

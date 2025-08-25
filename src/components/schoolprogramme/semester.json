@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_schoolprogramme_semesters",
+  "info": {
+    "displayName": "Semester"
+  },
+  "options": {},
+  "attributes": {
+    "semestername": {
+      "type": "string"
+    },
+    "subjects": {
+      "type": "component",
+      "component": "schoolprogramme.programme-subjects",
+      "repeatable": true
+    },
+    "pdfbtns": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_schoolprogramme_programme_specialisation_cards",
+  "info": {
+    "displayName": "Programme Specialisation Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "specialisationimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
