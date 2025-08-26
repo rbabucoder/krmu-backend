@@ -419,11 +419,15 @@ export interface ApiAboutKrmuAboutKrmu extends Struct.SingleTypeSchema {
       'api::about-krmu.about-krmu'
     > &
       Schema.Attribute.Private;
+    ourlocation: Schema.Attribute.Component<
+      'schoolprogramme.our-location',
+      false
+    >;
     publishedAt: Schema.Attribute.DateTime;
     subtitle: Schema.Attribute.Text;
     thenexgendescription: Schema.Attribute.Text;
     thenexgentitle: Schema.Attribute.Text;
-    title: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.DefaultTo<'testing text'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1159,6 +1163,10 @@ export interface ApiSchoolProgrammeSchoolProgramme
       'schoolprogramme.dream-career',
       false
     >;
+    financialassistance: Schema.Attribute.Component<
+      'schoolprogramme.financial-assistance',
+      false
+    >;
     herosection: Schema.Attribute.Component<
       'schoolprogramme.hero-section',
       false
@@ -1173,6 +1181,10 @@ export interface ApiSchoolProgrammeSchoolProgramme
       'api::school-programme.school-programme'
     > &
       Schema.Attribute.Private;
+    ourlocation: Schema.Attribute.Component<
+      'schoolprogramme.our-location',
+      false
+    >;
     programmeeligibility: Schema.Attribute.Component<
       'schoolprogramme.eligibility-criteria',
       false
@@ -1196,6 +1208,7 @@ export interface ApiSchoolProgrammeSchoolProgramme
       false
     >;
     title: Schema.Attribute.Text;
+    toc: Schema.Attribute.Component<'schoolprogramme.table-of-content', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

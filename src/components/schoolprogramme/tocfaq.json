@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_schoolprogramme_tocfaqs",
+  "info": {
+    "displayName": "tocfaq"
+  },
+  "options": {},
+  "attributes": {
+    "tocpoint": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "component": "schoolprogramme.ques-ans",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -777,6 +777,30 @@ export interface SchoolprogrammeEligibilityCriteria
   };
 }
 
+export interface SchoolprogrammeFinancialAssistance
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_financial_assistances';
+  info: {
+    displayName: 'Financial Assistance';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    financelogos: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+    point1: Schema.Attribute.String;
+    point2: Schema.Attribute.String;
+    point3: Schema.Attribute.String;
+    point4: Schema.Attribute.String;
+    point5: Schema.Attribute.String;
+    point6: Schema.Attribute.String;
+    point7: Schema.Attribute.String;
+  };
+}
+
 export interface SchoolprogrammeHeroSection extends Struct.ComponentSchema {
   collectionName: 'components_schoolprogramme_hero_sections';
   info: {
@@ -818,6 +842,19 @@ export interface SchoolprogrammeLabsFacilitiesCard
   attributes: {
     description: Schema.Attribute.Text;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface SchoolprogrammeOurLocation extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_our_locations';
+  info: {
+    displayName: 'Our Location';
+  };
+  attributes: {
+    badgetext: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    img1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -919,6 +956,17 @@ export interface SchoolprogrammeProgrammeSubjects
   };
 }
 
+export interface SchoolprogrammeQuesAns extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_ques_ans';
+  info: {
+    displayName: 'Ques Ans';
+  };
+  attributes: {
+    ans: Schema.Attribute.Text;
+    ques: Schema.Attribute.String;
+  };
+}
+
 export interface SchoolprogrammeSemester extends Struct.ComponentSchema {
   collectionName: 'components_schoolprogramme_semesters';
   info: {
@@ -950,6 +998,32 @@ export interface SchoolprogrammeSpecilisation extends Struct.ComponentSchema {
     specialisationimage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+  };
+}
+
+export interface SchoolprogrammeTableOfContent extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_table_of_contents';
+  info: {
+    displayName: 'Table Of Content';
+    icon: 'crown';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    highlightheading: Schema.Attribute.String;
+    tocfaq: Schema.Attribute.Component<'schoolprogramme.tocfaq', true>;
+    tocimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SchoolprogrammeTocfaq extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_tocfaqs';
+  info: {
+    displayName: 'tocfaq';
+  };
+  attributes: {
+    faq: Schema.Attribute.Component<'schoolprogramme.ques-ans', true>;
+    tocpoint: Schema.Attribute.String;
   };
 }
 
@@ -1313,9 +1387,11 @@ declare module '@strapi/strapi' {
       'schoolprogramme.dream-career': SchoolprogrammeDreamCareer;
       'schoolprogramme.dream-career-card': SchoolprogrammeDreamCareerCard;
       'schoolprogramme.eligibility-criteria': SchoolprogrammeEligibilityCriteria;
+      'schoolprogramme.financial-assistance': SchoolprogrammeFinancialAssistance;
       'schoolprogramme.hero-section': SchoolprogrammeHeroSection;
       'schoolprogramme.labs-and-facilities': SchoolprogrammeLabsAndFacilities;
       'schoolprogramme.labs-facilities-card': SchoolprogrammeLabsFacilitiesCard;
+      'schoolprogramme.our-location': SchoolprogrammeOurLocation;
       'schoolprogramme.programme-eligibility': SchoolprogrammeProgrammeEligibility;
       'schoolprogramme.programme-highlight-card': SchoolprogrammeProgrammeHighlightCard;
       'schoolprogramme.programme-highlights': SchoolprogrammeProgrammeHighlights;
@@ -1323,8 +1399,11 @@ declare module '@strapi/strapi' {
       'schoolprogramme.programme-specialisation-card': SchoolprogrammeProgrammeSpecialisationCard;
       'schoolprogramme.programme-structure': SchoolprogrammeProgrammeStructure;
       'schoolprogramme.programme-subjects': SchoolprogrammeProgrammeSubjects;
+      'schoolprogramme.ques-ans': SchoolprogrammeQuesAns;
       'schoolprogramme.semester': SchoolprogrammeSemester;
       'schoolprogramme.specilisation': SchoolprogrammeSpecilisation;
+      'schoolprogramme.table-of-content': SchoolprogrammeTableOfContent;
+      'schoolprogramme.tocfaq': SchoolprogrammeTocfaq;
       'shared.about-hero-banner': SharedAboutHeroBanner;
       'shared.achievements': SharedAchievements;
       'shared.advisory-board-component': SharedAdvisoryBoardComponent;

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_schoolprogramme_table_of_contents",
+  "info": {
+    "displayName": "Table Of Content",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "tocimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "highlightheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tocfaq": {
+      "type": "component",
+      "component": "schoolprogramme.tocfaq",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

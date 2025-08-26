@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_schoolprogramme_our_locations",
+  "info": {
+    "displayName": "Our Location"
+  },
+  "options": {},
+  "attributes": {
+    "badgetext": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "img1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

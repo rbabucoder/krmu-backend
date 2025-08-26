@@ -12,7 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "default": "testing text"
     },
     "subtitle": {
       "type": "text"
@@ -64,6 +65,11 @@
     "dreamcareer": {
       "type": "component",
       "component": "schoolprogramme.dream-career",
+      "repeatable": false
+    },
+    "ourlocation": {
+      "type": "component",
+      "component": "schoolprogramme.our-location",
       "repeatable": false
     }
   }

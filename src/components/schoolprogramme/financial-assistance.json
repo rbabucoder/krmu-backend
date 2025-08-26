@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_schoolprogramme_financial_assistances",
+  "info": {
+    "displayName": "Financial Assistance"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "highlightheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "point1": {
+      "type": "string"
+    },
+    "point2": {
+      "type": "string"
+    },
+    "point3": {
+      "type": "string"
+    },
+    "point4": {
+      "type": "string"
+    },
+    "point5": {
+      "type": "string"
+    },
+    "point6": {
+      "type": "string"
+    },
+    "point7": {
+      "type": "string"
+    },
+    "financelogos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

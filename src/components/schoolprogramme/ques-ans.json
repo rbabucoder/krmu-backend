@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_schoolprogramme_ques_ans",
+  "info": {
+    "displayName": "Ques Ans"
+  },
+  "options": {},
+  "attributes": {
+    "ques": {
+      "type": "string"
+    },
+    "ans": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

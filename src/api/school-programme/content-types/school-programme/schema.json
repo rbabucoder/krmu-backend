@@ -78,6 +78,21 @@
       "type": "component",
       "component": "schoolprogramme.dream-career",
       "repeatable": false
+    },
+    "financialassistance": {
+      "type": "component",
+      "component": "schoolprogramme.financial-assistance",
+      "repeatable": false
+    },
+    "toc": {
+      "type": "component",
+      "component": "schoolprogramme.table-of-content",
+      "repeatable": false
+    },
+    "ourlocation": {
+      "type": "component",
+      "component": "schoolprogramme.our-location",
+      "repeatable": false
     }
   }
 }
