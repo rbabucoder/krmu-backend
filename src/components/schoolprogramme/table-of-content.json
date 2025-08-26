@@ -29,6 +29,11 @@
       "type": "component",
       "component": "schoolprogramme.tocfaq",
       "repeatable": true
+    },
+    "tocbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
     }
   },
   "config": {}

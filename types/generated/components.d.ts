@@ -640,6 +640,7 @@ export interface SchoolprogrammeAdmissionProcess
     icon: 'store';
   };
   attributes: {
+    admissionbtn: Schema.Attribute.Component<'shared.button', false>;
     admissionprocesscard: Schema.Attribute.Component<
       'schoolprogramme.admission-process-card',
       true
@@ -1011,6 +1012,7 @@ export interface SchoolprogrammeTableOfContent extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     heading: Schema.Attribute.String;
     highlightheading: Schema.Attribute.String;
+    tocbtn: Schema.Attribute.Component<'shared.button', false>;
     tocfaq: Schema.Attribute.Component<'schoolprogramme.tocfaq', true>;
     tocimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };

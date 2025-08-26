@@ -29,6 +29,11 @@
       "type": "component",
       "component": "schoolprogramme.admission-process-card",
       "repeatable": true
+    },
+    "admissionbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
     }
   },
   "config": {}
