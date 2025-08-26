@@ -18,6 +18,11 @@
     },
     "description": {
       "type": "string"
+    },
+    "currbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
     }
   },
   "config": {}

@@ -720,6 +720,7 @@ export interface SchoolprogrammeCurriculum extends Struct.ComponentSchema {
     displayName: 'Curriculum';
   };
   attributes: {
+    currbtn: Schema.Attribute.Component<'shared.button', false>;
     description: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     highlightheading: Schema.Attribute.String;
