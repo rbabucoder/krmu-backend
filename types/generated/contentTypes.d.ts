@@ -1171,6 +1171,7 @@ export interface ApiSchoolProgrammeSchoolProgramme
       'schoolprogramme.hero-section',
       false
     >;
+    highlightitle: Schema.Attribute.String;
     labsfacilities: Schema.Attribute.Component<
       'schoolprogramme.labs-and-facilities',
       false

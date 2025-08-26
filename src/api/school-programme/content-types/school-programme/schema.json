@@ -93,6 +93,9 @@
       "type": "component",
       "component": "schoolprogramme.our-location",
       "repeatable": false
+    },
+    "highlightitle": {
+      "type": "string"
     }
   }
 }
