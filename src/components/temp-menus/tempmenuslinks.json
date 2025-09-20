@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_temp_menus_tempmenuslinks",
+  "info": {
+    "displayName": "tempmenuslinks"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "menulinks": {
+      "type": "component",
+      "component": "menu.menu-links",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

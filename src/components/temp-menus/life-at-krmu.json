@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_temp_menus_life_at_krmus",
+  "info": {
+    "displayName": "Life at KRMU"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "backgroundimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "backgroundimagetext": {
+      "type": "string"
+    },
+    "lifeatkrmu1": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    },
+    "lfeatkrmu2": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

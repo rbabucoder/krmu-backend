@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_temp_menus_admissions",
+  "info": {
+    "displayName": "Admissions Menu",
+    "icon": "connector"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "backgroundimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "backgroundimagetext": {
+      "type": "string"
+    },
+    "enrollnow": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    },
+    "scholarships": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    },
+    "visitus": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

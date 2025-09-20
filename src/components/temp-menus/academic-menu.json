@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_temp_menus_academic_menus",
+  "info": {
+    "displayName": "Academic Menu",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "backgroundimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "acadcounter": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    },
+    "academicmenu": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    },
+    "discovermenu": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

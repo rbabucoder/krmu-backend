@@ -498,6 +498,23 @@ export interface KrmucommitteeKrmuCommittee extends Struct.ComponentSchema {
   };
 }
 
+export interface MenuDropdownMenu extends Struct.ComponentSchema {
+  collectionName: 'components_menu_dropdown_menus';
+  info: {
+    displayName: 'DropdownMenu';
+  };
+  attributes: {
+    imgpos: Schema.Attribute.Enumeration<['rightimg', 'leftimg']> &
+      Schema.Attribute.DefaultTo<'rightimg'>;
+    menu_sections: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::menu-section.menu-section'
+    >;
+    menuimg: Schema.Attribute.Component<'menu.menumediacomp', false>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface MenuMenuButton extends Struct.ComponentSchema {
   collectionName: 'components_menu_menu_buttons';
   info: {
@@ -512,13 +529,14 @@ export interface MenuMenuButton extends Struct.ComponentSchema {
   };
 }
 
-export interface MenuMenuLink extends Struct.ComponentSchema {
+export interface MenuMenuLinks extends Struct.ComponentSchema {
   collectionName: 'components_menu_menu_links';
   info: {
-    displayName: 'MenuLink';
+    displayName: 'MenuLinks';
     icon: 'link';
   };
   attributes: {
+    menuclass: Schema.Attribute.String;
     title: Schema.Attribute.String;
     url: Schema.Attribute.String;
   };
@@ -535,6 +553,18 @@ export interface MenuMenuSocialLinks extends Struct.ComponentSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     url: Schema.Attribute.String;
+  };
+}
+
+export interface MenuMenumediacomp extends Struct.ComponentSchema {
+  collectionName: 'components_menu_menumediacomps';
+  info: {
+    displayName: 'menumediacomp';
+    icon: 'dashboard';
+  };
+  attributes: {
+    counter: Schema.Attribute.Component<'shared.counter-component', true>;
+    menuimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -1323,6 +1353,135 @@ export interface SharedTestingComponent extends Struct.ComponentSchema {
   };
 }
 
+export interface TempMenusAboutUsMenu extends Struct.ComponentSchema {
+  collectionName: 'components_temp_menus_about_us_menus';
+  info: {
+    displayName: 'About Us Menu';
+  };
+  attributes: {
+    aboutuscounter: Schema.Attribute.Component<
+      'shared.counter-component',
+      true
+    >;
+    administration: Schema.Attribute.Component<
+      'temp-menus.tempmenuslinks',
+      false
+    >;
+    backgroundimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    overview: Schema.Attribute.Component<'temp-menus.tempmenuslinks', false>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface TempMenusAcademicMenu extends Struct.ComponentSchema {
+  collectionName: 'components_temp_menus_academic_menus';
+  info: {
+    displayName: 'Academic Menu';
+    icon: 'command';
+  };
+  attributes: {
+    acadcounter: Schema.Attribute.Component<'shared.counter-component', true>;
+    academicmenu: Schema.Attribute.Component<
+      'temp-menus.tempmenuslinks',
+      false
+    >;
+    backgroundimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    discovermenu: Schema.Attribute.Component<
+      'temp-menus.tempmenuslinks',
+      false
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface TempMenusAdmissions extends Struct.ComponentSchema {
+  collectionName: 'components_temp_menus_admissions';
+  info: {
+    displayName: 'Admissions Menu';
+    icon: 'connector';
+  };
+  attributes: {
+    backgroundimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    backgroundimagetext: Schema.Attribute.String;
+    enrollnow: Schema.Attribute.Component<'temp-menus.tempmenuslinks', false>;
+    scholarships: Schema.Attribute.Component<
+      'temp-menus.tempmenuslinks',
+      false
+    >;
+    title: Schema.Attribute.String;
+    visitus: Schema.Attribute.Component<'temp-menus.tempmenuslinks', false>;
+  };
+}
+
+export interface TempMenusLifeAtKrmu extends Struct.ComponentSchema {
+  collectionName: 'components_temp_menus_life_at_krmus';
+  info: {
+    displayName: 'Life at KRMU';
+  };
+  attributes: {
+    backgroundimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    backgroundimagetext: Schema.Attribute.String;
+    lfeatkrmu2: Schema.Attribute.Component<'temp-menus.tempmenuslinks', false>;
+    lifeatkrmu1: Schema.Attribute.Component<'temp-menus.tempmenuslinks', false>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface TempMenusPlacementMenu extends Struct.ComponentSchema {
+  collectionName: 'components_temp_menus_placement_menus';
+  info: {
+    displayName: 'Placement Menu';
+  };
+  attributes: {
+    backgroundimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    placement: Schema.Attribute.Component<'temp-menus.tempmenuslinks', false>;
+    placementcounter: Schema.Attribute.Component<
+      'shared.counter-component',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface TempMenusResearchMenu extends Struct.ComponentSchema {
+  collectionName: 'components_temp_menus_research_menus';
+  info: {
+    displayName: 'Research Menu';
+  };
+  attributes: {
+    backgroundimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    research: Schema.Attribute.Component<'temp-menus.tempmenuslinks', false>;
+    researchcounter: Schema.Attribute.Component<
+      'shared.counter-component',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface TempMenusTempmenuslinks extends Struct.ComponentSchema {
+  collectionName: 'components_temp_menus_tempmenuslinks';
+  info: {
+    displayName: 'tempmenuslinks';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    menulinks: Schema.Attribute.Component<'menu.menu-links', true>;
+  };
+}
+
 export interface VisionmissionVisionAndMission extends Struct.ComponentSchema {
   collectionName: 'components_visionmission_vision_and_missions';
   info: {
@@ -1370,9 +1529,11 @@ declare module '@strapi/strapi' {
       'internationcollaboration.international-collboration': InternationcollaborationInternationalCollboration;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;
+      'menu.dropdown-menu': MenuDropdownMenu;
       'menu.menu-button': MenuMenuButton;
-      'menu.menu-link': MenuMenuLink;
+      'menu.menu-links': MenuMenuLinks;
       'menu.menu-social-links': MenuMenuSocialLinks;
+      'menu.menumediacomp': MenuMenumediacomp;
       'procard.procard': ProcardProcard;
       'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
       'schoolcomponent.eventsandexperiencecard': SchoolcomponentEventsandexperiencecard;
@@ -1431,6 +1592,13 @@ declare module '@strapi/strapi' {
       'shared.single-media': SharedSingleMedia;
       'shared.slider': SharedSlider;
       'shared.testing-component': SharedTestingComponent;
+      'temp-menus.about-us-menu': TempMenusAboutUsMenu;
+      'temp-menus.academic-menu': TempMenusAcademicMenu;
+      'temp-menus.admissions': TempMenusAdmissions;
+      'temp-menus.life-at-krmu': TempMenusLifeAtKrmu;
+      'temp-menus.placement-menu': TempMenusPlacementMenu;
+      'temp-menus.research-menu': TempMenusResearchMenu;
+      'temp-menus.tempmenuslinks': TempMenusTempmenuslinks;
       'visionmission.vision-and-mission': VisionmissionVisionAndMission;
     }
   }

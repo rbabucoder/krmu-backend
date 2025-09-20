@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_temp_menus_research_menus",
+  "info": {
+    "displayName": "Research Menu"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "researchcounter": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    },
+    "research": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    },
+    "backgroundimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

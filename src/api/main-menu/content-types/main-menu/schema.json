@@ -13,7 +13,11 @@
   "attributes": {
     "MainMenuItems": {
       "type": "dynamiczone",
-      "components": []
+      "components": [
+        "menu.menu-button",
+        "menu.menu-links",
+        "menu.dropdown-menu"
+      ]
     }
   }
 }

@@ -908,6 +908,46 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiHeaderMenuTempHeaderMenuTemp
+  extends Struct.SingleTypeSchema {
+  collectionName: 'header_menu_temps';
+  info: {
+    displayName: 'Header Menu Temp';
+    pluralName: 'header-menu-temps';
+    singularName: 'header-menu-temp';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    headermenus: Schema.Attribute.DynamicZone<
+      [
+        'temp-menus.academic-menu',
+        'temp-menus.admissions',
+        'temp-menus.placement-menu',
+        'temp-menus.research-menu',
+        'temp-menus.life-at-krmu',
+        'temp-menus.about-us-menu',
+        'menu.menu-links',
+        'menu.menu-button',
+      ]
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::header-menu-temp.header-menu-temp'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   collectionName: 'home_pages';
   info: {
@@ -973,7 +1013,9 @@ export interface ApiMainMenuMainMenu extends Struct.SingleTypeSchema {
       'api::main-menu.main-menu'
     > &
       Schema.Attribute.Private;
-    MainMenuItems: Schema.Attribute.DynamicZone<[]>;
+    MainMenuItems: Schema.Attribute.DynamicZone<
+      ['menu.menu-button', 'menu.menu-links', 'menu.dropdown-menu']
+    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1011,6 +1053,35 @@ export interface ApiMembershipAndRankingMembershipAndRanking
     rankings: Schema.Attribute.Component<'shared.card-with-image', true>;
     rankingtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMenuSectionMenuSection extends Struct.CollectionTypeSchema {
+  collectionName: 'menu_sections';
+  info: {
+    displayName: 'Menu Section';
+    pluralName: 'menu-sections';
+    singularName: 'menu-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::menu-section.menu-section'
+    > &
+      Schema.Attribute.Private;
+    mainmenulinks: Schema.Attribute.Component<'menu.menu-links', true>;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1444,7 +1515,7 @@ export interface ApiTopbarMenuTopbarMenu extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     TopbarMenuItems: Schema.Attribute.DynamicZone<
-      ['menu.menu-button', 'menu.menu-link']
+      ['menu.menu-button', 'menu.menu-links']
     >;
     topbarsociallinks: Schema.Attribute.Component<
       'menu.menu-social-links',
@@ -1980,9 +2051,11 @@ declare module '@strapi/strapi' {
       'api::facility.facility': ApiFacilityFacility;
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
       'api::global.global': ApiGlobalGlobal;
+      'api::header-menu-temp.header-menu-temp': ApiHeaderMenuTempHeaderMenuTemp;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
+      'api::menu-section.menu-section': ApiMenuSectionMenuSection;
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'api::school-category.school-category': ApiSchoolCategorySchoolCategory;

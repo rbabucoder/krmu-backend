@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_temp_menus_placement_menus",
+  "info": {
+    "displayName": "Placement Menu"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "backgroundimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "placementcounter": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    },
+    "placement": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

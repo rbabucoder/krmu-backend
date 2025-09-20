@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_temp_menus_about_us_menus",
+  "info": {
+    "displayName": "About Us Menu"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "backgroundimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "aboutuscounter": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    },
+    "overview": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    },
+    "administration": {
+      "type": "component",
+      "component": "temp-menus.tempmenuslinks",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_sections",
+  "info": {
+    "singularName": "menu-section",
+    "pluralName": "menu-sections",
+    "displayName": "Menu Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "mainmenulinks": {
+      "type": "component",
+      "component": "menu.menu-links",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_menu_dropdown_menus",
+  "info": {
+    "displayName": "DropdownMenu"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "menu_sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-section.menu-section"
+    },
+    "menuimg": {
+      "type": "component",
+      "component": "menu.menumediacomp",
+      "repeatable": false
+    },
+    "imgpos": {
+      "type": "enumeration",
+      "default": "rightimg",
+      "enum": [
+        "rightimg",
+        "leftimg"
+      ]
+    }
+  },
+  "config": {}
+}

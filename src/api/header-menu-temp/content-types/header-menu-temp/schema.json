@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_menu_temps",
+  "info": {
+    "singularName": "header-menu-temp",
+    "pluralName": "header-menu-temps",
+    "displayName": "Header Menu Temp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headermenus": {
+      "type": "dynamiczone",
+      "components": [
+        "temp-menus.academic-menu",
+        "temp-menus.admissions",
+        "temp-menus.placement-menu",
+        "temp-menus.research-menu",
+        "temp-menus.life-at-krmu",
+        "temp-menus.about-us-menu",
+        "menu.menu-links",
+        "menu.menu-button"
+      ]
+    }
+  }
+}
