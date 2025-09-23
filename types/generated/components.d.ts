@@ -736,6 +736,7 @@ export interface SchoolprogrammeAdmissionProcessCard
   };
   attributes: {
     description: Schema.Attribute.String;
+    link: Schema.Attribute.String;
     mobcounting: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };

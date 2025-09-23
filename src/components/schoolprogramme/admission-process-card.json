@@ -13,6 +13,9 @@
     },
     "mobcounting": {
       "type": "string"
+    },
+    "link": {
+      "type": "string"
     }
   },
   "config": {}
