@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_placement_overview_placement_paths",
+  "info": {
+    "displayName": "Placement Path"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bgimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desc": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -568,6 +568,50 @@ export interface MenuMenumediacomp extends Struct.ComponentSchema {
   };
 }
 
+export interface PlacementOverviewPlacementHero extends Struct.ComponentSchema {
+  collectionName: 'components_placement_overview_placement_heroes';
+  info: {
+    displayName: 'Placement Hero';
+  };
+  attributes: {
+    overviewcounter: Schema.Attribute.Component<
+      'shared.counter-with-class',
+      true
+    >;
+    overviewvideo: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PlacementOverviewPlacementHighlight
+  extends Struct.ComponentSchema {
+  collectionName: 'components_placement_overview_placement_highlights';
+  info: {
+    displayName: 'Placement Highlight';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    highlightbtn: Schema.Attribute.Component<'shared.button', false>;
+    placementhighlights: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
+export interface PlacementOverviewPlacementPath extends Struct.ComponentSchema {
+  collectionName: 'components_placement_overview_placement_paths';
+  info: {
+    displayName: 'Placement Path';
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    desc: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ProcardProcard extends Struct.ComponentSchema {
   collectionName: 'components_procard_procards';
   info: {
@@ -1193,6 +1237,18 @@ export interface SharedCounterComponent extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCounterWithClass extends Struct.ComponentSchema {
+  collectionName: 'components_shared_counter_with_classes';
+  info: {
+    displayName: 'Counter With Class';
+  };
+  attributes: {
+    classname: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedDepartmentContainer extends Struct.ComponentSchema {
   collectionName: 'components_shared_department_containers';
   info: {
@@ -1534,6 +1590,9 @@ declare module '@strapi/strapi' {
       'menu.menu-links': MenuMenuLinks;
       'menu.menu-social-links': MenuMenuSocialLinks;
       'menu.menumediacomp': MenuMenumediacomp;
+      'placement-overview.placement-hero': PlacementOverviewPlacementHero;
+      'placement-overview.placement-highlight': PlacementOverviewPlacementHighlight;
+      'placement-overview.placement-path': PlacementOverviewPlacementPath;
       'procard.procard': ProcardProcard;
       'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
       'schoolcomponent.eventsandexperiencecard': SchoolcomponentEventsandexperiencecard;
@@ -1579,6 +1638,7 @@ declare module '@strapi/strapi' {
       'shared.cardwithoutimg': SharedCardwithoutimg;
       'shared.contact-info-card': SharedContactInfoCard;
       'shared.counter-component': SharedCounterComponent;
+      'shared.counter-with-class': SharedCounterWithClass;
       'shared.department-container': SharedDepartmentContainer;
       'shared.employee-card': SharedEmployeeCard;
       'shared.employee-card-2': SharedEmployeeCard2;

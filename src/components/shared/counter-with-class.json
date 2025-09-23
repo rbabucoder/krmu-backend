@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_counter_with_classes",
+  "info": {
+    "displayName": "Counter With Class"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "classname": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

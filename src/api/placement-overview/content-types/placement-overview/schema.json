@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "placement_overviews",
+  "info": {
+    "singularName": "placement-overview",
+    "pluralName": "placement-overviews",
+    "displayName": "Placement Overview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "placementsoverviewcontainer": {
+      "type": "dynamiczone",
+      "components": [
+        "placement-overview.placement-hero",
+        "placement-overview.placement-highlight",
+        "placement-overview.placement-path"
+      ]
+    }
+  }
+}

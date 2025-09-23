@@ -1122,6 +1122,41 @@ export interface ApiNewsAndEventNewsAndEvent
   };
 }
 
+export interface ApiPlacementOverviewPlacementOverview
+  extends Struct.SingleTypeSchema {
+  collectionName: 'placement_overviews';
+  info: {
+    displayName: 'Placement Overview';
+    pluralName: 'placement-overviews';
+    singularName: 'placement-overview';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::placement-overview.placement-overview'
+    > &
+      Schema.Attribute.Private;
+    placementsoverviewcontainer: Schema.Attribute.DynamicZone<
+      [
+        'placement-overview.placement-hero',
+        'placement-overview.placement-highlight',
+        'placement-overview.placement-path',
+      ]
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiRegistrarOfficeRegistrarOffice
   extends Struct.SingleTypeSchema {
   collectionName: 'registrar_offices';
@@ -2057,6 +2092,7 @@ declare module '@strapi/strapi' {
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
       'api::menu-section.menu-section': ApiMenuSectionMenuSection;
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
+      'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'api::school-category.school-category': ApiSchoolCategorySchoolCategory;
       'api::school-programme.school-programme': ApiSchoolProgrammeSchoolProgramme;

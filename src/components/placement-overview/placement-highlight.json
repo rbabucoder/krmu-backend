@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_placement_overview_placement_highlights",
+  "info": {
+    "displayName": "Placement Highlight"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "placementhighlights": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "highlightbtn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
