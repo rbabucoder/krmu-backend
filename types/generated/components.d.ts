@@ -943,8 +943,8 @@ export interface SchoolprogrammeProgrammeEligibility
     icon: 'filter';
   };
   attributes: {
-    subtitle: Schema.Attribute.String;
-    title: Schema.Attribute.String;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.Text;
   };
 }
 
