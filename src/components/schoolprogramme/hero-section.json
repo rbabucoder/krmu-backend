@@ -25,6 +25,17 @@
         "videos",
         "audios"
       ]
+    },
+    "imgvideo": {
+      "type": "enumeration",
+      "default": "Image",
+      "enum": [
+        "Image",
+        "Video"
+      ]
+    },
+    "videofield": {
+      "type": "text"
     }
   },
   "config": {}

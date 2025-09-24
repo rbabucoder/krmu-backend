@@ -887,7 +887,10 @@ export interface SchoolprogrammeHeroSection extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     herobtn: Schema.Attribute.Component<'shared.button', false>;
     heroimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imgvideo: Schema.Attribute.Enumeration<['Image', 'Video']> &
+      Schema.Attribute.DefaultTo<'Image'>;
     subtitle: Schema.Attribute.String;
+    videofield: Schema.Attribute.Text;
   };
 }
 
