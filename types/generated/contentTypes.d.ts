@@ -750,6 +750,43 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiClubAndSocietyClubAndSociety
+  extends Struct.SingleTypeSchema {
+  collectionName: 'club_and_societies';
+  info: {
+    displayName: 'Club and Society';
+    pluralName: 'club-and-societies';
+    singularName: 'club-and-society';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    clubsaccordions: Schema.Attribute.Component<
+      'club-societies.club-and-societies',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    desc: Schema.Attribute.Blocks;
+    featured_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::club-and-society.club-and-society'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCodeOfConductCodeOfConduct extends Struct.SingleTypeSchema {
   collectionName: 'code_of_conducts';
   info: {
@@ -993,6 +1030,38 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiMagazineReflectionMagazineReflection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'magazine_reflections';
+  info: {
+    displayName: 'Magazine Reflection';
+    pluralName: 'magazine-reflections';
+    singularName: 'magazine-reflection';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::magazine-reflection.magazine-reflection'
+    > &
+      Schema.Attribute.Private;
+    magazinecard: Schema.Attribute.Component<'shared.magazine-card', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    reflectioncontent: Schema.Attribute.Blocks;
+    title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMainMenuMainMenu extends Struct.SingleTypeSchema {
   collectionName: 'main_menus';
   info: {
@@ -1154,6 +1223,76 @@ export interface ApiPlacementOverviewPlacementOverview
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPrintCoverageYearPrintCoverageYear
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'print_coverage_years';
+  info: {
+    displayName: 'Print Coverage Year';
+    pluralName: 'print-coverage-years';
+    singularName: 'print-coverage-year';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::print-coverage-year.print-coverage-year'
+    > &
+      Schema.Attribute.Private;
+    print_coverage: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::print-coverage.print-coverage'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Years: Schema.Attribute.String;
+  };
+}
+
+export interface ApiPrintCoveragePrintCoverage
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'print_coverages';
+  info: {
+    displayName: 'Print Coverage';
+    pluralName: 'print-coverages';
+    singularName: 'print-coverage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    desc: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::print-coverage.print-coverage'
+    > &
+      Schema.Attribute.Private;
+    print_coverage_years: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::print-coverage-year.print-coverage-year'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    upload_data: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
   };
 }
 
@@ -1559,6 +1698,36 @@ export interface ApiTopbarMenuTopbarMenu extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiVideoGalleryVideoGallery extends Struct.SingleTypeSchema {
+  collectionName: 'video_galleries';
+  info: {
+    displayName: 'Video Gallery';
+    pluralName: 'video-galleries';
+    singularName: 'video-gallery';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::video-gallery.video-gallery'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    videos: Schema.Attribute.Component<'shared.video-card', true>;
   };
 }
 
@@ -2081,6 +2250,7 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
+      'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
       'api::event.event': ApiEventEvent;
       'api::facility.facility': ApiFacilityFacility;
@@ -2088,11 +2258,14 @@ declare module '@strapi/strapi' {
       'api::global.global': ApiGlobalGlobal;
       'api::header-menu-temp.header-menu-temp': ApiHeaderMenuTempHeaderMenuTemp;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::magazine-reflection.magazine-reflection': ApiMagazineReflectionMagazineReflection;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
       'api::menu-section.menu-section': ApiMenuSectionMenuSection;
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;
+      'api::print-coverage-year.print-coverage-year': ApiPrintCoverageYearPrintCoverageYear;
+      'api::print-coverage.print-coverage': ApiPrintCoveragePrintCoverage;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'api::school-category.school-category': ApiSchoolCategorySchoolCategory;
       'api::school-programme.school-programme': ApiSchoolProgrammeSchoolProgramme;
@@ -2101,6 +2274,7 @@ declare module '@strapi/strapi' {
       'api::student-achievement.student-achievement': ApiStudentAchievementStudentAchievement;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::topbar-menu.topbar-menu': ApiTopbarMenuTopbarMenu;
+      'api::video-gallery.video-gallery': ApiVideoGalleryVideoGallery;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

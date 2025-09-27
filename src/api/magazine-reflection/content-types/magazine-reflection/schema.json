@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "magazine_reflections",
+  "info": {
+    "singularName": "magazine-reflection",
+    "pluralName": "magazine-reflections",
+    "displayName": "Magazine Reflection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "bgimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "reflectioncontent": {
+      "type": "blocks"
+    },
+    "magazinecard": {
+      "type": "component",
+      "component": "shared.magazine-card",
+      "repeatable": true
+    }
+  }
+}

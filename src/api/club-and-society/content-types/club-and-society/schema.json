@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "club_and_societies",
+  "info": {
+    "singularName": "club-and-society",
+    "pluralName": "club-and-societies",
+    "displayName": "Club and Society"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "clubsaccordions": {
+      "type": "component",
+      "component": "club-societies.club-and-societies",
+      "repeatable": true
+    }
+  }
+}

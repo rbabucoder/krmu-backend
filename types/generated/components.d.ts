@@ -131,6 +131,21 @@ export interface AwardsRecognitionAwardsAndRecognition
   attributes: {};
 }
 
+export interface ClubSocietiesClubAndSocieties extends Struct.ComponentSchema {
+  collectionName: 'components_club_societies_club_and_societies';
+  info: {
+    displayName: 'Club and Societies';
+  };
+  attributes: {
+    clubimages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    content: Schema.Attribute.Blocks;
+    title: Schema.Attribute.Text;
+  };
+}
+
 export interface HalloffameHallOfFame extends Struct.ComponentSchema {
   collectionName: 'components_halloffame_hall_of_fames';
   info: {
@@ -1330,6 +1345,19 @@ export interface SharedListItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedMagazineCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_magazine_cards';
+  info: {
+    displayName: 'Magazine Card';
+  };
+  attributes: {
+    magazineimg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    magazinepdf: Schema.Attribute.Media<'files'>;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -1410,6 +1438,17 @@ export interface SharedTestingComponent extends Struct.ComponentSchema {
   };
   attributes: {
     working: Schema.Attribute.String;
+  };
+}
+
+export interface SharedVideoCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_video_cards';
+  info: {
+    displayName: 'Video Card';
+  };
+  attributes: {
+    title: Schema.Attribute.Text;
+    videofield: Schema.Attribute.Text;
   };
 }
 
@@ -1567,6 +1606,7 @@ declare module '@strapi/strapi' {
       'admissionpage-components.location': AdmissionpageComponentsLocation;
       'admissionvisitus-component.academic': AdmissionvisitusComponentAcademic;
       'awards-recognition.awards-and-recognition': AwardsRecognitionAwardsAndRecognition;
+      'club-societies.club-and-societies': ClubSocietiesClubAndSocieties;
       'halloffame.hall-of-fame': HalloffameHallOfFame;
       'homepage-components.a-decade-left-col': HomepageComponentsADecadeLeftCol;
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;
@@ -1649,6 +1689,7 @@ declare module '@strapi/strapi' {
       'shared.fee-detail-card': SharedFeeDetailCard;
       'shared.fee-price': SharedFeePrice;
       'shared.list-item': SharedListItem;
+      'shared.magazine-card': SharedMagazineCard;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
@@ -1656,6 +1697,7 @@ declare module '@strapi/strapi' {
       'shared.single-media': SharedSingleMedia;
       'shared.slider': SharedSlider;
       'shared.testing-component': SharedTestingComponent;
+      'shared.video-card': SharedVideoCard;
       'temp-menus.about-us-menu': TempMenusAboutUsMenu;
       'temp-menus.academic-menu': TempMenusAcademicMenu;
       'temp-menus.admissions': TempMenusAdmissions;

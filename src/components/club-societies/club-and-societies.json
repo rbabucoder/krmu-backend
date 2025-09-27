@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_club_societies_club_and_societies",
+  "info": {
+    "displayName": "Club and Societies"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    },
+    "clubimages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

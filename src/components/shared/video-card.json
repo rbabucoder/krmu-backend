@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_video_cards",
+  "info": {
+    "displayName": "Video Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "videofield": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

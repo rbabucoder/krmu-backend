@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "print_coverages",
+  "info": {
+    "singularName": "print-coverage",
+    "pluralName": "print-coverages",
+    "displayName": "Print Coverage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "upload_data": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "print_coverage_years": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::print-coverage-year.print-coverage-year",
+      "mappedBy": "print_coverage"
+    },
+    "desc": {
+      "type": "text"
+    }
+  }
+}

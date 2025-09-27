@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_magazine_cards",
+  "info": {
+    "displayName": "Magazine Card"
+  },
+  "options": {},
+  "attributes": {
+    "magazineimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "magazinepdf": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

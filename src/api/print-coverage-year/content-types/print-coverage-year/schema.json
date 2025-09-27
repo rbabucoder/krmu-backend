@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "print_coverage_years",
+  "info": {
+    "singularName": "print-coverage-year",
+    "pluralName": "print-coverage-years",
+    "displayName": "Print Coverage Year"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Years": {
+      "type": "string"
+    },
+    "print_coverage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::print-coverage.print-coverage",
+      "inversedBy": "print_coverage_years"
+    }
+  }
+}
