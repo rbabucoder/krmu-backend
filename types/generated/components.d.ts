@@ -647,14 +647,18 @@ export interface PhdProgrammeOutcomeContent extends Struct.ComponentSchema {
   };
 }
 
-export interface PhdProgrammePhdAdmissionSelect extends Struct.ComponentSchema {
-  collectionName: 'components_phd_programme_phd_admission_selects';
+export interface PhdProgrammePhdAdmsissionAndSelectionProcess
+  extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_phd_admsission_and_selection_processes';
   info: {
-    displayName: 'Phd Admission Select';
+    displayName: 'PHD Admsission and Selection Process';
   };
   attributes: {
-    admissionselecttitle: Schema.Attribute.Blocks;
-    phdadmissioncontent: Schema.Attribute.Blocks;
+    bgimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    desc1: Schema.Attribute.Blocks;
+    desc2: Schema.Attribute.Blocks;
+    title1: Schema.Attribute.Blocks;
+    title2: Schema.Attribute.Blocks;
   };
 }
 
@@ -1794,7 +1798,7 @@ declare module '@strapi/strapi' {
       'phd-programme.career-options': PhdProgrammeCareerOptions;
       'phd-programme.dream-career': PhdProgrammeDreamCareer;
       'phd-programme.outcome-content': PhdProgrammeOutcomeContent;
-      'phd-programme.phd-admission-select': PhdProgrammePhdAdmissionSelect;
+      'phd-programme.phd-admsission-and-selection-process': PhdProgrammePhdAdmsissionAndSelectionProcess;
       'phd-programme.phd-faq': PhdProgrammePhdFaq;
       'phd-programme.phd-highlight': PhdProgrammePhdHighlight;
       'phd-programme.phd-outcome': PhdProgrammePhdOutcome;

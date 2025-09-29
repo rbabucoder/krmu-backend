@@ -1303,8 +1303,8 @@ export interface ApiPhdSingleProgrammePhdSingleProgramme
     > &
       Schema.Attribute.Private;
     phdadmissionselect: Schema.Attribute.Component<
-      'phd-programme.phd-admission-select',
-      true
+      'phd-programme.phd-admsission-and-selection-process',
+      false
     >;
     phdfaqtitle: Schema.Attribute.Text;
     phdlogoslide: Schema.Attribute.Media<

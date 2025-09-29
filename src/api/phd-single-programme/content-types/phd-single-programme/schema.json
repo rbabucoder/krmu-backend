@@ -97,11 +97,6 @@
         "Doctoral Programme"
       ]
     },
-    "phdadmissionselect": {
-      "type": "component",
-      "component": "phd-programme.phd-admission-select",
-      "repeatable": true
-    },
     "phdprogrammefaq": {
       "type": "component",
       "component": "phd-programme.phd-faq",
@@ -109,6 +104,11 @@
     },
     "phdfaqtitle": {
       "type": "text"
+    },
+    "phdadmissionselect": {
+      "type": "component",
+      "component": "phd-programme.phd-admsission-and-selection-process",
+      "repeatable": false
     }
   }
 }

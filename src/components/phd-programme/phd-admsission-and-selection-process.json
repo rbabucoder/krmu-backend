@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_phd_programme_phd_admsission_and_selection_processes",
+  "info": {
+    "displayName": "PHD Admsission and Selection Process"
+  },
+  "options": {},
+  "attributes": {
+    "title1": {
+      "type": "blocks"
+    },
+    "desc1": {
+      "type": "blocks"
+    },
+    "title2": {
+      "type": "blocks"
+    },
+    "desc2": {
+      "type": "blocks"
+    },
+    "bgimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
