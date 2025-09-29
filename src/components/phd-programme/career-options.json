@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_phd_programme_career_options",
+  "info": {
+    "displayName": "Career Options"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "careerpointers": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "testimonialheading": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

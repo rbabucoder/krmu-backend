@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_phd_programme_phd_faqs",
+  "info": {
+    "displayName": "PHD FAQ"
+  },
+  "options": {},
+  "attributes": {
+    "ques": {
+      "type": "text"
+    },
+    "ans": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

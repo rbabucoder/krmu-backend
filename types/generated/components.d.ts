@@ -146,6 +146,33 @@ export interface ClubSocietiesClubAndSocieties extends Struct.ComponentSchema {
   };
 }
 
+export interface CustomPageBodyContent extends Struct.ComponentSchema {
+  collectionName: 'components_custom_page_body_contents';
+  info: {
+    displayName: 'Body Content';
+  };
+  attributes: {
+    customhtmleditor: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+  };
+}
+
+export interface CustomPageMetaTag extends Struct.ComponentSchema {
+  collectionName: 'components_custom_page_meta_tags';
+  info: {
+    displayName: 'Meta Tag';
+  };
+  attributes: {
+    footer_meta_tags: Schema.Attribute.Text;
+    header_meta_tags: Schema.Attribute.Text;
+  };
+}
+
 export interface HalloffameHallOfFame extends Struct.ComponentSchema {
   collectionName: 'components_halloffame_hall_of_fames';
   info: {
@@ -580,6 +607,136 @@ export interface MenuMenumediacomp extends Struct.ComponentSchema {
   attributes: {
     counter: Schema.Attribute.Component<'shared.counter-component', true>;
     menuimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface PhdProgrammeCareerOptions extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_career_options';
+  info: {
+    displayName: 'Career Options';
+  };
+  attributes: {
+    careerpointers: Schema.Attribute.Component<'shared.list-item', true>;
+    desc: Schema.Attribute.Text;
+    testimonialheading: Schema.Attribute.String;
+    testimonials: Schema.Attribute.Component<'shared.counter-component', true>;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface PhdProgrammeDreamCareer extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_dream_careers';
+  info: {
+    displayName: 'Dream Career';
+  };
+  attributes: {
+    desc: Schema.Attribute.Blocks;
+    dreamcounter: Schema.Attribute.Component<'shared.counter-component', true>;
+    dreamimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface PhdProgrammeOutcomeContent extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_outcome_contents';
+  info: {
+    displayName: 'Outcome content';
+  };
+  attributes: {
+    outcomedesc: Schema.Attribute.Blocks;
+  };
+}
+
+export interface PhdProgrammePhdAdmissionSelect extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_phd_admission_selects';
+  info: {
+    displayName: 'Phd Admission Select';
+  };
+  attributes: {
+    admissionselecttitle: Schema.Attribute.Blocks;
+    phdadmissioncontent: Schema.Attribute.Blocks;
+  };
+}
+
+export interface PhdProgrammePhdFaq extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_phd_faqs';
+  info: {
+    displayName: 'PHD FAQ';
+  };
+  attributes: {
+    ans: Schema.Attribute.Text;
+    ques: Schema.Attribute.Text;
+  };
+}
+
+export interface PhdProgrammePhdHighlight extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_phd_highlights';
+  info: {
+    displayName: 'PHD Highlight';
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    heading: Schema.Attribute.String;
+    phdcontent: Schema.Attribute.Blocks;
+  };
+}
+
+export interface PhdProgrammePhdOutcome extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_phd_outcomes';
+  info: {
+    displayName: 'PHD Outcome';
+  };
+  attributes: {
+    phdoutcome: Schema.Attribute.Component<
+      'phd-programme.outcome-content',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PhdProgrammePhdOverview extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_phd_overviews';
+  info: {
+    displayName: 'PHD Overview';
+  };
+  attributes: {
+    desc: Schema.Attribute.Blocks;
+    overviewimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface PhdProgrammeScholarSponsoredPartTime
+  extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_scholar_sponsored_part_times';
+  info: {
+    displayName: 'Scholar Sponsored Part Time';
+  };
+  attributes: {
+    desc1: Schema.Attribute.Text;
+    desc2: Schema.Attribute.Text;
+    desc3: Schema.Attribute.Text;
+    scholarshipimg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    title1: Schema.Attribute.String;
+    title2: Schema.Attribute.String;
+    title3: Schema.Attribute.String;
+  };
+}
+
+export interface PhdProgrammeWhoShouldPursue extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_who_should_pursues';
+  info: {
+    displayName: 'Who should Pursue';
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    pursue: Schema.Attribute.Blocks;
+    title: Schema.Attribute.Text;
   };
 }
 
@@ -1386,9 +1543,7 @@ export interface SharedRichText extends Struct.ComponentSchema {
     displayName: 'Rich text';
     icon: 'align-justify';
   };
-  attributes: {
-    body: Schema.Attribute.RichText;
-  };
+  attributes: {};
 }
 
 export interface SharedSeo extends Struct.ComponentSchema {
@@ -1607,6 +1762,8 @@ declare module '@strapi/strapi' {
       'admissionvisitus-component.academic': AdmissionvisitusComponentAcademic;
       'awards-recognition.awards-and-recognition': AwardsRecognitionAwardsAndRecognition;
       'club-societies.club-and-societies': ClubSocietiesClubAndSocieties;
+      'custom-page.body-content': CustomPageBodyContent;
+      'custom-page.meta-tag': CustomPageMetaTag;
       'halloffame.hall-of-fame': HalloffameHallOfFame;
       'homepage-components.a-decade-left-col': HomepageComponentsADecadeLeftCol;
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;
@@ -1634,6 +1791,16 @@ declare module '@strapi/strapi' {
       'menu.menu-links': MenuMenuLinks;
       'menu.menu-social-links': MenuMenuSocialLinks;
       'menu.menumediacomp': MenuMenumediacomp;
+      'phd-programme.career-options': PhdProgrammeCareerOptions;
+      'phd-programme.dream-career': PhdProgrammeDreamCareer;
+      'phd-programme.outcome-content': PhdProgrammeOutcomeContent;
+      'phd-programme.phd-admission-select': PhdProgrammePhdAdmissionSelect;
+      'phd-programme.phd-faq': PhdProgrammePhdFaq;
+      'phd-programme.phd-highlight': PhdProgrammePhdHighlight;
+      'phd-programme.phd-outcome': PhdProgrammePhdOutcome;
+      'phd-programme.phd-overview': PhdProgrammePhdOverview;
+      'phd-programme.scholar-sponsored-part-time': PhdProgrammeScholarSponsoredPartTime;
+      'phd-programme.who-should-pursue': PhdProgrammeWhoShouldPursue;
       'placement-overview.placement-hero': PlacementOverviewPlacementHero;
       'placement-overview.placement-highlight': PlacementOverviewPlacementHighlight;
       'placement-overview.placement-path': PlacementOverviewPlacementPath;

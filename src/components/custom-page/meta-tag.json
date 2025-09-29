@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_custom_page_meta_tags",
+  "info": {
+    "displayName": "Meta Tag"
+  },
+  "options": {},
+  "attributes": {
+    "header_meta_tags": {
+      "type": "text"
+    },
+    "footer_meta_tags": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_phd_programme_phd_admission_selects",
+  "info": {
+    "displayName": "Phd Admission Select"
+  },
+  "options": {},
+  "attributes": {
+    "phdadmissioncontent": {
+      "type": "blocks"
+    },
+    "admissionselecttitle": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

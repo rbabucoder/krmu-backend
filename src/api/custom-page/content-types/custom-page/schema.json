@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "custom_pages",
+  "info": {
+    "singularName": "custom-page",
+    "pluralName": "custom-pages",
+    "displayName": "Custom Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "meta_tag": {
+      "type": "component",
+      "component": "custom-page.meta-tag",
+      "repeatable": false
+    },
+    "bodytags": {
+      "type": "component",
+      "component": "custom-page.body-content",
+      "repeatable": true
+    },
+    "Title": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "custom_css": {
+      "type": "richtext"
+    },
+    "csscustom": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  }
+}

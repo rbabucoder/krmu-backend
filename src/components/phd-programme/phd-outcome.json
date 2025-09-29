@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_phd_programme_phd_outcomes",
+  "info": {
+    "displayName": "PHD Outcome"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "phdoutcome": {
+      "type": "component",
+      "component": "phd-programme.outcome-content",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

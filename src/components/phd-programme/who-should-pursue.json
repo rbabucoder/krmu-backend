@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_phd_programme_who_should_pursues",
+  "info": {
+    "displayName": "Who should Pursue"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "pursue": {
+      "type": "blocks"
+    },
+    "bgimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

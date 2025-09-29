@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_phd_programme_phd_overviews",
+  "info": {
+    "displayName": "PHD Overview"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "overviewimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

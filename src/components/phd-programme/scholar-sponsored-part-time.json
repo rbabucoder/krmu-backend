@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_phd_programme_scholar_sponsored_part_times",
+  "info": {
+    "displayName": "Scholar Sponsored Part Time"
+  },
+  "options": {},
+  "attributes": {
+    "title1": {
+      "type": "string"
+    },
+    "desc1": {
+      "type": "text"
+    },
+    "title2": {
+      "type": "string"
+    },
+    "desc2": {
+      "type": "text"
+    },
+    "title3": {
+      "type": "string"
+    },
+    "desc3": {
+      "type": "text"
+    },
+    "scholarshipimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_phd_programme_phd_highlights",
+  "info": {
+    "displayName": "PHD Highlight"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "phdcontent": {
+      "type": "blocks"
+    },
+    "bgimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

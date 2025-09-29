@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_custom_page_body_contents",
+  "info": {
+    "displayName": "Body Content"
+  },
+  "options": {},
+  "attributes": {
+    "customhtmleditor": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  },
+  "config": {}
+}

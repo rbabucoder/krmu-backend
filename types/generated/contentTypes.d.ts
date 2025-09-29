@@ -816,6 +816,78 @@ export interface ApiCodeOfConductCodeOfConduct extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCustomPageCustomPage extends Struct.CollectionTypeSchema {
+  collectionName: 'custom_pages';
+  info: {
+    displayName: 'Custom Page';
+    pluralName: 'custom-pages';
+    singularName: 'custom-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bodytags: Schema.Attribute.Component<'custom-page.body-content', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    csscustom: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    custom_css: Schema.Attribute.RichText;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::custom-page.custom-page'
+    > &
+      Schema.Attribute.Private;
+    meta_tag: Schema.Attribute.Component<'custom-page.meta-tag', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'Title'>;
+    Title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiDegreeDegree extends Struct.CollectionTypeSchema {
+  collectionName: 'degrees';
+  info: {
+    displayName: 'Degree';
+    pluralName: 'degrees';
+    singularName: 'degree';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::degree.degree'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    school_programme: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::school-programme.school-programme'
+    >;
+    slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiEventEvent extends Struct.CollectionTypeSchema {
   collectionName: 'events';
   info: {
@@ -1191,6 +1263,80 @@ export interface ApiNewsAndEventNewsAndEvent
   };
 }
 
+export interface ApiPhdSingleProgrammePhdSingleProgramme
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'phd_single_programmes';
+  info: {
+    displayName: 'PHD Single Programme';
+    pluralName: 'phd-single-programmes';
+    singularName: 'phd-single-programme';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bgimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    careeroptions: Schema.Attribute.Component<
+      'phd-programme.career-options',
+      false
+    >;
+    connectingtalent: Schema.Attribute.Component<
+      'phd-programme.dream-career',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    degree: Schema.Attribute.Enumeration<['Doctoral Programme']>;
+    duration: Schema.Attribute.Component<'shared.counter-component', false>;
+    eligibility_criteria: Schema.Attribute.Component<
+      'shared.counter-component',
+      false
+    >;
+    fee_per_year: Schema.Attribute.Component<'shared.counter-component', false>;
+    formfield: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::phd-single-programme.phd-single-programme'
+    > &
+      Schema.Attribute.Private;
+    phdadmissionselect: Schema.Attribute.Component<
+      'phd-programme.phd-admission-select',
+      true
+    >;
+    phdfaqtitle: Schema.Attribute.Text;
+    phdlogoslide: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    phdoutcome: Schema.Attribute.Component<'phd-programme.phd-outcome', false>;
+    phdoverview: Schema.Attribute.Component<
+      'phd-programme.phd-overview',
+      false
+    >;
+    phdprogrammefaq: Schema.Attribute.Component<'phd-programme.phd-faq', true>;
+    phdslug: Schema.Attribute.UID<'heading'>;
+    programmehighlight: Schema.Attribute.Component<
+      'phd-programme.phd-highlight',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    pursue: Schema.Attribute.Component<
+      'phd-programme.who-should-pursue',
+      false
+    >;
+    scholarsponsoredparttime: Schema.Attribute.Component<
+      'phd-programme.scholar-sponsored-part-time',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPlacementOverviewPlacementOverview
   extends Struct.SingleTypeSchema {
   collectionName: 'placement_overviews';
@@ -1404,6 +1550,7 @@ export interface ApiSchoolProgrammeSchoolProgramme
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     curriculum: Schema.Attribute.Component<'schoolprogramme.curriculum', false>;
+    degrees: Schema.Attribute.Relation<'oneToMany', 'api::degree.degree'>;
     dreamcareer: Schema.Attribute.Component<
       'schoolprogramme.dream-career',
       false
@@ -2252,6 +2399,8 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
+      'api::custom-page.custom-page': ApiCustomPageCustomPage;
+      'api::degree.degree': ApiDegreeDegree;
       'api::event.event': ApiEventEvent;
       'api::facility.facility': ApiFacilityFacility;
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
@@ -2263,6 +2412,7 @@ declare module '@strapi/strapi' {
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
       'api::menu-section.menu-section': ApiMenuSectionMenuSection;
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
+      'api::phd-single-programme.phd-single-programme': ApiPhdSingleProgrammePhdSingleProgramme;
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;
       'api::print-coverage-year.print-coverage-year': ApiPrintCoverageYearPrintCoverageYear;
       'api::print-coverage.print-coverage': ApiPrintCoveragePrintCoverage;

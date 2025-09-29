@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_phd_programme_outcome_contents",
+  "info": {
+    "displayName": "Outcome content"
+  },
+  "options": {},
+  "attributes": {
+    "outcomedesc": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

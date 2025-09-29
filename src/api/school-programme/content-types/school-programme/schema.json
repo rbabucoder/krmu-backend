@@ -96,6 +96,12 @@
     },
     "highlightitle": {
       "type": "string"
+    },
+    "degrees": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::degree.degree",
+      "mappedBy": "school_programme"
     }
   }
 }

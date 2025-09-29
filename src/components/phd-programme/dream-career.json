@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_phd_programme_dream_careers",
+  "info": {
+    "displayName": "Dream Career"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "dreamimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "dreamcounter": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

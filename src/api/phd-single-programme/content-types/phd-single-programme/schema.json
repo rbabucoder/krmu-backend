@@ -1,0 +1,114 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phd_single_programmes",
+  "info": {
+    "singularName": "phd-single-programme",
+    "pluralName": "phd-single-programmes",
+    "displayName": "PHD Single Programme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "bgimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "formfield": {
+      "type": "text"
+    },
+    "duration": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": false
+    },
+    "fee_per_year": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": false
+    },
+    "eligibility_criteria": {
+      "type": "component",
+      "component": "shared.counter-component",
+      "repeatable": false
+    },
+    "phdoverview": {
+      "type": "component",
+      "component": "phd-programme.phd-overview",
+      "repeatable": false
+    },
+    "scholarsponsoredparttime": {
+      "type": "component",
+      "component": "phd-programme.scholar-sponsored-part-time",
+      "repeatable": false
+    },
+    "connectingtalent": {
+      "type": "component",
+      "component": "phd-programme.dream-career",
+      "repeatable": false
+    },
+    "phdlogoslide": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "careeroptions": {
+      "type": "component",
+      "component": "phd-programme.career-options",
+      "repeatable": false
+    },
+    "phdoutcome": {
+      "type": "component",
+      "component": "phd-programme.phd-outcome",
+      "repeatable": false
+    },
+    "programmehighlight": {
+      "type": "component",
+      "component": "phd-programme.phd-highlight",
+      "repeatable": false
+    },
+    "pursue": {
+      "type": "component",
+      "component": "phd-programme.who-should-pursue",
+      "repeatable": false
+    },
+    "phdslug": {
+      "type": "uid",
+      "targetField": "heading"
+    },
+    "degree": {
+      "type": "enumeration",
+      "enum": [
+        "Doctoral Programme"
+      ]
+    },
+    "phdadmissionselect": {
+      "type": "component",
+      "component": "phd-programme.phd-admission-select",
+      "repeatable": true
+    },
+    "phdprogrammefaq": {
+      "type": "component",
+      "component": "phd-programme.phd-faq",
+      "repeatable": true
+    },
+    "phdfaqtitle": {
+      "type": "text"
+    }
+  }
+}
