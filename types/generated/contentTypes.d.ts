@@ -1102,6 +1102,36 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiImageGalleryPageImageGalleryPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'image_gallery_pages';
+  info: {
+    displayName: 'Image Gallery Page';
+    pluralName: 'image-gallery-pages';
+    singularName: 'image-gallery-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::image-gallery-page.image-gallery-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMagazineReflectionMagazineReflection
   extends Struct.SingleTypeSchema {
   collectionName: 'magazine_reflections';
@@ -1365,6 +1395,40 @@ export interface ApiPhdSingleProgrammePhdSingleProgramme
       'phd-programme.scholar-sponsored-part-time',
       false
     >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPhotoGalleryPhotoGallery
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'photo_galleries';
+  info: {
+    displayName: 'Photo Gallery';
+    pluralName: 'photo-galleries';
+    singularName: 'photo-gallery';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    gallery_images: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::photo-gallery.photo-gallery'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'title'>;
+    title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2441,6 +2505,7 @@ declare module '@strapi/strapi' {
       'api::global.global': ApiGlobalGlobal;
       'api::header-menu-temp.header-menu-temp': ApiHeaderMenuTempHeaderMenuTemp;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::image-gallery-page.image-gallery-page': ApiImageGalleryPageImageGalleryPage;
       'api::magazine-reflection.magazine-reflection': ApiMagazineReflectionMagazineReflection;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
@@ -2448,6 +2513,7 @@ declare module '@strapi/strapi' {
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::news-event.news-event': ApiNewsEventNewsEvent;
       'api::phd-single-programme.phd-single-programme': ApiPhdSingleProgrammePhdSingleProgramme;
+      'api::photo-gallery.photo-gallery': ApiPhotoGalleryPhotoGallery;
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;
       'api::print-coverage-year.print-coverage-year': ApiPrintCoverageYearPrintCoverageYear;
       'api::print-coverage.print-coverage': ApiPrintCoveragePrintCoverage;

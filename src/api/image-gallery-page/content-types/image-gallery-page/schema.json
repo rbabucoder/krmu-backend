@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "image_gallery_pages",
+  "info": {
+    "singularName": "image-gallery-page",
+    "pluralName": "image-gallery-pages",
+    "displayName": "Image Gallery Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "bgimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
