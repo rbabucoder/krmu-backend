@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_events",
+  "info": {
+    "singularName": "news-event",
+    "pluralName": "news-events",
+    "displayName": "News Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_heading": {
+      "type": "blocks"
+    },
+    "main_desc": {
+      "type": "blocks"
+    }
+  }
+}
