@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_schoolprogramme_extra_subjects",
+  "info": {
+    "displayName": "extra_subjects"
+  },
+  "options": {},
+  "attributes": {
+    "sub_name": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

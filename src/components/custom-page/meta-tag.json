@@ -4,13 +4,6 @@
     "displayName": "Meta Tag"
   },
   "options": {},
-  "attributes": {
-    "header_meta_tags": {
-      "type": "text"
-    },
-    "footer_meta_tags": {
-      "type": "text"
-    }
-  },
+  "attributes": {},
   "config": {}
 }

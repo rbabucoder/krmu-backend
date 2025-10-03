@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_meta_tag_fields",
+  "info": {
+    "displayName": "Meta Tag Field"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "text"
+    },
+    "value": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

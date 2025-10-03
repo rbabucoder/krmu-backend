@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_meta_tags",
+  "info": {
+    "displayName": "Meta Tag"
+  },
+  "options": {},
+  "attributes": {
+    "mettagfield": {
+      "type": "component",
+      "component": "shared.meta-tag-field",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

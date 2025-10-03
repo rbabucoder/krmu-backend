@@ -167,10 +167,7 @@ export interface CustomPageMetaTag extends Struct.ComponentSchema {
   info: {
     displayName: 'Meta Tag';
   };
-  attributes: {
-    footer_meta_tags: Schema.Attribute.Text;
-    header_meta_tags: Schema.Attribute.Text;
-  };
+  attributes: {};
 }
 
 export interface HalloffameHallOfFame extends Struct.ComponentSchema {
@@ -1030,6 +1027,16 @@ export interface SchoolprogrammeEligibilityCriteria
   };
 }
 
+export interface SchoolprogrammeExtraSubjects extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_extra_subjects';
+  info: {
+    displayName: 'extra_subjects';
+  };
+  attributes: {
+    sub_name: Schema.Attribute.Text;
+  };
+}
+
 export interface SchoolprogrammeFinancialAssistance
   extends Struct.ComponentSchema {
   collectionName: 'components_schoolprogramme_financial_assistances';
@@ -1061,6 +1068,7 @@ export interface SchoolprogrammeHeroSection extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
+    formField: Schema.Attribute.Text;
     herobtn: Schema.Attribute.Component<'shared.button', false>;
     heroimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     imgvideo: Schema.Attribute.Enumeration<['Image', 'Video']> &
@@ -1208,6 +1216,10 @@ export interface SchoolprogrammeProgrammeSubjects
     displayName: 'Programme Subjects';
   };
   attributes: {
+    course_name: Schema.Attribute.Component<
+      'schoolprogramme.extra-subjects',
+      true
+    >;
     subjectname: Schema.Attribute.String;
   };
 }
@@ -1528,6 +1540,27 @@ export interface SharedMedia extends Struct.ComponentSchema {
   attributes: {};
 }
 
+export interface SharedMetaTag extends Struct.ComponentSchema {
+  collectionName: 'components_shared_meta_tags';
+  info: {
+    displayName: 'Meta Tag';
+  };
+  attributes: {
+    mettagfield: Schema.Attribute.Component<'shared.meta-tag-field', true>;
+  };
+}
+
+export interface SharedMetaTagField extends Struct.ComponentSchema {
+  collectionName: 'components_shared_meta_tag_fields';
+  info: {
+    displayName: 'Meta Tag Field';
+  };
+  attributes: {
+    key: Schema.Attribute.Text;
+    value: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedQuote extends Struct.ComponentSchema {
   collectionName: 'components_shared_quotes';
   info: {
@@ -1825,6 +1858,7 @@ declare module '@strapi/strapi' {
       'schoolprogramme.dream-career': SchoolprogrammeDreamCareer;
       'schoolprogramme.dream-career-card': SchoolprogrammeDreamCareerCard;
       'schoolprogramme.eligibility-criteria': SchoolprogrammeEligibilityCriteria;
+      'schoolprogramme.extra-subjects': SchoolprogrammeExtraSubjects;
       'schoolprogramme.financial-assistance': SchoolprogrammeFinancialAssistance;
       'schoolprogramme.hero-section': SchoolprogrammeHeroSection;
       'schoolprogramme.labs-and-facilities': SchoolprogrammeLabsAndFacilities;
@@ -1862,6 +1896,8 @@ declare module '@strapi/strapi' {
       'shared.list-item': SharedListItem;
       'shared.magazine-card': SharedMagazineCard;
       'shared.media': SharedMedia;
+      'shared.meta-tag': SharedMetaTag;
+      'shared.meta-tag-field': SharedMetaTagField;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;

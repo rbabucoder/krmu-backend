@@ -11,11 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "meta_tag": {
-      "type": "component",
-      "component": "custom-page.meta-tag",
-      "repeatable": false
-    },
     "bodytags": {
       "type": "component",
       "component": "custom-page.body-content",
@@ -37,6 +32,12 @@
       "options": {
         "preset": "defaultHtml"
       }
+    },
+    "headtag": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.meta-tag-field"
+      ]
     }
   }
 }

@@ -839,13 +839,13 @@ export interface ApiCustomPageCustomPage extends Struct.CollectionTypeSchema {
         }
       >;
     custom_css: Schema.Attribute.RichText;
+    headtag: Schema.Attribute.DynamicZone<['shared.meta-tag-field']>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::custom-page.custom-page'
     > &
       Schema.Attribute.Private;
-    meta_tag: Schema.Attribute.Component<'custom-page.meta-tag', false>;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'Title'>;
     Title: Schema.Attribute.Text;

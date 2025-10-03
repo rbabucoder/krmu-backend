@@ -36,6 +36,9 @@
     },
     "videofield": {
       "type": "text"
+    },
+    "formField": {
+      "type": "text"
     }
   },
   "config": {}
