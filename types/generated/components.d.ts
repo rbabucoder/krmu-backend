@@ -170,6 +170,38 @@ export interface CustomPageMetaTag extends Struct.ComponentSchema {
   attributes: {};
 }
 
+export interface FacultyFacultyTab extends Struct.ComponentSchema {
+  collectionName: 'components_faculty_faculty_tabs';
+  info: {
+    displayName: 'Faculty Tab';
+  };
+  attributes: {
+    tabcontent: Schema.Attribute.Blocks;
+    tabname: Schema.Attribute.String;
+  };
+}
+
+export interface FacultyFacultyTabContainer extends Struct.ComponentSchema {
+  collectionName: 'components_faculty_faculty_tab_containers';
+  info: {
+    displayName: 'Faculty Tab Container';
+  };
+  attributes: {
+    faculty_tab: Schema.Attribute.Component<'faculty.faculty-tab', true>;
+  };
+}
+
+export interface FacultyFacultyTabContentContainer
+  extends Struct.ComponentSchema {
+  collectionName: 'components_faculty_faculty_tab_content_containers';
+  info: {
+    displayName: 'Faculty Tab Content Container';
+  };
+  attributes: {
+    faculty_content: Schema.Attribute.Text;
+  };
+}
+
 export interface HalloffameHallOfFame extends Struct.ComponentSchema {
   collectionName: 'components_halloffame_hall_of_fames';
   info: {
@@ -488,6 +520,21 @@ export interface HomepageComponentsYourjourney extends Struct.ComponentSchema {
     button: Schema.Attribute.Component<'shared.button', true>;
     description: Schema.Attribute.Text;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface IndustryConnectJapeneseCuisines
+  extends Struct.ComponentSchema {
+  collectionName: 'components_industry_connect_japenese_cuisines';
+  info: {
+    displayName: 'Japenese Cuisines';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.Text;
+    japenese_cuisines_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
   };
 }
 
@@ -1561,6 +1608,16 @@ export interface SharedMetaTagField extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedPageType extends Struct.ComponentSchema {
+  collectionName: 'components_shared_page_types';
+  info: {
+    displayName: 'Page Type';
+  };
+  attributes: {
+    page_type: Schema.Attribute.Enumeration<['Custom Page', 'Other Page']>;
+  };
+}
+
 export interface SharedQuote extends Struct.ComponentSchema {
   collectionName: 'components_shared_quotes';
   info: {
@@ -1801,6 +1858,9 @@ declare module '@strapi/strapi' {
       'club-societies.club-and-societies': ClubSocietiesClubAndSocieties;
       'custom-page.body-content': CustomPageBodyContent;
       'custom-page.meta-tag': CustomPageMetaTag;
+      'faculty.faculty-tab': FacultyFacultyTab;
+      'faculty.faculty-tab-container': FacultyFacultyTabContainer;
+      'faculty.faculty-tab-content-container': FacultyFacultyTabContentContainer;
       'halloffame.hall-of-fame': HalloffameHallOfFame;
       'homepage-components.a-decade-left-col': HomepageComponentsADecadeLeftCol;
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;
@@ -1820,6 +1880,7 @@ declare module '@strapi/strapi' {
       'homepage-components.visit-explore': HomepageComponentsVisitExplore;
       'homepage-components.whykrmu': HomepageComponentsWhykrmu;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
+      'industry-connect.japenese-cuisines': IndustryConnectJapeneseCuisines;
       'internationcollaboration.international-collboration': InternationcollaborationInternationalCollboration;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;
@@ -1898,6 +1959,7 @@ declare module '@strapi/strapi' {
       'shared.media': SharedMedia;
       'shared.meta-tag': SharedMetaTag;
       'shared.meta-tag-field': SharedMetaTagField;
+      'shared.page-type': SharedPageType;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;

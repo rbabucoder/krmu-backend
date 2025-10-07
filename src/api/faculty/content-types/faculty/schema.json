@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faculties",
+  "info": {
+    "singularName": "faculty",
+    "pluralName": "faculties",
+    "displayName": "Faculty"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "faculty_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "faculty_name": {
+      "type": "string"
+    },
+    "faculty_qualification": {
+      "type": "string"
+    },
+    "faculty_designation": {
+      "type": "string"
+    },
+    "school_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::school-category.school-category",
+      "mappedBy": "faculty"
+    },
+    "faculty_tab_content": {
+      "type": "component",
+      "component": "faculty.faculty-tab-container",
+      "repeatable": false
+    },
+    "faculty_social_links": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "faculty_interest_areas": {
+      "type": "component",
+      "component": "faculty.faculty-tab-content-container",
+      "repeatable": true
+    },
+    "facultyslug": {
+      "type": "uid",
+      "targetField": "faculty_name"
+    }
+  }
+}

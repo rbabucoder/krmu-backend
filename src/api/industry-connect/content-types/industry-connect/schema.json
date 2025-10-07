@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "industry_connects",
+  "info": {
+    "singularName": "industry-connect",
+    "pluralName": "industry-connects",
+    "displayName": "Industry Connect"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "japenese_cuisines": {
+      "type": "component",
+      "component": "industry-connect.japenese-cuisines",
+      "repeatable": false
+    }
+  }
+}

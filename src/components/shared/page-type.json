@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_page_types",
+  "info": {
+    "displayName": "Page Type"
+  },
+  "options": {},
+  "attributes": {
+    "page_type": {
+      "type": "enumeration",
+      "enum": [
+        "Custom Page",
+        "Other Page"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_faculty_faculty_tabs",
+  "info": {
+    "displayName": "Faculty Tab"
+  },
+  "options": {},
+  "attributes": {
+    "tabname": {
+      "type": "string"
+    },
+    "tabcontent": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

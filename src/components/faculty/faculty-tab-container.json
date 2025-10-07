@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_faculty_faculty_tab_containers",
+  "info": {
+    "displayName": "Faculty Tab Container"
+  },
+  "options": {},
+  "attributes": {
+    "faculty_tab": {
+      "type": "component",
+      "component": "faculty.faculty-tab",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

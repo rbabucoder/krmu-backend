@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_industry_connect_japenese_cuisines",
+  "info": {
+    "displayName": "Japenese Cuisines"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "japenese_cuisines_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

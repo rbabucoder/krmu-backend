@@ -839,6 +839,9 @@ export interface ApiCustomPageCustomPage extends Struct.CollectionTypeSchema {
         }
       >;
     custom_css: Schema.Attribute.RichText;
+    enable_disable_custom_page: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<true>;
     headtag: Schema.Attribute.DynamicZone<['shared.meta-tag-field']>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -949,6 +952,53 @@ export interface ApiFacilityFacility extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFacultyFaculty extends Struct.CollectionTypeSchema {
+  collectionName: 'faculties';
+  info: {
+    displayName: 'Faculty';
+    pluralName: 'faculties';
+    singularName: 'faculty';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    faculty_designation: Schema.Attribute.String;
+    faculty_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    faculty_interest_areas: Schema.Attribute.Component<
+      'faculty.faculty-tab-content-container',
+      true
+    >;
+    faculty_name: Schema.Attribute.String;
+    faculty_qualification: Schema.Attribute.String;
+    faculty_social_links: Schema.Attribute.Component<'shared.list-item', true>;
+    faculty_tab_content: Schema.Attribute.Component<
+      'faculty.faculty-tab-container',
+      false
+    >;
+    facultyslug: Schema.Attribute.UID<'faculty_name'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::faculty.faculty'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    school_categories: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::school-category.school-category'
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1126,6 +1176,38 @@ export interface ApiImageGalleryPageImageGalleryPage
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiIndustryConnectIndustryConnect
+  extends Struct.SingleTypeSchema {
+  collectionName: 'industry_connects';
+  info: {
+    displayName: 'Industry Connect';
+    pluralName: 'industry-connects';
+    singularName: 'industry-connect';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    japenese_cuisines: Schema.Attribute.Component<
+      'industry-connect.japenese-cuisines',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::industry-connect.industry-connect'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1600,6 +1682,7 @@ export interface ApiSchoolCategorySchoolCategory
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    faculty: Schema.Attribute.Relation<'manyToOne', 'api::faculty.faculty'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -2501,11 +2584,13 @@ declare module '@strapi/strapi' {
       'api::degree.degree': ApiDegreeDegree;
       'api::event.event': ApiEventEvent;
       'api::facility.facility': ApiFacilityFacility;
+      'api::faculty.faculty': ApiFacultyFaculty;
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
       'api::global.global': ApiGlobalGlobal;
       'api::header-menu-temp.header-menu-temp': ApiHeaderMenuTempHeaderMenuTemp;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::image-gallery-page.image-gallery-page': ApiImageGalleryPageImageGalleryPage;
+      'api::industry-connect.industry-connect': ApiIndustryConnectIndustryConnect;
       'api::magazine-reflection.magazine-reflection': ApiMagazineReflectionMagazineReflection;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;

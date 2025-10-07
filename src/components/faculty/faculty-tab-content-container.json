@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_faculty_faculty_tab_content_containers",
+  "info": {
+    "displayName": "Faculty Tab Content Container"
+  },
+  "options": {},
+  "attributes": {
+    "faculty_content": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

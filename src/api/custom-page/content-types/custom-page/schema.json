@@ -38,6 +38,11 @@
       "components": [
         "shared.meta-tag-field"
       ]
+    },
+    "enable_disable_custom_page": {
+      "type": "boolean",
+      "required": true,
+      "default": true
     }
   }
 }
