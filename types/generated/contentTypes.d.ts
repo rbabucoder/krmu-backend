@@ -1409,6 +1409,36 @@ export interface ApiNewsEventNewsEvent extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiNoticeNotice extends Struct.SingleTypeSchema {
+  collectionName: 'notices';
+  info: {
+    displayName: 'Notice';
+    pluralName: 'notices';
+    singularName: 'notice';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::notice.notice'
+    > &
+      Schema.Attribute.Private;
+    noticepdfs: Schema.Attribute.Component<'notice-pdf.notice-pdf', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPhdSingleProgrammePhdSingleProgramme
   extends Struct.CollectionTypeSchema {
   collectionName: 'phd_single_programmes';
@@ -2597,6 +2627,7 @@ declare module '@strapi/strapi' {
       'api::menu-section.menu-section': ApiMenuSectionMenuSection;
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::news-event.news-event': ApiNewsEventNewsEvent;
+      'api::notice.notice': ApiNoticeNotice;
       'api::phd-single-programme.phd-single-programme': ApiPhdSingleProgrammePhdSingleProgramme;
       'api::photo-gallery.photo-gallery': ApiPhotoGalleryPhotoGallery;
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;

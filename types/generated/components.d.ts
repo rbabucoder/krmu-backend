@@ -654,6 +654,17 @@ export interface MenuMenumediacomp extends Struct.ComponentSchema {
   };
 }
 
+export interface NoticePdfNoticePdf extends Struct.ComponentSchema {
+  collectionName: 'components_notice_pdf_notice_pdfs';
+  info: {
+    displayName: 'Notice PDF';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    pdf_url: Schema.Attribute.Text;
+  };
+}
+
 export interface PhdProgrammeCareerOptions extends Struct.ComponentSchema {
   collectionName: 'components_phd_programme_career_options';
   info: {
@@ -1889,6 +1900,7 @@ declare module '@strapi/strapi' {
       'menu.menu-links': MenuMenuLinks;
       'menu.menu-social-links': MenuMenuSocialLinks;
       'menu.menumediacomp': MenuMenumediacomp;
+      'notice-pdf.notice-pdf': NoticePdfNoticePdf;
       'phd-programme.career-options': PhdProgrammeCareerOptions;
       'phd-programme.dream-career': PhdProgrammeDreamCareer;
       'phd-programme.outcome-content': PhdProgrammeOutcomeContent;

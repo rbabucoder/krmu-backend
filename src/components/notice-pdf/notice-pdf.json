@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_notice_pdf_notice_pdfs",
+  "info": {
+    "displayName": "Notice PDF"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "pdf_url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
