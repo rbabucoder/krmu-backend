@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_intcollab_internation_collaboration_full_width_cards",
+  "info": {
+    "displayName": "Internation Collaboration Full Width Card"
+  },
+  "options": {},
+  "attributes": {
+    "int_collab_full_width_card_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "int_collab_full_width_content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

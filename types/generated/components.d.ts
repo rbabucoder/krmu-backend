@@ -646,6 +646,45 @@ export interface IndustryConnectShapingCareer extends Struct.ComponentSchema {
   };
 }
 
+export interface IntcollabInternationCollaborationCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_intcollab_internation_collaboration_cards';
+  info: {
+    displayName: 'Internation Collaboration Card';
+  };
+  attributes: {
+    int_collab_card_content: Schema.Attribute.Blocks;
+    int_collab_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
+export interface IntcollabInternationCollaborationFullWidthCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_intcollab_internation_collaboration_full_width_cards';
+  info: {
+    displayName: 'Internation Collaboration Full Width Card';
+  };
+  attributes: {
+    int_collab_full_width_card_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    int_collab_full_width_content: Schema.Attribute.Blocks;
+  };
+}
+
+export interface IntcollabInternationalCollaboration
+  extends Struct.ComponentSchema {
+  collectionName: 'components_intcollab_international_collaborations';
+  info: {
+    displayName: 'International Collaboration';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+  };
+}
+
 export interface InternationcollaborationInternationalCollboration
   extends Struct.ComponentSchema {
   collectionName: 'components_internationcollaboration_international_collborations';
@@ -2007,6 +2046,9 @@ declare module '@strapi/strapi' {
       'industry-connect.networking-opportunities': IndustryConnectNetworkingOpportunities;
       'industry-connect.seminar': IndustryConnectSeminar;
       'industry-connect.shaping-career': IndustryConnectShapingCareer;
+      'intcollab.internation-collaboration-card': IntcollabInternationCollaborationCard;
+      'intcollab.internation-collaboration-full-width-card': IntcollabInternationCollaborationFullWidthCard;
+      'intcollab.international-collaboration': IntcollabInternationalCollaboration;
       'internationcollaboration.international-collboration': InternationcollaborationInternationalCollboration;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_intcollab_international_collaborations",
+  "info": {
+    "displayName": "International Collaboration"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

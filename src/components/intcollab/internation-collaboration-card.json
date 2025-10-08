@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_intcollab_internation_collaboration_cards",
+  "info": {
+    "displayName": "Internation Collaboration Card"
+  },
+  "options": {},
+  "attributes": {
+    "int_collab_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "int_collab_card_content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

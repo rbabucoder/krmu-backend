@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "international_collaborations",
+  "info": {
+    "singularName": "international-collaboration",
+    "pluralName": "international-collaborations",
+    "displayName": "International Collaboration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "int_collab_btn": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "int_collab_hero_grid": {
+      "type": "component",
+      "component": "intcollab.international-collaboration",
+      "repeatable": true
+    },
+    "intcollab_card": {
+      "type": "component",
+      "component": "intcollab.internation-collaboration-card",
+      "repeatable": true
+    },
+    "int_collab_full_width_card": {
+      "type": "component",
+      "component": "intcollab.internation-collaboration-full-width-card",
+      "repeatable": true
+    }
+  }
+}

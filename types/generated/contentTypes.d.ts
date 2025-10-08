@@ -1247,6 +1247,49 @@ export interface ApiIndustryConnectIndustryConnect
   };
 }
 
+export interface ApiInternationalCollaborationInternationalCollaboration
+  extends Struct.SingleTypeSchema {
+  collectionName: 'international_collaborations';
+  info: {
+    displayName: 'International Collaboration';
+    pluralName: 'international-collaborations';
+    singularName: 'international-collaboration';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    desc: Schema.Attribute.Text;
+    int_collab_btn: Schema.Attribute.Component<'shared.button', false>;
+    int_collab_full_width_card: Schema.Attribute.Component<
+      'intcollab.internation-collaboration-full-width-card',
+      true
+    >;
+    int_collab_hero_grid: Schema.Attribute.Component<
+      'intcollab.international-collaboration',
+      true
+    >;
+    intcollab_card: Schema.Attribute.Component<
+      'intcollab.internation-collaboration-card',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::international-collaboration.international-collaboration'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.Blocks;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMagazineReflectionMagazineReflection
   extends Struct.SingleTypeSchema {
   collectionName: 'magazine_reflections';
@@ -2654,6 +2697,7 @@ declare module '@strapi/strapi' {
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::image-gallery-page.image-gallery-page': ApiImageGalleryPageImageGalleryPage;
       'api::industry-connect.industry-connect': ApiIndustryConnectIndustryConnect;
+      'api::international-collaboration.international-collaboration': ApiInternationalCollaborationInternationalCollaboration;
       'api::magazine-reflection.magazine-reflection': ApiMagazineReflectionMagazineReflection;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
