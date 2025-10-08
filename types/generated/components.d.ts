@@ -523,6 +523,49 @@ export interface HomepageComponentsYourjourney extends Struct.ComponentSchema {
   };
 }
 
+export interface IndustryConnectDeputyCommissioner
+  extends Struct.ComponentSchema {
+  collectionName: 'components_industry_connect_deputy_commissioners';
+  info: {
+    displayName: 'Deputy Commissioner';
+  };
+  attributes: {
+    big_para: Schema.Attribute.Text;
+    deputy_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    desc: Schema.Attribute.Text;
+  };
+}
+
+export interface IndustryConnectExpertTalkRole extends Struct.ComponentSchema {
+  collectionName: 'components_industry_connect_expert_talk_roles';
+  info: {
+    displayName: 'Expert Talk Role';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    expert_talk_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    heading: Schema.Attribute.Text;
+  };
+}
+
+export interface IndustryConnectIdeaForge extends Struct.ComponentSchema {
+  collectionName: 'components_industry_connect_idea_forges';
+  info: {
+    displayName: 'Idea Forge';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    idea_forge_img_1: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
 export interface IndustryConnectJapeneseCuisines
   extends Struct.ComponentSchema {
   collectionName: 'components_industry_connect_japenese_cuisines';
@@ -530,9 +573,74 @@ export interface IndustryConnectJapeneseCuisines
     displayName: 'Japenese Cuisines';
   };
   attributes: {
-    content: Schema.Attribute.Blocks;
+    cuisine_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    desc: Schema.Attribute.Text;
     heading: Schema.Attribute.Text;
-    japenese_cuisines_img: Schema.Attribute.Media<
+  };
+}
+
+export interface IndustryConnectMuralEvent extends Struct.ComponentSchema {
+  collectionName: 'components_industry_connect_mural_events';
+  info: {
+    displayName: 'Mural Event';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    mural_img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface IndustryConnectNetworkingOpportunities
+  extends Struct.ComponentSchema {
+  collectionName: 'components_industry_connect_networking_opportunities';
+  info: {
+    displayName: 'Networking Opportunities';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    opportunities_content: Schema.Attribute.Blocks;
+    opportunities_img_1: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    opportunities_img_2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
+export interface IndustryConnectSeminar extends Struct.ComponentSchema {
+  collectionName: 'components_industry_connect_seminars';
+  info: {
+    displayName: 'Seminar';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    seminar_img_1: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    seminar_img_2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
+export interface IndustryConnectShapingCareer extends Struct.ComponentSchema {
+  collectionName: 'components_industry_connect_shaping_careers';
+  info: {
+    displayName: 'Shaping Career';
+  };
+  attributes: {
+    heading: Schema.Attribute.Text;
+    shaping_career: Schema.Attribute.Blocks;
+    shaping_career_img_1: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    shaping_career_img_2: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
   };
@@ -1891,7 +1999,14 @@ declare module '@strapi/strapi' {
       'homepage-components.visit-explore': HomepageComponentsVisitExplore;
       'homepage-components.whykrmu': HomepageComponentsWhykrmu;
       'homepage-components.yourjourney': HomepageComponentsYourjourney;
+      'industry-connect.deputy-commissioner': IndustryConnectDeputyCommissioner;
+      'industry-connect.expert-talk-role': IndustryConnectExpertTalkRole;
+      'industry-connect.idea-forge': IndustryConnectIdeaForge;
       'industry-connect.japenese-cuisines': IndustryConnectJapeneseCuisines;
+      'industry-connect.mural-event': IndustryConnectMuralEvent;
+      'industry-connect.networking-opportunities': IndustryConnectNetworkingOpportunities;
+      'industry-connect.seminar': IndustryConnectSeminar;
+      'industry-connect.shaping-career': IndustryConnectShapingCareer;
       'internationcollaboration.international-collboration': InternationcollaborationInternationalCollboration;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;

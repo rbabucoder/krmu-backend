@@ -1,17 +1,17 @@
 {
-  "collectionName": "components_industry_connect_japenese_cuisines",
+  "collectionName": "components_industry_connect_deputy_commissioners",
   "info": {
-    "displayName": "Japenese Cuisines"
+    "displayName": "Deputy Commissioner"
   },
   "options": {},
   "attributes": {
-    "heading": {
+    "big_para": {
       "type": "text"
     },
     "desc": {
       "type": "text"
     },
-    "cuisine_img": {
+    "deputy_img": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

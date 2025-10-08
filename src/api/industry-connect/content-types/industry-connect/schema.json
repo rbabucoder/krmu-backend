@@ -11,9 +11,73 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "japenese_cuisines": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bgimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "partnerships_title": {
+      "type": "text"
+    },
+    "partnership_logos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cuisines": {
       "type": "component",
       "component": "industry-connect.japenese-cuisines",
+      "repeatable": false
+    },
+    "mural_event": {
+      "type": "component",
+      "component": "industry-connect.mural-event",
+      "repeatable": false
+    },
+    "networking_opportunities": {
+      "type": "component",
+      "component": "industry-connect.networking-opportunities",
+      "repeatable": false
+    },
+    "shaping_career": {
+      "type": "component",
+      "component": "industry-connect.shaping-career",
+      "repeatable": false
+    },
+    "seminar": {
+      "type": "component",
+      "component": "industry-connect.seminar",
+      "repeatable": false
+    },
+    "idea_forge": {
+      "type": "component",
+      "component": "industry-connect.idea-forge",
+      "repeatable": false
+    },
+    "expert_talk_role": {
+      "type": "component",
+      "component": "industry-connect.expert-talk-role",
+      "repeatable": false
+    },
+    "deputy_commissioner": {
+      "type": "component",
+      "component": "industry-connect.deputy-commissioner",
       "repeatable": false
     }
   }

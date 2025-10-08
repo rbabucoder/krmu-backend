@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_industry_connect_japenese_cuisines",
+  "collectionName": "components_industry_connect_mural_events",
   "info": {
-    "displayName": "Japenese Cuisines"
+    "displayName": "Mural Event"
   },
   "options": {},
   "attributes": {
@@ -11,7 +11,7 @@
     "desc": {
       "type": "text"
     },
-    "cuisine_img": {
+    "mural_img": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

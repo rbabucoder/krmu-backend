@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_industry_connect_japenese_cuisines",
+  "collectionName": "components_industry_connect_idea_forges",
   "info": {
-    "displayName": "Japenese Cuisines"
+    "displayName": "Idea Forge"
   },
   "options": {},
   "attributes": {
@@ -11,7 +11,7 @@
     "desc": {
       "type": "text"
     },
-    "cuisine_img": {
+    "idea_forge_img_1": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

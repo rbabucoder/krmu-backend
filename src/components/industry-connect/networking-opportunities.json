@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_industry_connect_networking_opportunities",
+  "info": {
+    "displayName": "Networking Opportunities"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "opportunities_img_1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "opportunities_img_2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "opportunities_content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

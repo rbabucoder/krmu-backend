@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_industry_connect_shaping_careers",
+  "info": {
+    "displayName": "Shaping Career"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "shaping_career": {
+      "type": "blocks"
+    },
+    "shaping_career_img_1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "shaping_career_img_2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

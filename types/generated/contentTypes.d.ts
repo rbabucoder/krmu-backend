@@ -1194,11 +1194,25 @@ export interface ApiIndustryConnectIndustryConnect
     draftAndPublish: true;
   };
   attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    japenese_cuisines: Schema.Attribute.Component<
+    cuisines: Schema.Attribute.Component<
       'industry-connect.japenese-cuisines',
+      false
+    >;
+    deputy_commissioner: Schema.Attribute.Component<
+      'industry-connect.deputy-commissioner',
+      false
+    >;
+    description: Schema.Attribute.Text;
+    expert_talk_role: Schema.Attribute.Component<
+      'industry-connect.expert-talk-role',
+      false
+    >;
+    idea_forge: Schema.Attribute.Component<
+      'industry-connect.idea-forge',
       false
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -1207,7 +1221,26 @@ export interface ApiIndustryConnectIndustryConnect
       'api::industry-connect.industry-connect'
     > &
       Schema.Attribute.Private;
+    mural_event: Schema.Attribute.Component<
+      'industry-connect.mural-event',
+      false
+    >;
+    networking_opportunities: Schema.Attribute.Component<
+      'industry-connect.networking-opportunities',
+      false
+    >;
+    partnership_logos: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    partnerships_title: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
+    seminar: Schema.Attribute.Component<'industry-connect.seminar', false>;
+    shaping_career: Schema.Attribute.Component<
+      'industry-connect.shaping-career',
+      false
+    >;
+    title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
