@@ -858,6 +858,39 @@ export interface ApiCustomPageCustomPage extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiDeanHonorListDeanHonorList extends Struct.SingleTypeSchema {
+  collectionName: 'dean_honor_lists';
+  info: {
+    displayName: 'Dean Honor List';
+    pluralName: 'dean-honor-lists';
+    singularName: 'dean-honor-list';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    dean_honor_acc: Schema.Attribute.Component<
+      'dean-honor.dean-honor-list-accordion',
+      true
+    >;
+    herobg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::dean-honor-list.dean-honor-list'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiDegreeDegree extends Struct.CollectionTypeSchema {
   collectionName: 'degrees';
   info: {
@@ -2687,6 +2720,7 @@ declare module '@strapi/strapi' {
       'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
       'api::custom-page.custom-page': ApiCustomPageCustomPage;
+      'api::dean-honor-list.dean-honor-list': ApiDeanHonorListDeanHonorList;
       'api::degree.degree': ApiDegreeDegree;
       'api::event.event': ApiEventEvent;
       'api::facility.facility': ApiFacilityFacility;

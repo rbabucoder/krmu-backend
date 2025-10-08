@@ -170,6 +170,38 @@ export interface CustomPageMetaTag extends Struct.ComponentSchema {
   attributes: {};
 }
 
+export interface DeanHonorDeanHonorHtml extends Struct.ComponentSchema {
+  collectionName: 'components_dean_honor_dean_honor_htmls';
+  info: {
+    displayName: 'Dean Honor HTML';
+  };
+  attributes: {
+    acc_title: Schema.Attribute.Text;
+    dean_honor_html_field: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+  };
+}
+
+export interface DeanHonorDeanHonorListAccordion
+  extends Struct.ComponentSchema {
+  collectionName: 'components_dean_honor_dean_honor_list_accordions';
+  info: {
+    displayName: 'Dean Honor List Accordion';
+  };
+  attributes: {
+    dean_honor_html: Schema.Attribute.Component<
+      'dean-honor.dean-honor-html',
+      true
+    >;
+    title: Schema.Attribute.Text;
+  };
+}
+
 export interface FacultyFacultyTab extends Struct.ComponentSchema {
   collectionName: 'components_faculty_faculty_tabs';
   info: {
@@ -2016,6 +2048,8 @@ declare module '@strapi/strapi' {
       'club-societies.club-and-societies': ClubSocietiesClubAndSocieties;
       'custom-page.body-content': CustomPageBodyContent;
       'custom-page.meta-tag': CustomPageMetaTag;
+      'dean-honor.dean-honor-html': DeanHonorDeanHonorHtml;
+      'dean-honor.dean-honor-list-accordion': DeanHonorDeanHonorListAccordion;
       'faculty.faculty-tab': FacultyFacultyTab;
       'faculty.faculty-tab-container': FacultyFacultyTabContainer;
       'faculty.faculty-tab-content-container': FacultyFacultyTabContentContainer;

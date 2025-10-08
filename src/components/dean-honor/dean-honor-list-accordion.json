@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_dean_honor_dean_honor_list_accordions",
+  "info": {
+    "displayName": "Dean Honor List Accordion"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "dean_honor_html": {
+      "type": "component",
+      "component": "dean-honor.dean-honor-html",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "dean_honor_lists",
+  "info": {
+    "singularName": "dean-honor-list",
+    "pluralName": "dean-honor-lists",
+    "displayName": "Dean Honor List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "herobg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "dean_honor_acc": {
+      "type": "component",
+      "component": "dean-honor.dean-honor-list-accordion",
+      "repeatable": true
+    }
+  }
+}
