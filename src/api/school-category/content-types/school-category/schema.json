@@ -33,10 +33,22 @@
       "target": "api::school-programme.school-programme",
       "inversedBy": "school_categories"
     },
-    "faculty": {
+    "news_and_events": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
+      "target": "api::news-and-event.news-and-event",
+      "inversedBy": "school_categories"
+    },
+    "faculties": {
+      "type": "relation",
+      "relation": "manyToMany",
       "target": "api::faculty.faculty",
+      "inversedBy": "school_categories"
+    },
+    "student_achievements": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::student-achievement.student-achievement",
       "inversedBy": "school_categories"
     }
   }

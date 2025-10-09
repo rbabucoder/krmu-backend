@@ -50,6 +50,12 @@
         "videos",
         "audios"
       ]
+    },
+    "school_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::school-category.school-category",
+      "mappedBy": "news_and_events"
     }
   }
 }

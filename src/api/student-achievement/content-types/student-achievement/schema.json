@@ -24,10 +24,11 @@
     "achievementcontent": {
       "type": "text"
     },
-    "school_category": {
+    "school_categories": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::school-category.school-category"
+      "relation": "manyToMany",
+      "target": "api::school-category.school-category",
+      "mappedBy": "student_achievements"
     }
   }
 }

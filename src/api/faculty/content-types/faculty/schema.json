@@ -30,12 +30,6 @@
     "faculty_designation": {
       "type": "string"
     },
-    "school_categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::school-category.school-category",
-      "mappedBy": "faculty"
-    },
     "faculty_tab_content": {
       "type": "component",
       "component": "faculty.faculty-tab-container",
@@ -54,6 +48,23 @@
     "facultyslug": {
       "type": "uid",
       "targetField": "faculty_name"
+    },
+    "school_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::school-category.school-category",
+      "mappedBy": "faculties"
+    },
+    "faculty_card_desg": {
+      "type": "string"
+    },
+    "faculty_type": {
+      "type": "enumeration",
+      "enum": [
+        "Faculty",
+        "Advisory",
+        "Both"
+      ]
     }
   }
 }

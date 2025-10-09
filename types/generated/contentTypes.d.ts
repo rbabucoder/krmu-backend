@@ -1005,6 +1005,7 @@ export interface ApiFacultyFaculty extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    faculty_card_desg: Schema.Attribute.String;
     faculty_designation: Schema.Attribute.String;
     faculty_img: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
@@ -1020,6 +1021,7 @@ export interface ApiFacultyFaculty extends Struct.CollectionTypeSchema {
       'faculty.faculty-tab-container',
       false
     >;
+    faculty_type: Schema.Attribute.Enumeration<['Faculty', 'Advisory', 'Both']>;
     facultyslug: Schema.Attribute.UID<'faculty_name'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -1029,7 +1031,7 @@ export interface ApiFacultyFaculty extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     school_categories: Schema.Attribute.Relation<
-      'oneToMany',
+      'manyToMany',
       'api::school-category.school-category'
     >;
     updatedAt: Schema.Attribute.DateTime;
@@ -1481,6 +1483,10 @@ export interface ApiNewsAndEventNewsAndEvent
       true
     >;
     publishedAt: Schema.Attribute.DateTime;
+    school_categories: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::school-category.school-category'
+    >;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -1821,7 +1827,7 @@ export interface ApiSchoolCategorySchoolCategory
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
-    faculty: Schema.Attribute.Relation<'manyToOne', 'api::faculty.faculty'>;
+    faculties: Schema.Attribute.Relation<'manyToMany', 'api::faculty.faculty'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1829,6 +1835,10 @@ export interface ApiSchoolCategorySchoolCategory
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    news_and_events: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::news-and-event.news-and-event'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     school_programme: Schema.Attribute.Relation<
       'manyToOne',
@@ -1836,6 +1846,10 @@ export interface ApiSchoolCategorySchoolCategory
     >;
     schools: Schema.Attribute.Relation<'oneToMany', 'api::school.school'>;
     slug: Schema.Attribute.UID<'name'>;
+    student_achievements: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::student-achievement.student-achievement'
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2093,8 +2107,8 @@ export interface ApiStudentAchievementStudentAchievement
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    school_category: Schema.Attribute.Relation<
-      'oneToOne',
+    school_categories: Schema.Attribute.Relation<
+      'manyToMany',
       'api::school-category.school-category'
     >;
     updatedAt: Schema.Attribute.DateTime;
