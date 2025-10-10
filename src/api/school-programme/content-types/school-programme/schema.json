@@ -11,11 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "school_categories": {
+    "school_category": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::school-category.school-category",
-      "mappedBy": "school_programme"
+      "relation": "oneToOne",
+      "target": "api::school-category.school-category"
     },
     "title": {
       "type": "text"
@@ -97,11 +96,15 @@
     "highlightitle": {
       "type": "string"
     },
-    "degrees": {
+    "criteria": {
+      "type": "component",
+      "component": "schoolprogramme.criteria",
+      "repeatable": false
+    },
+    "degree": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::degree.degree",
-      "mappedBy": "school_programme"
+      "relation": "oneToOne",
+      "target": "api::degree.degree"
     }
   }
 }

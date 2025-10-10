@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_schoolprogramme_semester_fees",
+  "info": {
+    "displayName": "Semester Fee"
+  },
+  "options": {},
+  "attributes": {
+    "semester_fees": {
+      "type": "component",
+      "component": "schoolprogramme.semeter-fee",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

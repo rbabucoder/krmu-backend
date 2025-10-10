@@ -17,12 +17,6 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
-    },
-    "school_programme": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::school-programme.school-programme",
-      "inversedBy": "degrees"
     }
   }
 }

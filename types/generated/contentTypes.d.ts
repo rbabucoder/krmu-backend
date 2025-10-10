@@ -913,10 +913,6 @@ export interface ApiDegreeDegree extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    school_programme: Schema.Attribute.Relation<
-      'manyToOne',
-      'api::school-programme.school-programme'
-    >;
     slug: Schema.Attribute.UID<'name'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1840,10 +1836,6 @@ export interface ApiSchoolCategorySchoolCategory
       'api::news-and-event.news-and-event'
     >;
     publishedAt: Schema.Attribute.DateTime;
-    school_programme: Schema.Attribute.Relation<
-      'manyToOne',
-      'api::school-programme.school-programme'
-    >;
     schools: Schema.Attribute.Relation<'oneToMany', 'api::school.school'>;
     slug: Schema.Attribute.UID<'name'>;
     student_achievements: Schema.Attribute.Relation<
@@ -1883,8 +1875,9 @@ export interface ApiSchoolProgrammeSchoolProgramme
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    criteria: Schema.Attribute.Component<'schoolprogramme.criteria', false>;
     curriculum: Schema.Attribute.Component<'schoolprogramme.curriculum', false>;
-    degrees: Schema.Attribute.Relation<'oneToMany', 'api::degree.degree'>;
+    degree: Schema.Attribute.Relation<'oneToOne', 'api::degree.degree'>;
     dreamcareer: Schema.Attribute.Component<
       'schoolprogramme.dream-career',
       false
@@ -1926,8 +1919,8 @@ export interface ApiSchoolProgrammeSchoolProgramme
     >;
     programmeslug: Schema.Attribute.UID<'title'>;
     publishedAt: Schema.Attribute.DateTime;
-    school_categories: Schema.Attribute.Relation<
-      'oneToMany',
+    school_category: Schema.Attribute.Relation<
+      'oneToOne',
       'api::school-category.school-category'
     >;
     specialisation: Schema.Attribute.Component<
@@ -1985,6 +1978,7 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     deansname: Schema.Attribute.String;
     deanvisionsubtitle: Schema.Attribute.String;
     deanvisiontitle: Schema.Attribute.String;
+    degree: Schema.Attribute.Relation<'oneToOne', 'api::degree.degree'>;
     eventsbtn: Schema.Attribute.Component<'shared.button', false>;
     eventsdesc: Schema.Attribute.Text;
     eventstitle: Schema.Attribute.String;

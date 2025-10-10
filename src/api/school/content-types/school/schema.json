@@ -245,6 +245,11 @@
     "showdeaninfo": {
       "type": "boolean",
       "default": false
+    },
+    "degree": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::degree.degree"
     }
   }
 }

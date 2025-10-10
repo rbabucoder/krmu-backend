@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_schoolprogramme_criteria",
+  "info": {
+    "displayName": "Criteria"
+  },
+  "options": {},
+  "attributes": {
+    "eligibility_criteria": {
+      "type": "text"
+    },
+    "Duration": {
+      "type": "string"
+    },
+    "semester_i": {
+      "type": "string"
+    },
+    "semester_ii": {
+      "type": "string"
+    },
+    "programme_fee_per_year": {
+      "type": "string"
+    },
+    "eligibility_utm_links": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_schoolprogramme_semeter_fees",
+  "info": {
+    "displayName": "Semeter Fee"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

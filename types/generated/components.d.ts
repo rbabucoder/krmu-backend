@@ -1199,6 +1199,21 @@ export interface SchoolprogrammeCareerProspectsCard
   };
 }
 
+export interface SchoolprogrammeCriteria extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_criteria';
+  info: {
+    displayName: 'Criteria';
+  };
+  attributes: {
+    Duration: Schema.Attribute.String;
+    eligibility_criteria: Schema.Attribute.Text;
+    eligibility_utm_links: Schema.Attribute.Text;
+    programme_fee_per_year: Schema.Attribute.String;
+    semester_i: Schema.Attribute.String;
+    semester_ii: Schema.Attribute.String;
+  };
+}
+
 export interface SchoolprogrammeCurriculum extends Struct.ComponentSchema {
   collectionName: 'components_schoolprogramme_curricula';
   info: {
@@ -1484,6 +1499,38 @@ export interface SchoolprogrammeSemester extends Struct.ComponentSchema {
       'schoolprogramme.programme-subjects',
       true
     >;
+  };
+}
+
+export interface SchoolprogrammeSemesterFee extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_semester_fees';
+  info: {
+    displayName: 'Semester Fee';
+  };
+  attributes: {
+    semester_fees: Schema.Attribute.Component<
+      'schoolprogramme.semeter-fee',
+      true
+    >;
+  };
+}
+
+export interface SchoolprogrammeSemesterField extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_semester_fields';
+  info: {
+    displayName: 'Semester Field';
+  };
+  attributes: {};
+}
+
+export interface SchoolprogrammeSemeterFee extends Struct.ComponentSchema {
+  collectionName: 'components_schoolprogramme_semeter_fees';
+  info: {
+    displayName: 'Semeter Fee';
+  };
+  attributes: {
+    desc: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
   };
 }
 
@@ -2118,6 +2165,7 @@ declare module '@strapi/strapi' {
       'schoolprogramme.beyond-classroom': SchoolprogrammeBeyondClassroom;
       'schoolprogramme.career-prospects': SchoolprogrammeCareerProspects;
       'schoolprogramme.career-prospects-card': SchoolprogrammeCareerProspectsCard;
+      'schoolprogramme.criteria': SchoolprogrammeCriteria;
       'schoolprogramme.curriculum': SchoolprogrammeCurriculum;
       'schoolprogramme.dream-career': SchoolprogrammeDreamCareer;
       'schoolprogramme.dream-career-card': SchoolprogrammeDreamCareerCard;
@@ -2137,6 +2185,9 @@ declare module '@strapi/strapi' {
       'schoolprogramme.programme-subjects': SchoolprogrammeProgrammeSubjects;
       'schoolprogramme.ques-ans': SchoolprogrammeQuesAns;
       'schoolprogramme.semester': SchoolprogrammeSemester;
+      'schoolprogramme.semester-fee': SchoolprogrammeSemesterFee;
+      'schoolprogramme.semester-field': SchoolprogrammeSemesterField;
+      'schoolprogramme.semeter-fee': SchoolprogrammeSemeterFee;
       'schoolprogramme.specilisation': SchoolprogrammeSpecilisation;
       'schoolprogramme.table-of-content': SchoolprogrammeTableOfContent;
       'schoolprogramme.tocfaq': SchoolprogrammeTocfaq;
