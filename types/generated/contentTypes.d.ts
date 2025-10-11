@@ -1902,6 +1902,7 @@ export interface ApiSchoolProgrammeSchoolProgramme
       'api::school-programme.school-programme'
     > &
       Schema.Attribute.Private;
+    order_num: Schema.Attribute.String & Schema.Attribute.Unique;
     ourlocation: Schema.Attribute.Component<
       'schoolprogramme.our-location',
       false

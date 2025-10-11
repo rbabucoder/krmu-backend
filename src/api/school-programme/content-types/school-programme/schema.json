@@ -105,6 +105,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::degree.degree"
+    },
+    "order_num": {
+      "type": "string",
+      "unique": true
     }
   }
 }
