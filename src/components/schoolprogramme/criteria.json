@@ -22,6 +22,11 @@
     },
     "eligibility_utm_links": {
       "type": "text"
+    },
+    "programme_offered_number": {
+      "type": "biginteger",
+      "required": false,
+      "unique": true
     }
   },
   "config": {}

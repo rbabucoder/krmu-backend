@@ -1063,7 +1063,8 @@ export interface SchoolcomponentIndustryCollaborationCard
     icon: 'apps';
   };
   attributes: {
-    cardcontent: Schema.Attribute.Blocks;
+    card_desc: Schema.Attribute.Text;
+    card_list_item: Schema.Attribute.Component<'shared.list-item', true>;
     cardimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
@@ -1209,6 +1210,8 @@ export interface SchoolprogrammeCriteria extends Struct.ComponentSchema {
     eligibility_criteria: Schema.Attribute.Text;
     eligibility_utm_links: Schema.Attribute.Text;
     programme_fee_per_year: Schema.Attribute.String;
+    programme_offered_number: Schema.Attribute.BigInteger &
+      Schema.Attribute.Unique;
     semester_i: Schema.Attribute.String;
     semester_ii: Schema.Attribute.String;
   };

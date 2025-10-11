@@ -16,8 +16,13 @@
         "audios"
       ]
     },
-    "cardcontent": {
-      "type": "blocks"
+    "card_desc": {
+      "type": "text"
+    },
+    "card_list_item": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
     }
   },
   "config": {}
