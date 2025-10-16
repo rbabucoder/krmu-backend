@@ -41,6 +41,9 @@
       "options": {
         "preset": "defaultHtml"
       }
+    },
+    "admissionFormId": {
+      "type": "text"
     }
   },
   "config": {}

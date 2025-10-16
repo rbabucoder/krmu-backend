@@ -1133,6 +1133,7 @@ export interface SchoolprogrammeAdmissionProcess
         }
       >;
     admissionbtn: Schema.Attribute.Component<'shared.button', false>;
+    admissionFormId: Schema.Attribute.Text;
     admissionprocesscard: Schema.Attribute.Component<
       'schoolprogramme.admission-process-card',
       true
