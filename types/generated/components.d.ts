@@ -1125,6 +1125,13 @@ export interface SchoolprogrammeAdmissionProcess
     icon: 'store';
   };
   attributes: {
+    admFormField: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     admissionbtn: Schema.Attribute.Component<'shared.button', false>;
     admissionprocesscard: Schema.Attribute.Component<
       'schoolprogramme.admission-process-card',
@@ -1498,6 +1505,7 @@ export interface SchoolprogrammeSemester extends Struct.ComponentSchema {
   attributes: {
     pdfbtns: Schema.Attribute.Component<'shared.button', true>;
     semestername: Schema.Attribute.String;
+    semFormField: Schema.Attribute.Text;
     subjects: Schema.Attribute.Component<
       'schoolprogramme.programme-subjects',
       true
@@ -1647,6 +1655,7 @@ export interface SharedButton extends Struct.ComponentSchema {
     buttonclass: Schema.Attribute.String;
     buttonlink: Schema.Attribute.Text;
     buttontext: Schema.Attribute.String;
+    careerFormField: Schema.Attribute.Text;
   };
 }
 

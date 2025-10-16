@@ -17,6 +17,9 @@
       "type": "component",
       "component": "shared.button",
       "repeatable": true
+    },
+    "semFormField": {
+      "type": "text"
     }
   },
   "config": {}
