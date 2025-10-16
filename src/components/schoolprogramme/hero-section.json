@@ -39,6 +39,9 @@
     },
     "formField": {
       "type": "text"
+    },
+    "formId": {
+      "type": "text"
     }
   },
   "config": {}

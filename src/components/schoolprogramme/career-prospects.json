@@ -33,6 +33,9 @@
       "type": "component",
       "component": "schoolprogramme.career-prospects-card",
       "repeatable": true
+    },
+    "careerFormId": {
+      "type": "text"
     }
   },
   "config": {}

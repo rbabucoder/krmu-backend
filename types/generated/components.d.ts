@@ -1187,6 +1187,7 @@ export interface SchoolprogrammeCareerProspects extends Struct.ComponentSchema {
       'schoolprogramme.career-prospects-card',
       true
     >;
+    careerFormId: Schema.Attribute.Text;
     careerimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     description: Schema.Attribute.Text;
     heading: Schema.Attribute.String;
@@ -1331,6 +1332,7 @@ export interface SchoolprogrammeHeroSection extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     formField: Schema.Attribute.Text;
+    formId: Schema.Attribute.Text;
     herobtn: Schema.Attribute.Component<'shared.button', false>;
     heroimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     imgvideo: Schema.Attribute.Enumeration<['Image', 'Video']> &
