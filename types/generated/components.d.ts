@@ -1233,6 +1233,8 @@ export interface SchoolprogrammeCurriculum extends Struct.ComponentSchema {
   };
   attributes: {
     currbtn: Schema.Attribute.Component<'shared.button', false>;
+    currContainerId: Schema.Attribute.Text;
+    currFormId: Schema.Attribute.Text;
     description: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     highlightheading: Schema.Attribute.String;
@@ -1441,7 +1443,9 @@ export interface SchoolprogrammeProgrammeScope extends Struct.ComponentSchema {
   };
   attributes: {
     scopebtn: Schema.Attribute.Component<'shared.button', false>;
+    scopeContainerId: Schema.Attribute.Text;
     scopecontent: Schema.Attribute.Text;
+    scopeFormId: Schema.Attribute.Text;
     scopeheading: Schema.Attribute.String;
     scopeimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };

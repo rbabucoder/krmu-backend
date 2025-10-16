@@ -23,6 +23,12 @@
       "type": "component",
       "component": "shared.button",
       "repeatable": false
+    },
+    "currFormId": {
+      "type": "text"
+    },
+    "currContainerId": {
+      "type": "text"
     }
   },
   "config": {}

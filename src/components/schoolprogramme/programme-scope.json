@@ -26,6 +26,12 @@
       "type": "component",
       "component": "shared.button",
       "repeatable": false
+    },
+    "scopeFormId": {
+      "type": "text"
+    },
+    "scopeContainerId": {
+      "type": "text"
     }
   },
   "config": {}
