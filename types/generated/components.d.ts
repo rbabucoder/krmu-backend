@@ -1662,7 +1662,8 @@ export interface SharedButton extends Struct.ComponentSchema {
     buttonclass: Schema.Attribute.String;
     buttonlink: Schema.Attribute.Text;
     buttontext: Schema.Attribute.String;
-    careerFormField: Schema.Attribute.Text;
+    containerPopupFormId: Schema.Attribute.Text;
+    popupFormId: Schema.Attribute.Text;
   };
 }
 

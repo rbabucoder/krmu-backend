@@ -15,7 +15,10 @@
     "buttonclass": {
       "type": "string"
     },
-    "careerFormField": {
+    "popupFormId": {
+      "type": "text"
+    },
+    "containerPopupFormId": {
       "type": "text"
     }
   },
