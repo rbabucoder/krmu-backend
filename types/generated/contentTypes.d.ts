@@ -1925,6 +1925,7 @@ export interface ApiSchoolProgrammeSchoolProgramme
       'oneToOne',
       'api::school-category.school-category'
     >;
+    SEO: Schema.Attribute.Component<'shared.seo', false>;
     specialisation: Schema.Attribute.Component<
       'schoolprogramme.specilisation',
       false

@@ -1908,8 +1908,11 @@ export interface SharedSeo extends Struct.ComponentSchema {
   attributes: {
     canonical: Schema.Attribute.String & Schema.Attribute.Required;
     metaDescription: Schema.Attribute.Text & Schema.Attribute.Required;
+    metaKeyword: Schema.Attribute.Text;
     metaTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    noIndex: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     shareImage: Schema.Attribute.Media<'images'>;
+    tags: Schema.Attribute.Text;
   };
 }
 

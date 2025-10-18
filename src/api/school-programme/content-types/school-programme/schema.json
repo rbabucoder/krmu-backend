@@ -109,6 +109,11 @@
     "order_num": {
       "type": "string",
       "unique": false
+    },
+    "SEO": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

@@ -27,6 +27,16 @@
     "canonical": {
       "type": "string",
       "required": true
+    },
+    "metaKeyword": {
+      "type": "text"
+    },
+    "noIndex": {
+      "type": "boolean",
+      "default": false
+    },
+    "tags": {
+      "type": "text"
     }
   }
 }
