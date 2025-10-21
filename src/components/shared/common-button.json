@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_common_buttons",
+  "info": {
+    "displayName": "Common Button"
+  },
+  "options": {},
+  "attributes": {
+    "btn_text": {
+      "type": "string"
+    },
+    "btn_class": {
+      "type": "string"
+    },
+    "btn_link": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

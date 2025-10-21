@@ -1714,6 +1714,18 @@ export interface SharedCardwithoutimg extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCommonButton extends Struct.ComponentSchema {
+  collectionName: 'components_shared_common_buttons';
+  info: {
+    displayName: 'Common Button';
+  };
+  attributes: {
+    btn_class: Schema.Attribute.String;
+    btn_link: Schema.Attribute.Text;
+    btn_text: Schema.Attribute.String;
+  };
+}
+
 export interface SharedContactInfoCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_contact_info_cards';
   info: {
@@ -1906,7 +1918,7 @@ export interface SharedSeo extends Struct.ComponentSchema {
     name: 'Seo';
   };
   attributes: {
-    canonical: Schema.Attribute.String & Schema.Attribute.Required;
+    canonical: Schema.Attribute.String;
     metaDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     metaKeyword: Schema.Attribute.Text;
     metaTitle: Schema.Attribute.String & Schema.Attribute.Required;
@@ -2223,6 +2235,7 @@ declare module '@strapi/strapi' {
       'shared.card-with-image': SharedCardWithImage;
       'shared.card-with-image-link': SharedCardWithImageLink;
       'shared.cardwithoutimg': SharedCardwithoutimg;
+      'shared.common-button': SharedCommonButton;
       'shared.contact-info-card': SharedContactInfoCard;
       'shared.counter-component': SharedCounterComponent;
       'shared.counter-with-class': SharedCounterWithClass;
