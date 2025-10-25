@@ -71,6 +71,11 @@
       "type": "component",
       "component": "schoolprogramme.our-location",
       "repeatable": false
+    },
+    "school_seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

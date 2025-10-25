@@ -424,6 +424,7 @@ export interface ApiAboutKrmuAboutKrmu extends Struct.SingleTypeSchema {
       false
     >;
     publishedAt: Schema.Attribute.DateTime;
+    school_seo: Schema.Attribute.Component<'shared.seo', false>;
     subtitle: Schema.Attribute.Text;
     thenexgendescription: Schema.Attribute.Text;
     thenexgentitle: Schema.Attribute.Text;
@@ -2058,6 +2059,10 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     excitedbtns: Schema.Attribute.Component<'shared.button', true>;
     exciteddescription: Schema.Attribute.Text;
     excitedtitle: Schema.Attribute.String;
+    facility_slide: Schema.Attribute.Component<
+      'schoolcomponent.facility-slide',
+      true
+    >;
     herobutton: Schema.Attribute.Component<'shared.button', true>;
     iframe: Schema.Attribute.Text;
     induscollabtitle: Schema.Attribute.Blocks;
@@ -2093,6 +2098,7 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
       'manyToOne',
       'api::school-category.school-category'
     >;
+    school_seo: Schema.Attribute.Component<'shared.seo', false>;
     schoolcomps: Schema.Attribute.DynamicZone<['schoolcomponent.knowledge']>;
     schoolherobanner: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'

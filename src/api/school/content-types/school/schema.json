@@ -250,6 +250,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::degree.degree"
+    },
+    "facility_slide": {
+      "type": "component",
+      "component": "schoolcomponent.facility-slide",
+      "repeatable": true
+    },
+    "school_seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

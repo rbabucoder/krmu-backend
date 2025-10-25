@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_schoolcomponent_facility_slides",
+  "info": {
+    "displayName": "Facility Slide"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "facility_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

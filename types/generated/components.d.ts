@@ -1187,6 +1187,19 @@ export interface SchoolcomponentEventsandexperiencecard
   };
 }
 
+export interface SchoolcomponentFacilitySlide extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_facility_slides';
+  info: {
+    displayName: 'Facility Slide';
+  };
+  attributes: {
+    facility_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    title: Schema.Attribute.Text;
+  };
+}
+
 export interface SchoolcomponentIndustryCollaborationCard
   extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_industry_collaboration_cards';
@@ -2330,6 +2343,7 @@ declare module '@strapi/strapi' {
       'procard.procard': ProcardProcard;
       'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
       'schoolcomponent.eventsandexperiencecard': SchoolcomponentEventsandexperiencecard;
+      'schoolcomponent.facility-slide': SchoolcomponentFacilitySlide;
       'schoolcomponent.industry-collaboration-card': SchoolcomponentIndustryCollaborationCard;
       'schoolcomponent.knowledge': SchoolcomponentKnowledge;
       'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
