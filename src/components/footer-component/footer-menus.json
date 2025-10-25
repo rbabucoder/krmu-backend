@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_component_footer_menus",
+  "info": {
+    "displayName": "Footer Menus"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

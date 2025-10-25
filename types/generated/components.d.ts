@@ -234,6 +234,138 @@ export interface FacultyFacultyTabContentContainer
   };
 }
 
+export interface FooterComponentFooterColumn1 extends Struct.ComponentSchema {
+  collectionName: 'components_footer_component_footer_column_1s';
+  info: {
+    displayName: 'Footer Component 2';
+  };
+  attributes: {
+    footer_menu: Schema.Attribute.Component<
+      'footer-component.footer-menus',
+      true
+    >;
+    heading: Schema.Attribute.Component<
+      'footer-component.footer-heading',
+      false
+    >;
+  };
+}
+
+export interface FooterComponentFooterComponent1
+  extends Struct.ComponentSchema {
+  collectionName: 'components_footer_component_footer_component_1s';
+  info: {
+    displayName: 'Footer Component 1';
+  };
+  attributes: {
+    footer_btn: Schema.Attribute.Component<'shared.common-button', false>;
+    footer_desc: Schema.Attribute.Text;
+    footer_logo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    heading: Schema.Attribute.Component<
+      'footer-component.footer-heading',
+      false
+    >;
+  };
+}
+
+export interface FooterComponentFooterComponent3
+  extends Struct.ComponentSchema {
+  collectionName: 'components_footer_component_footer_component_3s';
+  info: {
+    displayName: 'Footer Component 3';
+  };
+  attributes: {
+    footer_menu: Schema.Attribute.Component<
+      'footer-component.footer-menus',
+      true
+    >;
+    heading: Schema.Attribute.Component<
+      'footer-component.footer-heading',
+      false
+    >;
+  };
+}
+
+export interface FooterComponentFooterComponent4
+  extends Struct.ComponentSchema {
+  collectionName: 'components_footer_component_footer_component_4s';
+  info: {
+    displayName: 'Footer Component 4';
+  };
+  attributes: {
+    footer_list_icon: Schema.Attribute.Component<
+      'footer-component.footer-list-icon',
+      true
+    >;
+    footer_social_icons: Schema.Attribute.Component<
+      'footer-component.footer-social-links',
+      true
+    >;
+    heading: Schema.Attribute.Component<
+      'footer-component.footer-heading',
+      false
+    >;
+    heading_2: Schema.Attribute.Component<
+      'footer-component.footer-heading',
+      false
+    >;
+  };
+}
+
+export interface FooterComponentFooterHeading extends Struct.ComponentSchema {
+  collectionName: 'components_footer_component_footer_headings';
+  info: {
+    displayName: 'Footer Heading';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+  };
+}
+
+export interface FooterComponentFooterListIcon extends Struct.ComponentSchema {
+  collectionName: 'components_footer_component_footer_list_icons';
+  info: {
+    displayName: 'Footer List Icon';
+  };
+  attributes: {
+    footer_info: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface FooterComponentFooterMenus extends Struct.ComponentSchema {
+  collectionName: 'components_footer_component_footer_menus';
+  info: {
+    displayName: 'Footer Menus';
+  };
+  attributes: {
+    title: Schema.Attribute.Text;
+    url: Schema.Attribute.Text;
+  };
+}
+
+export interface FooterComponentFooterSocialLinks
+  extends Struct.ComponentSchema {
+  collectionName: 'components_footer_component_footer_social_links';
+  info: {
+    displayName: 'Footer Social Links';
+  };
+  attributes: {
+    footer_icon: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    footer_url: Schema.Attribute.Text;
+  };
+}
+
 export interface HalloffameHallOfFame extends Struct.ComponentSchema {
   collectionName: 'components_halloffame_hall_of_fames';
   info: {
@@ -2135,6 +2267,14 @@ declare module '@strapi/strapi' {
       'faculty.faculty-tab': FacultyFacultyTab;
       'faculty.faculty-tab-container': FacultyFacultyTabContainer;
       'faculty.faculty-tab-content-container': FacultyFacultyTabContentContainer;
+      'footer-component.footer-column-1': FooterComponentFooterColumn1;
+      'footer-component.footer-component-1': FooterComponentFooterComponent1;
+      'footer-component.footer-component-3': FooterComponentFooterComponent3;
+      'footer-component.footer-component-4': FooterComponentFooterComponent4;
+      'footer-component.footer-heading': FooterComponentFooterHeading;
+      'footer-component.footer-list-icon': FooterComponentFooterListIcon;
+      'footer-component.footer-menus': FooterComponentFooterMenus;
+      'footer-component.footer-social-links': FooterComponentFooterSocialLinks;
       'halloffame.hall-of-fame': HalloffameHallOfFame;
       'homepage-components.a-decade-left-col': HomepageComponentsADecadeLeftCol;
       'homepage-components.a-decade-right-col': HomepageComponentsADecadeRightCol;

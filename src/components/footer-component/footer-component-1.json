@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_footer_component_footer_component_1s",
+  "info": {
+    "displayName": "Footer Component 1"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "component": "footer-component.footer-heading",
+      "repeatable": false
+    },
+    "footer_desc": {
+      "type": "text"
+    },
+    "footer_btn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    },
+    "footer_logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

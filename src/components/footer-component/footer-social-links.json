@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_footer_component_footer_social_links",
+  "info": {
+    "displayName": "Footer Social Links"
+  },
+  "options": {},
+  "attributes": {
+    "footer_icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "footer_url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

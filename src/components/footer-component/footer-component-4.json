@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_footer_component_footer_component_4s",
+  "info": {
+    "displayName": "Footer Component 4"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "component": "footer-component.footer-heading",
+      "repeatable": false
+    },
+    "footer_list_icon": {
+      "type": "component",
+      "component": "footer-component.footer-list-icon",
+      "repeatable": true
+    },
+    "heading_2": {
+      "type": "component",
+      "component": "footer-component.footer-heading",
+      "repeatable": false
+    },
+    "footer_social_icons": {
+      "type": "component",
+      "component": "footer-component.footer-social-links",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

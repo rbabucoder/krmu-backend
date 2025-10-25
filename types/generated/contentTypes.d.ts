@@ -1094,6 +1094,49 @@ export interface ApiFinanceDepartmentFinanceDepartment
   };
 }
 
+export interface ApiFooterFooter extends Struct.SingleTypeSchema {
+  collectionName: 'footers';
+  info: {
+    displayName: 'Footer';
+    pluralName: 'footers';
+    singularName: 'footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footer_comp_1: Schema.Attribute.Component<
+      'footer-component.footer-component-1',
+      false
+    >;
+    footer_comp_2: Schema.Attribute.Component<
+      'footer-component.footer-column-1',
+      false
+    >;
+    footer_comp_3: Schema.Attribute.Component<
+      'footer-component.footer-component-3',
+      false
+    >;
+    footer_comp_4: Schema.Attribute.Component<
+      'footer-component.footer-component-4',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::footer.footer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -2765,6 +2808,7 @@ declare module '@strapi/strapi' {
       'api::faculty.faculty': ApiFacultyFaculty;
       'api::faq.faq': ApiFaqFaq;
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
+      'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::header-menu-temp.header-menu-temp': ApiHeaderMenuTempHeaderMenuTemp;
       'api::home-page.home-page': ApiHomePageHomePage;
