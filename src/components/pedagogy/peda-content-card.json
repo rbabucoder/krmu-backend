@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_pedagogy_peda_content_cards",
+  "info": {
+    "displayName": "Peda Content Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "content": {
+      "type": "text"
+    },
+    "peda_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

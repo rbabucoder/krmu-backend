@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "pedagogies",
+  "info": {
+    "singularName": "pedagogy",
+    "pluralName": "pedagogies",
+    "displayName": "Pedagogy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pedagogy_hero": {
+      "type": "component",
+      "component": "pedagogy.pedagogy-hero",
+      "repeatable": false
+    },
+    "classroom_teaching": {
+      "type": "component",
+      "component": "pedagogy.classroom-teaching",
+      "repeatable": false
+    },
+    "lecture": {
+      "type": "component",
+      "component": "pedagogy.peda-content-card",
+      "repeatable": false
+    },
+    "practicals": {
+      "type": "component",
+      "component": "pedagogy.peda-content-card",
+      "repeatable": false
+    },
+    "innovative_work_lab": {
+      "type": "component",
+      "component": "pedagogy.peda-content-card",
+      "repeatable": false
+    },
+    "workshop_guest_lecture": {
+      "type": "component",
+      "component": "pedagogy.peda-content-card",
+      "repeatable": false
+    },
+    "technology_enable_learning": {
+      "type": "component",
+      "component": "pedagogy.peda-content-card",
+      "repeatable": false
+    },
+    "mock_interview": {
+      "type": "component",
+      "component": "pedagogy.peda-content-card",
+      "repeatable": false
+    },
+    "mentor_prog": {
+      "type": "component",
+      "component": "pedagogy.peda-content-card",
+      "repeatable": false
+    },
+    "industry_connect": {
+      "type": "component",
+      "component": "pedagogy.peda-industry-connect",
+      "repeatable": false
+    }
+  }
+}

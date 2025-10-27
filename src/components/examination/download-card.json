@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_examination_download_cards",
+  "info": {
+    "displayName": "Download Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "download_btn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

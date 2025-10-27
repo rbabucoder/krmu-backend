@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_examination_important_downloads",
+  "info": {
+    "displayName": "Important Download"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "imp_download_card": {
+      "type": "component",
+      "component": "examination.download-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

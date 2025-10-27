@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_examination_apply_onlines",
+  "info": {
+    "displayName": "Apply Online"
+  },
+  "options": {},
+  "attributes": {
+    "apply_online_content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  },
+  "config": {}
+}

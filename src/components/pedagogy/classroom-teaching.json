@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_pedagogy_classroom_teachings",
+  "info": {
+    "displayName": "Classroom Teaching"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_examination_abc_nad_digilockers",
+  "info": {
+    "displayName": "ABC NAD Digilocker"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "abc_nad_btns": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": true
+    },
+    "abc_nad_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

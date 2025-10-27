@@ -956,6 +956,50 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiExaminationExamination extends Struct.SingleTypeSchema {
+  collectionName: 'examinations';
+  info: {
+    displayName: 'Examination';
+    pluralName: 'examinations';
+    singularName: 'examination';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    abc_nad_digilocker: Schema.Attribute.Component<
+      'examination.abc-nad-digilocker',
+      false
+    >;
+    apply_online: Schema.Attribute.Component<'examination.apply-online', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    examination_faq: Schema.Attribute.Component<
+      'examination.examination-faq',
+      false
+    >;
+    examination_hero: Schema.Attribute.Component<
+      'examination.examination-hero',
+      false
+    >;
+    imp_download: Schema.Attribute.Component<
+      'examination.important-download',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::examination.examination'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFacilityFacility extends Struct.CollectionTypeSchema {
   collectionName: 'facilities';
   info: {
@@ -1619,6 +1663,64 @@ export interface ApiNoticeNotice extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPedagogyPedagogy extends Struct.SingleTypeSchema {
+  collectionName: 'pedagogies';
+  info: {
+    displayName: 'Pedagogy';
+    pluralName: 'pedagogies';
+    singularName: 'pedagogy';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    classroom_teaching: Schema.Attribute.Component<
+      'pedagogy.classroom-teaching',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    industry_connect: Schema.Attribute.Component<
+      'pedagogy.peda-industry-connect',
+      false
+    >;
+    innovative_work_lab: Schema.Attribute.Component<
+      'pedagogy.peda-content-card',
+      false
+    >;
+    lecture: Schema.Attribute.Component<'pedagogy.peda-content-card', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pedagogy.pedagogy'
+    > &
+      Schema.Attribute.Private;
+    mentor_prog: Schema.Attribute.Component<
+      'pedagogy.peda-content-card',
+      false
+    >;
+    mock_interview: Schema.Attribute.Component<
+      'pedagogy.peda-content-card',
+      false
+    >;
+    pedagogy_hero: Schema.Attribute.Component<'pedagogy.pedagogy-hero', false>;
+    practicals: Schema.Attribute.Component<'pedagogy.peda-content-card', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    technology_enable_learning: Schema.Attribute.Component<
+      'pedagogy.peda-content-card',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    workshop_guest_lecture: Schema.Attribute.Component<
+      'pedagogy.peda-content-card',
+      false
+    >;
   };
 }
 
@@ -2810,6 +2912,7 @@ declare module '@strapi/strapi' {
       'api::dean-honor-list.dean-honor-list': ApiDeanHonorListDeanHonorList;
       'api::degree.degree': ApiDegreeDegree;
       'api::event.event': ApiEventEvent;
+      'api::examination.examination': ApiExaminationExamination;
       'api::facility.facility': ApiFacilityFacility;
       'api::faculty.faculty': ApiFacultyFaculty;
       'api::faq.faq': ApiFaqFaq;
@@ -2828,6 +2931,7 @@ declare module '@strapi/strapi' {
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::news-event.news-event': ApiNewsEventNewsEvent;
       'api::notice.notice': ApiNoticeNotice;
+      'api::pedagogy.pedagogy': ApiPedagogyPedagogy;
       'api::phd-single-programme.phd-single-programme': ApiPhdSingleProgrammePhdSingleProgramme;
       'api::photo-gallery.photo-gallery': ApiPhotoGalleryPhotoGallery;
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;

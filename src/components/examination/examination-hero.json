@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_examination_examination_heroes",
+  "info": {
+    "displayName": "Examination Hero"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bgimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_pedagogy_pedagogy_heroes",
+  "info": {
+    "displayName": "Pedagogy Hero"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "title2": {
+      "type": "text"
+    },
+    "hero_bg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

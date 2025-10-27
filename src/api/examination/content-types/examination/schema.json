@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "examinations",
+  "info": {
+    "singularName": "examination",
+    "pluralName": "examinations",
+    "displayName": "Examination"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "examination_hero": {
+      "type": "component",
+      "component": "examination.examination-hero",
+      "repeatable": false
+    },
+    "imp_download": {
+      "type": "component",
+      "component": "examination.important-download",
+      "repeatable": false
+    },
+    "abc_nad_digilocker": {
+      "type": "component",
+      "component": "examination.abc-nad-digilocker",
+      "repeatable": false
+    },
+    "apply_online": {
+      "type": "component",
+      "component": "examination.apply-online",
+      "repeatable": false
+    },
+    "examination_faq": {
+      "type": "component",
+      "component": "examination.examination-faq",
+      "repeatable": false
+    }
+  }
+}

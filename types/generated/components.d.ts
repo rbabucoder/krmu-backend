@@ -202,6 +202,126 @@ export interface DeanHonorDeanHonorListAccordion
   };
 }
 
+export interface ExaminationAbcNadDigilocker extends Struct.ComponentSchema {
+  collectionName: 'components_examination_abc_nad_digilockers';
+  info: {
+    displayName: 'ABC NAD Digilocker';
+  };
+  attributes: {
+    abc_nad_btns: Schema.Attribute.Component<'shared.common-button', true>;
+    abc_nad_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    desc: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface ExaminationApplyOnline extends Struct.ComponentSchema {
+  collectionName: 'components_examination_apply_onlines';
+  info: {
+    displayName: 'Apply Online';
+  };
+  attributes: {
+    apply_online_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+  };
+}
+
+export interface ExaminationDownloadCard extends Struct.ComponentSchema {
+  collectionName: 'components_examination_download_cards';
+  info: {
+    displayName: 'Download Card';
+  };
+  attributes: {
+    download_btn: Schema.Attribute.Component<'shared.common-button', false>;
+    title: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+  };
+}
+
+export interface ExaminationExaminationAccordion
+  extends Struct.ComponentSchema {
+  collectionName: 'components_examination_examination_accordions';
+  info: {
+    displayName: 'Examination Accordion';
+  };
+  attributes: {
+    answer: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    ques: Schema.Attribute.Text;
+  };
+}
+
+export interface ExaminationExaminationFaq extends Struct.ComponentSchema {
+  collectionName: 'components_examination_examination_faqs';
+  info: {
+    displayName: 'Examination FAQ';
+  };
+  attributes: {
+    faq_accordion: Schema.Attribute.Component<
+      'examination.faq-accordion',
+      true
+    >;
+    heading: Schema.Attribute.Text;
+  };
+}
+
+export interface ExaminationExaminationHero extends Struct.ComponentSchema {
+  collectionName: 'components_examination_examination_heroes';
+  info: {
+    displayName: 'Examination Hero';
+  };
+  attributes: {
+    bgimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ExaminationFaqAccordion extends Struct.ComponentSchema {
+  collectionName: 'components_examination_faq_accordions';
+  info: {
+    displayName: 'FAQ Accordion';
+  };
+  attributes: {
+    exam_faq_acc: Schema.Attribute.Component<
+      'examination.examination-accordion',
+      true
+    >;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface ExaminationImportantDownload extends Struct.ComponentSchema {
+  collectionName: 'components_examination_important_downloads';
+  info: {
+    displayName: 'Important Download';
+  };
+  attributes: {
+    heading: Schema.Attribute.Text;
+    imp_download_card: Schema.Attribute.Component<
+      'examination.download-card',
+      true
+    >;
+  };
+}
+
 export interface FacultyFacultyTab extends Struct.ComponentSchema {
   collectionName: 'components_faculty_faculty_tabs';
   info: {
@@ -973,6 +1093,71 @@ export interface NoticePdfNoticePdf extends Struct.ComponentSchema {
   attributes: {
     content: Schema.Attribute.Text;
     pdf_url: Schema.Attribute.Text;
+  };
+}
+
+export interface PedagogyClassroomTeaching extends Struct.ComponentSchema {
+  collectionName: 'components_pedagogy_classroom_teachings';
+  info: {
+    displayName: 'Classroom Teaching';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+  };
+}
+
+export interface PedagogyPedaContentCard extends Struct.ComponentSchema {
+  collectionName: 'components_pedagogy_peda_content_cards';
+  info: {
+    displayName: 'Peda Content Card';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    peda_img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface PedagogyPedaIndustryConnect extends Struct.ComponentSchema {
+  collectionName: 'components_pedagogy_peda_industry_connects';
+  info: {
+    displayName: 'Peda Industry Connect';
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    industry_connect_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    mob_indus_connect_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    subheading: Schema.Attribute.Text;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface PedagogyPedagogyHero extends Struct.ComponentSchema {
+  collectionName: 'components_pedagogy_pedagogy_heroes';
+  info: {
+    displayName: 'Pedagogy Hero';
+  };
+  attributes: {
+    content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    description: Schema.Attribute.Text;
+    hero_bg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.Text;
+    title2: Schema.Attribute.Text;
   };
 }
 
@@ -2277,6 +2462,14 @@ declare module '@strapi/strapi' {
       'custom-page.meta-tag': CustomPageMetaTag;
       'dean-honor.dean-honor-html': DeanHonorDeanHonorHtml;
       'dean-honor.dean-honor-list-accordion': DeanHonorDeanHonorListAccordion;
+      'examination.abc-nad-digilocker': ExaminationAbcNadDigilocker;
+      'examination.apply-online': ExaminationApplyOnline;
+      'examination.download-card': ExaminationDownloadCard;
+      'examination.examination-accordion': ExaminationExaminationAccordion;
+      'examination.examination-faq': ExaminationExaminationFaq;
+      'examination.examination-hero': ExaminationExaminationHero;
+      'examination.faq-accordion': ExaminationFaqAccordion;
+      'examination.important-download': ExaminationImportantDownload;
       'faculty.faculty-tab': FacultyFacultyTab;
       'faculty.faculty-tab-container': FacultyFacultyTabContainer;
       'faculty.faculty-tab-content-container': FacultyFacultyTabContentContainer;
@@ -2327,6 +2520,10 @@ declare module '@strapi/strapi' {
       'menu.menu-social-links': MenuMenuSocialLinks;
       'menu.menumediacomp': MenuMenumediacomp;
       'notice-pdf.notice-pdf': NoticePdfNoticePdf;
+      'pedagogy.classroom-teaching': PedagogyClassroomTeaching;
+      'pedagogy.peda-content-card': PedagogyPedaContentCard;
+      'pedagogy.peda-industry-connect': PedagogyPedaIndustryConnect;
+      'pedagogy.pedagogy-hero': PedagogyPedagogyHero;
       'phd-programme.career-options': PhdProgrammeCareerOptions;
       'phd-programme.dream-career': PhdProgrammeDreamCareer;
       'phd-programme.outcome-content': PhdProgrammeOutcomeContent;

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_examination_faq_accordions",
+  "info": {
+    "displayName": "FAQ Accordion"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "exam_faq_acc": {
+      "type": "component",
+      "component": "examination.examination-accordion",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
