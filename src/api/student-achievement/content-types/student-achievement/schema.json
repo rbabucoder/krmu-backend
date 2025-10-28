@@ -21,14 +21,18 @@
         "audios"
       ]
     },
-    "achievementcontent": {
-      "type": "text"
-    },
     "school_categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::school-category.school-category",
       "mappedBy": "student_achievements"
+    },
+    "achievement_content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     }
   }
 }

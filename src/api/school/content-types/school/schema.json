@@ -265,6 +265,10 @@
       "type": "component",
       "component": "schoolcomponent.commence-you-journey",
       "repeatable": false
+    },
+    "fullwidthhero": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

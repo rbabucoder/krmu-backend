@@ -2169,6 +2169,7 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
       'schoolcomponent.facility-slide',
       true
     >;
+    fullwidthhero: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     herobutton: Schema.Attribute.Component<'shared.button', true>;
     iframe: Schema.Attribute.Text;
     induscollabtitle: Schema.Attribute.Blocks;
@@ -2271,7 +2272,13 @@ export interface ApiStudentAchievementStudentAchievement
     draftAndPublish: true;
   };
   attributes: {
-    achievementcontent: Schema.Attribute.Text;
+    achievement_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     achivementimage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
