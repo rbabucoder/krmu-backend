@@ -68,7 +68,7 @@
     },
     "order_num": {
       "type": "string",
-      "unique": true
+      "unique": false
     }
   }
 }

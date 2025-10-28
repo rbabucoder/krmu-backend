@@ -1070,7 +1070,7 @@ export interface ApiFacultyFaculty extends Struct.CollectionTypeSchema {
       'api::faculty.faculty'
     > &
       Schema.Attribute.Private;
-    order_num: Schema.Attribute.String & Schema.Attribute.Unique;
+    order_num: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     school_categories: Schema.Attribute.Relation<
       'manyToMany',
