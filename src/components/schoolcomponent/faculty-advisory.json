@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_schoolcomponent_faculty_advisories",
+  "info": {
+    "displayName": "Faculty/Advisory"
+  },
+  "options": {},
+  "attributes": {
+    "fac_adv": {
+      "type": "enumeration",
+      "enum": [
+        "Faculty/Advisory",
+        "Single"
+      ]
+    },
+    "fac_title": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  },
+  "config": {}
+}

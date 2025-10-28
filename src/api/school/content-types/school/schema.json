@@ -269,6 +269,11 @@
     "fullwidthhero": {
       "type": "boolean",
       "default": false
+    },
+    "fac_adv": {
+      "type": "component",
+      "component": "schoolcomponent.faculty-advisory",
+      "repeatable": false
     }
   }
 }

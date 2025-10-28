@@ -31,16 +31,6 @@
       "type": "uid",
       "targetField": "title"
     },
-    "featured_img": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "bgimg": {
       "type": "media",
       "multiple": false,

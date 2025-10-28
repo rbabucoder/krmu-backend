@@ -1581,9 +1581,6 @@ export interface ApiNewsAndEventNewsAndEvent
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    featured_img: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -2165,6 +2162,10 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     excitedbtns: Schema.Attribute.Component<'shared.button', true>;
     exciteddescription: Schema.Attribute.Text;
     excitedtitle: Schema.Attribute.String;
+    fac_adv: Schema.Attribute.Component<
+      'schoolcomponent.faculty-advisory',
+      false
+    >;
     facility_slide: Schema.Attribute.Component<
       'schoolcomponent.facility-slide',
       true

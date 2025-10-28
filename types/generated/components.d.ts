@@ -1401,6 +1401,23 @@ export interface SchoolcomponentFacilitySlide extends Struct.ComponentSchema {
   };
 }
 
+export interface SchoolcomponentFacultyAdvisory extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_faculty_advisories';
+  info: {
+    displayName: 'Faculty/Advisory';
+  };
+  attributes: {
+    fac_adv: Schema.Attribute.Enumeration<['Faculty/Advisory', 'Single']>;
+    fac_title: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+  };
+}
+
 export interface SchoolcomponentIndustryCollaborationCard
   extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_industry_collaboration_cards';
@@ -2558,6 +2575,7 @@ declare module '@strapi/strapi' {
       'schoolcomponent.commence-you-journey': SchoolcomponentCommenceYouJourney;
       'schoolcomponent.eventsandexperiencecard': SchoolcomponentEventsandexperiencecard;
       'schoolcomponent.facility-slide': SchoolcomponentFacilitySlide;
+      'schoolcomponent.faculty-advisory': SchoolcomponentFacultyAdvisory;
       'schoolcomponent.industry-collaboration-card': SchoolcomponentIndustryCollaborationCard;
       'schoolcomponent.knowledge': SchoolcomponentKnowledge;
       'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
