@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_schoolcomponent_commence_you_journeys",
+  "info": {
+    "displayName": "Commence you journey"
+  },
+  "options": {},
+  "attributes": {
+    "highlight_heading": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "commence_btn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    },
+    "commence_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

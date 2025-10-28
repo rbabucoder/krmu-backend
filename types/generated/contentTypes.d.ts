@@ -2144,6 +2144,10 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
       'schoolcomponent.industry-collaboration-card',
       true
     >;
+    commence_journey: Schema.Attribute.Component<
+      'schoolcomponent.commence-you-journey',
+      false
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -1360,6 +1360,22 @@ export interface SchoolcomponentAdmissionOpen extends Struct.ComponentSchema {
   };
 }
 
+export interface SchoolcomponentCommenceYouJourney
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_commence_you_journeys';
+  info: {
+    displayName: 'Commence you journey';
+  };
+  attributes: {
+    commence_btn: Schema.Attribute.Component<'shared.common-button', false>;
+    commence_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    heading: Schema.Attribute.Text;
+    highlight_heading: Schema.Attribute.Text;
+  };
+}
+
 export interface SchoolcomponentEventsandexperiencecard
   extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_eventsandexperiencecards';
@@ -2539,6 +2555,7 @@ declare module '@strapi/strapi' {
       'placement-overview.placement-path': PlacementOverviewPlacementPath;
       'procard.procard': ProcardProcard;
       'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
+      'schoolcomponent.commence-you-journey': SchoolcomponentCommenceYouJourney;
       'schoolcomponent.eventsandexperiencecard': SchoolcomponentEventsandexperiencecard;
       'schoolcomponent.facility-slide': SchoolcomponentFacilitySlide;
       'schoolcomponent.industry-collaboration-card': SchoolcomponentIndustryCollaborationCard;

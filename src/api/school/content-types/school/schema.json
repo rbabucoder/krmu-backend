@@ -260,6 +260,11 @@
       "type": "component",
       "component": "shared.seo",
       "repeatable": false
+    },
+    "commence_journey": {
+      "type": "component",
+      "component": "schoolcomponent.commence-you-journey",
+      "repeatable": false
     }
   }
 }
