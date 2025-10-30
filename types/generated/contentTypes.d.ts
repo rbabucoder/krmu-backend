@@ -2159,6 +2159,7 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     eventsbtn: Schema.Attribute.Component<'shared.button', false>;
     eventsdesc: Schema.Attribute.Text;
     eventstitle: Schema.Attribute.String;
+    excitedbg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     excitedbtns: Schema.Attribute.Component<'shared.button', true>;
     exciteddescription: Schema.Attribute.Text;
     excitedtitle: Schema.Attribute.String;
@@ -2198,6 +2199,9 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
       'api::school.school'
     > &
       Schema.Attribute.Private;
+    newsletterbg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     newsletterbtns: Schema.Attribute.Component<'shared.button', true>;
     newsletterdesc: Schema.Attribute.Text;
     newslettertitle: Schema.Attribute.String;

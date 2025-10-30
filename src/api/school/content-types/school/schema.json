@@ -86,6 +86,16 @@
     "excitedtitle": {
       "type": "string"
     },
+    "excitedbg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "exciteddescription": {
       "type": "text"
     },
@@ -274,6 +284,16 @@
       "type": "component",
       "component": "schoolcomponent.faculty-advisory",
       "repeatable": false
+    },
+    "newsletterbg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
