@@ -294,6 +294,11 @@
         "videos",
         "audios"
       ]
+    },
+    "video_comp": {
+      "type": "component",
+      "component": "schoolcomponent.industry-video",
+      "repeatable": false
     }
   }
 }

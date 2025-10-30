@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_schoolcomponent_school_video_components",
+  "info": {
+    "displayName": "School Video Component"
+  },
+  "options": {},
+  "attributes": {
+    "videoiframefield": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -2230,6 +2230,10 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     urlslug: Schema.Attribute.UID<'schoolname'>;
+    video_comp: Schema.Attribute.Component<
+      'schoolcomponent.industry-video',
+      false
+    >;
     videoformat: Schema.Attribute.Enumeration<['Iframe', 'videourl']> &
       Schema.Attribute.DefaultTo<'Iframe'>;
     videolink: Schema.Attribute.String;

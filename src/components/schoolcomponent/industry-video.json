@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_schoolcomponent_industry_videos",
+  "info": {
+    "displayName": "Industry Video"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "video_iframe_fields": {
+      "type": "component",
+      "component": "schoolcomponent.school-video-component",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

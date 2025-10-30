@@ -1432,6 +1432,20 @@ export interface SchoolcomponentIndustryCollaborationCard
   };
 }
 
+export interface SchoolcomponentIndustryVideo extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_industry_videos';
+  info: {
+    displayName: 'Industry Video';
+  };
+  attributes: {
+    heading: Schema.Attribute.Text;
+    video_iframe_fields: Schema.Attribute.Component<
+      'schoolcomponent.school-video-component',
+      true
+    >;
+  };
+}
+
 export interface SchoolcomponentKnowledge extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_knowledges';
   info: {
@@ -1477,6 +1491,17 @@ export interface SchoolcomponentSchoolTestimonialCard
     info: Schema.Attribute.Text;
     name: Schema.Attribute.String;
     userimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SchoolcomponentSchoolVideoComponent
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_school_video_components';
+  info: {
+    displayName: 'School Video Component';
+  };
+  attributes: {
+    videoiframefield: Schema.Attribute.Text;
   };
 }
 
@@ -2577,10 +2602,12 @@ declare module '@strapi/strapi' {
       'schoolcomponent.facility-slide': SchoolcomponentFacilitySlide;
       'schoolcomponent.faculty-advisory': SchoolcomponentFacultyAdvisory;
       'schoolcomponent.industry-collaboration-card': SchoolcomponentIndustryCollaborationCard;
+      'schoolcomponent.industry-video': SchoolcomponentIndustryVideo;
       'schoolcomponent.knowledge': SchoolcomponentKnowledge;
       'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
       'schoolcomponent.school-list-item': SchoolcomponentSchoolListItem;
       'schoolcomponent.school-testimonial-card': SchoolcomponentSchoolTestimonialCard;
+      'schoolcomponent.school-video-component': SchoolcomponentSchoolVideoComponent;
       'schoolprogramme.admission-process': SchoolprogrammeAdmissionProcess;
       'schoolprogramme.admission-process-card': SchoolprogrammeAdmissionProcessCard;
       'schoolprogramme.beyond-classroom': SchoolprogrammeBeyondClassroom;
