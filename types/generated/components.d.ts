@@ -131,6 +131,34 @@ export interface AwardsRecognitionAwardsAndRecognition
   attributes: {};
 }
 
+export interface BlogBlogFaq extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_faqs';
+  info: {
+    displayName: 'Blog FAQ';
+  };
+  attributes: {
+    answer: Schema.Attribute.Text;
+    ques: Schema.Attribute.Text;
+  };
+}
+
+export interface BlogSingleBlogComponent extends Struct.ComponentSchema {
+  collectionName: 'components_blog_single_blog_components';
+  info: {
+    displayName: 'Single Blog Component';
+  };
+  attributes: {
+    faqs: Schema.Attribute.Component<'blog.blog-faq', true>;
+    single_blog_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+  };
+}
+
 export interface ClubSocietiesClubAndSocieties extends Struct.ComponentSchema {
   collectionName: 'components_club_societies_club_and_societies';
   info: {
@@ -2515,6 +2543,8 @@ declare module '@strapi/strapi' {
       'admissionpage-components.location': AdmissionpageComponentsLocation;
       'admissionvisitus-component.academic': AdmissionvisitusComponentAcademic;
       'awards-recognition.awards-and-recognition': AwardsRecognitionAwardsAndRecognition;
+      'blog.blog-faq': BlogBlogFaq;
+      'blog.single-blog-component': BlogSingleBlogComponent;
       'club-societies.club-and-societies': ClubSocietiesClubAndSocieties;
       'custom-page.body-content': CustomPageBodyContent;
       'custom-page.meta-tag': CustomPageMetaTag;

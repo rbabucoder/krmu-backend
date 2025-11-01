@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_single_blog_components",
+  "info": {
+    "displayName": "Single Blog Component"
+  },
+  "options": {},
+  "attributes": {
+    "single_blog_content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "faqs": {
+      "type": "component",
+      "component": "blog.blog-faq",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

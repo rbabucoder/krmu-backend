@@ -719,6 +719,40 @@ export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiBlogCategoryBlogCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'blog_categories';
+  info: {
+    displayName: 'Blog Category';
+    pluralName: 'blog-categories';
+    singularName: 'blog-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    blog_category_slug: Schema.Attribute.UID<'blog_category_title'>;
+    blog_category_title: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-category.blog-category'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    single_blogs: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::single-blog.single-blog'
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   collectionName: 'categories';
   info: {
@@ -2269,6 +2303,43 @@ export interface ApiSectionSection extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSingleBlogSingleBlog extends Struct.CollectionTypeSchema {
+  collectionName: 'single_blogs';
+  info: {
+    displayName: 'Single Blog';
+    pluralName: 'single-blogs';
+    singularName: 'single-blog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    blog_categories: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::blog-category.blog-category'
+    >;
+    blog_slug: Schema.Attribute.UID<'title'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featured_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::single-blog.single-blog'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    single_blog: Schema.Attribute.DynamicZone<['blog.single-blog-component']>;
+    title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiStudentAchievementStudentAchievement
   extends Struct.CollectionTypeSchema {
   collectionName: 'student_achievements';
@@ -2925,6 +2996,7 @@ declare module '@strapi/strapi' {
       'api::alumni.alumni': ApiAlumniAlumni;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
+      'api::blog-category.blog-category': ApiBlogCategoryBlogCategory;
       'api::category.category': ApiCategoryCategory;
       'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
@@ -2962,6 +3034,7 @@ declare module '@strapi/strapi' {
       'api::school-programme.school-programme': ApiSchoolProgrammeSchoolProgramme;
       'api::school.school': ApiSchoolSchool;
       'api::section.section': ApiSectionSection;
+      'api::single-blog.single-blog': ApiSingleBlogSingleBlog;
       'api::student-achievement.student-achievement': ApiStudentAchievementStudentAchievement;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::topbar-menu.topbar-menu': ApiTopbarMenuTopbarMenu;
