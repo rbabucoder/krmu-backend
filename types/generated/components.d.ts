@@ -356,7 +356,13 @@ export interface FacultyFacultyTab extends Struct.ComponentSchema {
     displayName: 'Faculty Tab';
   };
   attributes: {
-    tabcontent: Schema.Attribute.Blocks;
+    tabcontent: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     tabname: Schema.Attribute.String;
   };
 }
@@ -378,7 +384,13 @@ export interface FacultyFacultyTabContentContainer
     displayName: 'Faculty Tab Content Container';
   };
   attributes: {
-    faculty_content: Schema.Attribute.Text;
+    fac_int_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
   };
 }
 

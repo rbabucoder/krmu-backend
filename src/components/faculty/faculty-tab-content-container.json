@@ -5,8 +5,12 @@
   },
   "options": {},
   "attributes": {
-    "faculty_content": {
-      "type": "text"
+    "fac_int_content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     }
   },
   "config": {}
