@@ -304,6 +304,11 @@
       "type": "component",
       "component": "schoolcomponent.programme-offered",
       "repeatable": false
+    },
+    "school_advantage": {
+      "type": "component",
+      "component": "schoolcomponent.advantage-content",
+      "repeatable": false
     }
   }
 }

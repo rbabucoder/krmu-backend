@@ -1388,6 +1388,23 @@ export interface SchoolcomponentAdmissionOpen extends Struct.ComponentSchema {
   };
 }
 
+export interface SchoolcomponentAdvantageContent
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_advantage_contents';
+  info: {
+    displayName: 'Advantage Content';
+  };
+  attributes: {
+    advantage_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+  };
+}
+
 export interface SchoolcomponentCommenceYouJourney
   extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_commence_you_journeys';
@@ -2639,6 +2656,7 @@ declare module '@strapi/strapi' {
       'placement-overview.placement-path': PlacementOverviewPlacementPath;
       'procard.procard': ProcardProcard;
       'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
+      'schoolcomponent.advantage-content': SchoolcomponentAdvantageContent;
       'schoolcomponent.commence-you-journey': SchoolcomponentCommenceYouJourney;
       'schoolcomponent.eventsandexperiencecard': SchoolcomponentEventsandexperiencecard;
       'schoolcomponent.facility-slide': SchoolcomponentFacilitySlide;

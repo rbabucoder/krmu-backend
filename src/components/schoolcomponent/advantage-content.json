@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_schoolcomponent_advantage_contents",
+  "info": {
+    "displayName": "Advantage Content"
+  },
+  "options": {},
+  "attributes": {
+    "advantage_content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  },
+  "config": {}
+}

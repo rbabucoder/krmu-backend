@@ -2244,6 +2244,10 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
       false
     >;
     publishedAt: Schema.Attribute.DateTime;
+    school_advantage: Schema.Attribute.Component<
+      'schoolcomponent.advantage-content',
+      false
+    >;
     school_category: Schema.Attribute.Relation<
       'manyToOne',
       'api::school-category.school-category'
