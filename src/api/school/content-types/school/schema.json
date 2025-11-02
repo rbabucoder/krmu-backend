@@ -299,6 +299,11 @@
       "type": "component",
       "component": "schoolcomponent.industry-video",
       "repeatable": false
+    },
+    "programme_offered": {
+      "type": "component",
+      "component": "schoolcomponent.programme-offered",
+      "repeatable": false
     }
   }
 }

@@ -1487,6 +1487,18 @@ export interface SchoolcomponentKnowledge extends Struct.ComponentSchema {
   };
 }
 
+export interface SchoolcomponentProgrammeOffered
+  extends Struct.ComponentSchema {
+  collectionName: 'components_schoolcomponent_programme_offereds';
+  info: {
+    displayName: 'Programme Offered';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    title: Schema.Attribute.Text;
+  };
+}
+
 export interface SchoolcomponentSchoolComponent extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_school_components';
   info: {
@@ -2634,6 +2646,7 @@ declare module '@strapi/strapi' {
       'schoolcomponent.industry-collaboration-card': SchoolcomponentIndustryCollaborationCard;
       'schoolcomponent.industry-video': SchoolcomponentIndustryVideo;
       'schoolcomponent.knowledge': SchoolcomponentKnowledge;
+      'schoolcomponent.programme-offered': SchoolcomponentProgrammeOffered;
       'schoolcomponent.school-component': SchoolcomponentSchoolComponent;
       'schoolcomponent.school-list-item': SchoolcomponentSchoolListItem;
       'schoolcomponent.school-testimonial-card': SchoolcomponentSchoolTestimonialCard;

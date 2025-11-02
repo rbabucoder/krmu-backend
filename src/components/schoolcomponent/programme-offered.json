@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_schoolcomponent_programme_offereds",
+  "info": {
+    "displayName": "Programme Offered"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "content": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -2239,6 +2239,10 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     newsletterbtns: Schema.Attribute.Component<'shared.button', true>;
     newsletterdesc: Schema.Attribute.Text;
     newslettertitle: Schema.Attribute.String;
+    programme_offered: Schema.Attribute.Component<
+      'schoolcomponent.programme-offered',
+      false
+    >;
     publishedAt: Schema.Attribute.DateTime;
     school_category: Schema.Attribute.Relation<
       'manyToOne',
