@@ -109,6 +109,21 @@
       "type": "component",
       "component": "phd-programme.phd-admsission-and-selection-process",
       "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "criteria": {
+      "type": "component",
+      "component": "schoolprogramme.criteria",
+      "repeatable": false
+    },
+    "school_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::school-category.school-category"
     }
   }
 }

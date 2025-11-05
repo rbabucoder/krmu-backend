@@ -1807,6 +1807,7 @@ export interface ApiPhdSingleProgrammePhdSingleProgramme
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    criteria: Schema.Attribute.Component<'schoolprogramme.criteria', false>;
     degree: Schema.Attribute.Enumeration<['Doctoral Programme']>;
     duration: Schema.Attribute.Component<'shared.counter-component', false>;
     eligibility_criteria: Schema.Attribute.Component<
@@ -1851,6 +1852,11 @@ export interface ApiPhdSingleProgrammePhdSingleProgramme
       'phd-programme.scholar-sponsored-part-time',
       false
     >;
+    school_category: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::school-category.school-category'
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
