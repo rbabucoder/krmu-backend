@@ -29,6 +29,10 @@
     },
     "currContainerId": {
       "type": "text"
+    },
+    "only_years": {
+      "type": "boolean",
+      "default": false
     }
   },
   "config": {}

@@ -1695,6 +1695,7 @@ export interface SchoolprogrammeCurriculum extends Struct.ComponentSchema {
     description: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     highlightheading: Schema.Attribute.String;
+    only_years: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     years: Schema.Attribute.Component<
       'schoolprogramme.programme-structure',
       true
