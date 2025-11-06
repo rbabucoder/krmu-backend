@@ -14,6 +14,17 @@
     "download_prospectus_enable_disable": {
       "type": "boolean",
       "default": false
+    },
+    "programme_handbook_enable_disable": {
+      "type": "boolean",
+      "default": false
+    },
+    "open_elective_enable_disable": {
+      "type": "boolean",
+      "default": false
+    },
+    "minor_enable_disable": {
+      "type": "boolean"
     }
   }
 }

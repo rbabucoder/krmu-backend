@@ -902,6 +902,11 @@ export interface ApiControllerSettingControllerSetting
       'api::controller-setting.controller-setting'
     > &
       Schema.Attribute.Private;
+    minor_enable_disable: Schema.Attribute.Boolean;
+    open_elective_enable_disable: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    programme_handbook_enable_disable: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
