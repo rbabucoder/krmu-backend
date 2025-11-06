@@ -1236,6 +1236,19 @@ export interface PhdProgrammeCareerOptions extends Struct.ComponentSchema {
   };
 }
 
+export interface PhdProgrammeCommenceJourney extends Struct.ComponentSchema {
+  collectionName: 'components_phd_programme_commence_journeys';
+  info: {
+    displayName: 'Commence Journey';
+  };
+  attributes: {
+    bgimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    commence_btn: Schema.Attribute.Component<'shared.common-button', false>;
+    heading: Schema.Attribute.Text;
+    highlight_heading: Schema.Attribute.Text;
+  };
+}
+
 export interface PhdProgrammeDreamCareer extends Struct.ComponentSchema {
   collectionName: 'components_phd_programme_dream_careers';
   info: {
@@ -2678,6 +2691,7 @@ declare module '@strapi/strapi' {
       'pedagogy.peda-industry-connect': PedagogyPedaIndustryConnect;
       'pedagogy.pedagogy-hero': PedagogyPedagogyHero;
       'phd-programme.career-options': PhdProgrammeCareerOptions;
+      'phd-programme.commence-journey': PhdProgrammeCommenceJourney;
       'phd-programme.dream-career': PhdProgrammeDreamCareer;
       'phd-programme.outcome-content': PhdProgrammeOutcomeContent;
       'phd-programme.phd-admsission-and-selection-process': PhdProgrammePhdAdmsissionAndSelectionProcess;

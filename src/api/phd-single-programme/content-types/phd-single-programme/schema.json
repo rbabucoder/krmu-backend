@@ -124,6 +124,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::school-category.school-category"
+    },
+    "commence_journey": {
+      "type": "component",
+      "component": "phd-programme.commence-journey",
+      "repeatable": false
     }
   }
 }

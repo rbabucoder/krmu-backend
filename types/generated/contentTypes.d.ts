@@ -1830,6 +1830,10 @@ export interface ApiPhdSingleProgrammePhdSingleProgramme
       'phd-programme.career-options',
       false
     >;
+    commence_journey: Schema.Attribute.Component<
+      'phd-programme.commence-journey',
+      false
+    >;
     connectingtalent: Schema.Attribute.Component<
       'phd-programme.dream-career',
       false

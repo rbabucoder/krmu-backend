@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_phd_programme_commence_journeys",
+  "info": {
+    "displayName": "Commence Journey"
+  },
+  "options": {},
+  "attributes": {
+    "bgimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "text"
+    },
+    "highlight_heading": {
+      "type": "text"
+    },
+    "commence_btn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
