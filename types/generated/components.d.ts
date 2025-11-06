@@ -174,6 +174,27 @@ export interface ClubSocietiesClubAndSocieties extends Struct.ComponentSchema {
   };
 }
 
+export interface ControllersDownloadProspectus extends Struct.ComponentSchema {
+  collectionName: 'components_controllers_download_prospectuses';
+  info: {
+    displayName: 'Download Prospectus';
+  };
+  attributes: {
+    enable_disable: Schema.Attribute.Boolean;
+  };
+}
+
+export interface ControllersEnableDisableButton extends Struct.ComponentSchema {
+  collectionName: 'components_controllers_enable_disable_buttons';
+  info: {
+    displayName: 'Enable Disable Button';
+  };
+  attributes: {
+    enable_disable: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+  };
+}
+
 export interface CustomPageBodyContent extends Struct.ComponentSchema {
   collectionName: 'components_custom_page_body_contents';
   info: {
@@ -2588,6 +2609,8 @@ declare module '@strapi/strapi' {
       'blog.blog-faq': BlogBlogFaq;
       'blog.single-blog-component': BlogSingleBlogComponent;
       'club-societies.club-and-societies': ClubSocietiesClubAndSocieties;
+      'controllers.download-prospectus': ControllersDownloadProspectus;
+      'controllers.enable-disable-button': ControllersEnableDisableButton;
       'custom-page.body-content': CustomPageBodyContent;
       'custom-page.meta-tag': CustomPageMetaTag;
       'dean-honor.dean-honor-html': DeanHonorDeanHonorHtml;

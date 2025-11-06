@@ -879,6 +879,36 @@ export interface ApiCodeOfConductCodeOfConduct extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiControllerSettingControllerSetting
+  extends Struct.SingleTypeSchema {
+  collectionName: 'controller_settings';
+  info: {
+    displayName: 'Controller Setting';
+    pluralName: 'controller-settings';
+    singularName: 'controller-setting';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    download_prospectus_enable_disable: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::controller-setting.controller-setting'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCustomPageCustomPage extends Struct.CollectionTypeSchema {
   collectionName: 'custom_pages';
   info: {
@@ -3043,6 +3073,7 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
+      'api::controller-setting.controller-setting': ApiControllerSettingControllerSetting;
       'api::custom-page.custom-page': ApiCustomPageCustomPage;
       'api::dean-honor-list.dean-honor-list': ApiDeanHonorListDeanHonorList;
       'api::degree.degree': ApiDegreeDegree;

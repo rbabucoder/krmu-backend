@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_controllers_download_prospectuses",
+  "info": {
+    "displayName": "Download Prospectus"
+  },
+  "options": {},
+  "attributes": {
+    "enable_disable": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

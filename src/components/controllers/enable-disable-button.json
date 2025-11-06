@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_controllers_enable_disable_buttons",
+  "info": {
+    "displayName": "Enable Disable Button"
+  },
+  "options": {},
+  "attributes": {
+    "enable_disable": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}
