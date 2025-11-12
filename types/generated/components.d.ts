@@ -2232,7 +2232,7 @@ export interface SharedCounterComponent extends Struct.ComponentSchema {
     displayName: 'Counter Component';
   };
   attributes: {
-    countercontent: Schema.Attribute.String;
+    countercontent: Schema.Attribute.Text;
     countertext: Schema.Attribute.String;
   };
 }

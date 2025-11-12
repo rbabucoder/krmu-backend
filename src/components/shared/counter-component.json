@@ -9,7 +9,7 @@
       "type": "string"
     },
     "countercontent": {
-      "type": "string"
+      "type": "text"
     }
   },
   "config": {}
