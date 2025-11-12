@@ -1760,6 +1760,35 @@ export interface ApiNoticeNotice extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiPageAssetPageAsset extends Struct.SingleTypeSchema {
+  collectionName: 'page_assets';
+  info: {
+    displayName: 'Global Page Asset';
+    pluralName: 'page-assets';
+    singularName: 'page-asset';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    css_in_header: Schema.Attribute.RichText;
+    js_in_footer: Schema.Attribute.RichText;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::page-asset.page-asset'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPedagogyPedagogy extends Struct.SingleTypeSchema {
   collectionName: 'pedagogies';
   info: {
@@ -3106,6 +3135,7 @@ declare module '@strapi/strapi' {
       'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'api::news-event.news-event': ApiNewsEventNewsEvent;
       'api::notice.notice': ApiNoticeNotice;
+      'api::page-asset.page-asset': ApiPageAssetPageAsset;
       'api::pedagogy.pedagogy': ApiPedagogyPedagogy;
       'api::phd-single-programme.phd-single-programme': ApiPhdSingleProgrammePhdSingleProgramme;
       'api::photo-gallery.photo-gallery': ApiPhotoGalleryPhotoGallery;
