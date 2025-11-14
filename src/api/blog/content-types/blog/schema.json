@@ -14,14 +14,10 @@
     "Title": {
       "type": "text"
     },
-    "npfFormId": {
-      "type": "text"
-    },
-    "npfFormClass": {
-      "type": "text"
-    },
-    "enable_disable_form": {
-      "type": "boolean"
+    "blog_seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

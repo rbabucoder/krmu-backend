@@ -719,8 +719,7 @@ export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiBlogCategoryBlogCategory
-  extends Struct.CollectionTypeSchema {
+export interface ApiBlogCategoryBlogCategory extends Struct.SingleTypeSchema {
   collectionName: 'blog_categories';
   info: {
     displayName: 'Blog Category';
@@ -731,8 +730,7 @@ export interface ApiBlogCategoryBlogCategory
     draftAndPublish: true;
   };
   attributes: {
-    blog_category_slug: Schema.Attribute.UID<'blog_category_title'>;
-    blog_category_title: Schema.Attribute.Text;
+    blog_category_seo: Schema.Attribute.Component<'shared.seo', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -743,10 +741,7 @@ export interface ApiBlogCategoryBlogCategory
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    single_blogs: Schema.Attribute.Relation<
-      'manyToMany',
-      'api::single-blog.single-blog'
-    >;
+    Title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -764,15 +759,13 @@ export interface ApiBlogBlog extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    blog_seo: Schema.Attribute.Component<'shared.seo', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    enable_disable_form: Schema.Attribute.Boolean;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'> &
       Schema.Attribute.Private;
-    npfFormClass: Schema.Attribute.Text;
-    npfFormId: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     Title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
@@ -2424,10 +2417,6 @@ export interface ApiSingleBlogSingleBlog extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    blog_categories: Schema.Attribute.Relation<
-      'manyToMany',
-      'api::blog-category.blog-category'
-    >;
     blog_slug: Schema.Attribute.UID<'title'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

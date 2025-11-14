@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "blog_categories",
   "info": {
     "singularName": "blog-category",
@@ -11,18 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "blog_category_title": {
+    "Title": {
       "type": "text"
     },
-    "blog_category_slug": {
-      "type": "uid",
-      "targetField": "blog_category_title"
-    },
-    "single_blogs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::single-blog.single-blog",
-      "inversedBy": "blog_categories"
+    "blog_category_seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

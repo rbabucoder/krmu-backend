@@ -28,12 +28,6 @@
         "audios"
       ]
     },
-    "blog_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::blog-category.blog-category",
-      "mappedBy": "single_blogs"
-    },
     "single_blog": {
       "type": "dynamiczone",
       "components": [
