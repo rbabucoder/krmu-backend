@@ -309,6 +309,9 @@
       "type": "component",
       "component": "schoolcomponent.advantage-content",
       "repeatable": false
+    },
+    "wordschoolslug": {
+      "type": "string"
     }
   }
 }

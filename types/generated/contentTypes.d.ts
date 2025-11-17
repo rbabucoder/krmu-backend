@@ -2374,6 +2374,7 @@ export interface ApiSchoolSchool extends Struct.CollectionTypeSchema {
     videoformat: Schema.Attribute.Enumeration<['Iframe', 'videourl']> &
       Schema.Attribute.DefaultTo<'Iframe'>;
     videolink: Schema.Attribute.String;
+    wordschoolslug: Schema.Attribute.String;
   };
 }
 
