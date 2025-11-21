@@ -1544,7 +1544,13 @@ export interface SchoolcomponentKnowledge extends Struct.ComponentSchema {
   };
   attributes: {
     counter: Schema.Attribute.Component<'shared.counter-component', true>;
-    description: Schema.Attribute.Blocks;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heading: Schema.Attribute.String;
     subheading: Schema.Attribute.String;
   };

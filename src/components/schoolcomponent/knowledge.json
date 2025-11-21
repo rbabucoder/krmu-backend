@@ -11,13 +11,17 @@
     "subheading": {
       "type": "string"
     },
-    "description": {
-      "type": "blocks"
-    },
     "counter": {
       "type": "component",
       "component": "shared.counter-component",
       "repeatable": true
+    },
+    "description": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     }
   },
   "config": {}
