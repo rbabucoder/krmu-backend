@@ -1048,6 +1048,31 @@ export interface InternationcollaborationInternationalCollboration
   };
 }
 
+export interface KreeKree extends Struct.ComponentSchema {
+  collectionName: 'components_kree_krees';
+  info: {
+    displayName: 'KREE';
+  };
+  attributes: {};
+}
+
+export interface KreeKreeEnrol extends Struct.ComponentSchema {
+  collectionName: 'components_kree_kree_enrols';
+  info: {
+    displayName: 'KREE Enrol';
+  };
+  attributes: {
+    heading: Schema.Attribute.Text;
+    kree_enrol_html: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+  };
+}
+
 export interface KrmuGroupKrMangalamGroup extends Struct.ComponentSchema {
   collectionName: 'components_krmu_group_kr_mangalam_groups';
   info: {
@@ -2710,6 +2735,8 @@ declare module '@strapi/strapi' {
       'intcollab.internation-collaboration-full-width-card': IntcollabInternationCollaborationFullWidthCard;
       'intcollab.international-collaboration': IntcollabInternationalCollaboration;
       'internationcollaboration.international-collboration': InternationcollaborationInternationalCollboration;
+      'kree.kree': KreeKree;
+      'kree.kree-enrol': KreeKreeEnrol;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;
       'menu.dropdown-menu': MenuDropdownMenu;

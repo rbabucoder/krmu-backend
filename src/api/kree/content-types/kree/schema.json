@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "krees",
+  "info": {
+    "singularName": "kree",
+    "pluralName": "krees",
+    "displayName": "KREE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kree_enrol": {
+      "type": "component",
+      "component": "kree.kree-enrol",
+      "repeatable": true
+    }
+  }
+}

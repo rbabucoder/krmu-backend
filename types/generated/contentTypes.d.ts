@@ -1527,6 +1527,31 @@ export interface ApiInternationalCollaborationInternationalCollaboration
   };
 }
 
+export interface ApiKreeKree extends Struct.SingleTypeSchema {
+  collectionName: 'krees';
+  info: {
+    displayName: 'KREE';
+    pluralName: 'krees';
+    singularName: 'kree';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    kree_enrol: Schema.Attribute.Component<'kree.kree-enrol', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::kree.kree'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMagazineReflectionMagazineReflection
   extends Struct.SingleTypeSchema {
   collectionName: 'magazine_reflections';
@@ -3146,6 +3171,7 @@ declare module '@strapi/strapi' {
       'api::image-gallery-page.image-gallery-page': ApiImageGalleryPageImageGalleryPage;
       'api::industry-connect.industry-connect': ApiIndustryConnectIndustryConnect;
       'api::international-collaboration.international-collaboration': ApiInternationalCollaborationInternationalCollaboration;
+      'api::kree.kree': ApiKreeKree;
       'api::magazine-reflection.magazine-reflection': ApiMagazineReflectionMagazineReflection;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;
