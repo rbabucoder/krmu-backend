@@ -1056,6 +1056,16 @@ export interface KreeKree extends Struct.ComponentSchema {
   attributes: {};
 }
 
+export interface KreeKreeApplyOnline extends Struct.ComponentSchema {
+  collectionName: 'components_kree_kree_apply_onlines';
+  info: {
+    displayName: 'KREE Apply online';
+  };
+  attributes: {
+    apply_btn: Schema.Attribute.Component<'shared.common-button', false>;
+  };
+}
+
 export interface KreeKreeEnrol extends Struct.ComponentSchema {
   collectionName: 'components_kree_kree_enrols';
   info: {
@@ -2736,6 +2746,7 @@ declare module '@strapi/strapi' {
       'intcollab.international-collaboration': IntcollabInternationalCollaboration;
       'internationcollaboration.international-collboration': InternationcollaborationInternationalCollboration;
       'kree.kree': KreeKree;
+      'kree.kree-apply-online': KreeKreeApplyOnline;
       'kree.kree-enrol': KreeKreeEnrol;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;

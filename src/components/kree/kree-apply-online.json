@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_kree_kree_apply_onlines",
+  "info": {
+    "displayName": "KREE Apply online"
+  },
+  "options": {},
+  "attributes": {
+    "apply_btn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

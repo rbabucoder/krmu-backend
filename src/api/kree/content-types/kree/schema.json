@@ -15,6 +15,11 @@
       "type": "component",
       "component": "kree.kree-enrol",
       "repeatable": true
+    },
+    "kree_apply_online": {
+      "type": "component",
+      "component": "kree.kree-apply-online",
+      "repeatable": false
     }
   }
 }

@@ -1541,6 +1541,10 @@ export interface ApiKreeKree extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    kree_apply_online: Schema.Attribute.Component<
+      'kree.kree-apply-online',
+      false
+    >;
     kree_enrol: Schema.Attribute.Component<'kree.kree-enrol', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::kree.kree'> &
