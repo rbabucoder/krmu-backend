@@ -1423,6 +1423,32 @@ export interface ProcardProcard extends Struct.ComponentSchema {
   };
 }
 
+export interface ProgrammeProgramme extends Struct.ComponentSchema {
+  collectionName: 'components_programme_programmes';
+  info: {
+    displayName: 'Programme';
+  };
+  attributes: {};
+}
+
+export interface ProgrammeProgrammeAlumni extends Struct.ComponentSchema {
+  collectionName: 'components_programme_programme_alumni';
+  info: {
+    displayName: 'Programme Alumni';
+  };
+  attributes: {
+    alumni_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    content: Schema.Attribute.Text;
+    name: Schema.Attribute.String;
+    qualification: Schema.Attribute.String;
+    review_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
 export interface SchoolcomponentAdmissionOpen extends Struct.ComponentSchema {
   collectionName: 'components_schoolcomponent_admission_opens';
   info: {
@@ -2711,6 +2737,8 @@ declare module '@strapi/strapi' {
       'placement-overview.placement-highlight': PlacementOverviewPlacementHighlight;
       'placement-overview.placement-path': PlacementOverviewPlacementPath;
       'procard.procard': ProcardProcard;
+      'programme.programme': ProgrammeProgramme;
+      'programme.programme-alumni': ProgrammeProgrammeAlumni;
       'schoolcomponent.admission-open': SchoolcomponentAdmissionOpen;
       'schoolcomponent.advantage-content': SchoolcomponentAdvantageContent;
       'schoolcomponent.commence-you-journey': SchoolcomponentCommenceYouJourney;

@@ -2063,6 +2063,34 @@ export interface ApiPrintCoveragePrintCoverage
   };
 }
 
+export interface ApiProgrammeProgramme extends Struct.SingleTypeSchema {
+  collectionName: 'programmes';
+  info: {
+    displayName: 'Programme';
+    pluralName: 'programmes';
+    singularName: 'programme';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    alumni: Schema.Attribute.Component<'programme.programme-alumni', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::programme.programme'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiRegistrarOfficeRegistrarOffice
   extends Struct.SingleTypeSchema {
   collectionName: 'registrar_offices';
@@ -3132,6 +3160,7 @@ declare module '@strapi/strapi' {
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;
       'api::print-coverage-year.print-coverage-year': ApiPrintCoverageYearPrintCoverageYear;
       'api::print-coverage.print-coverage': ApiPrintCoveragePrintCoverage;
+      'api::programme.programme': ApiProgrammeProgramme;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'api::school-category.school-category': ApiSchoolCategorySchoolCategory;
       'api::school-programme.school-programme': ApiSchoolProgrammeSchoolProgramme;
