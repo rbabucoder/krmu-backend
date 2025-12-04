@@ -1230,6 +1230,42 @@ export interface ApiFinanceDepartmentFinanceDepartment
   };
 }
 
+export interface ApiFinancialAssistanceFinancialAssistance
+  extends Struct.SingleTypeSchema {
+  collectionName: 'financial_assistances';
+  info: {
+    displayName: 'Financial Assistance';
+    pluralName: 'financial-assistances';
+    singularName: 'financial-assistance';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bank_loan: Schema.Attribute.Component<
+      'financial-assistance.bank-loans',
+      false
+    >;
+    content: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::financial-assistance.financial-assistance'
+    > &
+      Schema.Attribute.Private;
+    nbfc_card: Schema.Attribute.Component<'financial-assistance.nbfc', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    subheading: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   collectionName: 'footers';
   info: {
@@ -3213,6 +3249,7 @@ declare module '@strapi/strapi' {
       'api::faculty.faculty': ApiFacultyFaculty;
       'api::faq.faq': ApiFaqFaq;
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
+      'api::financial-assistance.financial-assistance': ApiFinancialAssistanceFinancialAssistance;
       'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::header-menu-temp.header-menu-temp': ApiHeaderMenuTempHeaderMenuTemp;

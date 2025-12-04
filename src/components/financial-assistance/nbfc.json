@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_financial_assistance_nbfcs",
+  "info": {
+    "displayName": "NBFC"
+  },
+  "options": {},
+  "attributes": {
+    "nbfc_cards": {
+      "type": "component",
+      "component": "financial-assistance.bank-loan-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

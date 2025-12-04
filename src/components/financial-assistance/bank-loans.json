@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_financial_assistance_bank_loans",
+  "info": {
+    "displayName": "Bank Loans"
+  },
+  "options": {},
+  "attributes": {
+    "bank_loan_card": {
+      "type": "component",
+      "component": "financial-assistance.bank-loan-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

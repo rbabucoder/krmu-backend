@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_financial_assistance_bank_loan_cards",
+  "info": {
+    "displayName": "Bank Loan Card"
+  },
+  "options": {},
+  "attributes": {
+    "bank_img": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bank_contact_person": {
+      "type": "string"
+    },
+    "bankinfo": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "download_btn_url": {
+      "type": "text"
+    },
+    "quick_apply_btn_url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

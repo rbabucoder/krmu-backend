@@ -415,6 +415,56 @@ export interface FacultyFacultyTabContentContainer
   };
 }
 
+export interface FinancialAssistanceBankLoanCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_financial_assistance_bank_loan_cards';
+  info: {
+    displayName: 'Bank Loan Card';
+  };
+  attributes: {
+    bank_contact_person: Schema.Attribute.String;
+    bank_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    bankinfo: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    download_btn_url: Schema.Attribute.Text;
+    quick_apply_btn_url: Schema.Attribute.Text;
+  };
+}
+
+export interface FinancialAssistanceBankLoans extends Struct.ComponentSchema {
+  collectionName: 'components_financial_assistance_bank_loans';
+  info: {
+    displayName: 'Bank Loans';
+  };
+  attributes: {
+    bank_loan_card: Schema.Attribute.Component<
+      'financial-assistance.bank-loan-card',
+      true
+    >;
+  };
+}
+
+export interface FinancialAssistanceNbfc extends Struct.ComponentSchema {
+  collectionName: 'components_financial_assistance_nbfcs';
+  info: {
+    displayName: 'NBFC';
+  };
+  attributes: {
+    nbfc_cards: Schema.Attribute.Component<
+      'financial-assistance.bank-loan-card',
+      true
+    >;
+  };
+}
+
 export interface FooterComponentFooterColumn1 extends Struct.ComponentSchema {
   collectionName: 'components_footer_component_footer_column_1s';
   info: {
@@ -2826,6 +2876,9 @@ declare module '@strapi/strapi' {
       'faculty.faculty-tab': FacultyFacultyTab;
       'faculty.faculty-tab-container': FacultyFacultyTabContainer;
       'faculty.faculty-tab-content-container': FacultyFacultyTabContentContainer;
+      'financial-assistance.bank-loan-card': FinancialAssistanceBankLoanCard;
+      'financial-assistance.bank-loans': FinancialAssistanceBankLoans;
+      'financial-assistance.nbfc': FinancialAssistanceNbfc;
       'footer-component.footer-column-1': FooterComponentFooterColumn1;
       'footer-component.footer-component-1': FooterComponentFooterComponent1;
       'footer-component.footer-component-3': FooterComponentFooterComponent3;
