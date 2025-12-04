@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_phdadmission_phd_personl_interviews",
+  "info": {
+    "displayName": "Phd Personl Interview"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "content": {
+      "type": "text"
+    },
+    "personal_interview_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "info_heading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

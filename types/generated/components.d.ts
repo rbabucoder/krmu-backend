@@ -1404,6 +1404,109 @@ export interface PhdProgrammeWhoShouldPursue extends Struct.ComponentSchema {
   };
 }
 
+export interface PhdadmissionEvenOddCard extends Struct.ComponentSchema {
+  collectionName: 'components_phdadmission_even_odd_cards';
+  info: {
+    displayName: 'Even Odd Card';
+  };
+  attributes: {
+    title: Schema.Attribute.Text;
+    url: Schema.Attribute.Text;
+  };
+}
+
+export interface PhdadmissionOfferedSchools extends Struct.ComponentSchema {
+  collectionName: 'components_phdadmission_offered_schools';
+  info: {
+    displayName: 'Offered Schools';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    school_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    url: Schema.Attribute.Text;
+  };
+}
+
+export interface PhdadmissionPhdAdmission extends Struct.ComponentSchema {
+  collectionName: 'components_phdadmission_phd_admissions';
+  info: {
+    displayName: 'Phd Admission';
+  };
+  attributes: {};
+}
+
+export interface PhdadmissionPhdAdmissionAccordions
+  extends Struct.ComponentSchema {
+  collectionName: 'components_phdadmission_phd_admission_accordions';
+  info: {
+    displayName: 'Phd Admission Accordions';
+  };
+  attributes: {
+    ans: Schema.Attribute.Text;
+    ques: Schema.Attribute.Text;
+  };
+}
+
+export interface PhdadmissionPhdInterviewInfo extends Struct.ComponentSchema {
+  collectionName: 'components_phdadmission_phd_interview_infos';
+  info: {
+    displayName: 'Phd Interview Info';
+  };
+  attributes: {};
+}
+
+export interface PhdadmissionPhdPersonlInterview
+  extends Struct.ComponentSchema {
+  collectionName: 'components_phdadmission_phd_personl_interviews';
+  info: {
+    displayName: 'Phd Personl Interview';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    info_heading: Schema.Attribute.String;
+    personal_interview_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
+export interface PhdadmissionPhdProgrammeOffered
+  extends Struct.ComponentSchema {
+  collectionName: 'components_phdadmission_phd_programme_offereds';
+  info: {
+    displayName: 'Phd Programme Offered';
+  };
+  attributes: {
+    even_odd_sem_card: Schema.Attribute.Component<
+      'phdadmission.even-odd-card',
+      true
+    >;
+    phd_programmes_schools: Schema.Attribute.Component<
+      'phdadmission.phd-programmes-schools',
+      false
+    >;
+    phdOffered_heading: Schema.Attribute.Text;
+  };
+}
+
+export interface PhdadmissionPhdProgrammesSchools
+  extends Struct.ComponentSchema {
+  collectionName: 'components_phdadmission_phd_programmes_schools';
+  info: {
+    displayName: 'Phd Programmes Schools';
+  };
+  attributes: {
+    offered_schools: Schema.Attribute.Component<
+      'phdadmission.offered-schools',
+      true
+    >;
+  };
+}
+
 export interface PlacementOverviewPlacementHero extends Struct.ComponentSchema {
   collectionName: 'components_placement_overview_placement_heroes';
   info: {
@@ -2771,6 +2874,14 @@ declare module '@strapi/strapi' {
       'phd-programme.phd-overview': PhdProgrammePhdOverview;
       'phd-programme.scholar-sponsored-part-time': PhdProgrammeScholarSponsoredPartTime;
       'phd-programme.who-should-pursue': PhdProgrammeWhoShouldPursue;
+      'phdadmission.even-odd-card': PhdadmissionEvenOddCard;
+      'phdadmission.offered-schools': PhdadmissionOfferedSchools;
+      'phdadmission.phd-admission': PhdadmissionPhdAdmission;
+      'phdadmission.phd-admission-accordions': PhdadmissionPhdAdmissionAccordions;
+      'phdadmission.phd-interview-info': PhdadmissionPhdInterviewInfo;
+      'phdadmission.phd-personl-interview': PhdadmissionPhdPersonlInterview;
+      'phdadmission.phd-programme-offered': PhdadmissionPhdProgrammeOffered;
+      'phdadmission.phd-programmes-schools': PhdadmissionPhdProgrammesSchools;
       'placement-overview.placement-hero': PlacementOverviewPlacementHero;
       'placement-overview.placement-highlight': PlacementOverviewPlacementHighlight;
       'placement-overview.placement-path': PlacementOverviewPlacementPath;

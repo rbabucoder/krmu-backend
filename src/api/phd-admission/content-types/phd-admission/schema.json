@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "phd_admissions",
+  "info": {
+    "singularName": "phd-admission",
+    "pluralName": "phd-admissions",
+    "displayName": "Phd Admission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "content": {
+      "type": "text"
+    },
+    "hero_btn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    },
+    "heroimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "phdprogramme_offered": {
+      "type": "component",
+      "component": "phdadmission.phd-programme-offered",
+      "repeatable": false
+    },
+    "personal_interview": {
+      "type": "component",
+      "component": "phdadmission.phd-personl-interview",
+      "repeatable": false
+    },
+    "phd_admission_acc": {
+      "type": "component",
+      "component": "phdadmission.phd-admission-accordions",
+      "repeatable": true
+    }
+  }
+}

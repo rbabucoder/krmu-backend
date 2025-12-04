@@ -1869,6 +1869,50 @@ export interface ApiPedagogyPedagogy extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiPhdAdmissionPhdAdmission extends Struct.SingleTypeSchema {
+  collectionName: 'phd_admissions';
+  info: {
+    displayName: 'Phd Admission';
+    pluralName: 'phd-admissions';
+    singularName: 'phd-admission';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    hero_btn: Schema.Attribute.Component<'shared.common-button', false>;
+    heroimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::phd-admission.phd-admission'
+    > &
+      Schema.Attribute.Private;
+    personal_interview: Schema.Attribute.Component<
+      'phdadmission.phd-personl-interview',
+      false
+    >;
+    phd_admission_acc: Schema.Attribute.Component<
+      'phdadmission.phd-admission-accordions',
+      true
+    >;
+    phdprogramme_offered: Schema.Attribute.Component<
+      'phdadmission.phd-programme-offered',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    subheading: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPhdSingleProgrammePhdSingleProgramme
   extends Struct.CollectionTypeSchema {
   collectionName: 'phd_single_programmes';
@@ -3185,6 +3229,7 @@ declare module '@strapi/strapi' {
       'api::notice.notice': ApiNoticeNotice;
       'api::page-asset.page-asset': ApiPageAssetPageAsset;
       'api::pedagogy.pedagogy': ApiPedagogyPedagogy;
+      'api::phd-admission.phd-admission': ApiPhdAdmissionPhdAdmission;
       'api::phd-single-programme.phd-single-programme': ApiPhdSingleProgrammePhdSingleProgramme;
       'api::photo-gallery.photo-gallery': ApiPhotoGalleryPhotoGallery;
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;

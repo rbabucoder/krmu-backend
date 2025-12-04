@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_phdadmission_even_odd_cards",
+  "info": {
+    "displayName": "Even Odd Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

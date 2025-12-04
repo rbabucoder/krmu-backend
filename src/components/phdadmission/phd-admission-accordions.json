@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_phdadmission_phd_admission_accordions",
+  "info": {
+    "displayName": "Phd Admission Accordions"
+  },
+  "options": {},
+  "attributes": {
+    "ques": {
+      "type": "text"
+    },
+    "ans": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

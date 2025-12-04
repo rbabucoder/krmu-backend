@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_phdadmission_phd_programmes_schools",
+  "info": {
+    "displayName": "Phd Programmes Schools"
+  },
+  "options": {},
+  "attributes": {
+    "offered_schools": {
+      "type": "component",
+      "component": "phdadmission.offered-schools",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

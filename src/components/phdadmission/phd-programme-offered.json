@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_phdadmission_phd_programme_offereds",
+  "info": {
+    "displayName": "Phd Programme Offered"
+  },
+  "options": {},
+  "attributes": {
+    "phdOffered_heading": {
+      "type": "text"
+    },
+    "phd_programmes_schools": {
+      "type": "component",
+      "component": "phdadmission.phd-programmes-schools",
+      "repeatable": false
+    },
+    "even_odd_sem_card": {
+      "type": "component",
+      "component": "phdadmission.even-odd-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
