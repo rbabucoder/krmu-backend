@@ -21,6 +21,11 @@
       "type": "component",
       "component": "shared.common-button",
       "repeatable": false
+    },
+    "faqs": {
+      "type": "component",
+      "component": "shared.fa-qs",
+      "repeatable": true
     }
   }
 }

@@ -2458,6 +2458,23 @@ export interface SharedEmployeeCard2 extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedFaQs extends Struct.ComponentSchema {
+  collectionName: 'components_shared_fa_qs';
+  info: {
+    displayName: 'FAQs';
+  };
+  attributes: {
+    ans: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    ques: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedFeeDetailCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_fee_detail_cards';
   info: {
@@ -2949,6 +2966,7 @@ declare module '@strapi/strapi' {
       'shared.department-container': SharedDepartmentContainer;
       'shared.employee-card': SharedEmployeeCard;
       'shared.employee-card-2': SharedEmployeeCard2;
+      'shared.fa-qs': SharedFaQs;
       'shared.fee-detail-card': SharedFeeDetailCard;
       'shared.fee-price': SharedFeePrice;
       'shared.list-item': SharedListItem;
