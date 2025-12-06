@@ -1200,6 +1200,45 @@ export interface ApiFaqFaq extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiFeeStructureFeeStructure extends Struct.SingleTypeSchema {
+  collectionName: 'fee_structures';
+  info: {
+    displayName: 'Fee Structure';
+    pluralName: 'fee-structures';
+    singularName: 'fee-structure';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    fee_structure_hero: Schema.Attribute.Component<
+      'fee-structure.fee-struture-hero',
+      false
+    >;
+    fee_structure_saarc: Schema.Attribute.Component<
+      'fee-structure.fee-structure-saarc',
+      false
+    >;
+    fee_structure_tab: Schema.Attribute.Component<
+      'fee-structure.fee-structure-tab',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::fee-structure.fee-structure'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFinanceDepartmentFinanceDepartment
   extends Struct.SingleTypeSchema {
   collectionName: 'finance_departments';
@@ -3248,6 +3287,7 @@ declare module '@strapi/strapi' {
       'api::facility.facility': ApiFacilityFacility;
       'api::faculty.faculty': ApiFacultyFaculty;
       'api::faq.faq': ApiFaqFaq;
+      'api::fee-structure.fee-structure': ApiFeeStructureFeeStructure;
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
       'api::financial-assistance.financial-assistance': ApiFinancialAssistanceFinancialAssistance;
       'api::footer.footer': ApiFooterFooter;

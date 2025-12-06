@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "fee_structures",
+  "info": {
+    "singularName": "fee-structure",
+    "pluralName": "fee-structures",
+    "displayName": "Fee Structure"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fee_structure_tab": {
+      "type": "component",
+      "component": "fee-structure.fee-structure-tab",
+      "repeatable": true
+    },
+    "fee_structure_hero": {
+      "type": "component",
+      "component": "fee-structure.fee-struture-hero",
+      "repeatable": false
+    },
+    "fee_structure_saarc": {
+      "type": "component",
+      "component": "fee-structure.fee-structure-saarc",
+      "repeatable": false
+    }
+  }
+}

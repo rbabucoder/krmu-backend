@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_fee_structure_fee_struture_heroes",
+  "info": {
+    "displayName": "Fee Struture Hero"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "fee_structure_url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

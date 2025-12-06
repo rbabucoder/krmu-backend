@@ -415,6 +415,60 @@ export interface FacultyFacultyTabContentContainer
   };
 }
 
+export interface FeeStructureFeeStructureAccordion
+  extends Struct.ComponentSchema {
+  collectionName: 'components_fee_structure_fee_structure_accordions';
+  info: {
+    displayName: 'Fee Structure Accordion';
+  };
+  attributes: {
+    panel_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    panel_heading: Schema.Attribute.Text;
+  };
+}
+
+export interface FeeStructureFeeStructureSaarc extends Struct.ComponentSchema {
+  collectionName: 'components_fee_structure_fee_structure_saarcs';
+  info: {
+    displayName: 'Fee Structure SAARC';
+  };
+  attributes: {
+    saarc_btn: Schema.Attribute.Text;
+  };
+}
+
+export interface FeeStructureFeeStructureTab extends Struct.ComponentSchema {
+  collectionName: 'components_fee_structure_fee_structure_tabs';
+  info: {
+    displayName: 'Fee Structure Tab';
+  };
+  attributes: {
+    download_fee_structure_url: Schema.Attribute.Text;
+    fee_structure_acc: Schema.Attribute.Component<
+      'fee-structure.fee-structure-accordion',
+      true
+    >;
+    tab_heading: Schema.Attribute.Text;
+  };
+}
+
+export interface FeeStructureFeeStrutureHero extends Struct.ComponentSchema {
+  collectionName: 'components_fee_structure_fee_struture_heroes';
+  info: {
+    displayName: 'Fee Struture Hero';
+  };
+  attributes: {
+    fee_structure_url: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+  };
+}
+
 export interface FinancialAssistanceBankLoanCard
   extends Struct.ComponentSchema {
   collectionName: 'components_financial_assistance_bank_loan_cards';
@@ -2876,6 +2930,10 @@ declare module '@strapi/strapi' {
       'faculty.faculty-tab': FacultyFacultyTab;
       'faculty.faculty-tab-container': FacultyFacultyTabContainer;
       'faculty.faculty-tab-content-container': FacultyFacultyTabContentContainer;
+      'fee-structure.fee-structure-accordion': FeeStructureFeeStructureAccordion;
+      'fee-structure.fee-structure-saarc': FeeStructureFeeStructureSaarc;
+      'fee-structure.fee-structure-tab': FeeStructureFeeStructureTab;
+      'fee-structure.fee-struture-hero': FeeStructureFeeStrutureHero;
       'financial-assistance.bank-loan-card': FinancialAssistanceBankLoanCard;
       'financial-assistance.bank-loans': FinancialAssistanceBankLoans;
       'financial-assistance.nbfc': FinancialAssistanceNbfc;

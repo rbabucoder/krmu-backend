@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_fee_structure_fee_structure_tabs",
+  "info": {
+    "displayName": "Fee Structure Tab"
+  },
+  "options": {},
+  "attributes": {
+    "tab_heading": {
+      "type": "text"
+    },
+    "fee_structure_acc": {
+      "type": "component",
+      "component": "fee-structure.fee-structure-accordion",
+      "repeatable": true
+    },
+    "download_fee_structure_url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

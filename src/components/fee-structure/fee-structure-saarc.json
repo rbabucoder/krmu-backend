@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_fee_structure_fee_structure_saarcs",
+  "info": {
+    "displayName": "Fee Structure SAARC"
+  },
+  "options": {},
+  "attributes": {
+    "saarc_btn": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
