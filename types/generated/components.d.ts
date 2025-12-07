@@ -415,6 +415,60 @@ export interface FacultyFacultyTabContentContainer
   };
 }
 
+export interface FeeStructureSaarcFeeStructureAccordion
+  extends Struct.ComponentSchema {
+  collectionName: 'components_fee_structure_saarc_fee_structure_accordions';
+  info: {
+    displayName: 'Fee Structure Accordion';
+  };
+  attributes: {};
+}
+
+export interface FeeStructureSaarcFeeStructureSaarcAccordion
+  extends Struct.ComponentSchema {
+  collectionName: 'components_fee_structure_saarc_fee_structure_saarc_accordions';
+  info: {
+    displayName: 'Fee Structure SAARC Accordion';
+  };
+  attributes: {
+    panel_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    panel_heading: Schema.Attribute.Text;
+  };
+}
+
+export interface FeeStructureSaarcFeeStructureSaarcApproval
+  extends Struct.ComponentSchema {
+  collectionName: 'components_fee_structure_saarc_fee_structure_saarc_approvals';
+  info: {
+    displayName: 'Fee Structure SAARC Approval';
+  };
+  attributes: {
+    fee_struct_click_here: Schema.Attribute.Text;
+    office_order_url: Schema.Attribute.Text;
+  };
+}
+
+export interface FeeStructureSaarcFeeStructureSaarcTab
+  extends Struct.ComponentSchema {
+  collectionName: 'components_fee_structure_saarc_fee_structure_saarc_tabs';
+  info: {
+    displayName: 'FEE Structure SAARC Tab';
+  };
+  attributes: {
+    fee_structure_saarc_accc: Schema.Attribute.Component<
+      'fee-structure-saarc.fee-structure-saarc-accordion',
+      true
+    >;
+    fee_structure_saarc_panel_heading: Schema.Attribute.Text;
+  };
+}
+
 export interface FeeStructureFeeStructureAccordion
   extends Struct.ComponentSchema {
   collectionName: 'components_fee_structure_fee_structure_accordions';
@@ -2930,6 +2984,10 @@ declare module '@strapi/strapi' {
       'faculty.faculty-tab': FacultyFacultyTab;
       'faculty.faculty-tab-container': FacultyFacultyTabContainer;
       'faculty.faculty-tab-content-container': FacultyFacultyTabContentContainer;
+      'fee-structure-saarc.fee-structure-accordion': FeeStructureSaarcFeeStructureAccordion;
+      'fee-structure-saarc.fee-structure-saarc-accordion': FeeStructureSaarcFeeStructureSaarcAccordion;
+      'fee-structure-saarc.fee-structure-saarc-approval': FeeStructureSaarcFeeStructureSaarcApproval;
+      'fee-structure-saarc.fee-structure-saarc-tab': FeeStructureSaarcFeeStructureSaarcTab;
       'fee-structure.fee-structure-accordion': FeeStructureFeeStructureAccordion;
       'fee-structure.fee-structure-saarc': FeeStructureFeeStructureSaarc;
       'fee-structure.fee-structure-tab': FeeStructureFeeStructureTab;

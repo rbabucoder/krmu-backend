@@ -1200,6 +1200,45 @@ export interface ApiFaqFaq extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiFeeStructureSaarcCountryFeeStructureSaarcCountry
+  extends Struct.SingleTypeSchema {
+  collectionName: 'fee_structure_saarc_countries';
+  info: {
+    displayName: 'Fee Structure SAARC Country';
+    pluralName: 'fee-structure-saarc-countries';
+    singularName: 'fee-structure-saarc-country';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    fee_struct_saarc_approval: Schema.Attribute.Component<
+      'fee-structure-saarc.fee-structure-saarc-approval',
+      false
+    >;
+    fee_structure_saarc_tab: Schema.Attribute.Component<
+      'fee-structure-saarc.fee-structure-saarc-tab',
+      true
+    >;
+    heading: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::fee-structure-saarc-country.fee-structure-saarc-country'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    saarc_url: Schema.Attribute.Text;
+    subheading: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFeeStructureFeeStructure extends Struct.SingleTypeSchema {
   collectionName: 'fee_structures';
   info: {
@@ -2101,6 +2140,39 @@ export interface ApiPhotoGalleryPhotoGallery
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPlacementHightlightPlacementHightlight
+  extends Struct.SingleTypeSchema {
+  collectionName: 'placement_hightlights';
+  info: {
+    displayName: 'Placement Hightlight';
+    pluralName: 'placement-hightlights';
+    singularName: 'placement-hightlight';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::placement-hightlight.placement-hightlight'
+    > &
+      Schema.Attribute.Private;
+    placement_highlight_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -3287,6 +3359,7 @@ declare module '@strapi/strapi' {
       'api::facility.facility': ApiFacilityFacility;
       'api::faculty.faculty': ApiFacultyFaculty;
       'api::faq.faq': ApiFaqFaq;
+      'api::fee-structure-saarc-country.fee-structure-saarc-country': ApiFeeStructureSaarcCountryFeeStructureSaarcCountry;
       'api::fee-structure.fee-structure': ApiFeeStructureFeeStructure;
       'api::finance-department.finance-department': ApiFinanceDepartmentFinanceDepartment;
       'api::financial-assistance.financial-assistance': ApiFinancialAssistanceFinancialAssistance;
@@ -3310,6 +3383,7 @@ declare module '@strapi/strapi' {
       'api::phd-admission.phd-admission': ApiPhdAdmissionPhdAdmission;
       'api::phd-single-programme.phd-single-programme': ApiPhdSingleProgrammePhdSingleProgramme;
       'api::photo-gallery.photo-gallery': ApiPhotoGalleryPhotoGallery;
+      'api::placement-hightlight.placement-hightlight': ApiPlacementHightlightPlacementHightlight;
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;
       'api::print-coverage-year.print-coverage-year': ApiPrintCoverageYearPrintCoverageYear;
       'api::print-coverage.print-coverage': ApiPrintCoveragePrintCoverage;

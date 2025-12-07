@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_fee_structure_saarc_fee_structure_saarc_approvals",
+  "info": {
+    "displayName": "Fee Structure SAARC Approval"
+  },
+  "options": {},
+  "attributes": {
+    "office_order_url": {
+      "type": "text"
+    },
+    "fee_struct_click_here": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

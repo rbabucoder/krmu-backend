@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_fee_structure_saarc_fee_structure_saarc_tabs",
+  "info": {
+    "displayName": "FEE Structure SAARC Tab"
+  },
+  "options": {},
+  "attributes": {
+    "fee_structure_saarc_panel_heading": {
+      "type": "text"
+    },
+    "fee_structure_saarc_accc": {
+      "type": "component",
+      "component": "fee-structure-saarc.fee-structure-saarc-accordion",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "placement_hightlights",
+  "info": {
+    "singularName": "placement-hightlight",
+    "pluralName": "placement-hightlights",
+    "displayName": "Placement Hightlight"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "placement_highlight_img": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
