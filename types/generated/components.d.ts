@@ -35,6 +35,40 @@ export interface AccrediationAccrediation extends Struct.ComponentSchema {
   };
 }
 
+export interface Admission2AdmissionTableOfContent
+  extends Struct.ComponentSchema {
+  collectionName: 'components_admission2_admission_table_of_contents';
+  info: {
+    displayName: 'Admission Table of Content';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    highlightheading: Schema.Attribute.Text;
+    tocbtn: Schema.Attribute.Component<'shared.common-button', false>;
+    tocfaq: Schema.Attribute.Component<'schoolprogramme.tocfaq', true>;
+    tocimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface Admission2Admission2Alumni extends Struct.ComponentSchema {
+  collectionName: 'components_admission2_admission2_alumni';
+  info: {
+    displayName: 'Admission2 Alumni';
+  };
+  attributes: {
+    alumni_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    content: Schema.Attribute.Text;
+    name: Schema.Attribute.String;
+    qualification: Schema.Attribute.String;
+    review_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
 export interface AdmissionpageComponentsAcademicExcellence
   extends Struct.ComponentSchema {
   collectionName: 'components_admissionpage_components_academic_excellences';
@@ -156,6 +190,39 @@ export interface BlogSingleBlogComponent extends Struct.ComponentSchema {
           preset: 'defaultHtml';
         }
       >;
+  };
+}
+
+export interface CareerDevelopmentCentreCareerDevelopmentCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_career_development_centre_career_development_cards';
+  info: {
+    displayName: 'Career Development Card';
+  };
+  attributes: {
+    cdc_content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    heading: Schema.Attribute.Text;
+  };
+}
+
+export interface CareerDevelopmentCentreCareerDevelopmentTeam
+  extends Struct.ComponentSchema {
+  collectionName: 'components_career_development_centre_career_development_teams';
+  info: {
+    displayName: 'Career Development Team';
+  };
+  attributes: {
+    cdc_designation: Schema.Attribute.Text;
+    cdc_name: Schema.Attribute.Text;
+    cdc_team_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
   };
 }
 
@@ -1347,6 +1414,17 @@ export interface NoticePdfNoticePdf extends Struct.ComponentSchema {
   attributes: {
     content: Schema.Attribute.Text;
     pdf_url: Schema.Attribute.Text;
+  };
+}
+
+export interface PdfPagePdfPageContentCard extends Struct.ComponentSchema {
+  collectionName: 'components_pdf_page_pdf_page_content_cards';
+  info: {
+    displayName: 'PDF Page Content Card';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    pdf_btn: Schema.Attribute.Component<'shared.common-button', false>;
   };
 }
 
@@ -2957,6 +3035,8 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'aboutwhychooseus-component.why-choose-us': AboutwhychooseusComponentWhyChooseUs;
       'accrediation.accrediation': AccrediationAccrediation;
+      'admission2.admission-table-of-content': Admission2AdmissionTableOfContent;
+      'admission2.admission2-alumni': Admission2Admission2Alumni;
       'admissionpage-components.academic-excellence': AdmissionpageComponentsAcademicExcellence;
       'admissionpage-components.admissionprocesscomponent': AdmissionpageComponentsAdmissionprocesscomponent;
       'admissionpage-components.alumni': AdmissionpageComponentsAlumni;
@@ -2966,6 +3046,8 @@ declare module '@strapi/strapi' {
       'awards-recognition.awards-and-recognition': AwardsRecognitionAwardsAndRecognition;
       'blog.blog-faq': BlogBlogFaq;
       'blog.single-blog-component': BlogSingleBlogComponent;
+      'career-development-centre.career-development-card': CareerDevelopmentCentreCareerDevelopmentCard;
+      'career-development-centre.career-development-team': CareerDevelopmentCentreCareerDevelopmentTeam;
       'club-societies.club-and-societies': ClubSocietiesClubAndSocieties;
       'controllers.download-prospectus': ControllersDownloadProspectus;
       'controllers.enable-disable-button': ControllersEnableDisableButton;
@@ -3045,6 +3127,7 @@ declare module '@strapi/strapi' {
       'menu.menu-social-links': MenuMenuSocialLinks;
       'menu.menumediacomp': MenuMenumediacomp;
       'notice-pdf.notice-pdf': NoticePdfNoticePdf;
+      'pdf-page.pdf-page-content-card': PdfPagePdfPageContentCard;
       'pedagogy.classroom-teaching': PedagogyClassroomTeaching;
       'pedagogy.peda-content-card': PedagogyPedaContentCard;
       'pedagogy.peda-industry-connect': PedagogyPedaIndustryConnect;

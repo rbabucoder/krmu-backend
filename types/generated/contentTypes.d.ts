@@ -548,6 +548,41 @@ export interface ApiAdmissionAdmission extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAdmission2Admission2 extends Struct.SingleTypeSchema {
+  collectionName: 'admission2s';
+  info: {
+    displayName: 'Admission2';
+    pluralName: 'admission2s';
+    singularName: 'admission2';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    adm_toc: Schema.Attribute.Component<
+      'admission2.admission-table-of-content',
+      false
+    >;
+    adm2_alumni: Schema.Attribute.Component<
+      'admission2.admission2-alumni',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::admission2.admission2'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAdvisoryBoardAdvisoryBoard extends Struct.SingleTypeSchema {
   collectionName: 'advisory_boards';
   info: {
@@ -768,6 +803,75 @@ export interface ApiBlogBlog extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCareerDevelopmentCentreTeamCareerDevelopmentCentreTeam
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'career_development_centre_teams';
+  info: {
+    displayName: 'Career Development Centre Team';
+    pluralName: 'career-development-centre-teams';
+    singularName: 'career-development-centre-team';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    cdc_designation: Schema.Attribute.Text;
+    cdc_name: Schema.Attribute.Text;
+    cdc_team_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::career-development-centre-team.career-development-centre-team'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCareerDevelopmentCentreCareerDevelopmentCentre
+  extends Struct.SingleTypeSchema {
+  collectionName: 'career_development_centres';
+  info: {
+    displayName: 'Career Development Centre';
+    pluralName: 'career-development-centres';
+    singularName: 'career-development-centre';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    cdc_card: Schema.Attribute.Component<
+      'career-development-centre.career-development-card',
+      true
+    >;
+    cdc_team: Schema.Attribute.Component<
+      'career-development-centre.career-development-team',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::career-development-centre.career-development-centre'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1920,6 +2024,70 @@ export interface ApiPageAssetPageAsset extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPagePage extends Struct.CollectionTypeSchema {
+  collectionName: 'pages';
+  info: {
+    displayName: 'Page';
+    pluralName: 'pages';
+    singularName: 'page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    custom_page_css: Schema.Attribute.RichText;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
+      Schema.Attribute.Private;
+    maincontent: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.Text;
+    title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPdfPdf extends Struct.CollectionTypeSchema {
+  collectionName: 'pdfs';
+  info: {
+    displayName: 'PDF';
+    pluralName: 'pdfs';
+    singularName: 'pdf';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::pdf.pdf'> &
+      Schema.Attribute.Private;
+    pdf_content_card: Schema.Attribute.Component<
+      'pdf-page.pdf-page-content-card',
+      true
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -3340,6 +3508,7 @@ declare module '@strapi/strapi' {
       'api::about.about': ApiAboutAbout;
       'api::accreditations-recognition-and-approval.accreditations-recognition-and-approval': ApiAccreditationsRecognitionAndApprovalAccreditationsRecognitionAndApproval;
       'api::admission.admission': ApiAdmissionAdmission;
+      'api::admission2.admission2': ApiAdmission2Admission2;
       'api::advisory-board.advisory-board': ApiAdvisoryBoardAdvisoryBoard;
       'api::advisory.advisory': ApiAdvisoryAdvisory;
       'api::alumni.alumni': ApiAlumniAlumni;
@@ -3347,6 +3516,8 @@ declare module '@strapi/strapi' {
       'api::author.author': ApiAuthorAuthor;
       'api::blog-category.blog-category': ApiBlogCategoryBlogCategory;
       'api::blog.blog': ApiBlogBlog;
+      'api::career-development-centre-team.career-development-centre-team': ApiCareerDevelopmentCentreTeamCareerDevelopmentCentreTeam;
+      'api::career-development-centre.career-development-centre': ApiCareerDevelopmentCentreCareerDevelopmentCentre;
       'api::category.category': ApiCategoryCategory;
       'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
@@ -3379,6 +3550,8 @@ declare module '@strapi/strapi' {
       'api::news-event.news-event': ApiNewsEventNewsEvent;
       'api::notice.notice': ApiNoticeNotice;
       'api::page-asset.page-asset': ApiPageAssetPageAsset;
+      'api::page.page': ApiPagePage;
+      'api::pdf.pdf': ApiPdfPdf;
       'api::pedagogy.pedagogy': ApiPedagogyPedagogy;
       'api::phd-admission.phd-admission': ApiPhdAdmissionPhdAdmission;
       'api::phd-single-programme.phd-single-programme': ApiPhdSingleProgrammePhdSingleProgramme;

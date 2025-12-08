@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_admission2_admission_table_of_contents",
+  "info": {
+    "displayName": "Admission Table of Content"
+  },
+  "options": {},
+  "attributes": {
+    "tocimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "text"
+    },
+    "highlightheading": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tocfaq": {
+      "type": "component",
+      "component": "schoolprogramme.tocfaq",
+      "repeatable": true
+    },
+    "tocbtn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

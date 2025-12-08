@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "career_development_centres",
+  "info": {
+    "singularName": "career-development-centre",
+    "pluralName": "career-development-centres",
+    "displayName": "Career Development Centre"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cdc_card": {
+      "type": "component",
+      "component": "career-development-centre.career-development-card",
+      "repeatable": true
+    },
+    "cdc_team": {
+      "type": "component",
+      "component": "career-development-centre.career-development-team",
+      "repeatable": true
+    }
+  }
+}

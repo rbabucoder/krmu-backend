@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "admission2s",
+  "info": {
+    "singularName": "admission2",
+    "pluralName": "admission2s",
+    "displayName": "Admission2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "adm_toc": {
+      "type": "component",
+      "component": "admission2.admission-table-of-content",
+      "repeatable": false
+    },
+    "adm2_alumni": {
+      "type": "component",
+      "component": "admission2.admission2-alumni",
+      "repeatable": true
+    }
+  }
+}

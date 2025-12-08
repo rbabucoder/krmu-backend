@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pdfs",
+  "info": {
+    "singularName": "pdf",
+    "pluralName": "pdfs",
+    "displayName": "PDF"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pdf_content_card": {
+      "type": "component",
+      "component": "pdf-page.pdf-page-content-card",
+      "repeatable": true
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

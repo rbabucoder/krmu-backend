@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_career_development_centre_career_development_teams",
+  "info": {
+    "displayName": "Career Development Team"
+  },
+  "options": {},
+  "attributes": {
+    "cdc_team_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cdc_name": {
+      "type": "text"
+    },
+    "cdc_designation": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

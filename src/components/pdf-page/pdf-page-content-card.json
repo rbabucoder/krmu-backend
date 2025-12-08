@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pdf_page_pdf_page_content_cards",
+  "info": {
+    "displayName": "PDF Page Content Card"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "pdf_btn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
