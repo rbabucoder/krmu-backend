@@ -31,6 +31,9 @@
     },
     "custom_page_css": {
       "type": "richtext"
+    },
+    "custom_page_js": {
+      "type": "richtext"
     }
   }
 }
