@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporate_advisory_boards",
+  "info": {
+    "singularName": "corporate-advisory-board",
+    "pluralName": "corporate-advisory-boards",
+    "displayName": "Corporate Advisory Board"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "corp_adv_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "corp_adv_info": {
+      "type": "text"
+    }
+  }
+}

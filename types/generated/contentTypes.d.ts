@@ -1011,6 +1011,39 @@ export interface ApiControllerSettingControllerSetting
   };
 }
 
+export interface ApiCorporateAdvisoryBoardCorporateAdvisoryBoard
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'corporate_advisory_boards';
+  info: {
+    displayName: 'Corporate Advisory Board';
+    pluralName: 'corporate-advisory-boards';
+    singularName: 'corporate-advisory-board';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    corp_adv_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    corp_adv_info: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::corporate-advisory-board.corporate-advisory-board'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCustomPageCustomPage extends Struct.CollectionTypeSchema {
   collectionName: 'custom_pages';
   info: {
@@ -3523,6 +3556,7 @@ declare module '@strapi/strapi' {
       'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
       'api::controller-setting.controller-setting': ApiControllerSettingControllerSetting;
+      'api::corporate-advisory-board.corporate-advisory-board': ApiCorporateAdvisoryBoardCorporateAdvisoryBoard;
       'api::custom-page.custom-page': ApiCustomPageCustomPage;
       'api::dean-honor-list.dean-honor-list': ApiDeanHonorListDeanHonorList;
       'api::degree.degree': ApiDegreeDegree;
