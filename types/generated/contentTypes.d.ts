@@ -1808,6 +1808,43 @@ export interface ApiKreeKree extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiLifeAtKrmuOverviewLifeAtKrmuOverview
+  extends Struct.SingleTypeSchema {
+  collectionName: 'life_at_krmu_overviews';
+  info: {
+    displayName: 'Life at KRMU Overview';
+    pluralName: 'life-at-krmu-overviews';
+    singularName: 'life-at-krmu-overview';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    hear_it_testimonials: Schema.Attribute.Component<
+      'life-at-krmu.hear-it-testimonials',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::life-at-krmu-overview.life-at-krmu-overview'
+    > &
+      Schema.Attribute.Private;
+    overview_video: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    subheading: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMagazineReflectionMagazineReflection
   extends Struct.SingleTypeSchema {
   collectionName: 'magazine_reflections';
@@ -2079,6 +2116,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     custom_page_css: Schema.Attribute.RichText;
     custom_page_js: Schema.Attribute.RichText;
+    is_custom_page: Schema.Attribute.Enumeration<['none', 'custom_page']>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
       Schema.Attribute.Private;
@@ -3577,6 +3615,7 @@ declare module '@strapi/strapi' {
       'api::industry-connect.industry-connect': ApiIndustryConnectIndustryConnect;
       'api::international-collaboration.international-collaboration': ApiInternationalCollaborationInternationalCollaboration;
       'api::kree.kree': ApiKreeKree;
+      'api::life-at-krmu-overview.life-at-krmu-overview': ApiLifeAtKrmuOverviewLifeAtKrmuOverview;
       'api::magazine-reflection.magazine-reflection': ApiMagazineReflectionMagazineReflection;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
       'api::membership-and-ranking.membership-and-ranking': ApiMembershipAndRankingMembershipAndRanking;

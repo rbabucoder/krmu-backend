@@ -1336,6 +1336,19 @@ export interface KrmucommitteeKrmuCommittee extends Struct.ComponentSchema {
   };
 }
 
+export interface LifeAtKrmuHearItTestimonials extends Struct.ComponentSchema {
+  collectionName: 'components_life_at_krmu_hear_it_testimonials';
+  info: {
+    displayName: 'Hear it Testimonials';
+  };
+  attributes: {
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    info: Schema.Attribute.Text;
+    name: Schema.Attribute.String;
+    qualification: Schema.Attribute.String;
+  };
+}
+
 export interface MenuDropdownMenu extends Struct.ComponentSchema {
   collectionName: 'components_menu_dropdown_menus';
   info: {
@@ -3121,6 +3134,7 @@ declare module '@strapi/strapi' {
       'kree.kree-enrol': KreeKreeEnrol;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;
+      'life-at-krmu.hear-it-testimonials': LifeAtKrmuHearItTestimonials;
       'menu.dropdown-menu': MenuDropdownMenu;
       'menu.menu-button': MenuMenuButton;
       'menu.menu-links': MenuMenuLinks;

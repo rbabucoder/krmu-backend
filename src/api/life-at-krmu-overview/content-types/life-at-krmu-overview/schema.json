@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "life_at_krmu_overviews",
+  "info": {
+    "singularName": "life-at-krmu-overview",
+    "pluralName": "life-at-krmu-overviews",
+    "displayName": "Life at KRMU Overview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "overview_video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "text"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "hear_it_testimonials": {
+      "type": "component",
+      "component": "life-at-krmu.hear-it-testimonials",
+      "repeatable": true
+    }
+  }
+}

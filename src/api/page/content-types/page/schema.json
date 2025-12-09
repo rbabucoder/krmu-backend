@@ -34,6 +34,13 @@
     },
     "custom_page_js": {
       "type": "richtext"
+    },
+    "is_custom_page": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "custom_page"
+      ]
     }
   }
 }
