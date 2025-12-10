@@ -22,13 +22,6 @@
       "component": "shared.seo",
       "repeatable": false
     },
-    "maincontent": {
-      "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor",
-      "options": {
-        "preset": "defaultHtml"
-      }
-    },
     "custom_page_css": {
       "type": "richtext"
     },
@@ -41,6 +34,9 @@
         "none",
         "custom_page"
       ]
+    },
+    "maincontent2": {
+      "type": "richtext"
     }
   }
 }
