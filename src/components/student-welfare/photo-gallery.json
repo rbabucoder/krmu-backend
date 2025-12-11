@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_student_welfare_photo_galleries",
+  "info": {
+    "displayName": "Photo Gallery"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "photo_gallery_imgs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

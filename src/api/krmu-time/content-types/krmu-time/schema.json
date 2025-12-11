@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "krmu_times",
+  "info": {
+    "singularName": "krmu-time",
+    "pluralName": "krmu-times",
+    "displayName": "KRMU Time"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "krmu_time_cards": {
+      "type": "component",
+      "component": "krmu-times.krmu-time-card",
+      "repeatable": true
+    }
+  }
+}

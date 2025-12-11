@@ -1,11 +1,11 @@
 {
-  "collectionName": "components_club_societies_club_and_societies",
+  "collectionName": "components_krmu_campus_facility_state_of_the_arts",
   "info": {
-    "displayName": "Club and Societies"
+    "displayName": "State of the Art"
   },
   "options": {},
   "attributes": {
-    "clubimages": {
+    "state_of_the_art_imgs": {
       "type": "media",
       "multiple": true,
       "allowedTypes": [
@@ -15,15 +15,11 @@
         "audios"
       ]
     },
-    "title": {
+    "heading": {
       "type": "text"
     },
     "content": {
-      "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor",
-      "options": {
-        "preset": "defaultHtml"
-      }
+      "type": "text"
     }
   },
   "config": {}

@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "student_welfares",
+  "info": {
+    "singularName": "student-welfare",
+    "pluralName": "student-welfares",
+    "displayName": "Student Welfare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "photo_gallery": {
+      "type": "component",
+      "component": "student-welfare.photo-gallery",
+      "repeatable": false
+    },
+    "tab_scroll": {
+      "type": "component",
+      "component": "student-welfare.student-welfare-tab-scroll",
+      "repeatable": false
+    }
+  }
+}

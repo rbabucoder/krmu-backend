@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sport_facility_sport_facility_img_comps",
+  "info": {
+    "displayName": "Sport Facility Img Comp"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "caption": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

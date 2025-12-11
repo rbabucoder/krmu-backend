@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "community_connects",
+  "info": {
+    "singularName": "community-connect",
+    "pluralName": "community-connects",
+    "displayName": "Community Connect"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nss_connect_connect_img_grid": {
+      "type": "component",
+      "component": "nss-community-connect.nss-community-connect-grid",
+      "repeatable": true
+    }
+  }
+}

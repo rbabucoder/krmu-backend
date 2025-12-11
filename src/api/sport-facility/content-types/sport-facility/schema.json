@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "sport_facilities",
+  "info": {
+    "singularName": "sport-facility",
+    "pluralName": "sport-facilities",
+    "displayName": "Sport Facility"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sport_facility_grid": {
+      "type": "component",
+      "component": "sport-facility.sport-facility-grid",
+      "repeatable": true
+    }
+  }
+}

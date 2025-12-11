@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_krmu_times_krmu_time_cards",
+  "info": {
+    "displayName": "KRMU Time Card"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pdf_url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_krmu_campus_facility_modern_classrooms",
+  "info": {
+    "displayName": "Modern Classroom"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "content": {
+      "type": "text"
+    },
+    "modern_classrooms_imgs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

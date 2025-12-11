@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_krmu_campus_facility_aesthetics_cafeterias",
+  "info": {
+    "displayName": "Aesthetics Cafeteria"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "content": {
+      "type": "text"
+    },
+    "aethetics_cafeteria_imgs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

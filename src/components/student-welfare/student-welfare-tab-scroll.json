@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_student_welfare_student_welfare_tab_scrolls",
+  "info": {
+    "displayName": "Student Welfare Tab Scroll"
+  },
+  "options": {},
+  "attributes": {
+    "html": {
+      "type": "richtext"
+    },
+    "css": {
+      "type": "richtext"
+    },
+    "js": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

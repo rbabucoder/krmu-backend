@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sport_facility_sport_facility_grids",
+  "info": {
+    "displayName": "Sport Facility Grid"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "sport_fac_img": {
+      "type": "component",
+      "component": "sport-facility.sport-facility-img-comp",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

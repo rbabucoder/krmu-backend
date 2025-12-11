@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_nss_community_connect_nss_community_connect_grids",
+  "info": {
+    "displayName": "NSS Community Connect Grid"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "nssimgs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

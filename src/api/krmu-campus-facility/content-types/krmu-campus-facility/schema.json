@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "krmu_campus_facilities",
+  "info": {
+    "singularName": "krmu-campus-facility",
+    "pluralName": "krmu-campus-facilities",
+    "displayName": "KRMU Campus Facility"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "state_of_art": {
+      "type": "component",
+      "component": "krmu-campus-facility.state-of-the-art",
+      "repeatable": false
+    },
+    "lab_workshops": {
+      "type": "component",
+      "component": "krmu-campus-facility.labs-workshops",
+      "repeatable": false
+    },
+    "modern_classroom": {
+      "type": "component",
+      "component": "krmu-campus-facility.modern-classroom",
+      "repeatable": false
+    },
+    "comfy_hostel": {
+      "type": "component",
+      "component": "krmu-campus-facility.comfy-hostel",
+      "repeatable": false
+    },
+    "sport_fitness": {
+      "type": "component",
+      "component": "krmu-campus-facility.sport-fitness",
+      "repeatable": false
+    },
+    "research_support": {
+      "type": "component",
+      "component": "krmu-campus-facility.research-support",
+      "repeatable": false
+    },
+    "aesthetics_cafeteria": {
+      "type": "component",
+      "component": "krmu-campus-facility.aesthetics-cafeteria",
+      "repeatable": false
+    }
+  }
+}

@@ -236,7 +236,13 @@ export interface ClubSocietiesClubAndSocieties extends Struct.ComponentSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
-    content: Schema.Attribute.Blocks;
+    content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     title: Schema.Attribute.Text;
   };
 }
@@ -1308,6 +1314,116 @@ export interface KreeKreeEnrol extends Struct.ComponentSchema {
   };
 }
 
+export interface KrmuCampusFacilityAestheticsCafeteria
+  extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_campus_facility_aesthetics_cafeterias';
+  info: {
+    displayName: 'Aesthetics Cafeteria';
+  };
+  attributes: {
+    aethetics_cafeteria_imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+  };
+}
+
+export interface KrmuCampusFacilityComfyHostel extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_campus_facility_comfy_hostels';
+  info: {
+    displayName: 'comfy_hostel';
+  };
+  attributes: {
+    comfy_slide_imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+  };
+}
+
+export interface KrmuCampusFacilityLabsWorkshops
+  extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_campus_facility_labs_workshops';
+  info: {
+    displayName: 'labs_workshops';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    lab_workshop_imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
+export interface KrmuCampusFacilityModernClassroom
+  extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_campus_facility_modern_classrooms';
+  info: {
+    displayName: 'Modern Classroom';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    modern_classrooms_imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
+export interface KrmuCampusFacilityResearchSupport
+  extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_campus_facility_research_supports';
+  info: {
+    displayName: 'Research Support';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    research_support_imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
+export interface KrmuCampusFacilitySportFitness extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_campus_facility_sport_fitnesses';
+  info: {
+    displayName: 'Sport Fitness';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    sport_fitness_imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
+export interface KrmuCampusFacilityStateOfTheArt
+  extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_campus_facility_state_of_the_arts';
+  info: {
+    displayName: 'State of the Art';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    state_of_the_art_imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
 export interface KrmuGroupKrMangalamGroup extends Struct.ComponentSchema {
   collectionName: 'components_krmu_group_kr_mangalam_groups';
   info: {
@@ -1321,6 +1437,17 @@ export interface KrmuGroupKrMangalamGroup extends Struct.ComponentSchema {
     >;
     subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface KrmuTimesKrmuTimeCard extends Struct.ComponentSchema {
+  collectionName: 'components_krmu_times_krmu_time_cards';
+  info: {
+    displayName: 'KRMU Time Card';
+  };
+  attributes: {
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    pdf_url: Schema.Attribute.Text;
   };
 }
 
@@ -1427,6 +1554,35 @@ export interface NoticePdfNoticePdf extends Struct.ComponentSchema {
   attributes: {
     content: Schema.Attribute.Text;
     pdf_url: Schema.Attribute.Text;
+  };
+}
+
+export interface NssCommunityConnectNssCommunityConnectGrid
+  extends Struct.ComponentSchema {
+  collectionName: 'components_nss_community_connect_nss_community_connect_grids';
+  info: {
+    displayName: 'NSS Community Connect Grid';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    nssimgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
+export interface NssCommunityConnectNssImageGrid
+  extends Struct.ComponentSchema {
+  collectionName: 'components_nss_community_connect_nss_image_grids';
+  info: {
+    displayName: 'NSS Image Grid';
+  };
+  attributes: {
+    nssimgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
   };
 }
 
@@ -2901,6 +3057,59 @@ export interface SharedVideoCard extends Struct.ComponentSchema {
   };
 }
 
+export interface SportFacilitySportFacilityGrid extends Struct.ComponentSchema {
+  collectionName: 'components_sport_facility_sport_facility_grids';
+  info: {
+    displayName: 'Sport Facility Grid';
+  };
+  attributes: {
+    heading: Schema.Attribute.Text;
+    sport_fac_img: Schema.Attribute.Component<
+      'sport-facility.sport-facility-img-comp',
+      true
+    >;
+  };
+}
+
+export interface SportFacilitySportFacilityImgComp
+  extends Struct.ComponentSchema {
+  collectionName: 'components_sport_facility_sport_facility_img_comps';
+  info: {
+    displayName: 'Sport Facility Img Comp';
+  };
+  attributes: {
+    caption: Schema.Attribute.Text;
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface StudentWelfarePhotoGallery extends Struct.ComponentSchema {
+  collectionName: 'components_student_welfare_photo_galleries';
+  info: {
+    displayName: 'Photo Gallery';
+  };
+  attributes: {
+    heading: Schema.Attribute.Text;
+    photo_gallery_imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
+export interface StudentWelfareStudentWelfareTabScroll
+  extends Struct.ComponentSchema {
+  collectionName: 'components_student_welfare_student_welfare_tab_scrolls';
+  info: {
+    displayName: 'Student Welfare Tab Scroll';
+  };
+  attributes: {
+    css: Schema.Attribute.RichText;
+    html: Schema.Attribute.RichText;
+    js: Schema.Attribute.RichText;
+  };
+}
+
 export interface TempMenusAboutUsMenu extends Struct.ComponentSchema {
   collectionName: 'components_temp_menus_about_us_menus';
   info: {
@@ -3132,7 +3341,15 @@ declare module '@strapi/strapi' {
       'kree.kree': KreeKree;
       'kree.kree-apply-online': KreeKreeApplyOnline;
       'kree.kree-enrol': KreeKreeEnrol;
+      'krmu-campus-facility.aesthetics-cafeteria': KrmuCampusFacilityAestheticsCafeteria;
+      'krmu-campus-facility.comfy-hostel': KrmuCampusFacilityComfyHostel;
+      'krmu-campus-facility.labs-workshops': KrmuCampusFacilityLabsWorkshops;
+      'krmu-campus-facility.modern-classroom': KrmuCampusFacilityModernClassroom;
+      'krmu-campus-facility.research-support': KrmuCampusFacilityResearchSupport;
+      'krmu-campus-facility.sport-fitness': KrmuCampusFacilitySportFitness;
+      'krmu-campus-facility.state-of-the-art': KrmuCampusFacilityStateOfTheArt;
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
+      'krmu-times.krmu-time-card': KrmuTimesKrmuTimeCard;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;
       'life-at-krmu.hear-it-testimonials': LifeAtKrmuHearItTestimonials;
       'menu.dropdown-menu': MenuDropdownMenu;
@@ -3141,6 +3358,8 @@ declare module '@strapi/strapi' {
       'menu.menu-social-links': MenuMenuSocialLinks;
       'menu.menumediacomp': MenuMenumediacomp;
       'notice-pdf.notice-pdf': NoticePdfNoticePdf;
+      'nss-community-connect.nss-community-connect-grid': NssCommunityConnectNssCommunityConnectGrid;
+      'nss-community-connect.nss-image-grid': NssCommunityConnectNssImageGrid;
       'pdf-page.pdf-page-content-card': PdfPagePdfPageContentCard;
       'pedagogy.classroom-teaching': PedagogyClassroomTeaching;
       'pedagogy.peda-content-card': PedagogyPedaContentCard;
@@ -3248,6 +3467,10 @@ declare module '@strapi/strapi' {
       'shared.slider': SharedSlider;
       'shared.testing-component': SharedTestingComponent;
       'shared.video-card': SharedVideoCard;
+      'sport-facility.sport-facility-grid': SportFacilitySportFacilityGrid;
+      'sport-facility.sport-facility-img-comp': SportFacilitySportFacilityImgComp;
+      'student-welfare.photo-gallery': StudentWelfarePhotoGallery;
+      'student-welfare.student-welfare-tab-scroll': StudentWelfareStudentWelfareTabScroll;
       'temp-menus.about-us-menu': TempMenusAboutUsMenu;
       'temp-menus.academic-menu': TempMenusAcademicMenu;
       'temp-menus.admissions': TempMenusAdmissions;

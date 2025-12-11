@@ -976,6 +976,38 @@ export interface ApiCodeOfConductCodeOfConduct extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCommunityConnectCommunityConnect
+  extends Struct.SingleTypeSchema {
+  collectionName: 'community_connects';
+  info: {
+    displayName: 'Community Connect';
+    pluralName: 'community-connects';
+    singularName: 'community-connect';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::community-connect.community-connect'
+    > &
+      Schema.Attribute.Private;
+    nss_connect_connect_img_grid: Schema.Attribute.Component<
+      'nss-community-connect.nss-community-connect-grid',
+      true
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiControllerSettingControllerSetting
   extends Struct.SingleTypeSchema {
   collectionName: 'controller_settings';
@@ -1800,6 +1832,94 @@ export interface ApiKreeKree extends Struct.SingleTypeSchema {
     kree_enrol: Schema.Attribute.Component<'kree.kree-enrol', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::kree.kree'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiKrmuCampusFacilityKrmuCampusFacility
+  extends Struct.SingleTypeSchema {
+  collectionName: 'krmu_campus_facilities';
+  info: {
+    displayName: 'KRMU Campus Facility';
+    pluralName: 'krmu-campus-facilities';
+    singularName: 'krmu-campus-facility';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    aesthetics_cafeteria: Schema.Attribute.Component<
+      'krmu-campus-facility.aesthetics-cafeteria',
+      false
+    >;
+    comfy_hostel: Schema.Attribute.Component<
+      'krmu-campus-facility.comfy-hostel',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    lab_workshops: Schema.Attribute.Component<
+      'krmu-campus-facility.labs-workshops',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::krmu-campus-facility.krmu-campus-facility'
+    > &
+      Schema.Attribute.Private;
+    modern_classroom: Schema.Attribute.Component<
+      'krmu-campus-facility.modern-classroom',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    research_support: Schema.Attribute.Component<
+      'krmu-campus-facility.research-support',
+      false
+    >;
+    sport_fitness: Schema.Attribute.Component<
+      'krmu-campus-facility.sport-fitness',
+      false
+    >;
+    state_of_art: Schema.Attribute.Component<
+      'krmu-campus-facility.state-of-the-art',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiKrmuTimeKrmuTime extends Struct.SingleTypeSchema {
+  collectionName: 'krmu_times';
+  info: {
+    displayName: 'KRMU Time';
+    pluralName: 'krmu-times';
+    singularName: 'krmu-time';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    krmu_time_cards: Schema.Attribute.Component<
+      'krmu-times.krmu-time-card',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::krmu-time.krmu-time'
+    > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -2923,6 +3043,37 @@ export interface ApiSingleBlogSingleBlog extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSportFacilitySportFacility extends Struct.SingleTypeSchema {
+  collectionName: 'sport_facilities';
+  info: {
+    displayName: 'Sport Facility';
+    pluralName: 'sport-facilities';
+    singularName: 'sport-facility';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sport-facility.sport-facility'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sport_facility_grid: Schema.Attribute.Component<
+      'sport-facility.sport-facility-grid',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiStudentAchievementStudentAchievement
   extends Struct.CollectionTypeSchema {
   collectionName: 'student_achievements';
@@ -2959,6 +3110,42 @@ export interface ApiStudentAchievementStudentAchievement
     school_categories: Schema.Attribute.Relation<
       'manyToMany',
       'api::school-category.school-category'
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiStudentWelfareStudentWelfare
+  extends Struct.SingleTypeSchema {
+  collectionName: 'student_welfares';
+  info: {
+    displayName: 'Student Welfare';
+    pluralName: 'student-welfares';
+    singularName: 'student-welfare';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::student-welfare.student-welfare'
+    > &
+      Schema.Attribute.Private;
+    photo_gallery: Schema.Attribute.Component<
+      'student-welfare.photo-gallery',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    tab_scroll: Schema.Attribute.Component<
+      'student-welfare.student-welfare-tab-scroll',
+      false
     >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -3587,6 +3774,7 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
+      'api::community-connect.community-connect': ApiCommunityConnectCommunityConnect;
       'api::controller-setting.controller-setting': ApiControllerSettingControllerSetting;
       'api::corporate-advisory-board.corporate-advisory-board': ApiCorporateAdvisoryBoardCorporateAdvisoryBoard;
       'api::custom-page.custom-page': ApiCustomPageCustomPage;
@@ -3609,6 +3797,8 @@ declare module '@strapi/strapi' {
       'api::industry-connect.industry-connect': ApiIndustryConnectIndustryConnect;
       'api::international-collaboration.international-collaboration': ApiInternationalCollaborationInternationalCollaboration;
       'api::kree.kree': ApiKreeKree;
+      'api::krmu-campus-facility.krmu-campus-facility': ApiKrmuCampusFacilityKrmuCampusFacility;
+      'api::krmu-time.krmu-time': ApiKrmuTimeKrmuTime;
       'api::life-at-krmu-overview.life-at-krmu-overview': ApiLifeAtKrmuOverviewLifeAtKrmuOverview;
       'api::magazine-reflection.magazine-reflection': ApiMagazineReflectionMagazineReflection;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;
@@ -3635,7 +3825,9 @@ declare module '@strapi/strapi' {
       'api::school.school': ApiSchoolSchool;
       'api::section.section': ApiSectionSection;
       'api::single-blog.single-blog': ApiSingleBlogSingleBlog;
+      'api::sport-facility.sport-facility': ApiSportFacilitySportFacility;
       'api::student-achievement.student-achievement': ApiStudentAchievementStudentAchievement;
+      'api::student-welfare.student-welfare': ApiStudentWelfareStudentWelfare;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::topbar-menu.topbar-menu': ApiTopbarMenuTopbarMenu;
       'api::video-gallery.video-gallery': ApiVideoGalleryVideoGallery;
