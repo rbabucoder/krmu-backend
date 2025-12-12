@@ -226,6 +226,16 @@ export interface CareerDevelopmentCentreCareerDevelopmentTeam
   };
 }
 
+export interface CareersOpenings extends Struct.ComponentSchema {
+  collectionName: 'components_careers_openings';
+  info: {
+    displayName: 'Openings';
+  };
+  attributes: {
+    opening_btn: Schema.Attribute.Component<'shared.common-button', false>;
+  };
+}
+
 export interface ClubSocietiesClubAndSocieties extends Struct.ComponentSchema {
   collectionName: 'components_club_societies_club_and_societies';
   info: {
@@ -3270,6 +3280,7 @@ declare module '@strapi/strapi' {
       'blog.single-blog-component': BlogSingleBlogComponent;
       'career-development-centre.career-development-card': CareerDevelopmentCentreCareerDevelopmentCard;
       'career-development-centre.career-development-team': CareerDevelopmentCentreCareerDevelopmentTeam;
+      'careers.openings': CareersOpenings;
       'club-societies.club-and-societies': ClubSocietiesClubAndSocieties;
       'controllers.download-prospectus': ControllersDownloadProspectus;
       'controllers.enable-disable-button': ControllersEnableDisableButton;

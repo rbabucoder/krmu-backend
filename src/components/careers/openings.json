@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_careers_openings",
+  "info": {
+    "displayName": "Openings"
+  },
+  "options": {},
+  "attributes": {
+    "opening_btn": {
+      "type": "component",
+      "component": "shared.common-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
