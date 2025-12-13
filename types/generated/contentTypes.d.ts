@@ -470,6 +470,38 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAcademicLeadershipAcademicLeadership
+  extends Struct.SingleTypeSchema {
+  collectionName: 'academic_leaderships';
+  info: {
+    displayName: 'Academic Leadership';
+    pluralName: 'academic-leaderships';
+    singularName: 'academic-leadership';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    academic_leadership: Schema.Attribute.Component<
+      'academic-leadership.academic-leadership',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::academic-leadership.academic-leadership'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAccreditationsRecognitionAndApprovalAccreditationsRecognitionAndApproval
   extends Struct.SingleTypeSchema {
   collectionName: 'accreditations_recognition_and_approvals';
@@ -1947,6 +1979,34 @@ export interface ApiKrmuTimeKrmuTime extends Struct.SingleTypeSchema {
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::krmu-time.krmu-time'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiLeadershipLeadership extends Struct.SingleTypeSchema {
+  collectionName: 'leaderships';
+  info: {
+    displayName: 'Leadership';
+    pluralName: 'leaderships';
+    singularName: 'leadership';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    leadership: Schema.Attribute.Component<'leadership.leadership', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::leadership.leadership'
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
@@ -3787,6 +3847,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about-krmu.about-krmu': ApiAboutKrmuAboutKrmu;
       'api::about.about': ApiAboutAbout;
+      'api::academic-leadership.academic-leadership': ApiAcademicLeadershipAcademicLeadership;
       'api::accreditations-recognition-and-approval.accreditations-recognition-and-approval': ApiAccreditationsRecognitionAndApprovalAccreditationsRecognitionAndApproval;
       'api::admission.admission': ApiAdmissionAdmission;
       'api::admission2.admission2': ApiAdmission2Admission2;
@@ -3828,6 +3889,7 @@ declare module '@strapi/strapi' {
       'api::kree.kree': ApiKreeKree;
       'api::krmu-campus-facility.krmu-campus-facility': ApiKrmuCampusFacilityKrmuCampusFacility;
       'api::krmu-time.krmu-time': ApiKrmuTimeKrmuTime;
+      'api::leadership.leadership': ApiLeadershipLeadership;
       'api::life-at-krmu-overview.life-at-krmu-overview': ApiLifeAtKrmuOverviewLifeAtKrmuOverview;
       'api::magazine-reflection.magazine-reflection': ApiMagazineReflectionMagazineReflection;
       'api::main-menu.main-menu': ApiMainMenuMainMenu;

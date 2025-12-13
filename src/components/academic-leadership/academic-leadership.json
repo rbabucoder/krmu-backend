@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_academic_leadership_academic_leaderships",
+  "info": {
+    "displayName": "Academic Leadership"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "desg": {
+      "type": "text"
+    },
+    "academic_leadership_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  },
+  "config": {}
+}

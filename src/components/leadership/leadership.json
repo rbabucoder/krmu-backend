@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_leadership_leaderships",
+  "info": {
+    "displayName": "Leadership"
+  },
+  "options": {},
+  "attributes": {
+    "leadership_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "desg": {
+      "type": "string"
+    },
+    "content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  },
+  "config": {}
+}

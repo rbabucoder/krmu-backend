@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "leaderships",
+  "info": {
+    "singularName": "leadership",
+    "pluralName": "leaderships",
+    "displayName": "Leadership"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "leadership": {
+      "type": "component",
+      "component": "leadership.leadership",
+      "repeatable": true
+    }
+  }
+}

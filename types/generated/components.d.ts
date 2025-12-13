@@ -20,6 +20,28 @@ export interface AboutwhychooseusComponentWhyChooseUs
   };
 }
 
+export interface AcademicLeadershipAcademicLeadership
+  extends Struct.ComponentSchema {
+  collectionName: 'components_academic_leadership_academic_leaderships';
+  info: {
+    displayName: 'Academic Leadership';
+  };
+  attributes: {
+    academic_leadership_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    desg: Schema.Attribute.Text;
+    name: Schema.Attribute.String;
+  };
+}
+
 export interface AccrediationAccrediation extends Struct.ComponentSchema {
   collectionName: 'components_accrediation_accrediations';
   info: {
@@ -1470,6 +1492,27 @@ export interface KrmucommitteeKrmuCommittee extends Struct.ComponentSchema {
     committeebtn: Schema.Attribute.Component<'shared.button', false>;
     description: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface LeadershipLeadership extends Struct.ComponentSchema {
+  collectionName: 'components_leadership_leaderships';
+  info: {
+    displayName: 'Leadership';
+  };
+  attributes: {
+    content: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    desg: Schema.Attribute.String;
+    leadership_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    name: Schema.Attribute.String;
   };
 }
 
@@ -3266,6 +3309,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'aboutwhychooseus-component.why-choose-us': AboutwhychooseusComponentWhyChooseUs;
+      'academic-leadership.academic-leadership': AcademicLeadershipAcademicLeadership;
       'accrediation.accrediation': AccrediationAccrediation;
       'admission2.admission-table-of-content': Admission2AdmissionTableOfContent;
       'admission2.admission2-alumni': Admission2Admission2Alumni;
@@ -3362,6 +3406,7 @@ declare module '@strapi/strapi' {
       'krmu-group.kr-mangalam-group': KrmuGroupKrMangalamGroup;
       'krmu-times.krmu-time-card': KrmuTimesKrmuTimeCard;
       'krmucommittee.krmu-committee': KrmucommitteeKrmuCommittee;
+      'leadership.leadership': LeadershipLeadership;
       'life-at-krmu.hear-it-testimonials': LifeAtKrmuHearItTestimonials;
       'menu.dropdown-menu': MenuDropdownMenu;
       'menu.menu-button': MenuMenuButton;

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "academic_leaderships",
+  "info": {
+    "singularName": "academic-leadership",
+    "pluralName": "academic-leaderships",
+    "displayName": "Academic Leadership"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "academic_leadership": {
+      "type": "component",
+      "component": "academic-leadership.academic-leadership",
+      "repeatable": true
+    }
+  }
+}
