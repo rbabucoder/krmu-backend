@@ -1068,6 +1068,37 @@ export interface ApiCommunityConnectCommunityConnect
   };
 }
 
+export interface ApiContactFormContactForm extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_forms';
+  info: {
+    displayName: 'Contact form';
+    pluralName: 'contact-forms';
+    singularName: 'contact-form';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    agree: Schema.Attribute.Boolean;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-form.contact-form'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiControllerSettingControllerSetting
   extends Struct.SingleTypeSchema {
   collectionName: 'controller_settings';
@@ -3865,6 +3896,7 @@ declare module '@strapi/strapi' {
       'api::club-and-society.club-and-society': ApiClubAndSocietyClubAndSociety;
       'api::code-of-conduct.code-of-conduct': ApiCodeOfConductCodeOfConduct;
       'api::community-connect.community-connect': ApiCommunityConnectCommunityConnect;
+      'api::contact-form.contact-form': ApiContactFormContactForm;
       'api::controller-setting.controller-setting': ApiControllerSettingControllerSetting;
       'api::corporate-advisory-board.corporate-advisory-board': ApiCorporateAdvisoryBoardCorporateAdvisoryBoard;
       'api::custom-page.custom-page': ApiCustomPageCustomPage;
