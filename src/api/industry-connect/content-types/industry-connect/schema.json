@@ -79,6 +79,11 @@
       "type": "component",
       "component": "industry-connect.deputy-commissioner",
       "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

@@ -36,6 +36,11 @@
       "type": "component",
       "component": "intcollab.internation-collaboration-full-width-card",
       "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

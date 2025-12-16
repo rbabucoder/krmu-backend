@@ -28,6 +28,11 @@
       "type": "component",
       "component": "dean-honor.dean-honor-list-accordion",
       "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

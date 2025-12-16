@@ -28,6 +28,11 @@
       "type": "component",
       "component": "notice-pdf.notice-pdf",
       "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

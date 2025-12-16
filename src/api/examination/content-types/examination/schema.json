@@ -35,6 +35,11 @@
       "type": "component",
       "component": "examination.examination-faq",
       "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

@@ -60,6 +60,11 @@
       "type": "component",
       "component": "pedagogy.peda-industry-connect",
       "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

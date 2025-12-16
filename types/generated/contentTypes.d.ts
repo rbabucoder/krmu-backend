@@ -470,6 +470,35 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAcademicAffairAcademicAffair
+  extends Struct.SingleTypeSchema {
+  collectionName: 'academic_affairs';
+  info: {
+    displayName: 'Academic Affair';
+    pluralName: 'academic-affairs';
+    singularName: 'academic-affair';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::academic-affair.academic-affair'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAcademicLeadershipAcademicLeadership
   extends Struct.SingleTypeSchema {
   collectionName: 'academic_leaderships';
@@ -1235,6 +1264,7 @@ export interface ApiDeanHonorListDeanHonorList extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1344,6 +1374,7 @@ export interface ApiExaminationExamination extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1848,6 +1879,7 @@ export interface ApiIndustryConnectIndustryConnect
     partnerships_title: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     seminar: Schema.Attribute.Component<'industry-connect.seminar', false>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     shaping_career: Schema.Attribute.Component<
       'industry-connect.shaping-career',
       false
@@ -1895,6 +1927,7 @@ export interface ApiInternationalCollaborationInternationalCollaboration
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     title: Schema.Attribute.Blocks;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -2303,6 +2336,7 @@ export interface ApiNoticeNotice extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     noticepdfs: Schema.Attribute.Component<'notice-pdf.notice-pdf', true>;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -2443,6 +2477,7 @@ export interface ApiPedagogyPedagogy extends Struct.SingleTypeSchema {
     pedagogy_hero: Schema.Attribute.Component<'pedagogy.pedagogy-hero', false>;
     practicals: Schema.Attribute.Component<'pedagogy.peda-content-card', false>;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     technology_enable_learning: Schema.Attribute.Component<
       'pedagogy.peda-content-card',
       false
@@ -3878,6 +3913,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about-krmu.about-krmu': ApiAboutKrmuAboutKrmu;
       'api::about.about': ApiAboutAbout;
+      'api::academic-affair.academic-affair': ApiAcademicAffairAcademicAffair;
       'api::academic-leadership.academic-leadership': ApiAcademicLeadershipAcademicLeadership;
       'api::accreditations-recognition-and-approval.accreditations-recognition-and-approval': ApiAccreditationsRecognitionAndApprovalAccreditationsRecognitionAndApproval;
       'api::admission.admission': ApiAdmissionAdmission;
