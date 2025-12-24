@@ -30,6 +30,12 @@
         "videos",
         "audios"
       ]
+    },
+    "link1": {
+      "type": "text"
+    },
+    "link2": {
+      "type": "text"
     }
   },
   "config": {}

@@ -888,6 +888,9 @@ export interface HomepageComponentsAfsSection extends Struct.ComponentSchema {
     afsimage1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     afsimage2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     afsimage3: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link1: Schema.Attribute.Text;
+    link2: Schema.Attribute.Text;
+    link3: Schema.Attribute.Text;
   };
 }
 
@@ -985,6 +988,8 @@ export interface HomepageComponentsFeeScholar extends Struct.ComponentSchema {
     FeeStructureImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    link1: Schema.Attribute.Text;
+    link2: Schema.Attribute.Text;
     ScholarshipImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;

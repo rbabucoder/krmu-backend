@@ -44,6 +44,15 @@
     },
     "afs3content": {
       "type": "string"
+    },
+    "link1": {
+      "type": "text"
+    },
+    "link2": {
+      "type": "text"
+    },
+    "link3": {
+      "type": "text"
     }
   },
   "config": {}
