@@ -106,14 +106,13 @@
       "relation": "oneToOne",
       "target": "api::degree.degree"
     },
-    "order_num": {
-      "type": "string",
-      "unique": false
-    },
     "SEO": {
       "type": "component",
       "component": "shared.seo",
       "repeatable": false
+    },
+    "order_num": {
+      "type": "integer"
     }
   }
 }
