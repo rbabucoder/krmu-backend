@@ -1,0 +1,129 @@
+{
+  "kind": "collectionType",
+  "collectionName": "internation_relation_forms",
+  "info": {
+    "singularName": "internation-relation-form",
+    "pluralName": "internation-relation-forms",
+    "displayName": "Internation Relation Form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "date"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address_line_1": {
+      "type": "text"
+    },
+    "address_line_2": {
+      "type": "text"
+    },
+    "emergency_phone": {
+      "type": "string"
+    },
+    "emergency_email": {
+      "type": "email"
+    },
+    "emergency_relationship": {
+      "type": "string"
+    },
+    "academic_background": {
+      "type": "string"
+    },
+    "previous_education": {
+      "type": "string"
+    },
+    "institution_name": {
+      "type": "string"
+    },
+    "study_country": {
+      "type": "string"
+    },
+    "study_duration": {
+      "type": "string"
+    },
+    "degree_obtained": {
+      "type": "string"
+    },
+    "major_field": {
+      "type": "string"
+    },
+    "language_proficiency": {
+      "type": "string"
+    },
+    "english_test": {
+      "type": "string"
+    },
+    "other_language": {
+      "type": "string"
+    },
+    "intended_programme": {
+      "type": "string"
+    },
+    "degree_programme": {
+      "type": "string"
+    },
+    "programme_major": {
+      "type": "string"
+    },
+    "entry_term": {
+      "type": "string"
+    },
+    "applied_before": {
+      "type": "enumeration",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "referral_source": {
+      "type": "enumeration",
+      "enum": [
+        "Online sources",
+        "Offline sources",
+        "Educational events",
+        "Word of mouth",
+        "Search engines",
+        "Recruitment agency",
+        "Government programs",
+        "Other"
+      ]
+    },
+    "statement_of_purpose": {
+      "type": "text"
+    },
+    "declaration_accepted": {
+      "type": "boolean"
+    },
+    "documents_pdf": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

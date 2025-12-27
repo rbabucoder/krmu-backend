@@ -1891,6 +1891,75 @@ export interface ApiIndustryConnectIndustryConnect
   };
 }
 
+export interface ApiInternationRelationFormInternationRelationForm
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'internation_relation_forms';
+  info: {
+    displayName: 'Internation Relation Form';
+    pluralName: 'internation-relation-forms';
+    singularName: 'internation-relation-form';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    academic_background: Schema.Attribute.String;
+    address_line_1: Schema.Attribute.Text;
+    address_line_2: Schema.Attribute.Text;
+    applied_before: Schema.Attribute.Enumeration<['Yes', 'No']>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date_of_birth: Schema.Attribute.Date;
+    declaration_accepted: Schema.Attribute.Boolean;
+    degree_obtained: Schema.Attribute.String;
+    degree_programme: Schema.Attribute.String;
+    documents_pdf: Schema.Attribute.Media<'images' | 'files'>;
+    email: Schema.Attribute.Email;
+    emergency_email: Schema.Attribute.Email;
+    emergency_phone: Schema.Attribute.String;
+    emergency_relationship: Schema.Attribute.String;
+    english_test: Schema.Attribute.String;
+    entry_term: Schema.Attribute.String;
+    first_name: Schema.Attribute.String;
+    gender: Schema.Attribute.Enumeration<['Male', 'Female', 'Other']>;
+    institution_name: Schema.Attribute.String;
+    intended_programme: Schema.Attribute.String;
+    language_proficiency: Schema.Attribute.String;
+    last_name: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::internation-relation-form.internation-relation-form'
+    > &
+      Schema.Attribute.Private;
+    major_field: Schema.Attribute.String;
+    other_language: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    previous_education: Schema.Attribute.String;
+    programme_major: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    referral_source: Schema.Attribute.Enumeration<
+      [
+        'Online sources',
+        'Offline sources',
+        'Educational events',
+        'Word of mouth',
+        'Search engines',
+        'Recruitment agency',
+        'Government programs',
+        'Other',
+      ]
+    >;
+    statement_of_purpose: Schema.Attribute.Text;
+    study_country: Schema.Attribute.String;
+    study_duration: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiInternationalCollaborationInternationalCollaboration
   extends Struct.SingleTypeSchema {
   collectionName: 'international_collaborations';
@@ -3307,6 +3376,40 @@ export interface ApiStudentWelfareStudentWelfare
   };
 }
 
+export interface ApiTestFormTestForm extends Struct.CollectionTypeSchema {
+  collectionName: 'test_forms';
+  info: {
+    displayName: 'test form';
+    pluralName: 'test-forms';
+    singularName: 'test-form';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    documents_pdf: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    email: Schema.Attribute.Email;
+    first_name: Schema.Attribute.String;
+    last_name: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::test-form.test-form'
+    > &
+      Schema.Attribute.Private;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
   collectionName: 'testimonials';
   info: {
@@ -3953,6 +4056,7 @@ declare module '@strapi/strapi' {
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::image-gallery-page.image-gallery-page': ApiImageGalleryPageImageGalleryPage;
       'api::industry-connect.industry-connect': ApiIndustryConnectIndustryConnect;
+      'api::internation-relation-form.internation-relation-form': ApiInternationRelationFormInternationRelationForm;
       'api::international-collaboration.international-collaboration': ApiInternationalCollaborationInternationalCollaboration;
       'api::kree.kree': ApiKreeKree;
       'api::krmu-campus-facility.krmu-campus-facility': ApiKrmuCampusFacilityKrmuCampusFacility;
@@ -3987,6 +4091,7 @@ declare module '@strapi/strapi' {
       'api::sport-facility.sport-facility': ApiSportFacilitySportFacility;
       'api::student-achievement.student-achievement': ApiStudentAchievementStudentAchievement;
       'api::student-welfare.student-welfare': ApiStudentWelfareStudentWelfare;
+      'api::test-form.test-form': ApiTestFormTestForm;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::topbar-menu.topbar-menu': ApiTopbarMenuTopbarMenu;
       'api::video-gallery.video-gallery': ApiVideoGalleryVideoGallery;
