@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prospect_leads",
+  "info": {
+    "singularName": "prospect-lead",
+    "pluralName": "prospect-leads",
+    "displayName": "Prospect Lead"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "page_url": {
+      "type": "text"
+    }
+  }
+}

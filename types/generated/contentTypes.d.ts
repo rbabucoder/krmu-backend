@@ -2889,6 +2889,38 @@ export interface ApiProgrammeProgramme extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiProspectLeadProspectLead
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'prospect_leads';
+  info: {
+    displayName: 'Prospect Lead';
+    pluralName: 'prospect-leads';
+    singularName: 'prospect-lead';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::prospect-lead.prospect-lead'
+    > &
+      Schema.Attribute.Private;
+    mobile: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+    page_url: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiRegistrarOfficeRegistrarOffice
   extends Struct.SingleTypeSchema {
   collectionName: 'registrar_offices';
@@ -4082,6 +4114,7 @@ declare module '@strapi/strapi' {
       'api::print-coverage-year.print-coverage-year': ApiPrintCoverageYearPrintCoverageYear;
       'api::print-coverage.print-coverage': ApiPrintCoveragePrintCoverage;
       'api::programme.programme': ApiProgrammeProgramme;
+      'api::prospect-lead.prospect-lead': ApiProspectLeadProspectLead;
       'api::registrar-office.registrar-office': ApiRegistrarOfficeRegistrarOffice;
       'api::school-category.school-category': ApiSchoolCategorySchoolCategory;
       'api::school-programme.school-programme': ApiSchoolProgrammeSchoolProgramme;
