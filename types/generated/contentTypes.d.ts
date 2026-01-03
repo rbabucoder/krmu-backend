@@ -2791,6 +2791,38 @@ export interface ApiPlacementOverviewPlacementOverview
   };
 }
 
+export interface ApiPlacementRecruiterPlacementRecruiter
+  extends Struct.SingleTypeSchema {
+  collectionName: 'placement_recruiters';
+  info: {
+    displayName: 'Placement Recruiter';
+    pluralName: 'placement-recruiters';
+    singularName: 'placement-recruiter';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::placement-recruiter.placement-recruiter'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    recruiters_logo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPrintCoverageYearPrintCoverageYear
   extends Struct.CollectionTypeSchema {
   collectionName: 'print_coverage_years';
@@ -4112,6 +4144,7 @@ declare module '@strapi/strapi' {
       'api::photo-gallery.photo-gallery': ApiPhotoGalleryPhotoGallery;
       'api::placement-hightlight.placement-hightlight': ApiPlacementHightlightPlacementHightlight;
       'api::placement-overview.placement-overview': ApiPlacementOverviewPlacementOverview;
+      'api::placement-recruiter.placement-recruiter': ApiPlacementRecruiterPlacementRecruiter;
       'api::print-coverage-year.print-coverage-year': ApiPrintCoverageYearPrintCoverageYear;
       'api::print-coverage.print-coverage': ApiPrintCoveragePrintCoverage;
       'api::programme.programme': ApiProgrammeProgramme;

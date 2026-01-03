@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "placement_recruiters",
+  "info": {
+    "singularName": "placement-recruiter",
+    "pluralName": "placement-recruiters",
+    "displayName": "Placement Recruiter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recruiters_logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
