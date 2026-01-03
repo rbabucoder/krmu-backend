@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "pdf_pages",
+  "info": {
+    "singularName": "pdf-page",
+    "pluralName": "pdf-pages",
+    "displayName": "PDFPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pdf_cards": {
+      "type": "component",
+      "component": "pdf-page.pdf-page-content-card",
+      "repeatable": true
+    }
+  }
+}

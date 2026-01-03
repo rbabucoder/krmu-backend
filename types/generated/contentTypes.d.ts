@@ -2473,6 +2473,37 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiPdfPagePdfPage extends Struct.SingleTypeSchema {
+  collectionName: 'pdf_pages';
+  info: {
+    displayName: 'PDFPage';
+    pluralName: 'pdf-pages';
+    singularName: 'pdf-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pdf-page.pdf-page'
+    > &
+      Schema.Attribute.Private;
+    pdf_cards: Schema.Attribute.Component<
+      'pdf-page.pdf-page-content-card',
+      true
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPdfPdf extends Struct.CollectionTypeSchema {
   collectionName: 'pdfs';
   info: {
@@ -4137,6 +4168,7 @@ declare module '@strapi/strapi' {
       'api::notice.notice': ApiNoticeNotice;
       'api::page-asset.page-asset': ApiPageAssetPageAsset;
       'api::page.page': ApiPagePage;
+      'api::pdf-page.pdf-page': ApiPdfPagePdfPage;
       'api::pdf.pdf': ApiPdfPdf;
       'api::pedagogy.pedagogy': ApiPedagogyPedagogy;
       'api::phd-admission.phd-admission': ApiPhdAdmissionPhdAdmission;
