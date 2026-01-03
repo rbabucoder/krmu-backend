@@ -2971,7 +2971,7 @@ export interface SharedListItem extends Struct.ComponentSchema {
   };
   attributes: {
     listicon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    listlink: Schema.Attribute.String;
+    listlink: Schema.Attribute.Text;
     listtext: Schema.Attribute.String;
   };
 }
