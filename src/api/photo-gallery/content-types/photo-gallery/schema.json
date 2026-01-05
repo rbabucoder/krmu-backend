@@ -27,6 +27,9 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "published_date_text": {
+      "type": "text"
     }
   }
 }
