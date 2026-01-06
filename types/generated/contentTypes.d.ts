@@ -2876,8 +2876,8 @@ export interface ApiPrintCoverageYearPrintCoverageYear
       'api::print-coverage-year.print-coverage-year'
     > &
       Schema.Attribute.Private;
-    print_coverage: Schema.Attribute.Relation<
-      'manyToOne',
+    print_coverages: Schema.Attribute.Relation<
+      'manyToMany',
       'api::print-coverage.print-coverage'
     >;
     publishedAt: Schema.Attribute.DateTime;
@@ -2911,7 +2911,7 @@ export interface ApiPrintCoveragePrintCoverage
     > &
       Schema.Attribute.Private;
     print_coverage_years: Schema.Attribute.Relation<
-      'oneToMany',
+      'manyToMany',
       'api::print-coverage-year.print-coverage-year'
     >;
     publishedAt: Schema.Attribute.DateTime;

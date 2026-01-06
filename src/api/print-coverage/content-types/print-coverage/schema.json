@@ -26,9 +26,9 @@
     },
     "print_coverage_years": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::print-coverage-year.print-coverage-year",
-      "mappedBy": "print_coverage"
+      "mappedBy": "print_coverages"
     },
     "desc": {
       "type": "text"

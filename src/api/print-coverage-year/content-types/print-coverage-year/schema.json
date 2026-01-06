@@ -14,9 +14,9 @@
     "Years": {
       "type": "string"
     },
-    "print_coverage": {
+    "print_coverages": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::print-coverage.print-coverage",
       "inversedBy": "print_coverage_years"
     }
