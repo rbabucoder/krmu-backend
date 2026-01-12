@@ -23,6 +23,9 @@
         "videos",
         "audios"
       ]
+    },
+    "order_num": {
+      "type": "integer"
     }
   }
 }

@@ -1817,6 +1817,7 @@ export interface ApiImageGalleryPageImageGalleryPage
       'api::image-gallery-page.image-gallery-page'
     > &
       Schema.Attribute.Private;
+    order_num: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
