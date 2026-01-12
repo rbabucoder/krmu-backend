@@ -30,6 +30,9 @@
     },
     "published_date_text": {
       "type": "text"
+    },
+    "order_num": {
+      "type": "integer"
     }
   }
 }

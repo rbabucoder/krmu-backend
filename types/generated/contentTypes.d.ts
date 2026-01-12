@@ -2746,6 +2746,7 @@ export interface ApiPhotoGalleryPhotoGallery
       'api::photo-gallery.photo-gallery'
     > &
       Schema.Attribute.Private;
+    order_num: Schema.Attribute.Integer;
     published_date_text: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'>;
