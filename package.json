@@ -36,8 +36,7 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": ">=18.0.0 <=22.x.x",
-    "npm": ">=6.0.0"
+    "node": "20.17.0"
   },
   "strapi": {
     "uuid": "59f0e3d9-588c-4289-bf3a-d7ce8d8b4f23",
