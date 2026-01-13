@@ -23,7 +23,6 @@
     "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
-    "pg": "^8.16.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
@@ -36,7 +35,8 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": "20.17.0"
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
   },
   "strapi": {
     "uuid": "59f0e3d9-588c-4289-bf3a-d7ce8d8b4f23",
