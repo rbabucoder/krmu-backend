@@ -1,0 +1,76 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.counter-component",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "countertext",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "countertext": {
+        "edit": {
+          "label": "countertext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "countertext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "countercontent": {
+        "edit": {
+          "label": "countercontent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "countercontent",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "countertext",
+        "countercontent"
+      ],
+      "edit": [
+        [
+          {
+            "name": "countertext",
+            "size": 6
+          },
+          {
+            "name": "countercontent",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.counter-component",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

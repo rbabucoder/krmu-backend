@@ -1,0 +1,118 @@
+{
+  "key": "plugin_content_manager_configuration_components::menu.dropdown-menu",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "menu_sections": {
+        "edit": {
+          "label": "menu_sections",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "heading"
+        },
+        "list": {
+          "label": "menu_sections",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "menuimg": {
+        "edit": {
+          "label": "menuimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "menuimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "imgpos": {
+        "edit": {
+          "label": "imgpos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "imgpos",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "title",
+        "menu_sections",
+        "menuimg"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "menu_sections",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "menuimg",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "imgpos",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "menu.dropdown-menu",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

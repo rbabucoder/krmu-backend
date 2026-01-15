@@ -1,0 +1,135 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.button",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "buttontext",
+      "defaultSortBy": "buttontext",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "buttontext": {
+        "edit": {
+          "label": "buttontext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "buttontext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "buttonlink": {
+        "edit": {
+          "label": "buttonlink",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "buttonlink",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "buttonclass": {
+        "edit": {
+          "label": "buttonclass",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "buttonclass",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "popupFormId": {
+        "edit": {
+          "label": "popupFormId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "popupFormId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "containerPopupFormId": {
+        "edit": {
+          "label": "containerPopupFormId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "containerPopupFormId",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "buttontext",
+        "buttonlink",
+        "buttonclass"
+      ],
+      "edit": [
+        [
+          {
+            "name": "buttontext",
+            "size": 6
+          },
+          {
+            "name": "buttonlink",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "buttonclass",
+            "size": 6
+          },
+          {
+            "name": "popupFormId",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "containerPopupFormId",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.button",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

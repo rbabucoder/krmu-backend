@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.list-item",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "listtext",
+      "defaultSortBy": "listtext",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "listicon": {
+        "edit": {
+          "label": "listicon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "listicon",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "listtext": {
+        "edit": {
+          "label": "listtext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "listtext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "listlink": {
+        "edit": {
+          "label": "listlink",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "listlink",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "listicon",
+        "listtext",
+        "listlink"
+      ],
+      "edit": [
+        [
+          {
+            "name": "listicon",
+            "size": 6
+          },
+          {
+            "name": "listtext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "listlink",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.list-item",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

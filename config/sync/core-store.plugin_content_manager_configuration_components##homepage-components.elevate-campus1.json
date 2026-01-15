@@ -1,0 +1,193 @@
+{
+  "key": "plugin_content_manager_configuration_components::homepage-components.elevate-campus1",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "beforehighlighttext",
+      "defaultSortBy": "beforehighlighttext",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "beforehighlighttext": {
+        "edit": {
+          "label": "beforehighlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "beforehighlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlighttext": {
+        "edit": {
+          "label": "highlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "afterhighlighttext": {
+        "edit": {
+          "label": "afterhighlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "afterhighlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subtitle": {
+        "edit": {
+          "label": "subtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "linktext": {
+        "edit": {
+          "label": "linktext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "linktext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "linkclass": {
+        "edit": {
+          "label": "linkclass",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "linkclass",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "link": {
+        "edit": {
+          "label": "link",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "link",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "highlighttext",
+        "subtitle",
+        "beforehighlighttext"
+      ],
+      "edit": [
+        [
+          {
+            "name": "highlighttext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "subtitle",
+            "size": 6
+          },
+          {
+            "name": "content",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "linktext",
+            "size": 6
+          },
+          {
+            "name": "linkclass",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "link",
+            "size": 6
+          },
+          {
+            "name": "beforehighlighttext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "afterhighlighttext",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "homepage-components.elevate-campus1",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

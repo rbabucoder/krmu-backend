@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.card-with-image-link",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "cardurl",
+      "defaultSortBy": "cardurl",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "cardimg": {
+        "edit": {
+          "label": "cardimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cardimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "cardurl": {
+        "edit": {
+          "label": "cardurl",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cardurl",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "cardtitle": {
+        "edit": {
+          "label": "cardtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cardtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "cardimg",
+        "cardtitle",
+        "cardurl"
+      ],
+      "edit": [
+        [
+          {
+            "name": "cardimg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "cardtitle",
+            "size": 6
+          },
+          {
+            "name": "cardurl",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.card-with-image-link",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

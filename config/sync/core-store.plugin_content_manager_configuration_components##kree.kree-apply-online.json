@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::kree.kree-apply-online",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "apply_btn": {
+        "edit": {
+          "label": "apply_btn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "apply_btn",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "apply_btn"
+      ],
+      "edit": [
+        [
+          {
+            "name": "apply_btn",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "kree.kree-apply-online",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

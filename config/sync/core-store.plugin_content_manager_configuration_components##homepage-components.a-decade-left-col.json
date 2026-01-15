@@ -1,0 +1,173 @@
+{
+  "key": "plugin_content_manager_configuration_components::homepage-components.a-decade-left-col",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "adecadetitle",
+      "defaultSortBy": "adecadetitle",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "adecadetitle": {
+        "edit": {
+          "label": "adecadetitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "adecadetitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "adecadesubtitle": {
+        "edit": {
+          "label": "adecadesubtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "adecadesubtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "adecadedescription": {
+        "edit": {
+          "label": "adecadedescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "adecadedescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button1text": {
+        "edit": {
+          "label": "button1text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button1text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button1link": {
+        "edit": {
+          "label": "button1link",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button1link",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button2text": {
+        "edit": {
+          "label": "button2text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button2text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button2link": {
+        "edit": {
+          "label": "button2link",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button2link",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "adecadetitle",
+        "adecadesubtitle",
+        "adecadedescription"
+      ],
+      "edit": [
+        [
+          {
+            "name": "adecadetitle",
+            "size": 6
+          },
+          {
+            "name": "adecadesubtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "adecadedescription",
+            "size": 6
+          },
+          {
+            "name": "button1text",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "button1link",
+            "size": 6
+          },
+          {
+            "name": "button2text",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "button2link",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "homepage-components.a-decade-left-col",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

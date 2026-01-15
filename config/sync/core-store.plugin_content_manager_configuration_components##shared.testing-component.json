@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.testing-component",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "working",
+      "defaultSortBy": "working",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "working": {
+        "edit": {
+          "label": "working",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "working",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "working"
+      ],
+      "edit": [
+        [
+          {
+            "name": "working",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.testing-component",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

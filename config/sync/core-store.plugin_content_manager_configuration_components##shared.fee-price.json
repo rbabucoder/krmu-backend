@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.fee-price",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "price",
+      "defaultSortBy": "price",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "refund": {
+        "edit": {
+          "label": "refund",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "refund",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "price": {
+        "edit": {
+          "label": "price",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "price",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "refund",
+        "price",
+        "heading"
+      ],
+      "edit": [
+        [
+          {
+            "name": "refund",
+            "size": 4
+          },
+          {
+            "name": "price",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "heading",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.fee-price",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

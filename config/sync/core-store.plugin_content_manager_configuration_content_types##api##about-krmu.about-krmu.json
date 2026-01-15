@@ -1,0 +1,392 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::about-krmu.about-krmu",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subtitle": {
+        "edit": {
+          "label": "subtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "accrediation": {
+        "edit": {
+          "label": "accrediation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "accrediation",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "krmugroup": {
+        "edit": {
+          "label": "krmugroup",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "krmugroup",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "thenexgentitle": {
+        "edit": {
+          "label": "thenexgentitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "thenexgentitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "thenexgendescription": {
+        "edit": {
+          "label": "thenexgendescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "thenexgendescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "halloffame": {
+        "edit": {
+          "label": "halloffame",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "halloffame",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "visionmission": {
+        "edit": {
+          "label": "visionmission",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "visionmission",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "internationcollaboration": {
+        "edit": {
+          "label": "internationcollaboration",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "internationcollaboration",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "krmucommittee": {
+        "edit": {
+          "label": "krmucommittee",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "krmucommittee",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "letsexplorecontent": {
+        "edit": {
+          "label": "letsexplorecontent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "letsexplorecontent",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "careerprospects": {
+        "edit": {
+          "label": "careerprospects",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "careerprospects",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "dreamcareer": {
+        "edit": {
+          "label": "dreamcareer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dreamcareer",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "ourlocation": {
+        "edit": {
+          "label": "ourlocation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ourlocation",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "school_seo": {
+        "edit": {
+          "label": "school_seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "school_seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "title",
+        "subtitle",
+        "createdAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "subtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "accrediation",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "krmugroup",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "thenexgentitle",
+            "size": 6
+          },
+          {
+            "name": "thenexgendescription",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "halloffame",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "visionmission",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "internationcollaboration",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "krmucommittee",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "letsexplorecontent",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "careerprospects",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "dreamcareer",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "ourlocation",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "school_seo",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "api::about-krmu.about-krmu"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

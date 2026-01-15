@@ -1,0 +1,76 @@
+{
+  "key": "plugin_content_manager_configuration_components::fee-structure-saarc.fee-structure-saarc-approval",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "office_order_url": {
+        "edit": {
+          "label": "office_order_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "office_order_url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fee_struct_click_here": {
+        "edit": {
+          "label": "fee_struct_click_here",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fee_struct_click_here",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "office_order_url",
+        "fee_struct_click_here"
+      ],
+      "edit": [
+        [
+          {
+            "name": "office_order_url",
+            "size": 6
+          },
+          {
+            "name": "fee_struct_click_here",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "fee-structure-saarc.fee-structure-saarc-approval",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

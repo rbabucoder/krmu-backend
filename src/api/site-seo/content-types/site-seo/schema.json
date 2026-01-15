@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_seos",
+  "info": {
+    "singularName": "site-seo",
+    "pluralName": "site-seos",
+    "displayName": "Site SEO"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "shareImg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "index": {
+      "type": "boolean"
+    },
+    "canonicalUrl": {
+      "type": "text"
+    },
+    "keyword": {
+      "type": "text"
+    }
+  }
+}

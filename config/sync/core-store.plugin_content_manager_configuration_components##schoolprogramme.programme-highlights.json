@@ -1,0 +1,117 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolprogramme.programme-highlights",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "heading",
+      "defaultSortBy": "heading",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subheading": {
+        "edit": {
+          "label": "subheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "programmehighlightcards": {
+        "edit": {
+          "label": "programmehighlightcards",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programmehighlightcards",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "highlightheading": {
+        "edit": {
+          "label": "highlightheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlightheading",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "subheading",
+        "programmehighlightcards",
+        "heading"
+      ],
+      "edit": [
+        [
+          {
+            "name": "subheading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "programmehighlightcards",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "highlightheading",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolprogramme.programme-highlights",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

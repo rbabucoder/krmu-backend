@@ -1,0 +1,539 @@
+{
+  "documentId": "f74fnraa11dhu53bkd8466xx",
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "s8so06qy58tndjxgzs1lwtc7",
+      "action": "api::about-krmu.about-krmu.find",
+      "locale": null
+    },
+    {
+      "documentId": "hlyyks6iq7v99snv0o4hvf06",
+      "action": "api::about.about.find",
+      "locale": null
+    },
+    {
+      "documentId": "xo4lfcl1mtw9enev507b39tg",
+      "action": "api::academic-affair.academic-affair.find",
+      "locale": null
+    },
+    {
+      "documentId": "rs0xo64zhepkheo0bowkixw3",
+      "action": "api::academic-leadership.academic-leadership.find",
+      "locale": null
+    },
+    {
+      "documentId": "yyjwzvpp4vouc0itghh8tv6p",
+      "action": "api::accreditations-recognition-and-approval.accreditations-recognition-and-approval.find",
+      "locale": null
+    },
+    {
+      "documentId": "u7628tdf4x48zscykvacmjlt",
+      "action": "api::admission.admission.find",
+      "locale": null
+    },
+    {
+      "documentId": "hl8i2e03rbqh4k3afzism7md",
+      "action": "api::admission2.admission2.find",
+      "locale": null
+    },
+    {
+      "documentId": "t9h5mgq1nu0npdikr3vaxwtb",
+      "action": "api::advisory-board.advisory-board.find",
+      "locale": null
+    },
+    {
+      "documentId": "k4y0qvp4vw1et7j8mdbaamdq",
+      "action": "api::alumni.alumni.find",
+      "locale": null
+    },
+    {
+      "documentId": "jyfdauhu2i6keyb2kpnbl5wl",
+      "action": "api::article.article.find",
+      "locale": null
+    },
+    {
+      "documentId": "bzdhu66blg39k8vbp365z1ly",
+      "action": "api::article.article.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "r6fs4tcujr4v71bk8hmm6f23",
+      "action": "api::author.author.find",
+      "locale": null
+    },
+    {
+      "documentId": "k3cdj6dhqtkv4gfw2e728f8h",
+      "action": "api::author.author.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "niu0k3so4jz8csqupdnsgnfd",
+      "action": "api::blog-category.blog-category.find",
+      "locale": null
+    },
+    {
+      "documentId": "afg9i8x3unr8rjr2reqmo7k8",
+      "action": "api::blog.blog.find",
+      "locale": null
+    },
+    {
+      "documentId": "etgxtb2l7d1yuorg3hzmg6h9",
+      "action": "api::career-development-centre-team.career-development-centre-team.find",
+      "locale": null
+    },
+    {
+      "documentId": "kj4yjx2vafm2sxcv56kuz2ez",
+      "action": "api::career-development-centre.career-development-centre.find",
+      "locale": null
+    },
+    {
+      "documentId": "cx9cxioko7mustn4zwszar6x",
+      "action": "api::career.career.find",
+      "locale": null
+    },
+    {
+      "documentId": "fqc99zjeecjesa2xfwyrd48g",
+      "action": "api::category.category.find",
+      "locale": null
+    },
+    {
+      "documentId": "o5zm0zz3vc7ly07v05l9qcq9",
+      "action": "api::category.category.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "q6hsg8zhn1udcq32a9w2i7dn",
+      "action": "api::club-and-society.club-and-society.find",
+      "locale": null
+    },
+    {
+      "documentId": "jj027munc5euno7vdhpu910n",
+      "action": "api::code-of-conduct.code-of-conduct.find",
+      "locale": null
+    },
+    {
+      "documentId": "kwxslsdp8v4eof1t8ij3b260",
+      "action": "api::community-connect.community-connect.find",
+      "locale": null
+    },
+    {
+      "documentId": "tm3fubanru7hhxtrtbdo73xy",
+      "action": "api::contact-form.contact-form.create",
+      "locale": null
+    },
+    {
+      "documentId": "eo46b4e9zc0q9whekt208cmn",
+      "action": "api::contact-form.contact-form.find",
+      "locale": null
+    },
+    {
+      "documentId": "zef1nsaunidg828wugggiebm",
+      "action": "api::contact-form.contact-form.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "s363dx2s0gav1q9lfih1wub0",
+      "action": "api::contact-form.contact-form.update",
+      "locale": null
+    },
+    {
+      "documentId": "jqakbborp67lm498vzq6wkjl",
+      "action": "api::controller-setting.controller-setting.find",
+      "locale": null
+    },
+    {
+      "documentId": "k5umjpvoyyl79gccrjyw8rrc",
+      "action": "api::corporate-advisory-board.corporate-advisory-board.find",
+      "locale": null
+    },
+    {
+      "documentId": "mkherg1gqrurou1ttmi1jzv0",
+      "action": "api::custom-page.custom-page.find",
+      "locale": null
+    },
+    {
+      "documentId": "hsgmfzj0nqqkzj8707wh4byn",
+      "action": "api::dean-honor-list.dean-honor-list.find",
+      "locale": null
+    },
+    {
+      "documentId": "nv983pvhxx1quxx6bftbhlbr",
+      "action": "api::degree.degree.find",
+      "locale": null
+    },
+    {
+      "documentId": "smy50x0y0nalt23blyrmwsjb",
+      "action": "api::event.event.find",
+      "locale": null
+    },
+    {
+      "documentId": "spl6s5j6xurxeqmu47twecby",
+      "action": "api::examination.examination.find",
+      "locale": null
+    },
+    {
+      "documentId": "v79empa98spsgdd42pp0ukcn",
+      "action": "api::facility.facility.find",
+      "locale": null
+    },
+    {
+      "documentId": "bh3edzqbe6m0jh3t3tlhq09x",
+      "action": "api::faculty.faculty.find",
+      "locale": null
+    },
+    {
+      "documentId": "p98x6gb8zzqd6rrvgk4lcqm6",
+      "action": "api::faq.faq.find",
+      "locale": null
+    },
+    {
+      "documentId": "x8z7djklihwspkkhovacoxv7",
+      "action": "api::fee-structure-saarc-country.fee-structure-saarc-country.find",
+      "locale": null
+    },
+    {
+      "documentId": "odh051nel56ceak8wjvzbuf7",
+      "action": "api::fee-structure.fee-structure.find",
+      "locale": null
+    },
+    {
+      "documentId": "a3q72dumgelt040w1eg4wiur",
+      "action": "api::finance-department.finance-department.find",
+      "locale": null
+    },
+    {
+      "documentId": "ldl8j36ow1jo4omfu1jdrix6",
+      "action": "api::financial-assistance.financial-assistance.find",
+      "locale": null
+    },
+    {
+      "documentId": "iry4m9stnxe2qybe10d38777",
+      "action": "api::footer.footer.find",
+      "locale": null
+    },
+    {
+      "documentId": "e3xwo0ewlwru4fypmijrny93",
+      "action": "api::global.global.find",
+      "locale": null
+    },
+    {
+      "documentId": "qkr0cy2ohkz6esgfb36g8qvy",
+      "action": "api::header-menu-temp.header-menu-temp.find",
+      "locale": null
+    },
+    {
+      "documentId": "mmx4nlae4jdda05p3hi4fhy4",
+      "action": "api::home-page.home-page.find",
+      "locale": null
+    },
+    {
+      "documentId": "m1tq0i7mn0jn5uy7r63b4mgs",
+      "action": "api::image-gallery-page.image-gallery-page.find",
+      "locale": null
+    },
+    {
+      "documentId": "a77r64ya3p58l6aqxxgt4goe",
+      "action": "api::industry-connect.industry-connect.find",
+      "locale": null
+    },
+    {
+      "documentId": "qm5u14m8536eubvz40zdhyl3",
+      "action": "api::internation-relation-form.internation-relation-form.create",
+      "locale": null
+    },
+    {
+      "documentId": "q358q7oh58n15l7pvw20l6pk",
+      "action": "api::internation-relation-form.internation-relation-form.delete",
+      "locale": null
+    },
+    {
+      "documentId": "tv5lpccnfiiljq52f4i01ag3",
+      "action": "api::internation-relation-form.internation-relation-form.find",
+      "locale": null
+    },
+    {
+      "documentId": "r8ogt2u3u3ezxkp8he3b2jtu",
+      "action": "api::internation-relation-form.internation-relation-form.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "xexocw9syqrge72b53iinh4t",
+      "action": "api::internation-relation-form.internation-relation-form.update",
+      "locale": null
+    },
+    {
+      "documentId": "vh1lmbg1f7zhrn6e9dy9en36",
+      "action": "api::international-collaboration.international-collaboration.find",
+      "locale": null
+    },
+    {
+      "documentId": "i2swvzlioder5ndddd87zed2",
+      "action": "api::kree.kree.find",
+      "locale": null
+    },
+    {
+      "documentId": "kuutyckh3nof8p00wlk13skt",
+      "action": "api::krmu-campus-facility.krmu-campus-facility.find",
+      "locale": null
+    },
+    {
+      "documentId": "ffwfmvgfwx73ny46wgnaip2e",
+      "action": "api::krmu-time.krmu-time.find",
+      "locale": null
+    },
+    {
+      "documentId": "jrrkz167fvxmv5p0pd4qgub5",
+      "action": "api::leadership.leadership.find",
+      "locale": null
+    },
+    {
+      "documentId": "c3suyc8lbdnhusa19hvlehi7",
+      "action": "api::life-at-krmu-overview.life-at-krmu-overview.find",
+      "locale": null
+    },
+    {
+      "documentId": "bwo7r6nuveiai3ot7udimrtd",
+      "action": "api::magazine-reflection.magazine-reflection.find",
+      "locale": null
+    },
+    {
+      "documentId": "aerzdjc2e6vl56sxi1qd011q",
+      "action": "api::main-menu.main-menu.find",
+      "locale": null
+    },
+    {
+      "documentId": "elbo54pl88lpjwzbydhkmc79",
+      "action": "api::membership-and-ranking.membership-and-ranking.find",
+      "locale": null
+    },
+    {
+      "documentId": "swoa48rac0a3lmf9vf00fcwn",
+      "action": "api::menu-section.menu-section.find",
+      "locale": null
+    },
+    {
+      "documentId": "qhc3hnfpdzl6cd6jtbmv6bs5",
+      "action": "api::news-and-event.news-and-event.find",
+      "locale": null
+    },
+    {
+      "documentId": "awuxy5n210dn0wqeys8vu2mn",
+      "action": "api::news-event.news-event.find",
+      "locale": null
+    },
+    {
+      "documentId": "wbtq5okx482sewl0t5lwr894",
+      "action": "api::notice.notice.find",
+      "locale": null
+    },
+    {
+      "documentId": "ozs5gxijal0xgj2t3cor4u1m",
+      "action": "api::page-asset.page-asset.find",
+      "locale": null
+    },
+    {
+      "documentId": "k6426b7o95lgy3lbpqdecdwp",
+      "action": "api::page.page.find",
+      "locale": null
+    },
+    {
+      "documentId": "gneehpfpfp82jf7vppll4xxu",
+      "action": "api::pdf-page.pdf-page.find",
+      "locale": null
+    },
+    {
+      "documentId": "euasa1dc2hoff8du45thmhch",
+      "action": "api::pdf.pdf.find",
+      "locale": null
+    },
+    {
+      "documentId": "he21zndxlh29u2bot8meqq3e",
+      "action": "api::pedagogy.pedagogy.find",
+      "locale": null
+    },
+    {
+      "documentId": "lldc3fautffj57xky7imjfvc",
+      "action": "api::phd-admission.phd-admission.find",
+      "locale": null
+    },
+    {
+      "documentId": "ti4exzaopoxuc30xb288ac69",
+      "action": "api::phd-single-programme.phd-single-programme.find",
+      "locale": null
+    },
+    {
+      "documentId": "muy2r9p0uo7lsn762eauqpcq",
+      "action": "api::photo-gallery.photo-gallery.find",
+      "locale": null
+    },
+    {
+      "documentId": "a838e3uknk1xtpv4o7tjt9m4",
+      "action": "api::placement-hightlight.placement-hightlight.find",
+      "locale": null
+    },
+    {
+      "documentId": "jrvoj1dr0kt6z5y3k6uoshyt",
+      "action": "api::placement-overview.placement-overview.find",
+      "locale": null
+    },
+    {
+      "documentId": "pyflhbchit019cvql4icypwb",
+      "action": "api::placement-recruiter.placement-recruiter.find",
+      "locale": null
+    },
+    {
+      "documentId": "fpozdoh2lpu17nul2epc1awk",
+      "action": "api::print-coverage-year.print-coverage-year.find",
+      "locale": null
+    },
+    {
+      "documentId": "nr9trqd9mseugahpi2mpahue",
+      "action": "api::print-coverage.print-coverage.find",
+      "locale": null
+    },
+    {
+      "documentId": "pbdxpolhy33lncw8lb1x0eol",
+      "action": "api::programme.programme.find",
+      "locale": null
+    },
+    {
+      "documentId": "ippc4ip5ixadn4ql2tpovs6x",
+      "action": "api::prospect-lead.prospect-lead.create",
+      "locale": null
+    },
+    {
+      "documentId": "wr8ddwrzmtvvl6634hpb3mby",
+      "action": "api::prospect-lead.prospect-lead.find",
+      "locale": null
+    },
+    {
+      "documentId": "j4d7rwnwav2zaxounqp4ber3",
+      "action": "api::prospect-lead.prospect-lead.update",
+      "locale": null
+    },
+    {
+      "documentId": "kxeyo6zrxdmzunggqhm6fm73",
+      "action": "api::registrar-office.registrar-office.find",
+      "locale": null
+    },
+    {
+      "documentId": "ujqmduyk1mqyv0yme1v99c9m",
+      "action": "api::school-category.school-category.find",
+      "locale": null
+    },
+    {
+      "documentId": "u4uhoi8mpk60w8tx4844ufjr",
+      "action": "api::school-programme.school-programme.find",
+      "locale": null
+    },
+    {
+      "documentId": "lh9ms5dfcuqitdxe512bn028",
+      "action": "api::school.school.find",
+      "locale": null
+    },
+    {
+      "documentId": "mrj1kddkvcobz9c4ki4nwxll",
+      "action": "api::section.section.find",
+      "locale": null
+    },
+    {
+      "documentId": "b582a8smsig6n366a9j5fwkw",
+      "action": "api::single-blog.single-blog.find",
+      "locale": null
+    },
+    {
+      "documentId": "d7yqfh6n6uoyatsfbd2zc8xw",
+      "action": "api::sport-facility.sport-facility.find",
+      "locale": null
+    },
+    {
+      "documentId": "v5iaqtmzsx02h9fpx0cs0ho3",
+      "action": "api::student-achievement.student-achievement.find",
+      "locale": null
+    },
+    {
+      "documentId": "v9kqefc5t76ytlef2ruok6u6",
+      "action": "api::student-welfare.student-welfare.find",
+      "locale": null
+    },
+    {
+      "documentId": "vq5tqvqc5cdwen3nl1mfbdt4",
+      "action": "api::test-form.test-form.create",
+      "locale": null
+    },
+    {
+      "documentId": "ozd52149ekhmekkjytcc9l5c",
+      "action": "api::test-form.test-form.find",
+      "locale": null
+    },
+    {
+      "documentId": "omfo4f77u1xbn65e729nzg6d",
+      "action": "api::testimonial.testimonial.find",
+      "locale": null
+    },
+    {
+      "documentId": "acmqhagyt9iooquvkk4ylg07",
+      "action": "api::topbar-menu.topbar-menu.find",
+      "locale": null
+    },
+    {
+      "documentId": "r6aw7vqp0bfz09qxti2igl49",
+      "action": "api::video-gallery.video-gallery.find",
+      "locale": null
+    },
+    {
+      "documentId": "q6o68bsw7xbjp3suqmuh31cm",
+      "action": "plugin::upload.content-api.find",
+      "locale": null
+    },
+    {
+      "documentId": "wwi1n514y2vl65yshs66xe5r",
+      "action": "plugin::upload.content-api.upload",
+      "locale": null
+    },
+    {
+      "documentId": "u8fqm2l8a94obpog7he8nex7",
+      "action": "plugin::users-permissions.auth.callback",
+      "locale": null
+    },
+    {
+      "documentId": "gr54jgwqbq6hfnqihcxlnipv",
+      "action": "plugin::users-permissions.auth.connect",
+      "locale": null
+    },
+    {
+      "documentId": "bwl90063p3h25nmentadg6wa",
+      "action": "plugin::users-permissions.auth.emailConfirmation",
+      "locale": null
+    },
+    {
+      "documentId": "ch9t3zq4cd62wrewr03bcz3f",
+      "action": "plugin::users-permissions.auth.forgotPassword",
+      "locale": null
+    },
+    {
+      "documentId": "e9lkz4ux5mxxw0klww7p0y1b",
+      "action": "plugin::users-permissions.auth.register",
+      "locale": null
+    },
+    {
+      "documentId": "jl7rm67s6boqv6r0j2lbzjv0",
+      "action": "plugin::users-permissions.auth.resetPassword",
+      "locale": null
+    },
+    {
+      "documentId": "jv1pqs06frfjuy860r0jnd1g",
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation",
+      "locale": null
+    },
+    {
+      "documentId": "rn588syvfwq6njeedt65bmwd",
+      "action": "plugin::users-permissions.role.find",
+      "locale": null
+    }
+  ]
+}

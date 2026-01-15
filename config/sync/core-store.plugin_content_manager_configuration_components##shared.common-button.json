@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.common-button",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "btn_text",
+      "defaultSortBy": "btn_text",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "btn_text": {
+        "edit": {
+          "label": "btn_text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "btn_text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "btn_class": {
+        "edit": {
+          "label": "btn_class",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "btn_class",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "btn_link": {
+        "edit": {
+          "label": "btn_link",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "btn_link",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "btn_text",
+        "btn_class",
+        "btn_link"
+      ],
+      "edit": [
+        [
+          {
+            "name": "btn_text",
+            "size": 6
+          },
+          {
+            "name": "btn_class",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "btn_link",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.common-button",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

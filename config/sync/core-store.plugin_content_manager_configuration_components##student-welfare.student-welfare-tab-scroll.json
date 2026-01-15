@@ -1,0 +1,96 @@
+{
+  "key": "plugin_content_manager_configuration_components::student-welfare.student-welfare-tab-scroll",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "html": {
+        "edit": {
+          "label": "html",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "html",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "css": {
+        "edit": {
+          "label": "css",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "css",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "js": {
+        "edit": {
+          "label": "js",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "js",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id"
+      ],
+      "edit": [
+        [
+          {
+            "name": "html",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "css",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "js",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "student-welfare.student-welfare-tab-scroll",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

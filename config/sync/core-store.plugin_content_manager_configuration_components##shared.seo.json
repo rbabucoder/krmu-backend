@@ -1,0 +1,173 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.seo",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "metaTitle",
+      "defaultSortBy": "metaTitle",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "metaTitle": {
+        "edit": {
+          "label": "metaTitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "metaTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "metaDescription": {
+        "edit": {
+          "label": "metaDescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "metaDescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "shareImage": {
+        "edit": {
+          "label": "shareImage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "shareImage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "canonical": {
+        "edit": {
+          "label": "canonical",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "canonical",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "metaKeyword": {
+        "edit": {
+          "label": "metaKeyword",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "metaKeyword",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "noIndex": {
+        "edit": {
+          "label": "noIndex",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "noIndex",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "tags": {
+        "edit": {
+          "label": "tags",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tags",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "metaTitle",
+        "metaDescription",
+        "shareImage"
+      ],
+      "edit": [
+        [
+          {
+            "name": "metaTitle",
+            "size": 6
+          },
+          {
+            "name": "metaDescription",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "shareImage",
+            "size": 6
+          },
+          {
+            "name": "canonical",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "metaKeyword",
+            "size": 6
+          },
+          {
+            "name": "noIndex",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "tags",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.seo",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

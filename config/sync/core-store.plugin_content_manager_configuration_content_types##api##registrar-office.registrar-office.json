@@ -1,0 +1,252 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::registrar-office.registrar-office",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "breadcrumb": {
+        "edit": {
+          "label": "breadcrumb",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "breadcrumb",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "registrarimage": {
+        "edit": {
+          "label": "registrarimage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "registrarimage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "registrarname": {
+        "edit": {
+          "label": "registrarname",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "registrarname",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "registrardesignation": {
+        "edit": {
+          "label": "registrardesignation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "registrardesignation",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "registraremail": {
+        "edit": {
+          "label": "registraremail",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "registraremail",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "registrarinfo": {
+        "edit": {
+          "label": "registrarinfo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "registrarinfo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "department": {
+        "edit": {
+          "label": "department",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "department",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "registrardescription": {
+        "edit": {
+          "label": "registrardescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "registrardescription",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "breadcrumb",
+        "createdAt",
+        "updatedAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "breadcrumb",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "registrarimage",
+            "size": 6
+          },
+          {
+            "name": "registrarname",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "registrardesignation",
+            "size": 6
+          },
+          {
+            "name": "registraremail",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "registrarinfo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "department",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "registrardescription",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "api::registrar-office.registrar-office"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

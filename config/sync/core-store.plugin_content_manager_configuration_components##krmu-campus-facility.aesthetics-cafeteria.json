@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::krmu-campus-facility.aesthetics-cafeteria",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "aethetics_cafeteria_imgs": {
+        "edit": {
+          "label": "aethetics_cafeteria_imgs",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "aethetics_cafeteria_imgs",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "content",
+        "aethetics_cafeteria_imgs"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "content",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "aethetics_cafeteria_imgs",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "krmu-campus-facility.aesthetics-cafeteria",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

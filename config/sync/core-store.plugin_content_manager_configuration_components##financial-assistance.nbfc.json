@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::financial-assistance.nbfc",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "nbfc_cards": {
+        "edit": {
+          "label": "nbfc_cards",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "nbfc_cards",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "nbfc_cards"
+      ],
+      "edit": [
+        [
+          {
+            "name": "nbfc_cards",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "financial-assistance.nbfc",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

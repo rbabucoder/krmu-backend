@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::controllers.download-prospectus",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "enable_disable": {
+        "edit": {
+          "label": "enable_disable",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "enable_disable",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "enable_disable"
+      ],
+      "edit": [
+        [
+          {
+            "name": "enable_disable",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "controllers.download-prospectus",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

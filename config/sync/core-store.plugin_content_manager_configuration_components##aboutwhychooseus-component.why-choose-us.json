@@ -1,0 +1,231 @@
+{
+  "key": "plugin_content_manager_configuration_components::aboutwhychooseus-component.why-choose-us",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "achievementstitle",
+      "defaultSortBy": "achievementstitle",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "maindescription": {
+        "edit": {
+          "label": "maindescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "maindescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "badgeheading": {
+        "edit": {
+          "label": "badgeheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "badgeheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titlebluetext": {
+        "edit": {
+          "label": "titlebluetext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titlebluetext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "beforetitlebluetext": {
+        "edit": {
+          "label": "beforetitlebluetext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "beforetitlebluetext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titlehighlighttext": {
+        "edit": {
+          "label": "titlehighlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titlehighlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "beforehighlighttitletext": {
+        "edit": {
+          "label": "beforehighlighttitletext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "beforehighlighttitletext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "achievementstitle": {
+        "edit": {
+          "label": "achievementstitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "achievementstitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "achievementsdescriptions": {
+        "edit": {
+          "label": "achievementsdescriptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "achievementsdescriptions",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ourachievements": {
+        "edit": {
+          "label": "ourachievements",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ourachievements",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "awardstitle": {
+        "edit": {
+          "label": "awardstitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "awardstitle",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "ourachievements",
+        "achievementstitle",
+        "achievementsdescriptions"
+      ],
+      "edit": [
+        [
+          {
+            "name": "ourachievements",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "achievementstitle",
+            "size": 6
+          },
+          {
+            "name": "achievementsdescriptions",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "badgeheading",
+            "size": 6
+          },
+          {
+            "name": "titlebluetext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "titlehighlighttext",
+            "size": 6
+          },
+          {
+            "name": "beforehighlighttitletext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "maindescription",
+            "size": 6
+          },
+          {
+            "name": "beforetitlebluetext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "awardstitle",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "aboutwhychooseus-component.why-choose-us",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

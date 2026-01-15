@@ -1,0 +1,78 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolcomponent.school-list-item",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "listheading",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "listsitems": {
+        "edit": {
+          "label": "listsitems",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "listsitems",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "listheading": {
+        "edit": {
+          "label": "listheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "listheading",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "listsitems",
+        "listheading"
+      ],
+      "edit": [
+        [
+          {
+            "name": "listsitems",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "listheading",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolcomponent.school-list-item",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

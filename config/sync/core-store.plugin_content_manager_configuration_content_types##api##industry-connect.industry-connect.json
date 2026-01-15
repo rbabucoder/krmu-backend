@@ -1,0 +1,372 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::industry-connect.industry-connect",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "bgimage": {
+        "edit": {
+          "label": "bgimage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bgimage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "partnerships_title": {
+        "edit": {
+          "label": "partnerships_title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "partnerships_title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "partnership_logos": {
+        "edit": {
+          "label": "partnership_logos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "partnership_logos",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "cuisines": {
+        "edit": {
+          "label": "cuisines",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cuisines",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "mural_event": {
+        "edit": {
+          "label": "mural_event",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mural_event",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "networking_opportunities": {
+        "edit": {
+          "label": "networking_opportunities",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "networking_opportunities",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "shaping_career": {
+        "edit": {
+          "label": "shaping_career",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "shaping_career",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "seminar": {
+        "edit": {
+          "label": "seminar",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seminar",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idea_forge": {
+        "edit": {
+          "label": "idea_forge",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idea_forge",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "expert_talk_role": {
+        "edit": {
+          "label": "expert_talk_role",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "expert_talk_role",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "deputy_commissioner": {
+        "edit": {
+          "label": "deputy_commissioner",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deputy_commissioner",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "seo": {
+        "edit": {
+          "label": "seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "title"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bgimage",
+            "size": 6
+          },
+          {
+            "name": "partnerships_title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "partnership_logos",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "cuisines",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "mural_event",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "networking_opportunities",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "shaping_career",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "seminar",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "idea_forge",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "expert_talk_role",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "deputy_commissioner",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "api::industry-connect.industry-connect"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

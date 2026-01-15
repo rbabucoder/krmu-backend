@@ -1,0 +1,553 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::phd-single-programme.phd-single-programme",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "bgimg": {
+        "edit": {
+          "label": "bgimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bgimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "formfield": {
+        "edit": {
+          "label": "formfield",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "formfield",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "duration": {
+        "edit": {
+          "label": "duration",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "duration",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "fee_per_year": {
+        "edit": {
+          "label": "fee_per_year",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fee_per_year",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "eligibility_criteria": {
+        "edit": {
+          "label": "eligibility_criteria",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "eligibility_criteria",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "phdoverview": {
+        "edit": {
+          "label": "phdoverview",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phdoverview",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "scholarsponsoredparttime": {
+        "edit": {
+          "label": "scholarsponsoredparttime",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "scholarsponsoredparttime",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "connectingtalent": {
+        "edit": {
+          "label": "connectingtalent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "connectingtalent",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "phdlogoslide": {
+        "edit": {
+          "label": "phdlogoslide",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phdlogoslide",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "careeroptions": {
+        "edit": {
+          "label": "careeroptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "careeroptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "phdoutcome": {
+        "edit": {
+          "label": "phdoutcome",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phdoutcome",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "programmehighlight": {
+        "edit": {
+          "label": "programmehighlight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programmehighlight",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "pursue": {
+        "edit": {
+          "label": "pursue",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "pursue",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "phdslug": {
+        "edit": {
+          "label": "phdslug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phdslug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "degree": {
+        "edit": {
+          "label": "degree",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "degree",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phdprogrammefaq": {
+        "edit": {
+          "label": "phdprogrammefaq",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phdprogrammefaq",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "phdfaqtitle": {
+        "edit": {
+          "label": "phdfaqtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phdfaqtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phdadmissionselect": {
+        "edit": {
+          "label": "phdadmissionselect",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phdadmissionselect",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "seo": {
+        "edit": {
+          "label": "seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "criteria": {
+        "edit": {
+          "label": "criteria",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "criteria",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "school_category": {
+        "edit": {
+          "label": "school_category",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "school_category",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "commence_journey": {
+        "edit": {
+          "label": "commence_journey",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "commence_journey",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "bgimg",
+        "formfield"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "bgimg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "formfield",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "duration",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "fee_per_year",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "eligibility_criteria",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "phdoverview",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "scholarsponsoredparttime",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "connectingtalent",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "phdlogoslide",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "careeroptions",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "phdoutcome",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "programmehighlight",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "pursue",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "phdslug",
+            "size": 6
+          },
+          {
+            "name": "degree",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "phdprogrammefaq",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "phdfaqtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "phdadmissionselect",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "criteria",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "school_category",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "commence_journey",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "api::phd-single-programme.phd-single-programme"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

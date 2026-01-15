@@ -1,0 +1,153 @@
+{
+  "key": "plugin_content_manager_configuration_components::admissionpage-components.fee-details",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "badgetext",
+      "defaultSortBy": "badgetext",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "badgetext": {
+        "edit": {
+          "label": "badgetext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "badgetext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlighttext": {
+        "edit": {
+          "label": "highlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "beforehighlighttext": {
+        "edit": {
+          "label": "beforehighlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "beforehighlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "paymentinfotitle": {
+        "edit": {
+          "label": "paymentinfotitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "paymentinfotitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "paymentinfocontent": {
+        "edit": {
+          "label": "paymentinfocontent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "paymentinfocontent",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "badgetext",
+        "highlighttext",
+        "beforehighlighttext"
+      ],
+      "edit": [
+        [
+          {
+            "name": "badgetext",
+            "size": 6
+          },
+          {
+            "name": "highlighttext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "beforehighlighttext",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "paymentinfotitle",
+            "size": 6
+          },
+          {
+            "name": "paymentinfocontent",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "admissionpage-components.fee-details",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

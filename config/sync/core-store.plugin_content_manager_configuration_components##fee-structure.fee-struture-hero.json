@@ -1,0 +1,76 @@
+{
+  "key": "plugin_content_manager_configuration_components::fee-structure.fee-struture-hero",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fee_structure_url": {
+        "edit": {
+          "label": "fee_structure_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fee_structure_url",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "fee_structure_url"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "fee_structure_url",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "fee-structure.fee-struture-hero",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

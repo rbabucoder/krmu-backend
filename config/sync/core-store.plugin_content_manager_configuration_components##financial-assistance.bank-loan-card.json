@@ -1,0 +1,135 @@
+{
+  "key": "plugin_content_manager_configuration_components::financial-assistance.bank-loan-card",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "bank_contact_person",
+      "defaultSortBy": "bank_contact_person",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "bank_img": {
+        "edit": {
+          "label": "bank_img",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bank_img",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "bank_contact_person": {
+        "edit": {
+          "label": "bank_contact_person",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bank_contact_person",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "bankinfo": {
+        "edit": {
+          "label": "bankinfo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bankinfo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "download_btn_url": {
+        "edit": {
+          "label": "download_btn_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "download_btn_url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "quick_apply_btn_url": {
+        "edit": {
+          "label": "quick_apply_btn_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "quick_apply_btn_url",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "bank_img",
+        "bank_contact_person",
+        "download_btn_url"
+      ],
+      "edit": [
+        [
+          {
+            "name": "bank_img",
+            "size": 6
+          },
+          {
+            "name": "bank_contact_person",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bankinfo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "download_btn_url",
+            "size": 6
+          },
+          {
+            "name": "quick_apply_btn_url",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "financial-assistance.bank-loan-card",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

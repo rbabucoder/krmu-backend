@@ -1,0 +1,666 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::internation-relation-form.internation-relation-form",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "first_name": {
+        "edit": {
+          "label": "first_name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "first_name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "last_name": {
+        "edit": {
+          "label": "last_name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "last_name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "date_of_birth": {
+        "edit": {
+          "label": "date_of_birth",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "date_of_birth",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "gender": {
+        "edit": {
+          "label": "gender",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "gender",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "email": {
+        "edit": {
+          "label": "email",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "email",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phone": {
+        "edit": {
+          "label": "phone",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phone",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "address_line_1": {
+        "edit": {
+          "label": "address_line_1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "address_line_1",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "address_line_2": {
+        "edit": {
+          "label": "address_line_2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "address_line_2",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "emergency_phone": {
+        "edit": {
+          "label": "emergency_phone",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "emergency_phone",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "emergency_email": {
+        "edit": {
+          "label": "emergency_email",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "emergency_email",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "emergency_relationship": {
+        "edit": {
+          "label": "emergency_relationship",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "emergency_relationship",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "academic_background": {
+        "edit": {
+          "label": "academic_background",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "academic_background",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "previous_education": {
+        "edit": {
+          "label": "previous_education",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "previous_education",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "institution_name": {
+        "edit": {
+          "label": "institution_name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "institution_name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "study_country": {
+        "edit": {
+          "label": "study_country",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "study_country",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "study_duration": {
+        "edit": {
+          "label": "study_duration",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "study_duration",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "degree_obtained": {
+        "edit": {
+          "label": "degree_obtained",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "degree_obtained",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "major_field": {
+        "edit": {
+          "label": "major_field",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "major_field",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "language_proficiency": {
+        "edit": {
+          "label": "language_proficiency",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "language_proficiency",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "english_test": {
+        "edit": {
+          "label": "english_test",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "english_test",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "other_language": {
+        "edit": {
+          "label": "other_language",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "other_language",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "intended_programme": {
+        "edit": {
+          "label": "intended_programme",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "intended_programme",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "degree_programme": {
+        "edit": {
+          "label": "degree_programme",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "degree_programme",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "programme_major": {
+        "edit": {
+          "label": "programme_major",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programme_major",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "entry_term": {
+        "edit": {
+          "label": "entry_term",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "entry_term",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "applied_before": {
+        "edit": {
+          "label": "applied_before",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "applied_before",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "referral_source": {
+        "edit": {
+          "label": "referral_source",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "referral_source",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "statement_of_purpose": {
+        "edit": {
+          "label": "statement_of_purpose",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "statement_of_purpose",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "declaration_accepted": {
+        "edit": {
+          "label": "declaration_accepted",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "declaration_accepted",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "documents_pdf": {
+        "edit": {
+          "label": "documents_pdf",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "documents_pdf",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "first_name",
+        "last_name",
+        "date_of_birth"
+      ],
+      "edit": [
+        [
+          {
+            "name": "first_name",
+            "size": 6
+          },
+          {
+            "name": "last_name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "date_of_birth",
+            "size": 4
+          },
+          {
+            "name": "gender",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "email",
+            "size": 6
+          },
+          {
+            "name": "phone",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "address_line_1",
+            "size": 6
+          },
+          {
+            "name": "address_line_2",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "emergency_phone",
+            "size": 6
+          },
+          {
+            "name": "emergency_email",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "emergency_relationship",
+            "size": 6
+          },
+          {
+            "name": "academic_background",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "previous_education",
+            "size": 6
+          },
+          {
+            "name": "institution_name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "study_country",
+            "size": 6
+          },
+          {
+            "name": "study_duration",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "degree_obtained",
+            "size": 6
+          },
+          {
+            "name": "major_field",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "language_proficiency",
+            "size": 6
+          },
+          {
+            "name": "english_test",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "other_language",
+            "size": 6
+          },
+          {
+            "name": "intended_programme",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "degree_programme",
+            "size": 6
+          },
+          {
+            "name": "programme_major",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "entry_term",
+            "size": 6
+          },
+          {
+            "name": "applied_before",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "referral_source",
+            "size": 6
+          },
+          {
+            "name": "statement_of_purpose",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "declaration_accepted",
+            "size": 4
+          },
+          {
+            "name": "documents_pdf",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "api::internation-relation-form.internation-relation-form"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

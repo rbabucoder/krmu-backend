@@ -1,0 +1,211 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolprogramme.dream-career",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "heading",
+      "defaultSortBy": "heading",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "careerlogos": {
+        "edit": {
+          "label": "careerlogos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "careerlogos",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "highestpackagenum": {
+        "edit": {
+          "label": "highestpackagenum",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highestpackagenum",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highestpackagetitle": {
+        "edit": {
+          "label": "highestpackagetitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highestpackagetitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "campusrecruitersnum": {
+        "edit": {
+          "label": "campusrecruitersnum",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "campusrecruitersnum",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "campusrecruitertitle": {
+        "edit": {
+          "label": "campusrecruitertitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "campusrecruitertitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "placementassistnum": {
+        "edit": {
+          "label": "placementassistnum",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "placementassistnum",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "placementassisttitle": {
+        "edit": {
+          "label": "placementassisttitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "placementassisttitle",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "description",
+        "careerlogos"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "careerlogos",
+            "size": 6
+          },
+          {
+            "name": "highestpackagenum",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "highestpackagetitle",
+            "size": 6
+          },
+          {
+            "name": "campusrecruitersnum",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "campusrecruitertitle",
+            "size": 6
+          },
+          {
+            "name": "placementassistnum",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "placementassisttitle",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolprogramme.dream-career",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

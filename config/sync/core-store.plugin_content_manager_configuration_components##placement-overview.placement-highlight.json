@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::placement-overview.placement-highlight",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "heading",
+      "defaultSortBy": "heading",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "placementhighlights": {
+        "edit": {
+          "label": "placementhighlights",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "placementhighlights",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "highlightbtn": {
+        "edit": {
+          "label": "highlightbtn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlightbtn",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "placementhighlights",
+        "highlightbtn"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "placementhighlights",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "highlightbtn",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "placement-overview.placement-highlight",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

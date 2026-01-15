@@ -1,0 +1,135 @@
+{
+  "key": "plugin_content_manager_configuration_components::programme.programme-alumni",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "review_img": {
+        "edit": {
+          "label": "review_img",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "review_img",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "qualification": {
+        "edit": {
+          "label": "qualification",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "qualification",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "alumni_img": {
+        "edit": {
+          "label": "alumni_img",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "alumni_img",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "content",
+        "review_img",
+        "name"
+      ],
+      "edit": [
+        [
+          {
+            "name": "content",
+            "size": 6
+          },
+          {
+            "name": "review_img",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "qualification",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "alumni_img",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "programme.programme-alumni",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

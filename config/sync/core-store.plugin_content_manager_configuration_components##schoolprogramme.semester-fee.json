@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolprogramme.semester-fee",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "semester_fees": {
+        "edit": {
+          "label": "semester_fees",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "semester_fees",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "semester_fees"
+      ],
+      "edit": [
+        [
+          {
+            "name": "semester_fees",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "schoolprogramme.semester-fee",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

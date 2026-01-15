@@ -1,0 +1,76 @@
+{
+  "key": "plugin_content_manager_configuration_components::footer-component.footer-social-links",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "footer_icon": {
+        "edit": {
+          "label": "footer_icon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "footer_icon",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "footer_url": {
+        "edit": {
+          "label": "footer_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "footer_url",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "footer_icon",
+        "footer_url"
+      ],
+      "edit": [
+        [
+          {
+            "name": "footer_icon",
+            "size": 6
+          },
+          {
+            "name": "footer_url",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "footer-component.footer-social-links",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

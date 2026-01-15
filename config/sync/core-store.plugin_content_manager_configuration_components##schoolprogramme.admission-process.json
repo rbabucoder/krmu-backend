@@ -1,0 +1,195 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolprogramme.admission-process",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "heading",
+      "defaultSortBy": "heading",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlightheading": {
+        "edit": {
+          "label": "highlightheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlightheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "desktopadmissionprocessimg": {
+        "edit": {
+          "label": "desktopadmissionprocessimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "desktopadmissionprocessimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "admissionprocesscard": {
+        "edit": {
+          "label": "admissionprocesscard",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "admissionprocesscard",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "admissionbtn": {
+        "edit": {
+          "label": "admissionbtn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "admissionbtn",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "admFormField": {
+        "edit": {
+          "label": "admFormField",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "admFormField",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "admissionFormId": {
+        "edit": {
+          "label": "admissionFormId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "admissionFormId",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "highlightheading",
+        "description"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "highlightheading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 6
+          },
+          {
+            "name": "desktopadmissionprocessimg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "admissionprocesscard",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "admissionbtn",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "admFormField",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "admissionFormId",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolprogramme.admission-process",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

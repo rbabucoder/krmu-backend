@@ -1,0 +1,536 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::school-programme.school-programme",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "school_category": {
+        "edit": {
+          "label": "school_category",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "school_category",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "programmeslug": {
+        "edit": {
+          "label": "programmeslug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programmeslug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "herosection": {
+        "edit": {
+          "label": "herosection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "herosection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "programmeeligibility": {
+        "edit": {
+          "label": "programmeeligibility",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programmeeligibility",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "programmescope": {
+        "edit": {
+          "label": "programmescope",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programmescope",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "programmehighlight": {
+        "edit": {
+          "label": "programmehighlight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programmehighlight",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "specialisation": {
+        "edit": {
+          "label": "specialisation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "specialisation",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "admissionprocess": {
+        "edit": {
+          "label": "admissionprocess",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "admissionprocess",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "curriculum": {
+        "edit": {
+          "label": "curriculum",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "curriculum",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "labsfacilities": {
+        "edit": {
+          "label": "labsfacilities",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "labsfacilities",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "beyondclassroom": {
+        "edit": {
+          "label": "beyondclassroom",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "beyondclassroom",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "career": {
+        "edit": {
+          "label": "career",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "career",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "dreamcareer": {
+        "edit": {
+          "label": "dreamcareer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dreamcareer",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "financialassistance": {
+        "edit": {
+          "label": "financialassistance",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "financialassistance",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "toc": {
+        "edit": {
+          "label": "toc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "toc",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "ourlocation": {
+        "edit": {
+          "label": "ourlocation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ourlocation",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "highlightitle": {
+        "edit": {
+          "label": "highlightitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlightitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "criteria": {
+        "edit": {
+          "label": "criteria",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "criteria",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "degree": {
+        "edit": {
+          "label": "degree",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "degree",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "SEO": {
+        "edit": {
+          "label": "SEO",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "SEO",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "order_num": {
+        "edit": {
+          "label": "order_num",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "order_num",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "title"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "highlightitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "herosection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "programmeslug",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "programmehighlight",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "programmeeligibility",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "programmescope",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "specialisation",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "admissionprocess",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "curriculum",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "labsfacilities",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "beyondclassroom",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "career",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "dreamcareer",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "toc",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "ourlocation",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "financialassistance",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "criteria",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "school_category",
+            "size": 6
+          },
+          {
+            "name": "degree",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "SEO",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "order_num",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "api::school-programme.school-programme"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,1384 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::school.school",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "school_category": {
+        "edit": {
+          "label": "school_category",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "school_category",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "schoolherobanner": {
+        "edit": {
+          "label": "schoolherobanner",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "schoolherobanner",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "schoolname": {
+        "edit": {
+          "label": "schoolname",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "schoolname",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "urlslug": {
+        "edit": {
+          "label": "urlslug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "urlslug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subheading": {
+        "edit": {
+          "label": "subheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "herobutton": {
+        "edit": {
+          "label": "herobutton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "herobutton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "videoformat": {
+        "edit": {
+          "label": "videoformat",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "videoformat",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "iframe": {
+        "edit": {
+          "label": "iframe",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "iframe",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "videolink": {
+        "edit": {
+          "label": "videolink",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "videolink",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "admissionsessiontitle": {
+        "edit": {
+          "label": "admissionsessiontitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "admissionsessiontitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "admissionbtn": {
+        "edit": {
+          "label": "admissionbtn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "admissionbtn",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "schoolcomps": {
+        "edit": {
+          "label": "schoolcomps",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "schoolcomps",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "alumnititle": {
+        "edit": {
+          "label": "alumnititle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "alumnititle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "alumnilogo": {
+        "edit": {
+          "label": "alumnilogo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "alumnilogo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "excitedtitle": {
+        "edit": {
+          "label": "excitedtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "excitedtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "excitedbg": {
+        "edit": {
+          "label": "excitedbg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "excitedbg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "exciteddescription": {
+        "edit": {
+          "label": "exciteddescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "exciteddescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "excitedbtns": {
+        "edit": {
+          "label": "excitedbtns",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "excitedbtns",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "newslettertitle": {
+        "edit": {
+          "label": "newslettertitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newslettertitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "newsletterdesc": {
+        "edit": {
+          "label": "newsletterdesc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newsletterdesc",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "newsletterbtns": {
+        "edit": {
+          "label": "newsletterbtns",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newsletterbtns",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "advantagetitle": {
+        "edit": {
+          "label": "advantagetitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "advantagetitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "advantagedesc": {
+        "edit": {
+          "label": "advantagedesc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "advantagedesc",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "advantagesubtitle": {
+        "edit": {
+          "label": "advantagesubtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "advantagesubtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "advantagimg": {
+        "edit": {
+          "label": "advantagimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "advantagimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "advantageCards": {
+        "edit": {
+          "label": "advantageCards",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "advantageCards",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "collabcards": {
+        "edit": {
+          "label": "collabcards",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "collabcards",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "induscollabtitle": {
+        "edit": {
+          "label": "induscollabtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "induscollabtitle",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "letsexplorecontent": {
+        "edit": {
+          "label": "letsexplorecontent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "letsexplorecontent",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "listitem1": {
+        "edit": {
+          "label": "listitem1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "listitem1",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "listitem2": {
+        "edit": {
+          "label": "listitem2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "listitem2",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "listitem3": {
+        "edit": {
+          "label": "listitem3",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "listitem3",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "coetitle1": {
+        "edit": {
+          "label": "coetitle1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "coetitle1",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "coebtn1": {
+        "edit": {
+          "label": "coebtn1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "coebtn1",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "coetitle2": {
+        "edit": {
+          "label": "coetitle2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "coetitle2",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "coebtn2": {
+        "edit": {
+          "label": "coebtn2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "coebtn2",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "knowledgetitle": {
+        "edit": {
+          "label": "knowledgetitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "knowledgetitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "knowledgepartenerlogos": {
+        "edit": {
+          "label": "knowledgepartenerlogos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "knowledgepartenerlogos",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "tetimonialtitle": {
+        "edit": {
+          "label": "tetimonialtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tetimonialtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "testimonialdesc": {
+        "edit": {
+          "label": "testimonialdesc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "testimonialdesc",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "testimonials": {
+        "edit": {
+          "label": "testimonials",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "testimonials",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "deanvisiontitle": {
+        "edit": {
+          "label": "deanvisiontitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deanvisiontitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "deanvisionsubtitle": {
+        "edit": {
+          "label": "deanvisionsubtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deanvisionsubtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "deanimg": {
+        "edit": {
+          "label": "deanimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deanimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "deancontent": {
+        "edit": {
+          "label": "deancontent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deancontent",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "deansname": {
+        "edit": {
+          "label": "deansname",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deansname",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "deanemail": {
+        "edit": {
+          "label": "deanemail",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deanemail",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "deandesignation": {
+        "edit": {
+          "label": "deandesignation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deandesignation",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "eventstitle": {
+        "edit": {
+          "label": "eventstitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "eventstitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "eventsdesc": {
+        "edit": {
+          "label": "eventsdesc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "eventsdesc",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "eventsbtn": {
+        "edit": {
+          "label": "eventsbtn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "eventsbtn",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "studentachievementtitle": {
+        "edit": {
+          "label": "studentachievementtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "studentachievementtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "studentachievementsbtn": {
+        "edit": {
+          "label": "studentachievementsbtn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "studentachievementsbtn",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "showdeaninfo": {
+        "edit": {
+          "label": "showdeaninfo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "showdeaninfo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "degree": {
+        "edit": {
+          "label": "degree",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "degree",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "facility_slide": {
+        "edit": {
+          "label": "facility_slide",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "facility_slide",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "school_seo": {
+        "edit": {
+          "label": "school_seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "school_seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "commence_journey": {
+        "edit": {
+          "label": "commence_journey",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "commence_journey",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "fullwidthhero": {
+        "edit": {
+          "label": "fullwidthhero",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fullwidthhero",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fac_adv": {
+        "edit": {
+          "label": "fac_adv",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fac_adv",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "newsletterbg": {
+        "edit": {
+          "label": "newsletterbg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newsletterbg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "video_comp": {
+        "edit": {
+          "label": "video_comp",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "video_comp",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "programme_offered": {
+        "edit": {
+          "label": "programme_offered",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programme_offered",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "school_advantage": {
+        "edit": {
+          "label": "school_advantage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "school_advantage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "wordschoolslug": {
+        "edit": {
+          "label": "wordschoolslug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "wordschoolslug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "createdBy"
+      ],
+      "edit": [
+        [
+          {
+            "name": "schoolherobanner",
+            "size": 6
+          },
+          {
+            "name": "urlslug",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "school_category",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "schoolname",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "subheading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "videoformat",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "iframe",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "herobutton",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "videolink",
+            "size": 6
+          },
+          {
+            "name": "admissionsessiontitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "excitedbtns",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "admissionbtn",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "schoolcomps",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "alumnititle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "alumnilogo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "newslettertitle",
+            "size": 6
+          },
+          {
+            "name": "excitedtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "exciteddescription",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "newsletterdesc",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "collabcards",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "advantagetitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "advantagedesc",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "newsletterbtns",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "advantagesubtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "advantagimg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "advantageCards",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "listitem2",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "induscollabtitle",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "letsexplorecontent",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "listitem1",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "coebtn1",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "listitem3",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "coetitle1",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "tetimonialtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "coebtn2",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "coetitle2",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "knowledgetitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "knowledgepartenerlogos",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "testimonials",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "testimonialdesc",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "deanvisionsubtitle",
+            "size": 6
+          },
+          {
+            "name": "deanvisiontitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "deandesignation",
+            "size": 6
+          },
+          {
+            "name": "deanimg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "deansname",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "deancontent",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "deanemail",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "eventstitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "eventsbtn",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "eventsdesc",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "studentachievementtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "studentachievementsbtn",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "showdeaninfo",
+            "size": 4
+          },
+          {
+            "name": "degree",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "facility_slide",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "school_seo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "commence_journey",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "fullwidthhero",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "fac_adv",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "excitedbg",
+            "size": 6
+          },
+          {
+            "name": "newsletterbg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "video_comp",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "programme_offered",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "school_advantage",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "wordschoolslug",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "api::school.school"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

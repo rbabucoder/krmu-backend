@@ -1,0 +1,135 @@
+{
+  "key": "plugin_content_manager_configuration_components::pedagogy.peda-industry-connect",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subheading": {
+        "edit": {
+          "label": "subheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "industry_connect_content": {
+        "edit": {
+          "label": "industry_connect_content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "industry_connect_content",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "bgimage": {
+        "edit": {
+          "label": "bgimage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bgimage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "mob_indus_connect_img": {
+        "edit": {
+          "label": "mob_indus_connect_img",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mob_indus_connect_img",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "title",
+        "subheading",
+        "bgimage"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "subheading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "industry_connect_content",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "bgimage",
+            "size": 6
+          },
+          {
+            "name": "mob_indus_connect_img",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "pedagogy.peda-industry-connect",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

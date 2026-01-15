@@ -1,0 +1,77 @@
+{
+  "key": "plugin_content_manager_configuration_components::dean-honor.dean-honor-html",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "dean_honor_html_field": {
+        "edit": {
+          "label": "dean_honor_html_field",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dean_honor_html_field",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "acc_title": {
+        "edit": {
+          "label": "acc_title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "acc_title",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "acc_title"
+      ],
+      "edit": [
+        [
+          {
+            "name": "dean_honor_html_field",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "acc_title",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "dean-honor.dean-honor-html",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

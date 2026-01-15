@@ -1,0 +1,117 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolcomponent.commence-you-journey",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "highlight_heading": {
+        "edit": {
+          "label": "highlight_heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlight_heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "commence_btn": {
+        "edit": {
+          "label": "commence_btn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "commence_btn",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "commence_img": {
+        "edit": {
+          "label": "commence_img",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "commence_img",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "highlight_heading",
+        "heading",
+        "commence_btn"
+      ],
+      "edit": [
+        [
+          {
+            "name": "highlight_heading",
+            "size": 6
+          },
+          {
+            "name": "heading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "commence_btn",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "commence_img",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolcomponent.commence-you-journey",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,249 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolprogramme.financial-assistance",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "heading",
+      "defaultSortBy": "heading",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlightheading": {
+        "edit": {
+          "label": "highlightheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlightheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "point1": {
+        "edit": {
+          "label": "point1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "point1",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "point2": {
+        "edit": {
+          "label": "point2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "point2",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "point3": {
+        "edit": {
+          "label": "point3",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "point3",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "point4": {
+        "edit": {
+          "label": "point4",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "point4",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "point5": {
+        "edit": {
+          "label": "point5",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "point5",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "point6": {
+        "edit": {
+          "label": "point6",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "point6",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "point7": {
+        "edit": {
+          "label": "point7",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "point7",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "financelogos": {
+        "edit": {
+          "label": "financelogos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "financelogos",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "highlightheading",
+        "description"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "highlightheading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 6
+          },
+          {
+            "name": "point1",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "point2",
+            "size": 6
+          },
+          {
+            "name": "point3",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "point4",
+            "size": 6
+          },
+          {
+            "name": "point5",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "point6",
+            "size": 6
+          },
+          {
+            "name": "point7",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "financelogos",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolprogramme.financial-assistance",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

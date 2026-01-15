@@ -1,0 +1,76 @@
+{
+  "key": "plugin_content_manager_configuration_components::sport-facility.sport-facility-img-comp",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "img": {
+        "edit": {
+          "label": "img",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "img",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "caption": {
+        "edit": {
+          "label": "caption",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "caption",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "img",
+        "caption"
+      ],
+      "edit": [
+        [
+          {
+            "name": "img",
+            "size": 6
+          },
+          {
+            "name": "caption",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "sport-facility.sport-facility-img-comp",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

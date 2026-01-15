@@ -1,0 +1,172 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::controller-setting.controller-setting",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "download_prospectus_enable_disable": {
+        "edit": {
+          "label": "download_prospectus_enable_disable",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "download_prospectus_enable_disable",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "programme_handbook_enable_disable": {
+        "edit": {
+          "label": "programme_handbook_enable_disable",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "programme_handbook_enable_disable",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "open_elective_enable_disable": {
+        "edit": {
+          "label": "open_elective_enable_disable",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "open_elective_enable_disable",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "minor_enable_disable": {
+        "edit": {
+          "label": "minor_enable_disable",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "minor_enable_disable",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "createdBy"
+      ],
+      "edit": [
+        [
+          {
+            "name": "download_prospectus_enable_disable",
+            "size": 4
+          },
+          {
+            "name": "programme_handbook_enable_disable",
+            "size": 4
+          },
+          {
+            "name": "open_elective_enable_disable",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "minor_enable_disable",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "api::controller-setting.controller-setting"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

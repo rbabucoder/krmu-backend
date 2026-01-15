@@ -1,0 +1,119 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolprogramme.semester",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "semestername",
+      "defaultSortBy": "semestername",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "semestername": {
+        "edit": {
+          "label": "semestername",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "semestername",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subjects": {
+        "edit": {
+          "label": "subjects",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subjects",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "pdfbtns": {
+        "edit": {
+          "label": "pdfbtns",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "pdfbtns",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "semFormField": {
+        "edit": {
+          "label": "semFormField",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "semFormField",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "semestername",
+        "subjects",
+        "pdfbtns"
+      ],
+      "edit": [
+        [
+          {
+            "name": "semestername",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "subjects",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "pdfbtns",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "semFormField",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolprogramme.semester",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

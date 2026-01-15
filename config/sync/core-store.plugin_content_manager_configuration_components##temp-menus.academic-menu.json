@@ -1,0 +1,139 @@
+{
+  "key": "plugin_content_manager_configuration_components::temp-menus.academic-menu",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "backgroundimage": {
+        "edit": {
+          "label": "backgroundimage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "backgroundimage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "acadcounter": {
+        "edit": {
+          "label": "acadcounter",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "acadcounter",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "academicmenu": {
+        "edit": {
+          "label": "academicmenu",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "academicmenu",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "discovermenu": {
+        "edit": {
+          "label": "discovermenu",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "discovermenu",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "title",
+        "backgroundimage",
+        "academicmenu"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "backgroundimage",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "acadcounter",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "academicmenu",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "discovermenu",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "temp-menus.academic-menu",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

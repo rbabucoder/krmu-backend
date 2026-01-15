@@ -1,0 +1,316 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::pedagogy.pedagogy",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "pedagogy_hero": {
+        "edit": {
+          "label": "pedagogy_hero",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "pedagogy_hero",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "classroom_teaching": {
+        "edit": {
+          "label": "classroom_teaching",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "classroom_teaching",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "lecture": {
+        "edit": {
+          "label": "lecture",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "lecture",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "practicals": {
+        "edit": {
+          "label": "practicals",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "practicals",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "innovative_work_lab": {
+        "edit": {
+          "label": "innovative_work_lab",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "innovative_work_lab",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "workshop_guest_lecture": {
+        "edit": {
+          "label": "workshop_guest_lecture",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "workshop_guest_lecture",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "technology_enable_learning": {
+        "edit": {
+          "label": "technology_enable_learning",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "technology_enable_learning",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "mock_interview": {
+        "edit": {
+          "label": "mock_interview",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mock_interview",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "mentor_prog": {
+        "edit": {
+          "label": "mentor_prog",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mentor_prog",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "industry_connect": {
+        "edit": {
+          "label": "industry_connect",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "industry_connect",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "seo": {
+        "edit": {
+          "label": "seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "pedagogy_hero",
+        "createdAt",
+        "updatedAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "pedagogy_hero",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "classroom_teaching",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "lecture",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "practicals",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "innovative_work_lab",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "workshop_guest_lecture",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "technology_enable_learning",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "mock_interview",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "mentor_prog",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "industry_connect",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "api::pedagogy.pedagogy"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

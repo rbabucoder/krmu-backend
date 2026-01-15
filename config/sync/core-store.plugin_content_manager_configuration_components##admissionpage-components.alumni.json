@@ -1,0 +1,117 @@
+{
+  "key": "plugin_content_manager_configuration_components::admissionpage-components.alumni",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "highlighttext",
+      "defaultSortBy": "highlighttext",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "highlighttext": {
+        "edit": {
+          "label": "highlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "beforehighlighttext": {
+        "edit": {
+          "label": "beforehighlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "beforehighlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "alumniinfo": {
+        "edit": {
+          "label": "alumniinfo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "alumniinfo",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "highlighttext",
+        "beforehighlighttext",
+        "content"
+      ],
+      "edit": [
+        [
+          {
+            "name": "highlighttext",
+            "size": 6
+          },
+          {
+            "name": "beforehighlighttext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "content",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "alumniinfo",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "admissionpage-components.alumni",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

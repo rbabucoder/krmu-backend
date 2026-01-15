@@ -1,0 +1,99 @@
+{
+  "key": "plugin_content_manager_configuration_components::fee-structure.fee-structure-tab",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "tab_heading": {
+        "edit": {
+          "label": "tab_heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tab_heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fee_structure_acc": {
+        "edit": {
+          "label": "fee_structure_acc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fee_structure_acc",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "download_fee_structure_url": {
+        "edit": {
+          "label": "download_fee_structure_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "download_fee_structure_url",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "tab_heading",
+        "fee_structure_acc",
+        "download_fee_structure_url"
+      ],
+      "edit": [
+        [
+          {
+            "name": "tab_heading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "fee_structure_acc",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "download_fee_structure_url",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "fee-structure.fee-structure-tab",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

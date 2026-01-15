@@ -1,0 +1,194 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::fee-structure-saarc-country.fee-structure-saarc-country",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subheading": {
+        "edit": {
+          "label": "subheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "saarc_url": {
+        "edit": {
+          "label": "saarc_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "saarc_url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fee_structure_saarc_tab": {
+        "edit": {
+          "label": "fee_structure_saarc_tab",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fee_structure_saarc_tab",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "fee_struct_saarc_approval": {
+        "edit": {
+          "label": "fee_struct_saarc_approval",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fee_struct_saarc_approval",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "subheading",
+        "saarc_url"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "subheading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "saarc_url",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "fee_structure_saarc_tab",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "fee_struct_saarc_approval",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "api::fee-structure-saarc-country.fee-structure-saarc-country"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

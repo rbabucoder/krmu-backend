@@ -1,0 +1,329 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::faculty.faculty",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "faculty_name",
+      "defaultSortBy": "faculty_name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "faculty_img": {
+        "edit": {
+          "label": "faculty_img",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_img",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "faculty_name": {
+        "edit": {
+          "label": "faculty_name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "faculty_qualification": {
+        "edit": {
+          "label": "faculty_qualification",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_qualification",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "faculty_designation": {
+        "edit": {
+          "label": "faculty_designation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_designation",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "faculty_tab_content": {
+        "edit": {
+          "label": "faculty_tab_content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_tab_content",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "faculty_social_links": {
+        "edit": {
+          "label": "faculty_social_links",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_social_links",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "faculty_interest_areas": {
+        "edit": {
+          "label": "faculty_interest_areas",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_interest_areas",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "facultyslug": {
+        "edit": {
+          "label": "facultyslug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "facultyslug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "school_categories": {
+        "edit": {
+          "label": "school_categories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "school_categories",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "faculty_card_desg": {
+        "edit": {
+          "label": "faculty_card_desg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_card_desg",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "faculty_type": {
+        "edit": {
+          "label": "faculty_type",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faculty_type",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "order_num": {
+        "edit": {
+          "label": "order_num",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "order_num",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "faculty_img",
+        "faculty_name",
+        "faculty_qualification"
+      ],
+      "edit": [
+        [
+          {
+            "name": "faculty_img",
+            "size": 6
+          },
+          {
+            "name": "faculty_name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "faculty_qualification",
+            "size": 6
+          },
+          {
+            "name": "faculty_designation",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "faculty_tab_content",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "faculty_social_links",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "faculty_interest_areas",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "facultyslug",
+            "size": 6
+          },
+          {
+            "name": "school_categories",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "faculty_card_desg",
+            "size": 6
+          },
+          {
+            "name": "faculty_type",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "order_num",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "api::faculty.faculty"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

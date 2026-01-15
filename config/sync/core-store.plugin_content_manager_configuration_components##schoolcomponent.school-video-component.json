@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolcomponent.school-video-component",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "videoiframefield": {
+        "edit": {
+          "label": "videoiframefield",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "videoiframefield",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "videoiframefield"
+      ],
+      "edit": [
+        [
+          {
+            "name": "videoiframefield",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolcomponent.school-video-component",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

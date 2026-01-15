@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::fee-structure.fee-structure-saarc",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "saarc_btn": {
+        "edit": {
+          "label": "saarc_btn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "saarc_btn",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "saarc_btn"
+      ],
+      "edit": [
+        [
+          {
+            "name": "saarc_btn",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "fee-structure.fee-structure-saarc",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

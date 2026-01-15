@@ -1,0 +1,191 @@
+{
+  "key": "plugin_content_manager_configuration_components::homepage-components.a-decade-right-col",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "counter1text",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "counter1text": {
+        "edit": {
+          "label": "counter1text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "counter1text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "counter1content": {
+        "edit": {
+          "label": "counter1content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "counter1content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "counter2text": {
+        "edit": {
+          "label": "counter2text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "counter2text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "counter2content": {
+        "edit": {
+          "label": "counter2content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "counter2content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "counter3text": {
+        "edit": {
+          "label": "counter3text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "counter3text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "counter3content": {
+        "edit": {
+          "label": "counter3content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "counter3content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "counter4text": {
+        "edit": {
+          "label": "counter4text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "counter4text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "counter4content": {
+        "edit": {
+          "label": "counter4content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "counter4content",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "counter1text",
+        "counter1content",
+        "counter2text"
+      ],
+      "edit": [
+        [
+          {
+            "name": "counter1text",
+            "size": 6
+          },
+          {
+            "name": "counter1content",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "counter2text",
+            "size": 6
+          },
+          {
+            "name": "counter2content",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "counter3text",
+            "size": 6
+          },
+          {
+            "name": "counter3content",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "counter4text",
+            "size": 6
+          },
+          {
+            "name": "counter4content",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "homepage-components.a-decade-right-col",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

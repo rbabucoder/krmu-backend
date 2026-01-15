@@ -1,0 +1,117 @@
+{
+  "key": "plugin_content_manager_configuration_components::homepage-components.visit-explore",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title1",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "visitexplorebtn": {
+        "edit": {
+          "label": "visitexplorebtn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "visitexplorebtn",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "title1": {
+        "edit": {
+          "label": "title1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title1",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title2": {
+        "edit": {
+          "label": "title2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title2",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "description",
+        "visitexplorebtn",
+        "title1"
+      ],
+      "edit": [
+        [
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "visitexplorebtn",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "title1",
+            "size": 6
+          },
+          {
+            "name": "title2",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "homepage-components.visit-explore",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

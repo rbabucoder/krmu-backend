@@ -1,0 +1,175 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolprogramme.career-prospects",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "heading",
+      "defaultSortBy": "heading",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlightheading": {
+        "edit": {
+          "label": "highlightheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlightheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "careerimg": {
+        "edit": {
+          "label": "careerimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "careerimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "careerbtn": {
+        "edit": {
+          "label": "careerbtn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "careerbtn",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "careercards": {
+        "edit": {
+          "label": "careercards",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "careercards",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "careerFormId": {
+        "edit": {
+          "label": "careerFormId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "careerFormId",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "highlightheading",
+        "description"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "highlightheading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 6
+          },
+          {
+            "name": "careerimg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "careerbtn",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "careercards",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "careerFormId",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolprogramme.career-prospects",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.breadcrumb",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "breadcrumbtext",
+      "defaultSortBy": "breadcrumbtext",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "breadcrumbtext": {
+        "edit": {
+          "label": "breadcrumbtext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "breadcrumbtext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "backgroundimage": {
+        "edit": {
+          "label": "backgroundimage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "backgroundimage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "breadcrumbbgcolor": {
+        "edit": {
+          "label": "breadcrumbbgcolor",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "breadcrumbbgcolor",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "breadcrumbtext",
+        "backgroundimage",
+        "breadcrumbbgcolor"
+      ],
+      "edit": [
+        [
+          {
+            "name": "breadcrumbtext",
+            "size": 6
+          },
+          {
+            "name": "backgroundimage",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "breadcrumbbgcolor",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.breadcrumb",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,254 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::phd-admission.phd-admission",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subheading": {
+        "edit": {
+          "label": "subheading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subheading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "hero_btn": {
+        "edit": {
+          "label": "hero_btn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "hero_btn",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heroimg": {
+        "edit": {
+          "label": "heroimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heroimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "phdprogramme_offered": {
+        "edit": {
+          "label": "phdprogramme_offered",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phdprogramme_offered",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "personal_interview": {
+        "edit": {
+          "label": "personal_interview",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "personal_interview",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "phd_admission_acc": {
+        "edit": {
+          "label": "phd_admission_acc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phd_admission_acc",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "subheading",
+        "content"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "subheading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "content",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "hero_btn",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "heroimg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "phdprogramme_offered",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "personal_interview",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "phd_admission_acc",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "api::phd-admission.phd-admission"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

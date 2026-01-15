@@ -1,0 +1,78 @@
+{
+  "key": "plugin_content_manager_configuration_components::homepage-components.a-decade-section",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "adecadeleftcol": {
+        "edit": {
+          "label": "adecadeleftcol",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "adecadeleftcol",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "adecaderightcol": {
+        "edit": {
+          "label": "adecaderightcol",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "adecaderightcol",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "adecadeleftcol",
+        "adecaderightcol"
+      ],
+      "edit": [
+        [
+          {
+            "name": "adecadeleftcol",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "adecaderightcol",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "homepage-components.a-decade-section",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

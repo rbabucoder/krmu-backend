@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::schoolprogramme.extra-subjects",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "sub_name": {
+        "edit": {
+          "label": "sub_name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sub_name",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "sub_name"
+      ],
+      "edit": [
+        [
+          {
+            "name": "sub_name",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "schoolprogramme.extra-subjects",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

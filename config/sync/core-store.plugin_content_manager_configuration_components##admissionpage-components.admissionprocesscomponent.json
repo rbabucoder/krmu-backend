@@ -1,0 +1,231 @@
+{
+  "key": "plugin_content_manager_configuration_components::admissionpage-components.admissionprocesscomponent",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "badgetext",
+      "defaultSortBy": "badgetext",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "badgetext": {
+        "edit": {
+          "label": "badgetext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "badgetext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title2": {
+        "edit": {
+          "label": "title2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title2",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "descriptions2": {
+        "edit": {
+          "label": "descriptions2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "descriptions2",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "readytobeginsbtns": {
+        "edit": {
+          "label": "readytobeginsbtns",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "readytobeginsbtns",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "needhelptext": {
+        "edit": {
+          "label": "needhelptext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "needhelptext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "needhelplink": {
+        "edit": {
+          "label": "needhelplink",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "needhelplink",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "needhelplinktext": {
+        "edit": {
+          "label": "needhelplinktext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "needhelplinktext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlighttext": {
+        "edit": {
+          "label": "highlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "beforehighlight": {
+        "edit": {
+          "label": "beforehighlight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "beforehighlight",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "badgetext",
+        "highlighttext",
+        "beforehighlight"
+      ],
+      "edit": [
+        [
+          {
+            "name": "badgetext",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "title2",
+            "size": 6
+          },
+          {
+            "name": "descriptions2",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "readytobeginsbtns",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "needhelptext",
+            "size": 6
+          },
+          {
+            "name": "needhelplink",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "needhelplinktext",
+            "size": 6
+          },
+          {
+            "name": "highlighttext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "beforehighlight",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "admissionpage-components.admissionprocesscomponent",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

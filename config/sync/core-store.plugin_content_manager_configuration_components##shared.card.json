@@ -1,0 +1,115 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.card",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "cardimg": {
+        "edit": {
+          "label": "cardimg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cardimg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "cardclass": {
+        "edit": {
+          "label": "cardclass",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cardclass",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "cardcontent": {
+        "edit": {
+          "label": "cardcontent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cardcontent",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "cardimg",
+        "title",
+        "cardclass"
+      ],
+      "edit": [
+        [
+          {
+            "name": "cardimg",
+            "size": 6
+          },
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "cardclass",
+            "size": 6
+          },
+          {
+            "name": "cardcontent",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "shared.card",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

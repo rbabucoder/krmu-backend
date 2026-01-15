@@ -1,0 +1,251 @@
+{
+  "key": "plugin_content_manager_configuration_components::homepage-components.shaping-future",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "subtitle",
+      "defaultSortBy": "subtitle",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "subtitle": {
+        "edit": {
+          "label": "subtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlightext": {
+        "edit": {
+          "label": "highlightext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "highlightext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "afterhighlighttext": {
+        "edit": {
+          "label": "afterhighlighttext",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "afterhighlighttext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "descriptions": {
+        "edit": {
+          "label": "descriptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "descriptions",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "link1text": {
+        "edit": {
+          "label": "link1text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "link1text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "link1": {
+        "edit": {
+          "label": "link1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "link1",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "link2text": {
+        "edit": {
+          "label": "link2text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "link2text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "link2": {
+        "edit": {
+          "label": "link2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "link2",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "shapingimage": {
+        "edit": {
+          "label": "shapingimage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "shapingimage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "shapingCounter": {
+        "edit": {
+          "label": "shapingCounter",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "shapingCounter",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "mobileshapingimage": {
+        "edit": {
+          "label": "mobileshapingimage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mobileshapingimage",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "subtitle",
+        "highlightext",
+        "afterhighlighttext"
+      ],
+      "edit": [
+        [
+          {
+            "name": "subtitle",
+            "size": 6
+          },
+          {
+            "name": "highlightext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "afterhighlighttext",
+            "size": 6
+          },
+          {
+            "name": "descriptions",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "link1text",
+            "size": 6
+          },
+          {
+            "name": "link1",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "link2text",
+            "size": 6
+          },
+          {
+            "name": "link2",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "shapingimage",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "shapingCounter",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "mobileshapingimage",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "homepage-components.shaping-future",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

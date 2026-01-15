@@ -3365,6 +3365,40 @@ export interface ApiSingleBlogSingleBlog extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSiteSeoSiteSeo extends Struct.CollectionTypeSchema {
+  collectionName: 'site_seos';
+  info: {
+    displayName: 'Site SEO';
+    pluralName: 'site-seos';
+    singularName: 'site-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    canonicalUrl: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    index: Schema.Attribute.Boolean;
+    keyword: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::site-seo.site-seo'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    shareImg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    slug: Schema.Attribute.UID<'title'>;
+    title: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSportFacilitySportFacility extends Struct.SingleTypeSchema {
   collectionName: 'sport_facilities';
   info: {
@@ -4190,6 +4224,7 @@ declare module '@strapi/strapi' {
       'api::school.school': ApiSchoolSchool;
       'api::section.section': ApiSectionSection;
       'api::single-blog.single-blog': ApiSingleBlogSingleBlog;
+      'api::site-seo.site-seo': ApiSiteSeoSiteSeo;
       'api::sport-facility.sport-facility': ApiSportFacilitySportFacility;
       'api::student-achievement.student-achievement': ApiStudentAchievementStudentAchievement;
       'api::student-welfare.student-welfare': ApiStudentWelfareStudentWelfare;
